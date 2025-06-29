@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Blog Page
- * Description: Modern blog/journal page with elegant design
+ * Description: Modern blog/journal page with elegant design sdfksdfslk
  *
  * @package tempusbelgravia
  */
