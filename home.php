@@ -34,7 +34,7 @@ get_header();
             </div>
             <div class="hero-overlay"></div>
             <div class="hero-content container"> <?php // Add .container or .wrap if needed for width constraint ?>
-                <h1 class="fade-in-up" style="animation-delay: 0.3s; animation-play-state: running;">Timeless Vitality, Visibly Rejuvenated</h1>
+                <h1 class="fade-in-up" style="animation-delay: 0.3s; animation-play-state: running;">Timeless Vitality & Visibly Rejuvenated</h1>
                 <p class="fade-in-up" style="animation-delay: 0.6s; animation-play-state: running;">Welcome to Tempus Lounge, Belgravia's sanctuary where advanced aesthetic treatments and pioneering longevity science converge. Discover the art of refined vitality and inner balance at our luxury London clinic.</p>
                 <div class="fade-in-up" style="animation-delay: 0.9s; animation-play-state: running;">
                     <a href="#treatments" class="cta-button cta-button-white">Explore Services</a> <?php // White background, Gold text on hero ?>
