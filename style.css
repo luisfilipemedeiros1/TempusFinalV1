@@ -1,0 +1,8193 @@
+/*
+Theme Name: tempusbelgravia
+Description: This is the theme created for tempusbelgravia on Genesis Framework.
+Author: Amad Zahid
+Author URI: http://www.dicema.com/
+Version: 2.0.0
+
+Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+Template: genesis
+Template Version: 2.0.0
+
+License: GPL-2.0+
+License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* CSS Custom Properties (Variables) for Theme Compatibility */
+:root {
+    /* Palette */
+    --primary: #AF8F5A; /* Gold */
+    --primary-dark: #8C6F44; /* Darker Gold */
+    --primary-light: #D4AF7A; /* Lighter Gold */
+    --primary-ultralight: #F7F3ED; /* Very Light Beige/Off-white */
+    --accent-deep: #004D40; /* Deep Teal/Green */
+    --accent-light: #A3C1AD; /* Light Sage Green */
+    --accent-gold: #C7A331; /* Brighter Gold */
+    --dark: #111111; /* Near Black */
+    --dark-text: #333333; /* Dark Gray for Text */
+    --light: #FCFBF9; /* Main Light Background */
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #555555; /* Medium Gray for secondary text */
+    --light-gray: #eeeeee; /* Borders, subtle backgrounds */
+    --focus-outline: var(--primary); /* Use primary gold for focus */
+
+    /* Typography */
+    --body-font: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --heading-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --display-font: 'Playfair Display', serif;
+
+    /* Animations */
+    --transition-slow: 0.6s ease;
+    --transition-medium: 0.4s ease;
+    --transition-fast: 0.2s ease;
+
+    /* Layout */
+    --horizontal-scroll-gap: 20px;
+    --horizontal-scroll-padding: 20px;
+    --header-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Table of Contents
+
+- HTML5 Reset
+- Baseline Normalize
+- Box Sizing
+- Float Clearing
+- Defaults
+- Typographical Elements
+- Headings
+- Objects
+- Forms
+- Tables
+- Structure and Layout
+- Site Containers
+- Column Widths and Positions
+- Column Classes
+- Common Classes
+- WordPress
+- Genesis
+- Titles
+- Widgets
+- Featured Content
+- Plugins
+- Genesis eNews Extended
+- Genesis Latest Tweets
+- Gravity Forms
+- Jetpack
+- Site Header
+- Title Area
+- Widget Area
+- Site Navigation
+- Header Navigation
+- Primary Navigation
+- Secondary Navigation
+- Content Area
+- Entries
+- Pagination
+- Comments
+- Sidebars
+- Footer Widgets
+- Site Footer
+- Media Queries
+- max-width: 1139px
+- max-width: 1023px
+- max-width: 767px
+
+*/
+
+
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+
+/* Baseline Normalize
+normalize.css v2.1.2 | MIT License | git.io/normalize
+--------------------------------------------- */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/* Box Sizing
+--------------------------------------------- */
+
+*,
+input[type="search"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+/* Float Clearing
+--------------------------------------------- */
+
+.archive-pagination:before,
+.clearfix:before,
+.entry:before,
+.entry-pagination:before,
+.footer-widgets:before,
+.nav-primary:before,
+.nav-secondary:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.archive-pagination:after,
+.clearfix:after,
+.entry:after,
+.entry-pagination:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 100%; /* 10px browser default */
+}
+
+body {
+	background-color: #f5f5f5;
+	/* color: #666; */
+	/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	/* font-family: 'NeueMontreal'; */
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.7;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background-color: #333;
+	color: #fff;
+}
+
+::selection {
+	background-color: #333;
+	color: #fff;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a img {
+	margin-bottom: -4px;
+	margin-bottom: -0.4rem;
+}
+
+a:hover {
+	color: #333;
+}
+
+p {
+	margin: 0 0 24px;
+	margin: 0 0 2.4rem;
+	padding: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote,
+blockquote::before {
+	color: #999;
+}
+
+blockquote {
+	margin: 40px 40px 24px;
+	margin: 4rem 4rem 2.4rem;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	font-size: 3rem;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+.entry-content code {
+	background-color: #333;
+	color: #ddd;
+}
+
+cite {
+	font-style: normal;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333;
+	/* font-family: Lato, sans-serif; */
+	/* 	font-family: roxoborough-heavy!important;
+	font-weight: 700; */
+	line-height: 1.3em;
+	margin: 0 0 16px;
+	margin: 0 0 1.6rem;
+	/*     font-family: 'neuemontreal-bold'; */
+	text-transform: uppercase;
+	font-family: 'open-sans-bold';
+	font-weight:100;
+
+}
+
+h1 {
+	font-size: 36px;
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-size: 35px;
+	font-size: 3.5rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto; /* IE8 */
+}
+
+/* Forms
+--------------------------------------------- */
+
+input,
+select,
+textarea {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: 1px 1px 3px #eee inset;
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 16px;
+	padding: 1.6rem;
+	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #999;
+	outline: none;
+}
+
+::-moz-placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #999;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+	background-color: #333;
+	border: none;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 16px 24px;
+	padding: 1.6rem 2.4rem;
+
+	width: auto;
+}
+
+button:hover,
+input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover,
+.entry-content .button:hover {
+	background-color: #f15123;
+}
+
+.entry-content .button:hover {
+	color: #fff;
+}
+
+.button {
+	border-radius: 3px;
+	display: inline-block;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ddd;
+	padding: 6px 0;
+	padding: 0.6rem 0;
+}
+
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------------- */
+.wrap {
+	margin: 0 auto;
+	max-width: 1140px;
+}
+.site-inner{
+	width: 100%;
+	position: relative;
+	background-color: white;
+}
+
+
+/* Column Widths and Positions
+--------------------------------------------- */
+
+/* Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	width: 920px;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+/* Content */
+
+.content {
+	float: right;
+	width: 740px;
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	width: 520px;
+}
+
+.full-width-content .content {
+	width: 100%;
+}
+
+/* Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	width: 360px;
+}
+
+.sidebar-content .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+}
+
+/* Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	width: 180px;
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}
+
+/* Column Classes
+Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+--------------------------------------------- */
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+	float: left;
+	margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+	width: 31.623931623931625%;
+}
+
+.four-sixths,
+.two-thirds {
+	width: 65.81196581196582%;
+}
+
+.one-fourth {
+	width: 23.076923076923077%;
+}
+
+.three-fourths {
+	width: 74.35897435897436%;
+}
+
+.one-sixth {
+	width: 14.52991452991453%;
+}
+
+.five-sixths {
+	width: 82.90598290598291%;
+}
+
+.first {
+	clear: both;
+	margin-left: 0;
+}
+.mt-20{
+	margin-top:20px;
+}
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* WordPress
+--------------------------------------------- */
+
+.avatar {
+	float: left;
+}
+
+.alignleft .avatar {
+	margin-right: 24px;
+	margin-right: 2.4rem;
+}
+
+.alignright .avatar {
+	margin-left: 24px;
+	margin-left: 2.4rem;
+}
+
+.search-form input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 24px;
+	margin: 0 auto 2.4rem;
+}
+
+img.alignnone {
+	margin-bottom: 12px;
+	margin-bottom: 1.2rem;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 24px 24px 0;
+	margin: 0 2.4rem 2.4rem 0;
+}
+
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 24px 24px;
+	margin: 0 0 2.4rem 2.4rem;
+}
+
+.wp-caption-text {
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: center;
+}
+.widget_calendar table {
+	width: 100%;
+}
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* Genesis
+--------------------------------------------- */
+
+.breadcrumb {
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+}
+
+.archive-description,
+.author-box {
+	background-color: #fff;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+}
+
+.archive-description {
+	padding: 40px 40px 24px;
+	padding: 4rem 4rem 2.4rem;
+}
+
+.author-box {
+	padding: 40px;
+	padding: 4rem;
+}
+
+.author-box-title {
+	color: #333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 4px;
+	margin-bottom: 0.4rem;
+}
+
+.author-box a {
+	border-bottom: 1px solid #ddd;
+}
+
+.author-box p {
+	margin-bottom: 0;
+}
+
+.author-box .avatar {
+	margin-right: 24px;
+	margin-right: 2.4rem;
+}
+
+/* Titles
+--------------------------------------------- */
+
+.entry-title {
+	font-size: 36px;
+	font-size: 3.6rem;
+	line-height: 1;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+	color: #333;
+}
+
+.entry-title a:hover {
+	color: #666;
+}
+
+.widget-title {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+
+}
+
+.sidebar .widget-title a {
+	border: none;
+}
+
+.archive-title {
+	font-size: 20px;
+	font-size: 2rem;
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content .entry {
+	border-bottom: 2px solid #f5f5f5;
+	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	padding: 0 0 24px;
+	padding: 0 0 2.4rem;
+}
+
+.featured-content .entry-title {
+	border: none;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.2;
+}
+
+.featured-content .entry-title a {
+	border: none;
+}
+
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget {
+	color: #999;
+}
+
+.enews-widget .widget-title {
+	color: #fff;
+}
+
+.enews-widget input {
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+}
+
+.enews-widget input:focus {
+	border: 1px solid #ddd;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: #f15123;
+	color: #fff;
+	margin: 0;
+	width: 100%;
+}
+
+.enews-widget input:hover[type="submit"] {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Genesis Latest Tweets
+--------------------------------------------- */
+
+.latest-tweets ul li {
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+}
+
+/* Gravity Forms
+--------------------------------------------- */
+
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 16px;
+	padding: 1.6rem;
+}
+
+div.gform_wrapper .ginput_complex label {
+	padding: 0;
+}
+
+div.gform_wrapper li,
+div.gform_wrapper form li {
+	margin: 16px 0 0;
+	margin: 1.6rem 0 0;
+}
+
+div.gform_wrapper .gform_footer input[type="submit"] {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+img#wpstats {
+	display: none;
+}
+
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background-color: #fff;
+	padding: 15px 0px;
+}
+
+.site-header .wrap {
+	padding: 10px 0;
+	height: 80px;
+	background: transparent;
+}
+.contact-booke-now{
+	width: 30%;
+	float: left;
+	position: absolute;
+	top: 12px;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+.single-product .contact-booke-now{
+	top: -143px;
+	right: 0px;
+}
+.contact-booke-now .contact-number{
+	float:left;
+	margin-right:20px;
+	margin-top:10px;
+}
+.contact-booke-now .contact-number p{
+	margin:0px;
+}
+.contact-booke-now .button-header{
+	padding: 0px;
+	width: 42%;
+	float: left;
+	margin: 0px;
+}
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+	float: left;
+	/* font-family: Lato, sans-serif; */
+	font-family: 'RoxboroughCF';
+	font-weight: 700;
+	padding: 16px 0;
+	padding: 1.6rem 0;
+	width: 217px;
+	height: 75px;
+}
+
+.header-image .title-area {
+	padding: 0;
+	/* 	    flex-basis: 18%;
+     */
+}
+
+.site-title {
+	font-size: 28px;
+	font-size: 2.8rem;
+	line-height: 1;
+	margin: 0 0 8px;
+	margin: 0 0 0.8rem;
+	text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:hover {
+	color: #333;
+}
+
+.site-description {
+	color: #999;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+/* Full width header, no widgets */
+
+.header-full-width .title-area,
+.header-full-width .site-title {
+	width: 100%;
+}
+
+.header-image .site-description,
+.header-image .site-title a {
+	display: block;
+	text-indent: -9999px;
+}
+
+/* Logo, hide text */
+.page-template-home .site-header .wrap {
+	background-size: 220px!important;
+
+}
+.header-image .site-header .wrap {
+	background: url(images/logo.png) no-repeat left;
+	padding: 0;
+	/* z-index: 99999; */
+	position: relative;
+	background-size: 220px;
+	/* 	display: flex; */
+	background-position:center;
+}
+
+.header-image .site-title a {
+	float: left;
+	min-height: 80px;
+	width: 20%;
+	position:absolute;
+	left:40%;
+
+}
+button.book-now{
+	margin-top: 15px;
+	padding: 10px 14px;
+	font-size: 15px;
+	background: #d0d1cf;
+	color: #000000;
+	border-radius: 5px;
+	font-family: 'open-sans-bold'!important;
+}
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+	float: left;
+	padding: 0px!important;
+	width: 100%;
+	text-align:center;
+	margin-left:-33px;
+}
+
+.header-image .site-header .widget-area {
+	padding: 20px 0;
+	padding: 2rem 0;
+}
+
+.site-header .search-form {
+	float: right;
+	margin-top: 24px;
+	margin-top: 2.4rem;
+}
+
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+	clear: both;
+	color: #999;
+	/* font-family: Lato, sans-serif; */
+	font-family: 'NeueMontreal',sans-serif;
+	line-height: 1.5;
+	width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+}
+
+.genesis-nav-menu a {
+	border: none;
+	color: black;
+	display: block;
+	padding: 28px 12px;
+	position: relative;
+	font-family: 'open-sans-light';
+	/* 	font-weight:600; */
+	font-size:15px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+
+.genesis-nav-menu .sub-menu .current-menu-item > a{
+	color: #d0d1cf;
+}
+
+.genesis-nav-menu > .menu-item > a {
+	text-transform: capitalize;
+	position: relative;
+}
+
+.genesis-nav-menu .sub-menu {
+	left: -9999px;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out;
+	-ms-transition: opacity .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
+	width: 201px;
+	z-index: 99;
+	background: white;
+	padding-bottom: 10px;
+
+}
+.genesis-nav-menu .sub-menu li a{
+	color:#000;
+}
+.genesis-nav-menu .sub-menu li{
+	border-bottom: 1px solid #ffffff;
+}
+.genesis-nav-menu .sub-menu li:last-child{
+	border-bottom: none;;
+}
+.genesis-nav-menu .sub-menu a {
+	border-top: none;
+	font-size: 12px;
+	/*    font-family: 'neuemontreal'; */
+	font-family: 'open-sans-light';
+	padding: 5px 20px;
+	position: relative;
+	width: 201px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -54px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+	padding: 28px 0;
+	padding: 2.8rem 0;
+	text-transform: uppercase;
+}
+
+.genesis-nav-menu > .right > a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+	margin-left: 48px;
+	margin-left: 4.8rem;
+}
+
+.genesis-nav-menu > .search {
+	padding: 14px 0 0;
+	padding: 1.4rem 0 0;
+}
+
+/* Site Header Navigation
+--------------------------------------------- */
+
+
+
+.site-header .sub-menu .sub-menu {
+	margin-top: -55px;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	background-color: #333;
+}
+
+.nav-primary a:hover,
+.nav-primary .current-menu-item > a {
+	color: #fff;
+}
+
+.nav-primary .sub-menu a:hover {
+	color: #333;
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+	background-color: #fff;
+}
+
+
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* Entries
+--------------------------------------------- */
+
+.entry {
+	background-color: #fff;
+	border-radius: 3px;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	padding: 40px 40px 24px;
+	padding: 4rem 4rem 2.4rem;
+}
+
+.entry-content a {
+	border-bottom: 1px solid #ddd;
+	color: #f15123;
+}
+
+.entry-content a:hover {
+	color: #333;
+}
+
+.entry-content .attachment a,
+.entry-content .gallery a {
+	border: none;
+}
+
+.entry-content ol,
+.entry-content p,
+.entry-content ul,
+.quote-caption {
+	margin-bottom: 26px;
+	margin-bottom: 2.6rem;
+}
+
+.entry-content ol,
+.entry-content ul {
+	margin-left: 40px;
+	margin-left: 4rem;
+}
+
+.entry-content ol li {
+	list-style-type: decimal;
+}
+
+.entry-content ul li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content .search-form {
+	width: 50%;
+}
+
+.entry-meta {
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.entry-meta a {
+	border-bottom: 1px solid #ddd;
+}
+
+.entry-header .entry-meta {
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+.entry-footer .entry-meta {
+	border-top: 2px solid #f5f5f5;
+	margin: 0 -40px;
+	margin: 0 -4rem;
+	padding: 32px 40px 8px;
+	padding: 3.2rem 4rem 0.8rem;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+	margin: 0 0.6rem 0 0.2rem;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.archive-pagination,
+.entry-pagination {
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 40px 0;
+	margin: 4rem 0;
+}
+
+.archive-pagination li {
+	display: inline;
+}
+
+.archive-pagination li a {
+	background-color: #333;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 12px;
+	padding: 0.8rem 1.2rem;
+}
+
+.archive-pagination li a:hover,
+.archive-pagination li.active a {
+	background-color: #f15123;
+}
+
+.entry-pagination a {
+	border-bottom: 1px solid #ddd;
+}
+
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: #fff;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+}
+
+.entry-comments {
+	padding: 40px;
+	padding: 4rem;
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 40px 40px 16px;
+	padding: 4rem 4rem 1.6rem;
+}
+
+.comment-respond a,
+.entry-comments a {
+	border-bottom: 1px solid #ddd;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+	margin-right: 1.2rem;
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+}
+
+.comment-list li {
+	margin-top: 24px;
+	margin-top: 2.4rem;
+	padding: 32px;
+	padding: 3.2rem;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+	margin-right: -3.2rem;
+}
+
+li.comment {
+	background-color: #f5f5f5;
+	border: 2px solid #fff;
+	border-right: none;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+	margin: 0 1.6rem 2.4rem 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+.form-allowed-tags {
+	background-color: #f5f5f5;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 24px;
+	padding: 2.4rem;
+}
+
+
+/*
+Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	color: #999;
+}
+
+.sidebar a {
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebar p:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.6rem;
+	word-wrap: break-word;
+}
+
+.sidebar ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .widget {
+	background-color: #fff;
+	border-radius: 3px;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	padding: 40px;
+	padding: 4rem;
+}
+
+.sidebar .enews-widget {
+	background-color: #333;
+}
+
+
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	/*	background-color: #f9f9f9; */
+	color: #999;
+	clear: both;
+	padding: 40px 0 16px;
+	padding: 4rem 0 1.6rem;
+	/* 	font-family: neuemontreal-light; */
+	font-family:'open-sans-light';
+}
+.page-template-home .footer-widgets .wrap{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	background-color: #f9f9f9;
+	border-style: solid;
+	border-width: 0px 80px;
+	border-color: #f9f9f9;
+	max-width:100%;
+}
+.footer-widgets-1{
+	width:100%;
+	padding-bottom:0px;
+	position:relative;
+}
+/* .footer-widgets-1:before{
+   content:'';
+	width:100%;
+	height:100%;
+	background:red;
+	position:absolute;
+	top:0px;
+} */
+.footer-widgets-4 {
+	width: 545px;
+}
+
+.footer-widgets-3 {
+	width: 260px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.footer-widgets-2 {
+	width:185px;
+}
+.page-template-home .footer-widgets-2{
+	width:20%;
+}
+.page-template-home .footer-widgets-3{
+	width:30%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin:0px;
+}
+.page-template-home .footer-widgets-4{
+	width:50%;
+}
+.footer-widgets-2,
+.footer-widgets-3 {
+	float: left;
+}
+
+.footer-widgets-4 {
+	float: left;
+
+}
+.whatsapp-icon{
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 98;
+	outline: none;
+	width: 60px;
+	border: none;
+	/* font-size: 65px; */
+	text-decoration: none;
+}
+.site-footer .whatsapp-icon a{
+	border:none;
+}
+.whatsapp-icon i{
+	color: green;
+}
+.footer-widgets a {
+
+	color: black;
+}
+.woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product{
+	text-align:center;
+}
+.footer-widgets a:hover {
+	color: #d0d1cf;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+.footer-widgets .widget-title {
+	color: black;
+	font-size: 24px;
+	/*     font-family: 'neuemontreal'; */
+	font-weight:100;
+	text-transform: capitalize;
+	/* 	font-family:'open-sans-medium'; */
+	letter-spacing: 0.2em;
+	font-family: 'open-sans-bold';
+
+}
+
+.footer-widgets li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.6rem;
+	word-wrap: break-word;
+}
+
+.footer-widgets .search-form input:focus {
+	border: 1px solid #ddd;
+}
+
+div.quantity  button{
+	background:transparent;
+	color:#e4b1a0;
+	padding:0px;
+}
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+.popup-g .facts-cross{
+	display: none;
+}
+.our-doctor-category .active  .popup-g .facts-cross {
+	/* 	width: 0vw; */
+
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	top: 10px;
+	z-index: 9;
+	right: 30px;
+	cursor: pointer;
+	top: 14%;
+	left: 84.5%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+.our-doctor-category .active  .popup-g .facts-cross i{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-position: revert;
+	position: relative;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+.our-doctor-category .active  .popup-g .facts-cross i:before{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+.our-doctor-category-home .active  .popup-g .facts-cross{
+	width: 10vw;
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	top: 80px;
+	z-index: 9;
+	right: 135px;
+	cursor: pointer;
+}
+.g-content-page{
+	position: relative;
+	width: 50%;
+	float: left;
+	padding: 20px;
+	min-height: 540px;
+	margin-top: -70px;
+}
+.g-content-page .popup-wrap-g{
+	display: none;
+}
+.g-content-page.active .popup-wrap-g{
+	overflow:auto;
+	display: block;
+	width: 75%;
+	height: 80vh;
+	/* 	margin: 30px auto; */
+	position: relative;
+	padding: 40px;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+.team-doctor-section .g-content-page .popup-wrap-g .doctor-left{
+	width: 45%;
+	float: left;
+	background: white;
+}
+.team-doctor-section .g-content-page .popup-wrap-g .doctor-image{
+	height:400px;
+}
+.doctors-social{
+	position: relative;
+	display: block;
+	padding: 40px 0px;
+}
+
+.doctors-social a{
+	font-size: 20px;
+	margin: 0px 20px;
+}
+.doctors-social i{
+	color:#000000;
+}
+.team-doctor-section  .g-content-page .popup-wrap-g .doctor-name h2{
+	color:black;
+	font-size:34px!important;
+	padding-top:0px;
+}
+.team-doctor-section  .g-content-page .popup-wrap-g .doctor-page-detail{
+	position: relative;
+	overflow: hidden;
+	padding-left: 30px;
+	display: block;
+	width: 55%;
+	text-align: left;
+	float: left;
+}
+.team-doctor-section  .g-content-page .popup-wrap-g .doctor-page-detail .doctor-description{
+	/* 	font-family: neuemontreal-light; */
+	font-size: 15px;
+	line-height:20px;
+	font-family:'open-sans-light';
+}
+.team-doctor-section  .g-content-page .popup-wrap-g .doctor-page-detail .doctor-description p{
+	margin-bottom:10px;
+}
+.team-doctor-section  .g-content-page .popup-wrap-g .doctor-page-detail .doctor-specialization p{
+	letter-spacing:1px;
+	font-size:20px;
+	font-family:'open-sans-medium';
+}
+.g-content-page.active .popup-g {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99999999;
+	overflow: hidden;
+	right: 0;
+	top: 0;
+	background: #000000de;
+}
+.g-content-page{
+	width: 100%;
+	padding: 0px;
+	min-height: 0px;
+}
+.nav-header{
+	text-align:center;
+}
+#menu-item-40 a{
+	padding-right:0px;
+}
+.site-footer {
+	background-color: #f9f9f9;
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 10px 0;
+	padding: 1rem 0;
+	text-align: center;
+}
+.site-footer .image{
+	width: 150px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+}
+.site-footer .sign-up {
+	width: 39%;
+	float: left;
+	padding-top: 15px;
+	margin-right: 130px;
+}
+.site-footer .contact-information {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	width: 38%;
+	color: #000;
+	float: left;
+	padding: 25px 0;
+	text-align: center;
+	/* font-family: neuemontreal-light; */
+	font-family: 'open-sans-light';
+	margin-left: 130px;
+}
+.newsletter-heading h2{
+	font-size:18px!important;
+}
+.site-footer .contact-information .footer-contact i{
+	padding-right: 12px;
+	color: black;
+	font-size: 16px;
+}
+.site-footer .contact-information .footer-contact{
+	float: left;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	display: block;
+	padding-right: 9px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	width: 100%;
+}
+/* .site-footer .contact-information .address{
+	margin-left:30px;
+} */
+.footer-form .footer-field{
+	text-align: left;
+	padding-left: 80px;
+	width: 78%;
+	float: left;
+	font-family: 'open-sans-bold';
+	font-weight: 100;
+}
+.footer-form .submit-singup{
+	width: 100px;
+	float: left;
+	padding-left: 16px;
+	margin-top: 30px;
+}
+.footer-information{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width:100%;
+}
+.footer-form .submit-singup input[type="submit"]{
+	font-family: 'open-sans-medium'!important;
+	color: #000000;
+	background: #d0d1cf;
+	padding: 14px 20px;
+}
+.site-footer a {
+	border-bottom: 1px solid #ddd;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+}
+.header-widget-area .dropdown-arrow {
+	width: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 26px;
+	right: 39.5%;
+	color:#e9c3b7;
+}
+.single-product .header-widget-area .dropdown-arrow {
+	width: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: -50px;
+	right: 46.7%;
+	color: #e9c3b7;
+}
+.banner-home-page::after{
+	content: "";
+	width: 3px;
+	height: 50px;
+	position: absolute;
+	color: black;
+	left: 50%;
+	background: #e4b1a0;
+	bottom: -19px;
+	display:none;
+}
+.heading-for-banner{
+	position: relative;
+	overflow: hidden;
+}
+.banner-home-page{
+	position: relative;
+	border-style:solid;
+	border-width: 0 80px 0 80px;
+	border-color: transparent;
+	display: block;
+	width: 100%;
+	/*     background-image: url(http://eventssaudi.com/tempus/wp-content/uploads/2022/08/banner.jpg); */
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/* 	height: 530px; */
+
+}
+.banner-home-page .arows-nex-prev .arow-prev{
+	top: 40%;
+	left: 50px;
+	font-size: 30px;
+	position: absolute;
+	color: white;
+	cursor:pointer;
+}
+.banner-home-page .arows-nex-prev .arow-nex{
+	position: absolute;
+	right: 50px;
+	top: 40%;
+	color: white;
+	font-size: 30px;
+	cursor:pointer;
+}
+.asfand{
+	position: relative;
+}
+/* new */
+.home-banner img{
+	width:100%;
+	height:100%;
+}
+.home-overlay{
+	margin: 0;
+	position: absolute;
+	top: 70%;
+	right: 0%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.scroll-now{
+	padding-bottom: 30px;
+	position: relative;
+	width: 15%;
+	margin: -96px auto 0;
+	display:none;
+}
+/* new */
+.scroll-now p i{
+	top: 55px;
+	position: absolute;
+	left: 45%;
+	font-size: 20px;
+	color: #ffffff;
+}
+.banner-home-page .heading-for-banner h2{
+	color: white;
+	/* 	width: 532px; */
+	margin: 0 auto;
+	/* 	padding-top: 140px; */
+	font-size:35px;
+	text-align:left;
+}
+.banner-home-page .subtext-for-banner{
+	position: relative;
+}
+.banner-home-page .subtext-for-banner p{
+	width: 452px;
+	margin: 0;
+	color: white;
+	text-align: left;
+	padding-top: 6px;
+	/* 	font-family: 'neuemontreal-light';  */
+	line-height: 24px;
+	font-size: 15px;
+	font-family:'open-sans-light';
+}
+.banner-home-page .scroll-now p{
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	margin-top: 30px;
+	/*     font-family: neuemontreal; */
+	font-family: 'open-sans-medium';
+}
+.banner-home-page .scroll-now  button{
+	background: transparent;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+}
+.treatment-page-banner .button-for-banner{
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+}
+.button-for-banner{
+	width: 100%;
+	height: 48px;
+	/* margin: 0 auto; */
+	padding-top: 20px;
+	position: relative;
+	text-align: center;
+
+}
+.button-for-banner button{
+	color: #000000;
+	background-color: #d0d1cf;
+	/* 	font-family: 'neuemontreal';  */
+	font-size:14px;
+	font-family:'open-sans-medium';
+	letter-spacing: 2px;
+}
+.newsletter-form{
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.newsletter-left{
+	position:relative;
+	float:left;
+	margin-left:0px;
+}
+.newsletter-left {
+	position: relative;
+	float: left;
+	padding-top: 25px;
+	width: 100%;
+	padding-bottom: 15px;
+
+}
+.newsletter-email input{
+	padding: 8px 40px 8px 12px;
+}
+.newsletter-submit input[type="submit"]{
+	padding: 8.5px 20px;
+	font-family: 'open-sans-medium'!important;
+	color: #000000;
+	background: #d0d1cf;
+	letter-spacing: 2px;
+}
+.newsletter-submit p{
+	margin-bottom:0px;
+}
+.footer-contact{
+	width:50%;
+	float:left;
+	color:#000;
+}
+.footer-contact i{
+	padding-right:10px;
+}
+.footer-icons-social{
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	display:block;
+	padding-top:18px;
+}
+.footer-icons-social .social-icons{
+	float:left;
+	padding-right:20px;
+}
+.footer-icons-social .social-icons i{
+	color: black;
+	font-size: 20px;
+}
+.newsletter-social{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	padding-top:25px;
+}
+.newsletter-social i{
+	width:10%;
+	float:left;
+	color:#000000;
+}
+.newsletter-social br{
+	display:none;
+}
+.newsletter-callus h4{
+	letter-spacing:0.2rem;
+	font-size:18px!important;
+}
+.newsletter-contact{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.contact-no{
+	width:26%;
+	float:left;
+	position:relative;
+}
+.newsletter-mail{
+	width:74%;
+	float:left;
+	position:relative;
+}
+.location-language h4{
+	letter-spacing:0.2em;
+	font-size:18px!important;
+}
+.newsletter-mail:before{
+	width: 3px;
+	height: 3px;
+	display: inline-block;
+	content: "";
+	background-color: #cbcbcb;
+	margin: 0 7px 2px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.newsletter-contact p {
+	font-family: 'open-sans-light';
+	color: #000000;
+	letter-spacing: 0.12px;
+}
+.newsletter-email {
+	width: 74%;
+	float: left;
+}
+.newsletter-email p{
+	margin-bottom:0px;
+}
+.newsletter-submit{
+	width: 23%;
+	float: left;
+	text-align: right;
+	margin-left: 10px;
+}
+
+.left-content .newsletter-content p{
+	font-family: 'open-sans-light';
+	color: #000000;
+	letter-spacing: 0.12px;
+	padding-bottom:10px;
+	display:none;
+}
+.newsletter-right{
+	position:relative;
+	float:left;
+	width:48%;
+	margin-left:22px;
+}
+.footer-widgets-5{
+	background-color: #f9f9f9;
+	max-width: 1140px!important;
+	margin: 0 auto!important;
+	width: 100%;
+	overflow: hidden;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.footer-icons::after{
+	margin-top: 10px;
+	content: "";
+	height: 2px;
+	/* margin-left: 53px; */
+	color: black;
+	width: 43.5%;
+	position: absolute;
+	background: black;
+	right: 0px;
+}
+.footer-icons::before{
+	margin-top: 10px;
+	content: "";
+	height: 2px;
+	color: black;
+	width: 39%;
+	position: absolute;
+	background: black;
+	/* margin-right: 10px; */
+	left: 0px;
+}
+.social-icon{
+	float: left;
+	left: calc(50% - 9.72px/2 - 124.14px);
+	padding-right: 26px;
+	position: relative;
+}
+.social-icon i{
+	color: black;
+	font-size: 20px;
+}
+.footer-widgets {
+	padding: 0px 0px 17.5px;
+}
+/* #menu-item-35{
+	position:relative;
+}
+#menu-item-35:after{
+	content: '\f078';
+	color: #d0d1cf;
+	font-family: 'FontAwesome';
+	font-size: 11px!important;
+	position: absolute;
+	top: 35px;
+	right: -1px;
+
+} */
+.treatment-single-page{
+	padding:70px 0;
+}
+
+.treatment-single-page .single-treatment-box{
+	display: grid;
+	grid-template-columns: 70% 25%;
+	grid-template-rows: 1fr;
+	grid-column-gap: 40px;
+	grid-row-gap: 0px;
+}
+.treatment-single-page .single-treatment-box .treatment-single-image{
+	background-color: #8d8d8d;
+	height:300px;
+	overflow:hidden;
+}
+.treatment-single-page .single-treatment-box .treatment-single-image img{
+	width:100%;
+	object-fit:cover;
+	height:100%;
+}
+.treatment-single-page .single-treatment-box .treatment-single-description ul{
+	padding-left:15px;
+}
+.condition-single-page{
+	padding:70px 0;
+}
+.treatment-single-image img{
+    height: auto;
+    width: 100%;
+}
+.condition-single-image img{
+	height: auto;
+	width: 100%;
+}
+.single-condition-title{
+	margin-top:20px;
+	text-align: center;
+}
+.who-we-are-section{
+	position: relative;
+	width: 100%;
+	display: block;
+	/*     background: #f9f9f9; */
+	padding: 70px 0px 50px;
+	overflow: hidden;
+}
+.who-we-are-section .who-are-we{
+	width: 1375px;
+	margin: 0 auto;
+}
+.who-we-are-section .wrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width:100%;
+	align-content: center;
+}
+.who-we-are-section .who-we-are-image{
+	width: 675px;
+	display: block;
+	padding: 20px;
+	float: left;
+	height: 450px;
+}
+.who-we-are-section .text-for-who-we-are{
+	width: 45%;
+	float: left;
+	margin-left: 100px;
+	font-family: neuemontreal;
+
+}
+.who-we-are-section .who-we-are-image img{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.who-we-are-section .heading .before-heading-text p{
+	color: black;
+	margin-bottom: 0px;
+	/* 	font-family: 'neuemontreal-medium';  */
+	font-size: 12px;
+	font-family: 'open-sans-medium';
+	margin-left:2px;
+}
+.who-we-are-section .heading h2{
+	color: black;
+	margin-bottom:0px;
+}
+
+.who-we-are-section .description-who-we-are{
+	/*     font-family: 'neuemontreal'; */
+	overflow: hidden;
+	padding-top: 55px;
+	padding-right:20px;
+	font-size:16px;
+	line-height:24px;
+	font-family:'open-sans-light';
+}
+.who-we-are-section .heading{
+	position:relative;
+	display:block;
+	padding-right:10px;
+}
+.who-we-are-section .heading::after{
+	left: 70px;
+	bottom: -30px;
+	content: "";
+	background-color: #e9c3b7;
+	position: absolute;
+	height: 4px;
+	width: 260px;
+	display:none;
+}
+.treatments-section{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom:70px;
+}
+.treatments-section .wrap{
+	width:100%;
+	margin:0 auto;
+	max-width:100%;
+	border-style:solid;
+	border-width:0px 80px;
+	border-color:#ffffff;
+}
+.treatments-section .arows-next-pervious-icon .arow-pervious-icon{
+	position: absolute;
+	left: 0px;
+	text-align: center;
+	border-radius: 50%;
+	padding-right: 3px;
+	top: -232px;
+	font-size: 25px;
+	cursor: pointer;
+	left: -91px;
+	z-index: 99999999;
+}
+.arows-next-pervious-icon{
+	position:relative;
+}
+.treatments-section .arows-next-pervious-icon .arow-pervious-icon i{
+	color:#cf9c63;
+}
+.treatments-section .arows-next-pervious-icon .arow-next-icon{
+	position: absolute;
+	left: 0px;
+	text-align: center;
+	border-radius: 50%;
+	padding-right: 3px;
+	top: -232px;
+	font-size: 25px;
+	cursor: pointer;
+	right: -92px;
+	z-index: 99999999;
+	text-align: right;
+}
+.treatments-section .arows-next-pervious-icon .arow-next-icon{
+	color:#cf9c63;
+}
+.treatments-section .treatments-names .text-before-heading{
+	text-align: center;
+	font-family: roxoborough-light!important;
+
+}
+.treatments-section .treatments-names .text-before-heading p{
+	margin-bottom: 70px;
+	font-size: 35px;
+	/*     font-family: 'neuemontreal-bold'; */
+	text-transform:uppercase;
+	font-family: 'open-sans-bold';
+	letter-spacing:5px;
+	line-height:1.3em;
+}
+.treatments-section .treatment-box .name-of-it-treatment{
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	position: absolute;
+	width: 100%;
+}
+/* .woocommerce ul.products li.product .woocommerce-loop-product__title{
+height:50px;
+} */
+.treatments-section .treatment-box .description-of-treatment{
+	min-height: 80px;
+	position: relative;
+	display: block;
+	height: 100%;
+}
+.treatments-section .treatment-box{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 50%;
+	float: left;
+	color: white;
+	padding: 0px 10px 20px;
+}
+
+
+/* .treatments-section .treatment-box .treatment-image::before{
+background-color: #ebc3b7;
+content: "";
+position: absolute;
+width: 385px;
+height: 385px;
+top: 60px;
+} */
+.treatments-section .treatment-box .treatment-image img{
+	position: relative;
+	transition: 0.5s all ease-in-out;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.treatments-section .treatments-names .treatment-box .treatment-image{
+	position: relative;
+	overflow: hidden;
+	height: 365px;
+	display: block;
+	width: 100%;
+
+}
+.treatments-section .treatments-names .treatment-box .treatment-image .treatment-overlay{
+	background-color: #000000;
+	opacity: 0.4;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.treatments-section .treatments-names .treatment-box:hover .treatment-image img{
+	transform: scale(1.5);
+}
+
+.treatments-section .treatment-box  .name-of-it-treatment .text-before-heading p{
+	color: black;
+	margin:0px
+}
+.treatments-section .treatment-box  .name-of-it-treatment h2{
+	color: white;
+	font-size: 30px!important;
+	text-align: center;
+}
+.treatments-section .treatment-box #treatments_2 h2{
+	text-align:left;
+	padding-right:0px;
+	padding-left:48px;
+}
+.treatments-section .treatment-box #treatments_4 h2{
+	text-align:left;
+	padding-right:0px;
+	padding-left:48px;
+}
+.treatments-section .treatment-box .description-of-treatment p{
+	width: 100%;
+	font-family: neuemontreal;
+
+}
+.treatment-box .show-more-button button{
+	background-color: #8ac5e7;
+	padding: 14px;
+	width: 135px;
+	border-radius: 5px;
+}
+h2.package-heading{
+	text-align:center;
+	margin-bottom:70px;
+}
+.treatment-box .show-more-button button p{
+	margin: 0px;
+	font-size: 14px;
+}
+.projects-count{
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	display: none;
+	width: 100%;
+	padding: 50px 0px;
+	/* 	border-top:1px solid #000000; */
+}
+.projects-count .name-count-area{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.projects-count .name-count-area .number-of-projects p{
+	margin: 0px;
+	font-size: 40px;
+	color: #a9d3ec;
+	font-family: roxoborough-heavy;
+}
+.projects-count .name-count-area .title-of-project P{
+	color: black;
+	font-family: neuemontreal-light;
+	font-size:23px;
+}
+.doctors-section{
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	/* 	max-width:1140px; */
+	margin:0 auto;
+}
+.doctors-section .heading-for-doctors h2{
+	text-align: center;
+	color: black;
+
+}
+
+.doctors-section .doctor-name-description{
+	width: 565px;
+	height: 475px;
+	background-color: white;
+	float: left;
+	position: relative;
+	left: -50px;
+	top: 50px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+	z-index: 9999999;
+}
+.doctors-section .doctor-name-description .doctor-name{
+	width: 408px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.doctors-section .doctor-name-description .doctor-name p{
+	color: #8ac5e7;
+	margin-bottom: 0px;
+}
+.doctors-section .doctor-name-description .doctor-name h2{
+	color: #cf9d64;
+	font-size: 34px!important;
+}
+.doctors-section .doctor-name-description .about-doctor p{
+	margin: 0 auto;
+	margin-top: 30px;
+	color: black;
+	line-height: 20px;
+	font-family: neuemontreal;
+	padding-right:20px;
+
+}
+.doctors-section .doctor-details{
+	/* 	margin-left: 150px; */
+	position: relative;
+	/* 	max-width:1140px; */
+	top: 40px;
+	margin:0 100px;
+	overflow: visible;
+}
+.doctors-section .arows-ne-pre .arow-pre{
+	left: 90px;
+	position: absolute;
+	top: 40%;
+	background: white;
+	/* width: 40px; */
+	border-radius: 50%;
+	color: #a9d3ec;
+	border: 1px solid transparent;
+	/* padding: 5px 13px 5px 13px; */
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+.doctors-section .arows-ne-pre .arow-pre i {
+	color: #d0d1cf;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	position: absolute;
+	font-size: 20px;
+	/* color: #EC1A25; */
+}
+.doctors-section .arows-ne-pre .arow-ne i {
+	color: #d0d1cf;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	position: absolute;
+	font-size: 20px;
+	/* color: #EC1A25; */
+}
+.doctors-section .arows-ne-pre .arow-ne{
+	right: 90px;
+	position: absolute;
+	top: 40%;
+	background: white;
+	/* width: 40px; */
+	border-radius: 50%;
+	color: #a9d3ec;
+	border: 1px solid transparent;
+	/* padding: 5px 13px 5px 13px; */
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+.doctors-section .doctor-details .doctor-box{
+	padding: 0 15px;
+	position: relative;
+	/*     width: 30.7%; */
+	width:552px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-bottom: 100px;
+	text-align:center;
+}
+.doctors-section .doctor-details .doctor-box .doctor-image{
+	width: 100%;
+	height: 648px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #bbbbbb;
+}
+.doctors-section .doctor-details .doctor-box .doctor-image img{
+	width:100%;
+}
+.doctors-section .doctor-details .doctor-box .doctor-image video{
+	object-fit: cover;
+}
+.doctors-section .doctor-details .doctor-box .read-more-button button{
+	background: #d0d1cf;
+	color: #000000;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	font-family: 'neuemontreal';
+
+}
+button{
+	letter-spacing:2px;
+}
+.doctor-box .read-more-button{
+	margin-top:10px;
+}
+.doctors-section .doctor-details .doctor-box .read-more-button button p{
+	margin: 0px;
+	font-size: 14px;
+	/* 	font-family: 'neuemontreal'; */
+	font-family:'open-sans-medium';
+}
+.doctors-section .doctor-details .doctor-box .doctor-specialization p{
+	margin: 0px;
+	font-size: 16px;
+	padding: 10px 0px;
+	/* 	font-family: 'neuemontreal-light';  */
+	line-height:25px;
+	font-family:'open-sans-light';
+}
+.doctors-section .doctor-details .doctor-box .doctor-name h2{
+	font-size: 18px!important;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0px;
+	/*     font-family: 'neuemontreal-medium'; */
+	/* 	line-height: 40.4px; */
+	text-transform: capitalize;
+	font-family:'open-sans-medium';
+	letter-spacing:4px;
+
+}
+.doctors-section .about-doctor .social-icons i{
+	border: 1px solid black;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	padding-left: 4px;
+	padding-top: 3px;
+	margin-left: 10px;
+}
+.doctors-section .about-doctor .social-icons i:hover{
+	color: #8ac5e7;
+	border: 1px solid #8ac5e7;
+}
+.industry-leading-brands{
+	position: relative;
+	width: 100%;
+	display: block;
+	background: #f6f6f6;
+	padding: 70px 0px;
+}
+.industry-leading-brands .logos-of-brands{
+	width: 13.3%;
+	float: left;
+	padding:0px 20px;
+}
+/* .industry-leading-slider{
+padding-top: 50px;
+
+} */
+.industry-leading-brands .heading-industry-leading-brands{
+	text-align: center;
+	font-family: neuemontreal;
+	color: #9a9a9a;
+
+}
+.industry-leading-brands .heading-industry-leading-brands p{
+	font-size: 35px;
+	/* font-family: 'neuemontreal-bold'; */
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 55px;
+	font-family: 'open-sans-bold';
+	line-height: 1.3em;
+	letter-spacing: 5px;
+}
+.arows-next-pervious{
+	position:relative;
+}
+.pateint-reviews .arow-pervious{
+	position: absolute;
+	left: 0px;
+	text-align: center;
+	border-radius: 50%;
+	padding-right: 3px;
+	color: #8ac5e7;
+	top: -232px;
+	font-size: 25px;
+	cursor: pointer;
+	left: -91px;
+	z-index: 99999999;
+}
+.pateint-reviews .arow-next{
+	position: absolute;
+	left: 0px;
+	text-align: center;
+	border-radius: 50%;
+	padding-right: 3px;
+	color: #8ac5e7;
+	top: -232px;
+	font-size: 25px;
+	cursor: pointer;
+	right: -92px;
+	z-index: 99999999;
+	text-align: right;
+}
+.pateint-reviews{
+	position: relative;
+	display: none;
+	width: 100%;
+	padding-bottom: 80px;
+	background:#f9f9f9;
+}
+
+.pateint-reviews .patient-review-heading{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.pateint-reviews .patient-review-heading p{
+	color: black;
+	margin-bottom: 0px;
+	font-size: 12px;
+	font-family: neuemontreal;
+}
+.pateint-reviews .patient-review-heading h2{
+	color: black;
+}
+.pateint-reviews .review-box{
+	width: 32%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+	height: 400px;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+/* .pateint-reviews .review-box:nth-child(1){
+margin-left: 4px;
+} */
+.pateint-reviews .pateint-review-details .slick-slide{
+	margin: 0 15px;
+}
+.pateint-reviews .patient-image{
+	width: 90px;
+	height: 90px;
+	background: #bbbbbb;
+	border-radius: 50%;
+	margin: 20px auto;
+	margin-top: 40px;
+}
+.pateint-reviews .patient-name h4{
+	text-align: center;
+	margin: 0px;
+	padding-bottom:10px;
+	font-family:roxborough-regular!important;
+}
+.pateint-reviews .time-of-review p{
+	color: #999999;
+	text-align: center;
+	margin: 0px;
+}
+.pateint-reviews .review-text p{
+	text-align: center;
+	height: 110px;
+	font-family: neuemontreal;
+	color: #999999;
+	line-height: 20px;
+	font-size: 14px;
+	padding:20px;
+}
+.review-stars{
+	text-align: center;
+	color: #cf9350;
+}
+.membership-package{
+	overflow: hidden;
+	display: block;
+	position: relative;
+	background: #ffffff;
+	padding-top:50px;
+}
+.membership-package .membership-package-box {
+	flex-basis: 33%;
+	height: 820px;
+	float: left;
+	margin: 5px 0;
+	background-color: rgb(236,236,236);
+	transition: all 0.2s;
+	box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 10%);
+
+}
+.membership-package .membership-package-box:hover {
+	margin-top: -.25rem;
+	margin-bottom: .25rem;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.membership-package #package_1{
+	border-top:15px solid rgb(237,207,195);
+
+}
+.membership-package #package_2{
+	border-top:15px solid rgb(209,157,100);
+}
+.membership-package #package_3{
+	border-top:15px solid rgb(68,68,68);
+}
+.membership-package .membership-type h4{
+	padding-bottom: 100px;
+}
+/* .membership-package .membership-package-box:hover{
+	background: #d0d1cf;
+} */
+/* .membership-package .membership-package-box:hover .membership-type p{
+	color:black;
+} */
+.membership-package .membership-products-details .price-of-package .vat{
+	color:gray;
+	font-weight: lighter;
+}
+.membership-package .heading-membersip-package h2{
+	text-align: center;
+	color: #000000;
+	margin-bottom:10px;
+}
+.membership-package .heading-membersip-package p{
+	width: 580px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 15px;
+	line-height: 24px;
+	color: #000000;
+	/*     font-family: 'neuemontreal'; */
+	font-family:'open-sans-light';
+}
+.membership-package .membership-type{
+	text-align: center;
+	margin-top: 50px;
+}
+.membership-package .description-of-package{
+	width: 80%;
+	font-size: 24px;
+	margin: 0 auto;
+	line-height: 30px;
+	height: 400px;
+	/* 	font-family: 'neuemontreal-light';  */
+	color: #000000;
+	font-family:'open-sans-light';
+}
+.membership-package .description-of-package ul{
+	margin: 0px;
+	list-style: none;
+}
+.membership-package .description-of-package ul li{
+	text-indent: -10px;
+	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
+	/*     font-weight: 600; */
+	color: #000000;
+}
+.membership-package .description-of-package ul li:before{
+	content: "- ";
+	text-indent: -5px;
+}
+.membership-package .description-of-package ul li::marker{
+	font-size:24px;
+}
+/* .membership-package .description-of-package ul{
+	list-style-type:circle;
+} */
+.membership-package .price-of-package p{
+	color: rgb(67,67,67);
+	position:relative;
+	/*border-bottom: 2px solid #726965;*/
+	width: 72%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+/* .membership-package .price-of-package p:after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 37px;
+    width: 78%;
+    height: 2px;
+    background: #726965;
+    margin: 0 auto;
+    text-align: center;
+	
+} */
+/* .membership-package .membership-package-box:hover .description-of-package{
+color: white;
+}
+.membership-package .membership-package-box:hover .price-of-package p{
+color: white;
+} */
+.membership-package .price-of-package{
+	text-align: center;
+	/* 	font-size: 45px; */
+	font-size:87px;
+	position: relative;
+	/*     font-family: neuemontreal; */
+	font-family: 'open-sans-bold';
+	font-weight:bold;
+}
+.membership-package  .membership-products-details{
+	/* 	max-width: 1140px; */
+	overflow: hidden;
+	position: relative;
+	margin:0 200px;
+	display:flex;
+	flex-direction: row;
+	gap: 25px;
+	padding: 70px 0;
+}
+.membership-package .whatsapp-icon{
+	width: 6%;
+	right: 45px;
+	position: absolute;
+	bottom: 75px;
+}
+.membership-package  .membership-products-details .membership-type p{
+	color: #000000;
+	margin: 0px 0 0.4rem;
+	/* 	font-family: neuemontreal; */
+	font-size: 18px;
+	font-family: 'open-sans-bold';
+	letter-spacing: 2px;
+}
+.membership-package  .membership-products-details .membership-type h4{
+	color: black;
+	/* 	font-family: neuemontreal-bold!important; */
+	margin:0px;
+	font-size:28px;
+	font-family: 'open-sans-bold';
+	font-weight:bold;
+}
+.membership-package  .membership-products-details  .join-now-button{
+	text-align: center;
+	position: relative;
+	top: 15px;
+}
+.membership-package  .membership-products-details  .join-now-button button{
+	background-color: #B8B3AA;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	width: 204px;
+	padding: 2.6rem 4.4rem;
+	/* 	padding: 1.6rem 4.4rem; */
+	/*     font-family: 'neuemontreal';	 */
+	color:#000000;
+	font-family:'open-sans-medium';
+}
+/* .membership-package .membership-package-box:hover .join-now-button button{
+	background: transparent;
+	border: 1px solid #000000;
+} */
+.membership-package  .membership-products-details .price-of-package p span{
+	font-size: 22px;
+}
+.membership-package  .membership-products-details .price-of-package #currency-icon {
+	position: relative;
+	left: -10px;
+	/* top: 22px; */
+	font-size: 40px;
+	top: -36px;
+}
+.quality-experince{
+	position: relative;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2022/08/pic2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-style: solid;
+	border-width: 0px 80px;
+	border-color: #f9f9f9;
+}
+.quality-experince .heading-quality-experience h2{
+	text-align: center;
+	margin: 0 auto;
+	padding: 200px 0px;
+	/* 	font-family:'open-sans-medium'; */
+	color:#000000;
+	text-transform: inherit;
+	/* 	font-weight:100; */
+
+}
+.get-in-touch-form{
+	position:relative;
+	overflow:hidden;
+	background-color:#f9f9f9;
+}
+.get-in-touch-form .contact-form .wpcf7{
+	/* 	width: 48.3%; */
+	float: left;
+	position: relative;
+	overflow: hidden;
+	/*     margin-left: 50px; */
+	width: 50%;
+	margin-left: 30px;
+}
+.get-in-touch-contact .contact-form{
+	width: 53%;
+	padding-right:50px;
+	overflow: hidden;
+}
+.get-in-touch-contact .contact-form .wrap {
+	max-width:1140px;
+	margin:0 auto;
+}
+.get-in-touch-contact .contact-form  .tempus-field{
+	/*     width: 46.9%; */
+	float: left;
+	/*     margin-right: 51px; */
+	font-family: Myriad Pro;
+	width: 50%;
+	padding-right: 8px;
+}
+/* .get-in-touch-contact .contact-form  .tempus-field:nth-child(odd){
+	padding-right:0px;
+} */
+.get-in-touch-contact .contact-form  .heading-contact-form h2{
+	color: black;
+	position: relative;
+	/*     font-family: 'neuemontreal'; */
+	margin-bottom: 40px;
+}
+.get-in-touch-contact .contact-form  .wpcf7 input{
+	border: 1px solid #000000;
+	margin-bottom:8px;
+	padding: 1.6rem;
+	background:transparent;
+	box-shadow:none;
+	font-size:14px;
+	/* 	font-family: 'neuemontreal'; */
+	font-family:'open-sans-medium';
+	letter-spacing:2px;
+
+}
+.contact-tempus{
+	width: 100%;
+	margin: 0 auto;
+}
+.get-in-touch-contact .contact-form  .wpcf7 input::placeholder{
+	color: #000000;
+}
+.contact-form  .wpcf7  .contact-message textarea::placeholder{
+	color: #000000;
+	font-size:14px;
+	/* 	padding:20px; */
+	font-family:'open-sans-light';
+	font-weight:100;
+}
+.contact-form  .wpcf7  .contact-message{
+	width: 100%;
+	overflow: hidden;
+	padding-right: 8px;
+}
+.contact-form  .wpcf7 .wpcf7-submit{
+	background-color: #d0d1cf!important;
+	margin-top: 25px;
+	width: 150px;
+	padding: 12px!important;
+	/* border-radius: 20px; */
+	font-family: 'open-sans-medium'!important;
+	/* font-weight: 600; */
+	font-size: 18px;
+	border: none!important;
+	color:#000000;
+}
+.map-home-page{
+	background: #f9f9f9;
+	width: 47%;
+	float: left;
+	margin-top:-7px;
+}
+.get-in-touch-contact{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	padding:70px 0 0px;
+	background-color:white;
+	border-style: solid;
+	border-width: 0px 80px;
+	border-color: #ffffff;
+}
+.get-in-touch-contact .wrap{
+	display:flex;
+	align-items:center;
+	max-width:100%;
+}
+#menu-item-361 .current-menu-item{
+	color:black;
+}
+/*----------------------TreatMents Page---------------------------*/
+.treatment-page-banner{
+	width: 100%;
+	height: 530px;
+	background-color: #8d8d8d;
+	padding-top: 110px;
+	position: relative;
+}
+.treatment-page-banner .treatment-banner-heading h2{
+	text-align: center;
+	color: white;
+	margin-top: 50px;
+}
+.treatment-page-banner .treatment-banner-subtext p{
+	width: 685px;
+	margin: 0 auto;
+	color: white;
+	/*     font-family: neuemontreal-light; */
+	text-align: center;
+	font-size: 18px;
+	font-family:'open-sans-light';
+}
+.treatment-page-banner .scroll-now-treatment-page button {
+	background: transparent;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+}
+.treatment-page-banner .scroll-now-treatment-page p {
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	/*     font-family: neuemontreal; */
+	/* padding-top: 65px; */
+	font-family: 'Montserrat', sans-serif;
+;
+}
+.scroll-now-treatment-page{
+	width: 15%;
+	position: relative;
+	margin: 0 auto;
+	top: 62px;
+}
+.treatment-page-banner::after {
+	content: "";
+	width: 3px;
+	height: 50px;
+	position: absolute;
+	color: black;
+	left: 50%;
+	background: #e4b1a0;
+	bottom: -19px;
+	z-index: 99999;
+	display:none;
+}
+.treatments-we-offer:nth-last-child(1){
+	padding-bottom:0px;
+}
+.treatments-we-offer{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	padding:70px 0px;
+}
+.medical-aesthetics-page{
+	padding-top:50px;
+}
+.medical-aesthetics-page .medical-aesthetics{
+	padding-bottom:0px;
+	padding-top:20px;
+}
+.laser-treatments{
+	display:none;
+}
+.treatments-we-offer .treatment-details{
+	max-width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.treatments-we-offer .treatment-details h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.treatments-we-offer .popup-wrap-g .certfied-description h2, .certified-name h2{
+	text-align:left!important;
+	font-size:22px!important;
+	margin-bottom:20px!important;
+}
+.treatments-we-offer .popup-wrap-g .certfied-description ul{
+	padding-left:20px;
+	margin-bottom:24px;
+}
+/* .treatments-we-offer .background-color{
+background-color: #f9f9f9;
+margin-bottom: 10px;
+width: 100%;
+overflow: hidden;
+position: relative;
+} */
+.treatments-we-offer .treatment-page-box{
+	cursor:pointer;
+	position: relative;
+	overflow: hidden;
+	/* max-width: 900px; */
+	width: 100%;
+	margin:0px;
+
+}
+/* .treatments-we-offer .treatment-page-box:hover{
+background: #D0D1CF;
+color: black;
+} */
+.background-color{
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	margin: 100px auto;
+	/* max-width: 900px; */
+	width: 22.3%;
+	margin: 0px 15px 50px;
+	float: left;
+	height: auto;
+	text-align: center;
+}
+.treatment-popup{
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	margin: 100px auto;
+	/* max-width: 900px; */
+	width: 22.3%;
+	margin: 0px 15px 50px;
+	float: left;
+	height: auto;
+	text-align: center;
+}
+.treatments-we-offer  .treatment-image{
+	width: 100%;
+	height: 250px;
+	float: left;
+	background-color: #8d8d8d;
+}
+.treatments-we-offer .treatment-image img{
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+.treatments-we-offer .pricing-details{
+	/*     width: 450px;
+	float: left; */
+	font-family: customregular!important;
+	/*     margin-left: 50px; */
+	display: block;
+	padding-top: 10px;
+	width: 100%;
+	overflow: hidden;
+
+}
+.treatments-we-offer .treatment-name h2{
+	color: black;
+	/* width: 400px; */
+	font-size: 16px!important;
+	text-transform: capitalize;
+	font-family: 'open-sans-medium';
+	margin-bottom: 11px;
+	letter-spacing: 3px;
+	height:50px;
+	text-align:center;
+}
+.treatments-we-offer .treatment-name h2 a{
+	color:#000;
+}
+.treatments-we-offer .treatment-detail{
+	height:160px;
+	padding:0 10px;
+	/* 	font-family: 'neuemontreal-light'; */
+	font-family:'open-sans-light';
+	display:none;
+}
+.woocommerce nav.woocommerce-pagination .page-numbers{
+	font-family: 'open-sans-medium'!important;
+}
+
+.treatments-we-offer .treatment-price p{
+	/* 	font-family: neuemontreal!important; */
+	font-family: 'open-sans-bold'!important;
+	margin-bottom:0px;
+	margin: 0 40px;
+	/* background: #d0d1cf!important;*/
+	color: #000000!important;
+	padding: 10px;
+	border-radius: 5px;
+}
+.treatments-we-offer .treatment-detail p{
+	margin-bottom:10px;
+}
+.tempus-certified-package{
+	background-color: #edcdc3;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.tempus-certified-package .treatment-name h2{
+	letter-spacing: 3px;
+	width: 300px;
+	color: #999;
+	font-size: 24px;
+	margin: 0 auto;
+	height: 80px;
+	line-height: 32px;
+	margin-top: 50px;
+}
+
+.tempus-certified-package  .slider-treatment-page-box{
+	width: 350px;
+	float: left;
+	background-color: white;
+	height: 380px;
+	margin: 50px auto;
+	box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+.tempus-certified-package  .slider-treatment-detail p{
+	width: 300px;
+	margin: 0 auto;
+	height: 90px;
+	line-height: 20px;
+	font-family: neuemontreal;
+}
+.tempus-certified-package .slider-tempus-certified-package .slick-slide{
+	margin: 0 15px;
+}
+.slider-tempus-certified-package{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.slider-treatment-price p{
+	margin-left: 30px;
+}
+.heading-tempus-certified h2{
+	text-align: center;
+	margin-top: 50px;
+}
+.tempus-certified-package .pervious-arrow{
+	position: absolute;
+	left: 20px;
+	font-size: 25px;
+	top: 60%;
+	color: #757575;
+	cursor: pointer;
+}
+.tempus-certified-package .next-arrow {
+	position: absolute;
+	right: 20px;
+	font-size: 25px;
+	top: 60%;
+	color: #757575;
+	cursor: pointer;
+}
+.tempus-certified-package .treatment-image{
+	position: relative;
+	height: 380px;
+	width: 350px;
+}
+.tempus-certified-package .treatment-image img{
+	height: 380px;
+}
+.tempus-certified-package .treatment-image .slider-pricing-details{
+	position: absolute;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*------------------GP Service Page---------------------*/
+/* .gp-service-page-banner{
+width: 100%;
+margin-top: -110px;
+height: 530px;
+background-color: #8d8d8d;
+padding-top: 110px;
+position: relative;
+}
+.gp-service-page-banner .gp-service-banner-heading h2{
+text-align: center;
+color: white;
+margin-top: 50px;
+}
+.gp-service-page-banner .gp-service-banner-subtext p{
+width: 685px;
+margin: 0 auto;
+color: white;
+font-family: neuemontreal-light;
+text-align: center;
+font-size: 18px;
+}
+.gp-service-page-banner  .scroll-now-gp-service-page button{
+background: transparent;
+text-align: center;
+width: 100%;
+padding: 0px;
+margin-top: 25px;
+}
+.gp-service-page-banner::after {
+content: "";
+width: 3px;
+height: 50px;
+position: absolute;
+color: black;
+left: 50%;
+background: #e4b1a0;
+bottom: -19px;
+z-index: 99999;
+}
+.gp-service-we-offer{
+width: 100%;
+position: relative;
+overflow: hidden;
+display: block;
+}
+.gp-service-we-offer .background-color {
+background-color: #f9f9f9;
+margin-bottom: 10px;
+width: 100%;
+overflow: hidden;
+position: relative;
+}
+.gp-service-we-offer .gp-service-page-box{
+position: relative;
+overflow: hidden;
+margin: 100px auto;
+max-width: 900px;
+}
+.gp-service-we-offer .gp-service-page-box .gp-service-image {
+width: 300px;
+height: 320px;
+float: left;
+background-color: #8d8d8d;
+}
+.gp-service-we-offer .service-name-detail {
+width: 450px;
+float: left;
+font-family: customregular!important;
+margin-left: 50px;
+}
+.gp-service-we-offer .gp-service-name h2 {
+color: #ebc4b8;
+width: 400px;
+} */
+/*----------------face-asthetic-treatment------------------*/
+.face-asthetic-treatment-page-banner{
+	width: 100%;
+	height: 500px;
+	background-color: #8d8d8d;
+	position: relative;
+	padding-top: 0px;
+}
+.face-asthetic-treatment-page-banner .category-treatment-banner{
+	position: relative;
+	height: 500px;
+	width: 100%;
+	display: block;
+}
+.face-asthetic-treatment-page-banner .category-treatment-banner img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.face-asthetic-treatment-page-banner .certified-banner{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.face-asthetic-treatment-page-banner .certified-banner img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+.face-asthetic-treatment-page-banner .button-for-banner{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.scroll-now-face-asthetic-treatment-page{
+	bottom: 33px;
+	position: absolute;
+	bottom: 21px;
+	left: 48.5%;
+}
+.face-asthetic-treatment-page-banner .scroll-now-face-asthetic-treatment-page button p{
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	margin-top: 30px;
+	font-family: neuemontreal;
+}
+.face-overflow{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1{
+	text-align: center;
+	color: white;
+	/* 	margin-top: 50px; */
+}
+.face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-subtext p{
+	width: 685px;
+	margin: 0 auto;
+	color: white;
+	/*     font-family: neuemontreal-light; */
+	text-align: center;
+	font-size: 18px;
+	font-family: 'open-sans-light';
+}
+.face-asthetic-treatment-page-banner  .scroll-now-face-asthetic-treatment-page button{
+	background: transparent;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin-top: 60px;
+}
+.face-asthetic-treatment-page-banner::after {
+	content: "";
+	width: 3px;
+	height: 50px;
+	position: absolute;
+	color: black;
+	left: 50%;
+	background: #e4b1a0;
+	bottom: -19px;
+	z-index: 99999;
+	display:none;
+}
+.face-asthetic-treatment-we-offer{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.face-asthetic-treatment-we-offer .background-color {
+	/* 	background-color: #f9f9f9;
+        margin-bottom: 10px;
+        width: 100%;
+        overflow: hidden;
+        position: relative; */
+	margin: 0 15px;
+	position: relative;
+	width: 30.7%;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-bottom: 50px;
+	text-align: center;
+	cursor:pointer;
+}
+.face-asthetic-treatment-we-offer .face-asthetic-treatment-detail{
+	display:none;
+}
+.face-asthetic-treatment-we-offer .face-asthetic-treatment-page-box{
+	position: relative;
+	overflow: hidden;
+	/* 	margin: 100px auto; */
+	max-width: 900px;
+}
+.face-asthetic-treatment-we-offer .service-name-detail .contouring-cost p{
+	background: #d0d1cf;
+	color: #000000;
+	width: 150px;
+	border-radius: 10px;
+	margin:0 auto;
+	padding:10px;
+	font-family: 'open-sans-bold'!important;
+}
+.face-asthetic-treatment-we-offer .face-asthetic-treatment-page-box .face-asthetic-treatment-image {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #bbbbbb;
+}
+.face-asthetic-treatment-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.page-template-body-contouring .face-asthetic-treatment-we-offer .face-asthetic-treatment-page-box .face-asthetic-treatment-image{
+	width: 300px;
+	height: 320px;
+	float: left;
+	background-color: #8d8d8d;
+}
+.certified-section .g-content-page .certified-left{
+	width: 45%;
+	float: left;
+	background: white;
+}
+.certified-section .g-content-page .certified-left .certified-image{
+	height:400px;
+	overflow:hidden;
+}
+.certified-section .g-content-page .certified-left .certified-image img{
+	width:100%;
+}
+.certified-section .g-content-page .popup-wrap-g .certified-page-detail{
+	position: relative;
+	overflow: hidden;
+	padding-left: 30px;
+	display: block;
+	width: 55%;
+	text-align: left;
+	float: left;
+}
+.face-asthetic-treatment-page-box .g-content-page .popup-wrap-g .certified-image{
+
+}
+.certified-section .active .popup-g .facts-cross{
+	/* width: 0vw; */
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	top: 10px;
+	z-index: 9;
+	right: 30px;
+	cursor: pointer;
+}
+.treatments-we-offer .active .popup-g .facts-cross i{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-position: revert;
+	position: relative;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+.treatments-we-offer .active .popup-g .facts-cross i:before{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.treatments-we-offer .active .popup-g .facts-cross{
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	top: 10px;
+	z-index: 9;
+	right: 30px;
+	cursor: pointer;
+	top: 14%;
+	left: 84.5%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+.treatments-we-offer .g-content-page .certified-left{
+	width: 45%;
+	float: left;
+	background: white;
+}
+.treatments-we-offer .g-content-page .popup-wrap-g .certified-page-detail{
+	position: relative;
+	overflow: hidden;
+	padding-left: 30px;
+	display: block;
+	width: 55%;
+	text-align: left;
+	float: left;
+}
+.treatments-we-offer .g-content-page .popup-wrap-g .certified-page-detail .popup-price a{
+	color:#000;
+	font-weight: bold;
+}
+.treatments-we-offer .g-content-page .certified-left .certified-image{
+	background:#8d8d8d;
+	height: 400px;
+	overflow: hidden;
+}
+.treatments-we-offer .g-content-page .certified-left .certified-image img{
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+.face-asthetic-treatment-we-offer .service-name-detail {
+	/* 	width: 550px;
+        float: left;
+        font-family: customregular!important;
+        margin-left: 50px; */
+	font-family: 'open-sans-light'!important;
+}
+.face-asthetic-treatment-we-offer .face-asthetic-treatment-name h2 {
+	/* 	color: black;
+        position:relative;
+        font-size: 26px; */
+	color: black;
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 18px!important;
+	text-transform: capitalize;
+	font-family: 'open-sans-medium';
+	letter-spacing: 4px;
+}
+.face-asthetic-treatment-we-offer .face-asthetic-treatment-name h2:after{
+	background-color: #ebc4b8;
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+}
+.banner-img{
+	background-size: 100% 100%;
+	background-position: center;
+	/* align-content: center; */
+	background-repeat: no-repeat;
+	height: 500px;
+}
+video.banner-img{
+	object-fit: cover;
+}
+.home-banner img{
+	display:none;
+}
+.page-template-home .genesis-nav-menu #menu-item-360 > a,.page-template-home .genesis-nav-menu #menu-item-361 > a{
+	color:black;
+}
+.page-template-home .genesis-nav-menu #menu-item-360 > a:hover,.page-template-home .genesis-nav-menu #menu-item-361 > a:hover{
+	color: #d0d1cf;
+}
+.page-template-team .genesis-nav-menu .sub-menu #menu-item-495 > a,.page-template-team .genesis-nav-menu .sub-menu #menu-item-496 > a, .page-template-team .genesis-nav-menu .sub-menu #menu-item-497 > a{
+	color:black;
+}
+.page-template-team .genesis-nav-menu .sub-menu #menu-item-495 > a:hover,.page-template-team .genesis-nav-menu .sub-menu #menu-item-496 > a:hover, .page-template-team .genesis-nav-menu .sub-menu #menu-item-497 > a:hover{
+	color: #d0d1cf;
+}
+.genesis-nav-menu .sub-menu #menu-item-713 > a{
+	color:#000;
+}
+.genesis-nav-menu .sub-menu #menu-item-713 > a:hover{
+	color:#d0d1cf;
+}
+.genesis-nav-menu .sub-menu #menu-item-1773 > a{
+	color:#000;
+}
+.genesis-nav-menu .sub-menu #menu-item-1773 > a:hover{
+	color:#d0d1cf;
+}
+
+/*------------Rashid---------------------*/
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+	background-color: #d0d1cf!important;
+	font-family: neuemontreal!important;
+	font-weight: 100;
+	padding: 18px 30px;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.page-template-default .genesis-nav-menu a{
+	color: #000000;;
+}
+
+.page-template-home-php .genesis-nav-menu a{
+	color: black;
+}
+.page-template-home-php .genesis-nav-menu a:hover{
+	color: #d0d1cf;
+}
+.page-template-default .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+.product-template-default .genesis-nav-menu a{
+	color: black;
+}
+.product-template-default .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3{
+	font-size: 1em!important;
+}
+.product-template-default .sidebar{
+	display: none;
+}
+.product-template-default .content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.page-template-default  .sidebar{
+	display: none;
+}
+.page-template-default .content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.product-template-default .comment-respond, .entry-pings{
+	display: none;
+}
+.product-template-default section{
+	position: relative;
+	width: 100%;
+}
+.woocommerce div.product form.cart .button{
+	margin-top:0px;
+}
+.single-product .related{
+	overflow:hidden;
+}
+.woocommerce .quantity .qty {
+	padding: 19px 10px 19px 10px;
+	/*     width: 6.631em!important; */
+	text-align: center;
+	color:black;
+	font-weight:700;
+}
+.single-page-products{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 100px auto;
+}
+.single-page-products .image-single-product{
+	width: 40%;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	height: 350px;
+	background: black;
+	margin-right: 50px;
+}
+.single-page-products .name-price-description{
+	width: 52%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.ingredients #heading{
+	color: #8ac5e6;
+	font-family: neuemontreal;
+}
+.how-to-use #heading{
+	color: #8ac5e6;
+	font-family: neuemontreal;
+}
+.woocommerce div.product .stock{
+	color: #8ac5e6!important;
+
+}
+.product_meta{
+	display: none;
+}
+.woocommerce div.product div.summary {
+	line-height: 20px!important;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+	color: black!important;
+	font-family: customregular;
+}
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
+	width: 48%!important;
+}
+.woocommerce div.product form.cart div.quantity {
+	float: left;
+	margin: 0 20px 0 0!important;
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3{
+	color: #000000;
+	/*      font-family: 'neuemontreal-medium'; */
+	text-transform: capitalize;
+	font-size: 18px!important;
+	font-weight:100;
+	font-family:'open-sans-bold';
+	letter-spacing:0px;
+	height:60px;
+}
+.page-id-19 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+	color:white!important;
+	background:#8ac7e8!important;
+	font-family:neuemontreal!important;
+	font-weight:100!important;
+}
+/* .woocommerce nav.woocommerce-pagination{
+display:none;
+} */
+.woocommerce div.product form.cart{
+	padding-top:30px!important;
+}
+
+.page-id-102 .entry{
+	padding:0px!important;
+}
+.page-id-19  .how-to-use-shop p{
+	margin:0px;
+}
+.page-id-19  .how-to-use-shop{
+	/*    font-family: 'neuemontreal-light'; */
+	min-height:110px;
+	font-family:'open-sans-light';
+}
+.product-template-default .how-to-use-shop{
+	/*    font-family: 'neuemontreal-light'; */
+	height:110px;
+	font-family:'open-sans-light';
+}
+.woocommerce ul.products li.product .price{
+	color: black!important;
+	font-size: 20px!important;
+	font-family:'open-sans-medium!important';
+	margin-top:20px;
+}
+.entry-content a{
+	color: black;
+	border: none;
+	font-family: roxoborough-heavy!important;
+}
+.woocommerce table.cart td.actions .coupon ,.woocommerce-page table.cart td.actions .coupon{
+	display: none;
+}
+#add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img{
+	width: 120px!important;
+}
+.woocommerce table.shop_table{
+	border: none!important;
+}
+.woocommerce table.shop_table td {
+	border-top: 2px solid black!important;
+}
+.entry-summary .heading-single-product-page h2{
+	font-size: 40px!important;
+	color: black;
+}
+.single-product .entry-header{
+	display:none;
+}
+.cart_totals  h2, .cart_totals .shop_table, .cart_totals .shop_table_responsive{
+	display: none;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+	width: 20%!important;
+}
+
+.order-total{
+	width: 18%;
+	right: 0;
+	position: absolute;
+}
+.woocommerce table.shop_table .order-total td{
+	border-top:none!important;
+}
+.woocommerce .woocommerce-cart-form .button{
+	display: none;
+}
+.woocommerce table.shop_table tbody .order-total th ,.woocommerce table.shop_table .order-total td{
+	border-top: none!important;
+}
+th{
+	text-transform: none!important;
+}
+/*rashid */
+.page-id-19 .entry{
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+.page-id-19 .slick-next {
+	right: 124px;
+}
+.page-id-19 .post-19 .entry-content{
+	max-width: 1140px;
+	margin: 0 auto;
+	position:relative;
+	z-index:99999;
+}
+.page-id-19 .slick-next:before{
+	content: '\f054';
+	font-family: 'FontAwesome';
+	color: #ffe3da;
+	font-size: 25px!important;
+	line-height: 1;
+	opacity: .75;
+	border-radius: 51%;
+	padding: 14px 10px 10px 10px;
+	-webkit-font-smoothing: antialiased;
+	background-color: #fff;
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border: 1px solid #ffe3da;
+}
+.page-id-19 .slick-prev:before{
+	content: '\f053';
+	font-family: 'FontAwesome';
+	color: #ffe3da;
+	font-size: 25px!important;
+	line-height: 1;
+	opacity: .75;
+	border-radius: 51%;
+	padding: 20px;
+	padding: 14px 10px 10px 10px;
+	-webkit-font-smoothing: antialiased;
+	background-color: #fff;
+	position: absolute;
+	border: 1px solid #ffe3da;
+	width: 2em;
+	height: 2em;
+}
+
+.page-id-19 .slick-prev {
+	left: 75px;
+	z-index: 9999;
+}
+.page-id-19 .slick-prev, .slick-next{
+	top:30%;
+}
+.page-id-19  .woocommerce .woocommerce-result-count, .page-id-19 .woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering{
+	display:none;
+}
+.entry{
+	max-width:1140px;
+	margin:0 auto;
+	padding-right:0px;
+	padding-left:0px;
+}
+.page-id-19 .entry-title{
+	position: relative;
+	padding: 70px 0;
+	text-align: center;
+	font-size: 45px;
+	margin:0px;
+}
+
+.page-id-19 input, select, textarea {
+	background-color: #fff;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	box-shadow: 1px 1px 3px #eee inset;
+	color: #999;
+	font-size: 14px;
+	padding: 1.6rem;
+	width: 100%;
+	color: #000000;
+}
+/* .page-id-19 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+padding:0 10px;
+} */
+.page-id-19 .post-19 .woocommerce ul.products li.product .button{
+	margin:0px;
+	font-family: 'open-sans-medium'!important;
+	background: #d0d1cf!important;
+	color: #000000!important;
+}
+.product-categories{
+	padding-bottom:40px;
+	text-align:center;
+	margin-top:-50px;
+	display:none;
+}
+.woocommerce-shop .product-categories{
+	display:block;
+}
+.how-to-use-shop{
+	font-family: 'open-sans-light'!important;
+}
+.product-categories a{
+	font-family: 'open-sans-light'!important;
+	font-weight:bold;
+}
+.product-categories a:nth-child(1){
+	display:none;
+}
+.product-count {
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 6px;
+	border-radius: 10px;
+	margin-left: -5px;
+	margin-top: -20px;
+	vertical-align: middle;
+}
+
+.woocommerce ul.products li.product .button{
+	margin:0px;
+	font-family: 'open-sans-medium'!important;
+	background: #d0d1cf!important;
+	color: #000000!important;
+}
+.product-template-default .woocommerce ul.products li.product .button{
+	margin:0px;
+	font-family: 'open-sans-medium'!important;
+	background: #d0d1cf!important;
+	color: #000000!important;
+}
+.woocommerce ul.products li.product a img{
+	width:100%!important;
+	height:100%!important;
+	margin-bottom:0px!important;
+}
+.woocommerce-cart tbody{
+	position:relative;
+}
+.woocommerce table.shop_table .order-total th{
+	padding:9px 0px!important;
+}
+.woocommerce table.shop_table th{
+	padding:15px 12px!important;
+}
+.woocommerce-cart .entry{
+	padding: 8rem 4rem 4.4rem!important;
+}
+.woocommerce-cart .entry-title{
+	display:none;
+}
+div.quantity {
+	position: relative;
+	margin: 0 0 1rem;
+}
+div.quantity div.arrows {
+	padding: 1px 0;
+	position: absolute;
+	display: block;
+	flex-direction: column;
+	left: 0;
+	height: 100%;
+	justify-content: space-between;
+	border-left: 1px solid rgba(51, 51, 51, 0.25);
+}
+div.quantity div.arrows > i {
+	padding: 0 5px;
+	color: rgba(51, 51, 51, 0.75);
+	cursor: pointer;
+}
+div.quantity div.arrows > i:focus, div.quantity div.arrows > i:active {
+	color: #333333;
+}
+div.quantity div.arrows .arrow-divider {
+	height: 1px;
+	background: rgba(51, 51, 51, 0.25);
+}
+div.quantity input[type=number] {
+	margin: 0;
+	padding-right: 24px;
+	padding-left: 0;
+	text-align: center;
+}
+div.quantity input[type=number]::-webkit-inner-spin-button, div.quantity input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+.fa-caret-down:before{
+	content: "\f053"!important;
+	color: #cd9b63;
+
+}
+.fa-caret-up:before{
+	content: "\f054"!important;
+	color: #cd9b63;
+}
+.fa-caret-up{
+	top: 17px;
+	position: relative;
+	right: -63px;
+}
+.fa-caret-down{
+	top: 17px;
+	position: relative;
+	left: -13px;
+}
+div.quantity div.arrows{
+	border-left:none!important;
+}
+.quantity input, select, textarea{
+	background: transparent;
+	box-shadow: none!important;
+	border: 1px solid #000000;
+	color: #000000;
+	letter-spacing:2px;
+}
+.contact-form  .wpcf7 .wpcf7-form-control-wrap textarea{
+	font-size: 14px;
+}
+.contact-form  .wpcf7 .wpcf7-form-control-wrap textarea::placeholder{
+	color:#000000;
+	font-family: 'open-sans-medium';
+
+}
+div.quantity div.arrows{
+
+	width:100%;
+}
+.contouring-cost{
+	font-weight:bold;
+	padding-top:20px;
+}
+/*. rashid css 17 */
+/*----------------------------------Doctor Page------------------------*/
+.page-template-team .genesis-nav-menu a{
+	color: black;
+}
+.page-template-team .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+
+.banner-for-doctor-category .our-doctors-heading h2{
+	text-align: center;
+	padding-top: 50px;
+	color: black;
+}
+.team-doctor-section{
+	position: relative;
+	display: block;
+	width: 100%;
+	background-color:#f9f9f9;
+	padding-top:50px;
+}
+/* .page-template-cosmetic-dermatology .tempus-asthetic-treatment-we-offer{
+	display:none;
+} */
+.team-doctor-section .our-doctors-banner .team-description p{
+	margin:0px;
+	font-family:'open-sans-light';
+	/* 	font-family:neuemontreal-light; */
+}
+.team-doctor-section .our-doctors-banner{
+	width: 54%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 70px;
+}
+/* .specialist-doc{
+	margin-top:-378px!important;
+} */
+/* .patient-team{
+	margin-top:-378px!important;
+} */
+.our-doctors-heading h2{
+	margin: 0px;
+	padding-bottom: 50px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.team-doctor-section .doctor-box{
+	margin: 0 15px;
+	position: relative;
+	width: 30.7%;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-bottom:50px;
+	text-align:center;
+}
+.team-doctor-section .doctor-box .doctor-image video{
+	object-fit:cover;
+}
+.team-doctor-section .doctor-box .doctor-image{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #bbbbbb;
+}
+#trp-floater-ls.trp-color-dark{
+	display:none!important;
+}
+.team-doctor-section .doctor-box .doctor-image img{
+	width:100%;
+}
+
+.team-doctor-section .doctor-box .doctor-specialization p{
+	margin: 0px;
+	font-size: 16px;
+	padding: 10px 0px;
+	/*     font-family: neuemontreal-light; */
+	font-family:'open-sans-light';
+}
+/* #practitioners,#liaison{
+	display:none;
+} */
+.team-doctor-section .doctor-box  .doctor-name h2{
+	color: black;
+	margin:0px;
+	padding-top: 10px;
+	font-size: 18px!important;
+	text-transform:capitalize;
+	font-family:'open-sans-medium';
+	letter-spacing:4px;
+}
+.team-doctor-section .doctor-box .about-doctor{
+	height: 117px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	margin-top: 10px;
+	font-family: neuemontreal;
+	overflow: hidden;
+}
+.team-doctor-section .doctor-box .doctor-liaison-name .about-doctor, .team-doctor-section .doctor-box .doctor-practitioner-name .about-doctor{
+	/* 	width: 825px; */
+	height: 190px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	margin-top: 0px;
+	font-family: neuemontreal;
+	overflow: auto;
+}
+.banner-for-practitioners-category{
+	background-color: #eecdc4;
+	height: 640px;
+}
+.banner-for-practitioners-category .our-doctors-heading h2{
+	text-align: center;
+	padding-top: 50px;
+	color: black;
+}
+/* .team-doctor-section .doctor-box:nth-child(1) .doctor-practitioner-name{
+position: absolute;
+top: 110px;
+left: 480px;
+width:450px;
+
+}
+.team-doctor-section .doctor-box:nth-child(1) .doctor-practitioner-name h2{
+color: white;
+}
+.team-doctor-section .doctor-box .doctor-practitioner-name{
+position: absolute;
+bottom: 312px;
+left: 550px;
+width:450px;
+} */
+.team-doctor-section .doctor-box .doctor-practitioner-name h2{
+	color: white;
+	/* height: 140px; */
+	font-size: 30px!important;
+	padding-top: 30px;
+}
+.banner-for-liaison-category{
+	background-color: #a9d2ec;
+	height: 640px;
+}
+/* .team-doctor-section .doctor-box:nth-child(1) .doctor-liaison-name{
+position: absolute;
+top: 110px;
+left: 480px;
+width:450px;
+}
+.team-doctor-section .doctor-box:nth-child(1) .doctor-liaison-name h2{
+color: white;
+}
+.team-doctor-section .doctor-box .doctor-liaison-name{
+position: absolute;
+bottom: 312px;
+left: 550px;
+width:450px;
+} */
+.team-doctor-section .doctor-box .doctor-liaison-name{
+	position: absolute;
+	top: 0;
+	padding: 0 15px;
+	display:none;
+	height: 100%;
+	background: rgba(142, 138, 170, 0.81);
+	color:white;
+	width:100%;
+}
+.team-doctor-section .doctor-box:hover .doctor-liaison-name{
+	display:block;
+
+}
+.team-doctor-section .doctor-box:hover .doctor-practitioner-name{
+	display:block;
+
+}
+.team-doctor-section .doctor-box .doctor-practitioner-name{
+	position: absolute;
+	top: 0;
+	padding: 0 15px;
+	display:none;
+	height: 100%;
+	background: rgba(142, 138, 170, 0.81);
+	color:white;
+	width:100%;
+}
+.team-doctor-section .doctor-box .doctor-liaison-name h2{
+	color: white;
+	font-size: 30px!important;
+	padding-top: 30px;
+}
+.banner-for-liaison-category .our-doctors-heading h2{
+	text-align: center;
+	padding-top: 50px;
+	color: black;
+}
+.team-doctor-section .read-more-button button p{
+	margin: 0px;
+	font-size: 14px;
+	/*     font-family: neuemontreal-bold; */
+	font-family:'open-sans-medium';
+}
+.team-doctor-section .read-more-button button{
+	background: #d0d1cf;
+	color: #000000;
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	font-family: 'open-sans-medium';
+
+}
+.team-doctor-section .read-more-button button p{
+	margin: 0px;
+}
+.team-doctor-section .read-more-button i{
+	margin-left: 30px;
+	font-size: 22px;
+	top: 3px;
+	position: relative;
+	color: #8ac5e6;
+}
+.woocommerce-shipping-fields #ship-to-different-address-checkbox{
+	width: 4%!important;
+}
+.tax-team_category .genesis-nav-menu a{
+	color: black;
+}
+.tax-team_category .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+.woocommerce-checkout .woocommerce table.shop_table tbody .order-total th, .woocommerce table.shop_table .order-total td{
+	border-top: 1px solid rgba(0,0,0,.1)!important;
+}
+.woocommerce-checkout .order-total{
+	width: auto;
+	position: relative;
+}
+.woocommerce-checkout .woocommerce table.shop_table td{
+	/* border-top: 1px solid rgba(0,0,0,.1)!important; */
+	border-top: none!important;
+	text-align:right;
+}
+.woocommerce-checkout .woocommerce table.shop_table{
+	/* border: 1px solid rgba(0,0,0,.1)!important; */
+	width: 100%!important;
+	float: left;
+}
+.woocommerce-checkout .woocommerce-checkout #payment {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.woocommerce-checkout .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2{
+	display: none;
+}
+.woocommerce-checkout .woocommerce .col2-set, .woocommerce-page .col2-set {
+	width: 50%!important;
+	float: left;
+}
+.woocommerce-checkout  .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+	float: left;
+	width: 85%!important;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order{
+	width: 50%;
+	float: left;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order .cart_item .product-name{
+	display: flex;
+	align-items: center;
+}
+.woocommerce-checkout  .product-name{
+	color: #cd9b63;
+}
+
+.woocommerce-checkout .woocommerce-checkout-review-order tfoot th{
+	border-top:none!important
+}
+.woocommerce-checkout .order-total::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	background: rgba(0,0,0,.1);
+	height: 2px;
+	left: 0;
+	overflow: hidden;
+	top: 0;
+}
+.woocommerce-form-coupon-toggle{
+	display: none!important;
+}
+.woocommerce-checkout .checkout_coupon.woocommerce-form-coupon {
+	display: block !important;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.woocommerce-checkout .woocommerce form.checkout_coupon{
+	border-top: 1px solid rgba(0,0,0,.1)!important;
+	padding-top: 1px;
+	border: none!important;
+}
+.woocommerce-checkout .woocommerce form.checkout_coupon::before{
+	content: "";
+	height: 2px;
+
+	width: 100%;
+	background: rgba(0,0,0,.1);
+	position: absolute;
+}
+
+.woocommerce-checkout .woocommerce-form-coupon  .form-row-first input.input-text{
+	padding: 10px;
+}
+.woocommerce table.shop_table .coupon-form td{
+	padding: 0px!important;
+}
+.woocommerce-checkout .woocommerce-form-coupon .form-row-first{
+	width: 75%!important;
+}
+.woocommerce-checkout .woocommerce-form-coupon .form-row-last {
+	float: right;
+	width: 25%!important;
+}
+.woocommerce-checkout .woocommerce-form-coupon .form-row-last button{
+	width: 100%!important;
+	padding:10px!important;
+}
+.woocommerce-checkout  .woocommerce-checkout-review-order-table .cart-subtotal th, .woocommerce-checkout  .woocommerce-checkout-review-order-table .shipping th{
+	padding: 12px 0px!important;
+}
+.woocommerce-checkout .woocommerce-checkout-review-order-table td{
+	padding:0px!important;
+}
+.entry-title{
+	text-align:center;
+}
+.woocommerce-notices-wrapper .product-categories{
+	text-align: center;
+}
+.get-in-touch{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	display:block;
+	margin:0 auto;
+	padding:40px 0px;
+}
+.touch-field{
+	margin-right: 21px;
+	width: 25.7%;
+	float: left;
+	/* background: red; */
+	box-shadow: 2px 2px 7px rgb(0 0 0 / 25%);
+	padding: 20px;
+	margin-left:3px;
+}
+.touch-field:nth-child(2n){
+	margin-right:0px;
+}
+.address-content{
+	font-size:13px;
+}
+.touch-icon{
+	width: 17%;
+	float: left;
+	/* overflow: hidden; */
+	position: relative;
+	top: 20px;
+	/* background: red; */
+	border-radius: 50%;
+	z-index: 999999999999;
+	display: block;
+}
+.touch-icon:before{
+	content: "";
+	position: absolute;
+	background: #8ac5e7;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	left: 15px;
+	z-index: -1;
+	top: -6px
+}
+.touch-text{
+	width:80%;
+	float:left;
+	overflow:hidden;
+	padding-left: 20px;
+
+}
+.touch-head{
+	font-size:24px;
+	font-family:roxoborough-heavy!important;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+.touch-icon i{
+	font-size: 20px;
+	position: relative;
+	top: 4px;
+	left: 25px;
+}
+.touch-address{
+	width: 42%!important;
+	/* margin: 0 auto; */
+	/* text-align: center; */
+	position: relative;
+	left: 0!important;
+	top: 0!important;
+	margin-left: 20px!important;
+}
+/*----------------------Blog Page--------------------*/
+.page-template-blogs .genesis-nav-menu a{
+	color: black;
+}
+.page-template-blogs .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+.blog-page  .sticky{
+	border: 1px solid rgba(0,0,0,.1);
+	position: relative;
+	overflow: hidden;
+	width: 100%!important;
+	margin-left: 0px!important;
+	padding: 4rem 4rem 4rem!important;
+	padding: 40px 40px 40px!important;
+	height: auto!important;
+	margin:40px 0PX;
+}
+.blog-page  .sticky .name-of-blog{
+	width: 48%;
+	margin-top: 80px;
+	float: right;
+	position: relative;
+	padding: 0px!important;
+	height: auto!important;
+}
+.blog-page  .sticky:nth-child(1) .name-of-blog h2{
+	font-size: 26px!important;
+	color: black;
+}
+.blog-page  .sticky .name-of-blog::after{
+	width: 125px;
+	height: 2px;
+	position: absolute;
+	background: #a9d2ec;
+	content: "";
+}
+.blog-page  .sticky::before{
+	content: "";
+	width: 40%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #a9d2ec;
+}
+.blog-page  .sticky .image-of-blog{
+	width: 510px!important;
+	height: 510px!important;
+	float: left;
+	position: relative;
+	border: 10px solid white;
+}
+.blog-page  .sticky .detail-of-blog{
+	margin-left: 40px;
+	width: 45%;
+	float: left;
+	padding: 0px!important;
+	height: 200px!important;
+}
+.blog-page  .sticky .continue-reading-button{
+	position: relative;
+	display: block;
+	background: transparent;
+	width: 45%;
+	float: left;
+	margin-left: 40px!important;
+}
+.blog-page  .sticky .continue-reading-button button{
+	background-color: #a9d2ec!important;
+	width: 200px;
+	padding: 0px;
+	padding: 10px;
+	border-radius: 50px;
+}
+.blog-page  .sticky .continue-reading-button button p{
+	margin-bottom: 0px;
+}
+.blog-page .blog-post-box{
+	width: 360px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin:20px 10px;
+	display: block;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 960px;
+	padding: 0px;
+}
+.blog-page .blog-post-box .image-of-blog{
+	width: 100%;
+	height: 350px;
+	background-color: #cbcbcb;
+	overflow:hidden;
+}
+.blog-page .blog-post-box #blog-heading{
+	padding:30px;
+	height: 165px;
+}
+.blog-page .blog-post-box .name-of-blog h2{
+	font-size: 20px!important;
+	letter-spacing:2px;
+}
+.blog-page .blog-post-box .detail-of-blog{
+	overflow: hidden;
+	height: 300px;
+	line-height: 22px;
+	padding: 10px 30px 10px 30px;
+	margin-bottom: 30px;
+	font-family: 'open-sans-light';
+}
+.blog-page .blog-post-box .continue-reading-button button{
+	background-color: #e6b19f;
+	width: 212px;
+	padding: 0px;
+	padding: 10px 32px 10px 15px;
+	border-radius: 50px;
+}
+.blog-page .blog-post-box .continue-reading-button button p {
+	margin-bottom: 0px;
+	font-family: 'neuemontreal';
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.blog-page .blog-post-box .continue-reading-button {
+	position: relative;
+	display: block;
+	background: transparent;
+	width: 45%;
+	float: left;
+	margin-left: 30px;
+}
+.blog-page .blog-post-box  .name-of-blog::after {
+	width: 125px;
+	height: 2px;
+	position: absolute;
+	background: #a9d2ec;
+	content: "";
+}
+.blog-page .blog-post-box .continue-reading-button i{
+	position: absolute;
+	right: -35px;
+	top: 12px;
+	font-size: 14px;
+}
+html, body{
+	overflow-x: hidden;
+}
+.blog-page .blog-post-box:nth-child(1) .continue-reading-button i{
+	position: absolute;
+	top: 10px;
+	right: 280px;
+}
+.blog-page{
+	padding:70px 0;
+}
+.blog-page .sticky .date{
+	display: none;
+}
+.blog-page .blog-post-box .date{
+	margin-left: 30px;
+	position: relative;
+	top: 25px;
+	text-transform: uppercase;
+	color: #999999;
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+.blog-page .blog-post-box .date .comment-icon{
+	border-radius: 38%;
+	font-size: 13px;
+	text-align: center;
+	position: absolute;
+	top: 3px;
+	left: 175px;
+}
+.blog-page .blog-post-box .date .comment-icon:before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 31px;
+	border: 1px solid gray;
+	top: -5px;
+	border-radius: 14px;
+	left: -18px;
+}
+
+.blog-page .blog-post-box .date .comment-icon i{
+	margin-right:4px;
+}
+/*20/08/2022*/
+/*------------Press Page---------------------*/
+.page-template-press .genesis-nav-menu a{
+	color: black;
+}
+.page-template-press .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+.press-page{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom:20px;
+}
+.press-page .press-box{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	border: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 50px;
+}
+.press-page .press-box .date-comment{
+	font-family: 'neuemontreal';
+	width: 20%;
+	float: left;
+	color: #999999;
+	text-align: center;
+	margin-top: 30px;
+	font-weight: 700;
+}
+.press-page .press-box .name-date-title{
+	width: 73%;
+	float: left;
+	border-left: 2px solid rgba(0,0,0,.1);
+	margin-top: 30px;
+	margin-bottom: 40px;
+	position: relative;
+	padding-left: 50px;
+}
+.press-page .press-box  .publish-date p{
+	font-size: 24px!important;
+}
+.press-page .press-box .name-date-title .title-of-press h4{
+	font-size: 40px!important;
+	color: black;
+	text-transform: capitalize;
+	letter-spacing:2px;
+}
+.press-page .press-box .name-date-title .press-name::before{
+	content: "";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background-color: #8ac5e6;
+	border-radius: 50%;
+	left: -17px;
+	top: 10px;
+}
+.press-page .press-box .image-of-press{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: #cbcbcb;
+	overflow: hidden;
+}
+.press-page .press-box .image-of-press img{
+	width:100%;
+	height:500px;
+	object-fit:cover;
+}
+.press-page .press-box .content-of-press{
+	padding: 30px 10px 30px 30px;
+	font-family: 'open-sans-light';
+}
+.press-page .press-box .content-of-press p{
+	margin-bottom: 0px;
+	/* 	color:#acacac; */
+	color:#000;
+}
+.press-page .press-box .press-detailed-content{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 250px;
+}
+.press-page .press-box .press-detailed-content .detail-heading h3{
+	letter-spacing:2px;
+}
+.press-page .press-box .press-detailed-content .detail-heading{
+	width: 65%;
+	padding: 20px 0;
+	margin-left: 30px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 30px;
+}
+.press-page .press-box .press-detailed-content .detail-content{
+	padding: 0px 10px 30px 30px;
+	/* 	font-family: 'neuemontreal'; */
+	/* 	color:#acacac; */
+	font-family: 'open-sans-light';
+	color:#000;
+}
+.press-page .press-box .press-detailed-content .detail-content p{
+	margin:0px;
+}
+.press-page .press-box .continue-reading-button{
+	position: relative;
+	display: block;
+	background: transparent;
+	width: 45%;
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+.press-page .press-box .continue-reading-button button{
+	background-color: #d0d1cf!important;
+	width: 210px;
+	font-size: 13px;
+	/* padding: 10px; */
+	padding: 10px 26px 10px 14px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-family: 'neuemontreal';
+	margin-top: 25px;
+}
+.press-page .press-box .continue-reading-button button p{
+	margin-bottom: 0px;
+}
+.press-page .press-box .continue-reading-button button i{
+	position: absolute;
+	top: 36px;
+	left: 180px;
+}
+.press-page .press-box .comments-on-press{
+	border-radius: 38%;
+	font-size: 13px;
+	text-align: center;
+	position: absolute;
+	top: 110px;
+	left: 45px;
+}
+.press-page .press-box .comments-on-press::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 31px;
+	border: 1px solid gray;
+	top: -5px;
+	border-radius: 14px;
+	left: -18px;
+}
+.press-page .press-box .comments-on-press i{
+	margin-right: 4px;
+}
+/*----------------------single Page Press--------------------------------*/
+.press-page .press-box .single-press-detailed-content{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+
+}
+.press-page .press-box .single-press-detailed-content .detail-heading{
+	width: 65%;
+	padding: 20px 0;
+	margin-left: 30px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 30px;
+}
+.press-page .press-box .single-press-detailed-content .detail-content p{
+	margin:0px;
+}
+.press-page .press-box .single-press-detailed-content .detail-content{
+	padding: 0px 10px 30px 30px;
+	font-family: 'open-sans-light';
+	/* 	color:#acacac; */
+	color:#000;
+}
+.single .genesis-nav-menu a{
+	color: black;
+}
+.single .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+/*----------------------------------Team Single Page------------------------------*/
+.team-doctor-section .doctor-box .about-doctor-single {
+	letter-spacing: 1px;
+	font-size: 18px;
+	margin-top: 50px;
+	font-family: neuemontreal;
+	overflow: hidden;
+}
+.banner-for-doctor-category-single {
+	background-color: #a9d2ec;
+	height: 400px;
+}
+/*-----------------single blog page----------*/
+.single-blog-page .blog-post-box {
+	position: relative;
+	overflow: hidden;
+	margin-left: 30px;
+	display: block;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 0px;
+	padding: 70px 0px;
+	margin-bottom: 100px;
+}
+.single-blog-page .blog-post-box .date {
+	margin-left: 30px;
+	position: relative;
+	top: 25px;
+	text-transform: uppercase;
+	color: #999999;
+}
+.single-blog-page .blog-post-box #blog-heading {
+	padding: 30px;
+	width: 710px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.single-blog-page .blog-post-box #blog-heading h2 {
+	text-transform:capitalize;
+	letter-spacing:2px;
+}
+.single-blog-page .blog-post-box .image-of-blog {
+	width: 367px;
+	height: 365px;
+	background-color: #cbcbcb;
+	float: right;
+	margin-right: 30px;
+	overflow: hidden;
+}
+.single-blog-page .blog-post-box .detail-of-blog {
+	width: 100%;
+	position: relative;
+	line-height: 22px;
+	padding: 10px 30px 10px 30px;
+	font-family: 'open-sans-light';
+}
+.single-blog-page .blog-post-box .date .comment-icon {
+	width: 49px;
+	height: 23px;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 38%;
+	font-size: 13px;
+	text-align: center;
+	position: absolute;
+	top: 2px;
+	left: 130px;
+}
+.single-blog-page .blog-post-box .date .comment-icon i{
+	padding-right:10px;
+}
+.tempus-certified-package .treatment-image img{
+	display:none;
+}
+.tempus-certified-package .treatment-image:hover img{
+	display:block;
+}
+.tempus-certified-package .treatment-image:hover .package-overlay{
+	display:block;
+}
+.tempus-certified-package .treatment-image:hover .treatment-name h2{
+	color:#fff;
+}
+.tempus-certified-package .treatment-image:hover .slider-treatment-detail p ,.tempus-certified-package .treatment-image:hover .slider-treatment-price p{
+	color:#fff;
+}
+.tempus-certified-package .treatment-image .package-overlay{
+	background-color: #000000;
+	opacity: 0.4;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	display:none;
+}
+.page-template-certified-package .genesis-nav-menu a {
+	color: black;
+}
+.page-template-certified-package .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #d0d1cf;
+}
+
+/* concern */
+
+.concerns-page{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	background-color: #D0D1CF;
+	background:transparent;
+
+}
+.concern-banner{
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:100% 100%;
+	display: block;
+	position:relative;
+	background-color: #8d8d8d;
+	border-style: solid;
+	border-width: 0px 80px;
+	border-color: #f9f9f9;
+}
+.concern-banner .concern-overlay{
+	background-color: #000000;
+	opacity: 0.4;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.concern-banner .concerns-content{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width:685px;
+}
+.concern-banner .concerns-content h2{
+	text-align: center;
+	color: white;
+	/* 	font-size:22px!important; */
+}
+.concern-banner .concerns-content p{
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'open-sans-light';
+}
+.concern-button{
+	position:relative;
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-top:38px;
+}
+.concern-banner .scroll-now-treatment-page p{
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+.concern-banner .scroll-now-treatment-page button{
+	border: none;
+	background: transparent;
+}
+.concern-banner .scroll-now-treatment-page{
+	width:100%;
+	text-align:center;
+}
+.concern-button a{
+	background: #d0d1cf;
+	padding: 16px 24px;
+	font-size: 14px;
+	font-family: 'open-sans-medium';
+	color: #000000;
+	margin-top: 24px;
+	overflow: hidden;
+}
+.concerns-posts{
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding: 70px 0px 0px;
+	border-style: solid;
+	border-width: 0px 80px;
+	border-color: #f9f9f9;
+	background: #f9f9f9;
+}
+
+.concerns-page .concern-box{
+	width:50%;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	padding:0px 10px 20px;
+}
+
+.concerns-page .concerns-heading h2{
+	padding:70px 0;
+	text-align:center;
+	margin:0px;
+	background-color: #D0D1CF;
+
+}
+.concerns-page .concern-title{
+	margin: 0;
+	position: absolute;
+	bottom: 20%;
+	left:0;
+	width: 100%;
+	text-align: center;
+}
+.concerns-page .concern-title h2{
+	font-size: 30px!important;
+	color: #ffffff;
+	text-align:center;
+}
+.concerns-page .concern-box .concer-image{
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+.concerns-page .concern-box:hover .concern-title{
+	bottom: 35%;
+}
+.concerns-page .concern-box:hover .concern-des{
+	display:block;
+}
+.concerns-page .concern-box .concern-des{
+	display:none;
+	color:#ffff;
+	padding:0 20px;
+	/* 	font-family: 'neuemontreal-light';  */
+	font-family:'open-sans-light';
+
+}
+.concerns-page .concern-box:hover .concer-image img{
+	transform: scale(1.5);
+}
+.concerns-page .concern-box .concer-image img{
+	width:100%;
+	position: relative;
+	transition: 0.5s all ease-in-out;
+	width: 100%;
+	height:100%;
+}
+.scroll-now-treatment-page{
+	display:none;
+}
+.newsletter-social:before{
+	content: '';
+	width: 72px;
+	height: 2px;
+	background: #d0d1cf;
+	position: absolute;
+	top: -1px;
+}
+/* 11 asfand */
+.tempus-cards{
+	cursor: pointer;
+	position: relative;
+	/*     overflow: hidden; */
+	margin: 20px 0;
+	/* max-width: 900px; */
+	/*     width: 25%; */
+	width: 24%;
+	padding: 0px 15px 50px;
+	/*     float: left; */
+	/*     height: auto; */
+	text-align: center;
+	/* 	height:480px; */
+	display: inline-flex;
+}
+.tempus-asthetic-treatment-details{
+	position:relative;
+	display:block;
+	max-width:1140px;
+	overflow:hidden;
+	margin:0 auto;
+	padding: 50px 0px 0px 0px;
+}
+.anti-asthetic-treatment-details{
+	position:relative;
+	display:block;
+	max-width:1140px;
+	overflow:hidden;
+	margin:0 auto;
+	padding-bottom:20px;
+}
+.thread-asthetic-treatment-details{
+	position:relative;
+	display:block;
+	max-width:1140px;
+	overflow:hidden;
+	margin:0 auto;
+}
+.tempus-asthetic-treatment-we-offer h2{
+	text-align:center;
+	margin-bottom:50px;
+}
+.tempus-asthetic-treatment-image{
+	width: 100%;
+	height: 250px;
+	float: left;
+	background-color: #8d8d8d;
+	overflow:hidden;
+}
+.tempus-asthetic-treatment-name h2{
+	color: black;
+	/* width: 400px; */
+	font-size: 16px!important;
+	text-transform: capitalize;
+	font-family: 'open-sans-medium';
+	margin-bottom: 11px;
+	letter-spacing: 3px;
+	padding-top:10px;
+}
+.tempus-asthetic-treatment-detail {
+	/*     height: 200px; */
+	padding: 0 10px;
+	/* font-family: 'neuemontreal-light'; */
+	font-family: 'open-sans-light';
+}
+.tempus-asthetic-treatment-name {
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+h2.packages-certified{
+	text-align:center;
+	margin-bottom:40px;
+}
+.certified-section{
+	padding-top:70px;
+}
+/* .certified-section .background-color{
+	margin-bottom:0px!important;
+} */
+.tempus-cards img{
+	width:100%;
+}
+/* CSS Changes 11 Nov, 2022  Start*/
+
+.genesis-nav-menu .menu-item.menu-item-has-children:hover{
+	position: relative;
+}
+
+/* .genesis-nav-menu .menu-item.menu-item-has-children:after{
+	content: '\f078';
+	color: #d0d1cf;
+	font-family: 'FontAwesome';
+	font-size: 11px!important;
+	position: absolute;
+	top: 32px;
+	right: -1px;
+}
+.genesis-nav-menu .menu-item.menu-item-has-children:hover:after{
+	content: '\f077';
+	color: #d0d1cf;
+	font-family: 'FontAwesome';
+	font-size: 11px!important;
+	position: absolute;
+	top: 32px;
+	right: -1px;
+
+} */
+
+.search-form-input {
+	display: none;
+	position: absolute;
+	right: 20%;
+	width: 200px;
+	z-index: 9;
+	top: 135px;
+}
+.single-product #custom_html-4 i{
+	top: -46px;
+	right: 20%;
+
+}
+.single-product .search-form .search-form-input{
+	margin-top:-70px;
+}
+.single-product .book-now{
+	top: -55px;
+	right: -120px;
+}
+#custom_html-4 i {
+	position: absolute;
+	right: 23%;
+	width: 15.83px;
+	bottom: -55%;
+	cursor: pointer;
+	-webkit-text-stroke: 1.2px white;
+}
+.team-single-page .team-doctor-section{
+	width:100%;
+	padding-bottom:70px;
+}
+.search-page{
+	padding-bottom:70px;
+}
+.team-single-page .doctor-image{
+	width: 30%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	background-color: #bbbbbb;
+	float: left;
+	margin-right: 40px;
+}
+.team-single-page .doctor-name{
+	float: left;
+	position: relative;
+	width: 65%;
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1218::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/MEDICAL-AESTHETIC.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1220::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/SURGICAL-SERVICES.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1327::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/dermatology.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1215::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/FACIAL-AESTHETICS.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1214::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/body-treatments.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1219::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/NUTRITION-AND-FUNCTIONAL-MEDICINE.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1467::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/LASER-HAIR-REMOVAL.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1216::before{
+	content: "";
+	width: 35px;
+	background-repeat: no-repeat;
+	height: 35px;
+	/* padding-right: 20px; */
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/INFUSIONS.png);
+}
+.genesis-nav-menu #menu-item-154 .sub-menu{
+	width: 240px;
+}
+.genesis-nav-menu #menu-item-154 .sub-menu li{
+	width:100%;
+}
+.genesis-nav-menu #menu-item-154 .sub-menu li a {
+	padding:10px;
+	width:100%;
+}
+.genesis-nav-menu #menu-item-154 .sub-menu li a:hover{
+	color: #d0d1cf;
+}
+.genesis-nav-menu #menu-item-154 .sub-menu li a span{
+	margin-left:30px;
+}
+.term-body-treatments .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	top: -25px;
+	left: 66px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/body-treatments.png);
+}
+.term-medical-aesthetics .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	left: 53px;
+	top: -25px;
+
+	background-size: 100%;
+	position: absolute;
+	padding-right: 20px;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/MEDICAL-AESTHETIC.png);
+}
+.term-surgical-services  .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	left: 56px;
+	top: -25px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/SURGICAL-SERVICES.png);
+}
+.term-dermatology .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	height: 80px;
+	background-repeat: no-repeat;
+	left: 109px;
+	top: -25px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/dermatology.png);
+}
+.term-facial-aesthetics .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	left: 61px;
+	top: -25px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/FACIAL-AESTHETICS.png);
+}
+.term-nutrition-and-functional-medicine .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	left: 15px;
+	top: -25px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/NUTRITION-AND-FUNCTIONAL-MEDICINE.png);
+}
+.term-laser-treatments .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	left: 41px;
+	top: -25px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/LASER-HAIR-REMOVAL.png);
+}
+.term-iv-infusions  .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+	content: "";
+	width: 80px;
+	background-repeat: no-repeat;
+	height: 80px;
+	left: -40px;
+	top: -25px;
+	padding-right: 20px;
+	background-size: 100%;
+	position: absolute;
+	background-image: url(https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/INFUSIONS.png);
+}
+.popup-appointment {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99999999;
+	overflow: hidden;
+	right: 0;
+	top: 0;
+	background: #000000de;
+	display: none;
+}
+.popup-appointwrap{
+	overflow: auto;
+	display: block;
+	width: 60%;
+	height: auto;
+	/* margin: 30px auto; */
+	position: relative;
+	padding: 40px;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+
+}
+.popup-appointment .book-cross {
+	display: block;
+	font-size: 25px;
+	position: absolute;
+	top: 10px;
+	z-index: 9;
+	cursor: pointer;
+	top: 6%;
+	left: 94.5%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+.popup-appointment .book-cross i{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-position: revert;
+	position: relative;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+.popup-appointment .book-cross i:before{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+.popup-appointment input, textarea{
+	border: 1px solid #000000;
+	margin-bottom: 12px;
+	background: transparent;
+	box-shadow: none;
+	/* font-family: 'neuemontreal'; */
+	font-family: 'open-sans-medium';
+	letter-spacing: 2px;
+	padding: 1.6rem;
+	font-size: 14px;
+	color: #000000;
+}
+.popup-appointment textarea{
+	height:100px;
+}
+.popup-appointment input[type="submit"]{
+	background-color: #d0d1cf!important;
+	margin-top: 25px;
+	width: 150px;
+	padding: 12px!important;
+	/* border-radius: 20px; */
+	font-family: 'open-sans-medium'!important;
+	/* font-weight: 600; */
+	font-size: 18px;
+	border: none!important;
+	color: #000000;
+	margin-left:60px;
+}
+.tempus-textarea{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	padding-right: 8px;
+}
+.tempus-textarea textarea::placeholder{
+	color:#000000;
+}
+.tempus-textarea textarea{
+	border: 1px solid #000000;
+}
+.tempus-book ::-webkit-input-placeholder { /* WebKit browsers */
+	color: #000 !important;
+	opacity: 1;
+}
+.tempus-book textarea::placeholder{
+	color: #000000;
+	opacity: 1;
+}
+.tempus-book{
+	/* margin-right: 51px; */
+	font-family: Myriad Pro;
+	width: 50%;
+	padding-right: 8px;
+	float: left;
+
+}
+.book-cross i{
+	color: #000000;
+}
+.heading-contact-book h2{
+	margin-bottom: 20px;
+}
+.woocommerce div.product div.images .flex-control-thumbs{
+	margin-top:20px !important;
+}
+.woocommerce div.product div.images .flex-control-thumbs li {
+	margin-right:10px !important;
+}
+/* CSS Changes 11 Nov, 2022  End */
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+@media (min-width:1440px) and (max-width: 1920px){
+	.membership-package .price-of-package{
+		font-size:30px;
+	}
+	.term-iv-infusions .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before {
+		left: -50px;
+	}
+	.membership-package .whatsapp-icon{
+		width: 4%;
+		right: 10px;
+		position: absolute;
+		bottom: 75px;
+	}
+	.membership-package .membership-products-details{
+		margin:0 100px;
+	}
+	.doctors-section .doctor-details .doctor-box .doctor-image{
+		height:490px;
+	}
+	.treatments-section .treatments-names .treatment-box .treatment-image{
+		height:290px;
+	}
+	.membership-package .membership-products-details .price-of-package #currency-icon {
+		left: -5px;
+		font-size: 15px;
+		top: -10px;
+	}
+}
+@media only screen and (max-width: 1440px) {
+
+	.pateint-reviews .arow-pervious {
+		left:-50px;
+	}
+	.pateint-reviews .arow-next{
+		right:-50px;
+	}
+	.term-iv-infusions  .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		left: 60px;
+	}
+	.term-nutrition-and-functional-medicine .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		left: -60px;
+		top: -25px;
+	}
+	.treatments-section .arows-next-pervious-icon .arow-pervious-icon{
+		left:-50px;
+	}
+	.treatments-section .arows-next-pervious-icon .arow-next-icon{
+		right:-50px;
+	}
+	/* 	.tempus-field{
+	width:47.8%;
+} */
+	.contact-form .wpcf7 .contact-message {
+		width: 100%;
+	}
+	.contact-form  .wpcf7  .contact-message textarea::placeholder{
+		font-size:14px;
+		/* 		padding:10px; */
+		font-family:'open-sans-medium';
+	}
+	.scroll-now-face-asthetic-treatment-page {
+		left: 47.5%;
+	}
+	.touch-field {
+		margin-right: 20px;
+		/*     width: 47.7%; */
+		float: left;
+		/* background: red; */
+		box-shadow: 2px 2px 7px rgb(0 0 0 / 25%);
+		padding: 20px;
+		left: 4px;
+		position: relative;
+	}
+	.touch-address {
+		width: 60%;
+		margin: 0 auto;
+		/* text-algn: center; */
+		position: relative;
+		left: 20%;
+		top: 31px;
+	}
+	/* 	.contact-form {
+	width: 80%;
+} */
+
+	.who-we-are-section .who-are-we{
+		width:85%;
+	}
+	.who-we-are-section .who-we-are-image{
+		width:50%;
+		height:auto;
+	}
+	.who-we-are-section .text-for-who-we-are{
+		width:50%;
+		margin-left:50px;
+	}
+	.who-we-are-section .description-who-we-are{
+		padding-top: 50px;
+		line-height: 20px;
+		/* letter-spacing: 1px; */
+		padding-right: 10px;
+	}
+	.who-we-are-section .heading::after{
+		bottom:-15px;
+	}
+	.treatments-section .treatments-names .treatment-box .treatment-image{
+		height:240px;
+	}
+	.doctors-section{
+		max-width:1140px;
+		margin:0 auto;
+	}
+	.doctors-section .doctor-details{
+		max-width:1140px;
+		margin:0 auto;
+	}
+	.doctors-section .doctor-details .doctor-box .doctor-image{
+		height:400px;
+	}
+	.doctors-section .arows-ne-pre .arow-pre{
+		left:-8px;
+	}
+	.doctors-section .arows-ne-pre .arow-ne{
+		right:-8px;
+	}
+	/* 	.doctors-section .doctor-details .doctor-box .doctor-name h2{
+            font-size:24px!important;
+        } */
+	.doctors-section .doctor-details .doctor-box .doctor-specialization p{
+		font-size:16px;
+	}
+	.membership-package .membership-products-details{
+		max-width:1140px;
+		margin:0 auto;
+	}
+	.membership-package .whatsapp-icon{
+		width: 36px;
+		right: 16px;
+		position: absolute;
+		bottom: 84px;
+	}
+	.membership-package .price-of-package{
+		font-size:24px;
+	}
+	.membership-package .membership-products-details .price-of-package #currency-icon{
+		left: -2px;
+		font-size: 17px;
+		top: -11px;
+	}
+	.membership-package .membership-products-details .price-of-package p span{
+		font-size:16px;
+	}
+	.membership-package .description-of-package{
+		width:250px;
+		font-size:18px;
+	}
+	.membership-package .membership-products-details .join-now-button button{
+		padding: 1.6rem 4.4rem;
+		width:auto;
+		font-size:14px;
+	}
+	.membership-package .membership-package-box{
+		height:820px;
+	}
+	.map-home-page{
+		width:47%;
+		overflow: hidden;
+		margin-top: -7px;
+	}
+	.get-in-touch-contact .contact-form .wpcf7 input{
+		padding:1.6rem;
+		font-size:14px;
+	}
+	.get-in-touch-form .contact-form .wpcf7{
+		width:50%;
+		margin-left:30px;
+	}
+	.contact-form .wrap{
+		max-width:1140px;
+		margin:0 auto;
+		padding:0px;
+
+	}
+	/* 	.concerns-page .concern-title h2 {
+            font-size: 40.29px!important;
+        } */
+	.concerns-page .concern-title {
+		margin: 0;
+		position: absolute;
+		bottom: 16%;
+		left: 0;
+		transform: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media (max-width: 1366px){
+	.banner-home-page{
+		border-width: 0 40px 0 40px;
+	}
+	.treatments-section .wrap{
+		border-width: 0 40px 0 40px;
+	}
+	.quality-experince{
+		border-width:0px 40px;
+	}
+	.concern-banner {
+		border-width:0px 40px;
+	}
+	/* 	.treatments-section .treatment-box{
+            width:47.9%;
+        } */
+	.concerns-posts{
+		border-width:0px 40px;
+	}
+	.get-in-touch-contact{
+		border-width:0 40px;
+	}
+	.page-template-home .footer-widgets .wrap{
+		border-width:0 40px;
+	}
+}
+@media only screen and (max-width: 1139px) {
+
+
+	.site-inner,
+	.wrap {
+		max-width: 960px;
+	}
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		width: 740px;
+	}
+
+	.content,
+	.site-header .widget-area {
+		width: 100%;
+	}
+	#custom_html-4 i{
+		right:19%;
+	}
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,
+	.content-sidebar-sidebar .content {
+		width: 400px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.sidebar-primary,
+	.title-area {
+		width: 300px;
+	}
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+		background-color: #fff;
+	}
+	.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1218::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1220::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1327::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1327::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1215::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1214::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1219::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1467::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1216::before{
+
+		top: 10px;
+	}
+	.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3{
+		width:100%;
+		float:none;
+		margin:0px!important;
+		font-size: 14px!important;
+	}
+	.treatment-single-page{
+		padding:50px 40px;
+	}
+	.condition-single-page{
+		padding:50px 40px;
+	}
+	.treatment-single-page .single-treatment-box .treatment-single-image{
+		height:200px;
+		overflow:hidden;
+	}
+	.treatments-we-offer .treatment-detail{
+		height:120px;
+	}
+	.membership-package .price-of-package p{
+		width:100%;
+	}
+	.page-id-19 .how-to-use-shop p{
+		font-size: 14px;
+	}
+	.page-id-19 .how-to-use-shop{
+		padding:0px;
+	}
+	.content,
+	.content-sidebar-sidebar .content,
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.sidebar-content-sidebar .content,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-primary,
+	.sidebar-secondary,
+	.sidebar-sidebar-content .content,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.site-header .widget-area,
+	.site-inner,
+	.title-area,
+	.wrap {
+		width: 100%;
+	}
+	.footer-information{
+		padding:0 20px;
+	}
+	.footer-form .footer-field{
+		padding-left:20px;
+		width:72%;
+	}
+	.site-header .wrap {
+		padding: 20px 0;
+		padding: 2rem 0;
+	}
+
+	.header-image .site-header .wrap {
+
+		background-size: 130px;
+	}
+
+	.site-inner {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	.archive-description,
+	.author-box,
+	.comment-respond,
+	.entry,
+	.entry-comments,
+	.entry-footer .entry-meta,
+	.header-image .site-header .widget-area,
+	.sidebar .widget,
+	.site-header {
+		padding: 0;
+	}
+
+	.genesis-nav-menu li,
+	.site-header ul.genesis-nav-menu,
+	.site-header .search-form {
+		float: none;
+	}
+
+	.genesis-nav-menu,
+	.site-description,
+	.site-header .title-area,
+	.site-header .search-form,
+	.site-title {
+		text-align: ;
+	}
+
+	.genesis-nav-menu a,
+	.genesis-nav-menu > .first > a,
+	.genesis-nav-menu > .last > a {
+		padding: 20px 10px;
+		padding: 2rem 1rem;
+	}
+
+	.site-header .search-form {
+		margin: 16px auto ;
+		margin: 1.6rem auto;
+	}
+
+	.genesis-nav-menu li.right {
+		display: none;
+	}
+	.concerns-page .concern-box .concer-image{
+		height:213px;
+	}
+	.concerns-page .concern-box:hover .concern-title{
+		bottom: 20%;
+	}
+	.entry-footer .entry-meta {
+		margin: 0;
+		padding-top: 12px;
+		padding-top: 1.2rem;
+	}
+
+	.sidebar .widget.enews-widget {
+		padding: 40px;
+		padding: 4rem;
+	}
+	.header-widget-area .dropdown-arrow{
+		top: 23px;
+		font-size: 12px;
+		right: 48.7%;
+	}
+	.site-footer {
+		padding: 24px 0;
+		padding: 2.4rem 0;
+	}
+
+	.footer-widgets {
+		padding: 40px 20px 16px;
+	}
+
+	.footer-widgets-1 {
+		margin: 0;
+	}
+	.who-we-are-section{
+		padding-left:20px;
+		padding-right:20px;
+		padding-bottom:0px;
+	}
+	.doctors-section .doctor-details .doctor-box .doctor-name h2{
+		font-size:16px!important;
+	}
+	.doctors-section .doctor-details .doctor-box .doctor-specialization p{
+		font-size:14px;
+	}
+	.projects-count{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.header-widget-area {
+		position: relative;
+		margin-left: -33px!important;
+	}
+	.contact-booke-now {
+		width: 40%;
+		float: left;
+		position: absolute;
+		top: -60px;
+		right: -15px;
+		display: flex;
+		justify-content: flex-end;
+	}
+	#custom_html-4 i {
+		top: 24px;
+		right: 15%;
+	}
+	.search-form-input{
+		right: 15%;
+		width: 200px;
+		z-index: 9;
+		top: 45px;
+	}
+	.single-product #custom_html-4 i {
+		top: -37px;
+		right: 15%;
+	}
+	.title-area{
+		width:150px;
+	}
+	.genesis-nav-menu a{
+		font-size:14px;
+		padding:2rem 8px!important;
+	}
+	.quality-experince{
+		background-size:100% 100%;
+		border:none;
+	}
+	.quality-experince .heading-quality-experience h2{
+		padding:100px 0;
+	}
+	.contact-form{
+		width: 50%!important;
+		padding-left: 0px!important;
+		/* margin: 0 auto; */
+		overflow: hidden;
+	}
+	.quality-experince .heading-quality-experience h2 br{
+		display:none;
+	}
+	/* 	.treatments-we-offer .treatment-page-box{
+            width: 45.7%;
+        } */
+	.background-color{
+		width:29.4%;
+	}
+	.treatment-popup{
+		width:29.2%;
+	}
+	.map-home-page {
+		width: 50%;
+		margin-right: 0px;
+		margin-top: 50px;
+	}
+	.get-in-touch-form .contact-form .wpcf7{
+		margin-left:30px;
+	}
+	.footer-widgets-2{
+		margin-bottom:0px;
+		margin-left:0px;
+	}
+	.page-template-home .footer-widgets-2{
+		width:100%;
+	}
+	.page-template-home .footer-widgets .wrap{
+		max-width:1140px;
+		margin:0 auto;
+	}
+	.footer-widgets-3,.page-template-home .footer-widgets-3{
+		margin-top: 0px;
+		position: relative;
+		top: 0px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		padding:0px;
+		width:100%;
+	}
+	.page-template-home .footer-widgets-4{
+		width:100%;
+	}
+	.page-template-home .footer-widgets{
+		padding:0px;
+	}
+	.footer-icons{
+		margin-left: -16px;
+	}
+	.social-icon {
+		left: calc(50% - 9.72px/2 - 91.14px);
+	}
+	.footer-icons::before {
+		width:33%;
+		left:0px;
+	}
+	.footer-icons::after{
+		width:33%;
+	}
+	.pateint-reviews .patient-name h4{
+		font-size:18px;
+		padding-bottom:5px;
+	}
+	.pateint-reviews .review-text p{
+		height:210px;
+		margin:0px;
+	}
+	.pateint-reviews .review-box{
+		height:440px;
+	}
+	.pateint-reviews .patient-image{
+		margin-top:20px;
+	}
+	.arows-next-pervious{
+		display:none;
+	}
+	.pateint-reviews .slick-dots li.slick-active button:before{
+		color:#8ac5e7;
+	}
+	.pateint-reviews .slick-dots li button:before {
+		font-size:16px;
+	}
+	.pateint-reviews .slick-dots {
+		bottom:-90px;
+	}
+	.pateint-reviews .slick-dots li{
+		margin:0px 20px;
+	}
+	.pateint-reviews{
+		padding-right:10px;
+		padding-left:10px;
+	}
+	.banner-home-page .heading-for-banner h2 br{
+		display:none;
+	}
+	.membership-package .membership-package-box{
+		padding:0px 30px;
+		width:250px;
+	}
+	.membership-package .membership-products-details{
+		padding-left:0px;
+	}
+	.membership-package .whatsapp-icon{
+		bottom:0;
+	}
+	.membership-package{
+		padding: 50px 20px;
+	}
+	.get-in-touch-contact{
+		padding: 50px 20px 0px 20px;
+		border-width:0px;
+	}
+	.membership-package .description-of-package {
+		width: 100%;
+		height: 323px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.get-in-touch-contact .contact-form .heading-contact-form h2{
+		font-size:30px!important;
+	}
+	.membership-package .membership-package-box{
+		flex-basis:33%;
+	}
+	.membership-package .price-of-package{
+		font-size:20px;
+	}
+	.membership-package .membership-products-details .membership-type p{
+		font-size:14px;
+	}
+	.membership-package .membership-products-details .price-of-package #currency-icon {
+		left: 10px;
+		top: 5px;
+		font-size: 15px;
+		left: -5px;
+		font-size: 20px;
+		top: -11px;
+	}
+
+	.membership-package .membership-package-box {
+		height:750px;
+	}
+	.banner-home-page .heading-for-banner h2{
+		font-size:35px!important;
+	}
+	.home-overlay{
+		left:45%;
+		top:44%;
+	}
+	/* 	.treatments-section .treatment-box .name-of-it-treatment h2 {
+            font-size: 25px!important;
+        } */
+	.treatments-section .wrap{
+		border:none;
+	}
+	.banner-home-page{
+		border:none;
+	}
+	.treatments-section .treatment-box .name-of-it-treatment h2{
+		width:100%;
+	}
+	.treatments-section .treatment-box .description-of-treatment p{
+		width:100%;
+		margin:0px;
+	}
+	.treatments-section .treatment-box .treatment-image::before {
+		display:none;
+	}
+	.treatments-section{
+		padding-top:50px;
+	}
+	.treatment-image {
+		/* 		padding-left: 44px; */
+		display: block;
+		overflow: hidden;
+	}
+	.treatments-section .treatment-box .description-of-treatment{
+		min-height:104px;
+	}
+	.treatments-section .treatments-names .treatment-box .treatment-image{
+		height:155px;
+	}
+	.treatments-section .treatments-names .text-before-heading p{
+		margin-bottom:50px;
+		font-size:30px;
+	}
+	/* 	.treatments-section .treatment-box{
+	width:45.8%;
+} */
+	.treatments-section .treatment-box .treatment-image img {
+		left: 0px;
+		top: 0px;
+	}
+	.treatment-box{
+		display:flex;
+		align-content:center;
+	}
+	.doctors-section .doctor-image {
+		height: 290px!important;
+		float: left;
+		margin-bottom:20px;
+	}
+	.doctors-section .doctor-name-description {
+		/* width: 381px; */
+		top: 50px;
+		width: 40%;
+		height: 330px;
+		background-color: white;
+		float: left;
+		position: relative;
+		left: -50px;
+		/* top: -108px; */
+		border-radius: 5px;
+		box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+		z-index: 9999999;
+	}
+	.doctors-section .doctor-name-description .doctor-name {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+	.doctors-section .about-doctor .social-icons {
+		margin-top: 0px;
+		margin-left: -10px;
+	}
+	.doctors-section .doctor-name-description .about-doctor p {
+		margin-top: 16px;
+		font-size: 14px;
+		padding-right:0px;
+	}
+	.doctors-section .doctor-name-description .doctor-name h2{
+		font-size: 26px!important;
+		margin: 0px;
+	}
+	.industry-leading-brands .logos-of-brands {
+		width: 12%;
+		padding: 0px 15px;
+	}
+	.who-we-are-section .heading h2{
+		font-size:22px!important;
+	}
+	.who-we-are-section .heading::after{
+		width:150px;
+	}
+	.who-we-are-section .description-who-we-are{
+		padding-top:10px!important;
+	}
+	.who-we-are-section .description-who-we-are p{
+		margin:0px;
+		padding-bottom:10px;
+	}
+	.who-we-are-section .heading{
+		padding-bottom:10px;
+	}
+	.who-we-are-section .text-for-who-we-are{
+		margin-left:30px;
+	}
+	.who-we-are-section .who-are-we{
+		width:100%;
+	}
+	.treatments-section .slick-dots {
+		bottom: -50px;
+	}
+	.treatments-section .slick-dots li {
+		margin: 0px 20px;
+	}
+	.treatments-section .slick-dots li {
+		margin: 0px 20px;
+	}
+	.treatments-section .slick-dots li.slick-active button:before{
+		color:#e4b1a0;
+	}
+	.treatments-section .slick-dots li button:before {
+		font-size: 16px;
+	}
+	.banner-img{
+		height:380px;
+	}
+	.concern-banner{
+		height:380px;
+	}
+	.face-asthetic-treatment-page-banner{
+		height:380px;
+	}
+	.face-asthetic-treatment-page-banner .certified-banner{
+		height:380px;
+	}
+	.face-asthetic-treatment-page-banner .category-treatment-banner{
+		height:380px;
+	}
+	.arows-next-pervious-icon{
+		display:none;
+	}
+	.entry{
+		padding:40px 20px;
+	}
+	.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+		width: 26%!important;
+		float:right!important;
+	}
+	.woocommerce-cart .entry {
+		padding: 8rem 2rem 4.4rem!important;
+	}
+	.order-total {
+		width: 21.9%;
+	}
+	.single-product #product-142 {
+		padding: 9rem 2rem 4.4rem!important;
+	}
+	.team-doctor-section{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.team-doctor-section .doctor-box .about-doctor{
+		width:100%;
+	}
+	.team-doctor-section .doctor-box .doctor-image {
+		width: 404px;
+		height: 360px;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-image{
+		width: 47%;
+		float: left;
+		height: 310px;
+		margin-right: 30px;
+		margin-bottom:25px;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-page-detail{
+		padding-left: 30px;
+		display: block;
+		float:none;
+		overflow:visible;
+		width: 100%;
+		text-align: left;
+	}
+	.g-content-page.active .popup-wrap-g{
+		height:70vh;
+
+	}
+	.our-doctor-category .active .popup-g .facts-cross{
+		/* 		font-size:30px; */
+		top: 17%;
+		left: 85%;
+	}
+	.team-doctor-section .doctor-box{
+		width: 45.8%;
+	}
+	.team-doctor-section .our-doctors-banner{
+		width:80%;
+	}
+	.banner-for-liaison-category{
+		height:540px;
+	}
+	.banner-for-practitioners-category{
+		height:540px;
+	}
+	.scroll-now-face-asthetic-treatment-page {
+		left: 45.5%;
+	}
+	/* 	.face-asthetic-treatment-we-offer .service-name-detail {
+            width: 430px;
+        } */
+	.face-asthetic-treatment-we-offer .face-asthetic-treatment-name h2{
+		font-size:22px!important;
+	}
+	.tempus-field {
+		width: 45.8%;
+	}
+	.touch-field {
+		margin-right: 12px;
+		width:47.7%;
+	}
+	.touch-icon {
+		left:-13px;
+	}
+	.touch-address {
+		width: 72%!important;
+		left: 12%!important;
+		top: 31px!important;
+	}
+	.blog-page .sticky .image-of-blog {
+		width: 339px!important;
+		height: 345px!important;
+		float: left;
+		position: relative;
+		border: 10px solid white;
+	}
+	.blog-page .sticky .detail-of-blog {
+		margin-left: 31px;
+		width: 44%;
+		float: left;
+		padding: 0px!important;
+	}
+	.blog-page .wrap{
+		padding:0px 20px;
+	}
+	.blog-page .blog-post-box {
+		width: 375px;
+		margin-bottom:30px;
+		margin:20px 7px;
+		height: 960px;
+	}
+
+	.blog-page .sticky:nth-child(1) .name-of-blog h2 {
+		margin-bottom: 30px;
+		font-size: 40px!important;
+		color: #e6b19f;
+	}
+	.blog-page .sticky{
+		padding: 17px 40px 40px!important;
+	}
+	.blog-page .blog-post-box #blog-heading{
+		float:left;
+		margin-bottom:20px;
+	}
+	.blog-page .sticky .name-of-blog{
+		width:100%;
+		margin-top:10px;
+	}
+	.blog-page .blog-post-box:nth-child(1) .continue-reading-button i {
+		right:128px;
+	}
+	/*Press page*/
+	.press-page .press-box .publish-date p {
+		font-size: 22px!important;
+	}
+	.press-page .press-box .name-date-title .press-name h2{
+		font-size: 45px!important;
+	}
+	.press-page .press-box .name-date-title .title-of-press h4 {
+		font-size: 35px!important;
+
+	}
+	.press-page .press-box .continue-reading-button{
+		padding-top: 30px;
+	}
+	.press-page .press-box .continue-reading-button button i{
+		top: 42px;
+	}
+	.press-page{
+		padding:40px 20px;
+	}
+	.single-blog-page .blog-post-box #blog-heading{
+		width:100%;
+		position:relative;
+		overflow:hidden;
+	}
+	.treatments-we-offer{
+		padding:40px 20px;
+	}
+	.treatments-we-offer .treatment-image{
+		padding-left:0px;
+	}
+	/* 	.treatments-we-offer .pricing-details{
+	width: 390px;
+	margin-left: 30px;
+} */
+	.tempus-certified-package .treatment-image{
+		padding-left:0px;
+		width:100%;
+	}
+	.tempus-certified-package .treatment-name h2{
+		width: 100%;
+		margin-top: 50px;
+		font-size: 20px;
+		height: 55px
+	}
+	.tempus-certified-package .slider-treatment-detail p{
+		width:100%;
+		height:auto;
+	}
+	.slider-treatment-price p{
+		margin-left:0px;
+	}
+	.tempus-certified-package .treatment-image .slider-pricing-details{
+		padding:0 20px;
+	}
+	.treatment-page-banner{
+		padding-top:98px;
+	}
+	.banner-home-page .arows-nex-prev .arow-nex{
+		right:100px;
+	}
+	.banner-home-page .arows-nex-prev .arow-prev{
+		left:50px;
+	}
+	.page-id-19 .post-19 .entry-content{
+		padding:0 20px;
+	}
+	.concerns-page .concern-title h2 {
+		font-size: 22.29px!important;
+	}
+	.concerns-page .concern-title {
+		bottom:12%;
+	}
+	/* 	#menu-item-35:after {
+            font-size: 9px!important;
+            top: 27px;
+            right: -3px;
+        } */
+	/* 	.genesis-nav-menu .menu-item.menu-item-has-children:after,.genesis-nav-menu .menu-item.menu-item-has-children:hover:after {
+            font-size: 9px!important;
+            top: 27px;
+            right: -3px;
+        } */
+	.who-we-are-section .description-who-we-are {
+		padding-top: 25px;
+	}
+	.treatments-section .treatment-box .name-of-it-treatment h2 {
+		font-size: 18px!important;
+	}
+
+	.concern-banner{
+		border-width:0px;
+		border:none;
+	}
+	/* 	.newsletter-right {
+          width:47%;
+        } */
+	.newsletter-left {
+		margin:0px;
+	}
+	.site-footer .contact-information .address{
+		margin:0px;
+	}
+	.left-content{
+		width:100%;
+	}
+	.newsletter-submit {
+		width: 22%;
+	}
+	.concerns-posts{
+		border-width:0px;
+	}
+	.blog-page .blog-post-box .continue-reading-button i{
+		right:-28px;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-left{
+		width:auto;
+		float:none;
+	}
+	.site-footer .contact-information{
+		width:100%;
+		margin:0px;
+		padding-bottom:0px;
+	}
+	.site-footer .sign-up {
+		width: 60%;
+		margin: 0px;
+		padding-right: 30px;
+		text-align:left;
+	}
+	.tempus-cards{
+		/* 		width: 33.3%; */
+		width: 32.5%;
+		margin-bottom:10px;
+	}
+	.tempus-asthetic-treatment-details{
+		padding: 30px 0px 20px;
+
+	}
+	.treatments-we-offer .active .popup-g .facts-cross{
+		top: 17%;
+		left: 85%;
+	}
+	.treatments-we-offer .g-content-page .certified-left{
+		width: 60%;
+		padding-left:20px;
+		float: right;
+	}
+	.treatments-we-offer .g-content-page .popup-wrap-g .certified-page-detail{
+		width:100%;
+		padding:0px;
+		overflow:visible;
+		float:none;
+	}
+	.treatments-we-offer .g-content-page .certified-left .certified-image{
+		height:340px;
+	}
+	.face-asthetic-treatment-details{
+		padding:0 20px;
+	}
+	.face-asthetic-treatment-we-offer .background-color{
+		margin:0px;
+		width:50%;
+		padding: 30px 10px;
+	}
+	.certified-section .active .popup-g .facts-cross{
+		top: 2px;
+		right: 15px;
+	}
+	.popup-appointwrap{
+		height: auto;
+		width: 85%;
+	}
+	.popup-appointment .book-cross{
+		top: 8.5%;
+		left: 94.5%;
+	}
+	#menu-item-1634{
+		display:none;
+	}
+	.heading-contact-book h2{
+		font-size: 30px;
+	}
+	.site-header .widget-area{
+		margin-left: 17px;
+	}
+	/* 	button.book-now{
+            display: none;
+        } */
+}
+@media only screen and (max-width: 768px) {
+	/* 	.newsletter-right {
+            width: 46.5%;
+        } */
+	/* 	.newsletter-left {
+            width: 46.5%;
+        } */
+	.header-widget-area .dropdpwn-arrow{
+		right:52.7%;
+	}
+	.page-template-home .site-header .wrap {
+		background-size: 100px!important;
+	}
+	.treatments-section .treatments-names .treatment-box .treatment-image{
+		height:145px;
+	}
+	.doctors-section .doctor-image{
+		height: 270px!important;
+	}
+	.doctors-section .doctor-details .doctor-box .doctor-specialization p{
+		font-size:13px;
+	}
+	.get-in-touch-contact .contact-form{
+		width: 49%!important;
+		padding-left: 0px!important;
+	}
+	.fa-caret-down {
+		top: 15px;
+		position: relative;
+		left: -64px;
+	}
+	.fa-caret-up {
+		top: 15px;
+		position: relative;
+		right: -10px;
+	}
+	.single-product .fa-caret-down {
+		top: 15px;
+		position: relative;
+		left: -6px;
+	}
+	.single-product .fa-caret-up {
+		top: 15px;
+		position: relative;
+		right: -58px;
+	}
+	.team-doctor-section .doctor-box .doctor-liaison-name h2{
+		font-size:45px!important;
+	}
+	/* 	.team-doctor-section .doctor-box .doctor-liaison-name{
+	width:295px;
+}
+	.team-doctor-section .doctor-box:nth-child(1) .doctor-liaison-name{
+	width:295px;
+} */
+	.team-doctor-section .doctor-box .doctor-practitioner-name h2{
+		font-size:45px!important;
+	}
+	/* 	.team-doctor-section .doctor-box .doctor-practitioner-name{
+	width:295px;
+} */
+	/* 	.team-doctor-section .doctor-box .doctor-name{
+	width:295px;
+} */
+	.team-doctor-section .doctor-box .doctor-name h2{
+		font-size:22px!important;
+	}
+	/* 	.face-asthetic-treatment-we-offer .face-asthetic-treatment-page-box .face-asthetic-treatment-image {
+            width: 283px;
+            height: 300px;
+        } */
+
+	/* 	.face-asthetic-treatment-we-offer .service-name-detail {
+            width: 420px;
+            margin-left: 23px;
+        } */
+	.blog-page .blog-post-box {
+		width: 350px;
+	}
+	.blog-page .blog-post-box .continue-reading-button i{
+		right: -56px;
+	}
+	.blog-page .sticky .detail-of-blog{
+		width:42%;
+	}
+	.blog-page .blog-post-box .continue-reading-button {
+		width:40%;
+	}
+	.blog-page .blog-post-box:nth-child(1) .continue-reading-button i {
+		right: 73px;
+	}
+
+	#custom_html-4 i {
+		top: 24px;
+		right: 12%;
+	}
+	.title-area {
+		width: 110px;
+	}
+	.contact-booke-now{
+		width:41%;
+	}
+	.header-image .site-header .wrap{
+		background-size: 100px;
+	}
+	.genesis-nav-menu a{
+		padding:2rem 5px;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+	#mobi-menu {
+		position: absolute;
+		top: 23px;
+		right: 27px;
+		z-index: 99999;
+		padding: 25px 25px 5px;
+		text-transform: uppercase;
+		display: block;
+		background: url(https://tempusbelgravia.co.uk/wp-content/uploads/2022/08/Group-135.png)no-repeat;
+		margin: 0;
+		height: auto;
+		text-align: left;
+		cursor: pointer;
+		background-size:48%;
+		background-position:100%;
+	}
+	#custom_html-4 i{
+		display:none;
+	}
+	.genesis-nav-menu a {
+		font-size: 15px;
+		padding: 2rem 10px;
+	}
+	.nav-header{
+		display:none;
+	}
+	.tax-team_category .genesis-nav-menu a{
+		color:#ffffff;
+	}
+	.page-template-certified-package .genesis-nav-menu a{
+		color:#ffffff;
+	}
+	.nav-header {
+		width:100%;
+		text-align:center;
+		background: #000000;
+		margin-top: 69px;
+		left:0;
+		position: absolute;
+		z-index:99999;
+	}
+	.genesis-nav-menu .menu-item {
+		/* 		display: flex; */
+		text-align: center;
+		width: 100%;
+	}
+	.who-we-are-section .wrap{
+		display:block;
+	}
+	.who-we-are-section .who-we-are-image{
+		width:100%;
+		padding:0px;
+	}
+	.who-we-are-section .text-for-who-we-are{
+		width:100%;
+		margin-left:0px;
+	}
+	h2 {
+		font-size: 55px!important;
+		font-size: 3.5rem!important;
+	}
+	.who-we-are-section .heading .before-heading-text p{
+		font-size:14px;
+	}
+	/* 	.treatments-section .treatment-box .treatment-image img{
+	left:0px;
+	top:30px;
+} */
+	.treatments-section .treatment-box .name-of-it-treatment{
+		width: 100%;
+	}
+	.treatments-section .treatment-box .treatment-image::before{
+		display:none;
+	}
+	.treatments-section .treatment-box .description-of-treatment p{
+		width:100%;
+	}
+	.treatments-section .treatment-box .name-of-it-treatment h2{
+		width: 100%;
+		font-size: 18px!important;
+		text-align: center!important;
+		padding: 10px
+	}
+	.treatments-section .treatment-box #treatments_2 h2{
+		padding:0px;
+	}
+	.treatments-section .treatment-box #treatments_4 h2{
+		padding:0px;
+	}
+	.who-we-are-section .heading{
+		text-align:center;
+		padding:0px;
+	}
+	.who-we-are-section .who-are-we{
+		height:auto;
+		padding:10px;
+	}
+	.site-inner{
+		padding:0px;
+	}
+	.treatments-section{
+		padding: 40px 20px 40px;
+		margin-bottom: 0px;
+
+	}
+	.treatments-section .treatment-box .name-of-it-treatment .text-before-heading p{
+		font-size:14px;
+	}
+	.arows-next-pervious-icon{
+		display:none;
+	}
+	.treatments-section .slick-dots li.slick-active button:before{
+		color:#e4b1a0;
+	}
+	.treatments-section .slick-dots li button:before {
+		font-size:12px;
+	}
+	.treatments-section .slick-dots {
+		bottom:-53px;
+	}
+	.projects-count .name-count-area{
+		width: 50%;
+		padding-bottom: 20px;
+	}
+	.projects-count {
+		padding: 50px 20px 30px;
+	}
+	.projects-count .name-count-area:last-child{
+		padding-bottom:0px;
+	}
+	.doctors-section .doctor-image{
+		width:100%;
+		margin-left:0px;
+	}
+	.doctors-section .heading-for-doctors h2{
+		margin-bottom:0px;
+		font-size:22px!important;
+	}
+	.pateint-reviews .pateint-review-details .slick-slide {
+		margin: 0 20px;
+	}
+	.pateint-reviews .slick-dots li.slick-active button:before{
+		color:#8ac5e7;
+	}
+	.pateint-reviews .slick-dots li button:before {
+		font-size:12px;
+	}
+	.pateint-reviews .slick-dots {
+		bottom:-53px;
+	}
+	.pateint-reviews{
+		padding:0px 0px 50px;
+	}
+	.industry-leading-brands .heading-industry-leading-brands{
+		padding-top:0px;
+	}
+	.pateint-reviews .patient-review-heading p{
+		font-size:14px;
+	}
+	.membership-package .heading-membersip-package p{
+		width:100%;
+	}
+	.industry-leading-brands .heading-industry-leading-brands p{
+		font-size:22px;
+		margin:0px;
+	}
+	.membership-package .membership-products-details{
+		padding-top:65px;
+		padding: 70px 0 0px;
+
+	}
+	.membership-package .heading-membersip-package h2{
+		padding-top:15px;
+		font-size:30px!important;
+	}
+	.membership-package{
+		height:100%;
+	}
+	.membership-package .membership-products-details{
+		display:block;
+		padding-left:0px;
+	}
+	.membership-package .membership-package-box{
+		width:100%;
+		margin-bottom:25px;
+	}
+	.quality-experince {
+		background-size: cover;
+		background-position: center center;
+	}
+	.quality-experince .heading-quality-experience h2{
+		padding: 50px 10px;
+		font-size: 18px!important;
+
+	}
+	.quality-experince .heading-quality-experience h2 br{
+		display:none;
+	}
+	.contact-form {
+		width: 100%;
+		padding: 60px 20px;
+		margin: 0px;
+	}
+	.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product{
+		width:100%!important;
+	}
+	.contact-tempus{
+		width:100%;
+	}
+	.tempus-field{
+		width:100%;
+		margin-right:0px;
+	}
+	.map-home-page{
+		width: 100%;
+		padding: 0px;
+		margin-right:0px;
+	}
+	.get-in-touch-contact .wrap{
+		display:block;
+	}
+
+	.doctors-section{
+		padding: 0px 20px;
+		padding-bottom: 50px;
+		height:100%;
+		overflow:hidden;
+	}
+	.doctors-section .doctor-name-description{
+		width:100%;
+		height:100%;
+		top:20px;
+		left:0px;
+	}
+	.doctors-section .doctor-name-description .doctor-name {
+		padding: 40px 20px;
+		width: 100%;
+	}
+	.industry-leading-brands .logos-of-brands{
+		width: 39.8%;
+		padding: 0 10px;
+		text-align: center;
+	}
+	.newsletter-submit input[type="submit"]{
+		padding:8px 10px;
+	}
+	.industry-leading-brands{
+		padding: 50px 20px 0px;
+	}
+	.who-we-are-section{
+		padding-top:50px;
+		margin:0px;
+	}
+	.treatments-section .treatments-names .text-before-heading p{
+		font-size:22px;
+		margin-bottom: 40px;
+
+	}
+	.header-image .site-header .wrap {
+		background-position: 10px;
+		/* 		background-size:auto; */
+	}
+	.footer-icons{
+		margin-left: -5px;
+	}
+	.banner-img{
+		height:250px;
+		background-position:8%;
+	}
+	.banner-home-page .heading-for-banner h2{
+		font-size: 18px!important;
+		line-height: 24px;
+		text-align: left;
+		margin: 0px;
+	}
+	.banner-home-page .subtext-for-banner p{
+		width: 70%;
+		font-size: 12px;
+		line-height: 16px;
+		padding-top: 0px;
+	}
+	.home-overlay{
+		width: 100%;
+		left: 60%;
+		top:54%;
+	}
+	.banner-home-page .arows-nex-prev .arow-nex{
+		right:10px;
+		top:38%;
+	}
+	.banner-home-page .arows-nex-prev .arow-prev{
+		left:10px;
+		top:38%;
+	}
+	.button-for-banner button{
+		font-size: 9px;
+		padding: 10px;
+	}
+	/* 	.button-for-banner{
+            width:193px;
+        } */
+	.header-widget-area {
+		width: 100%!important;
+		top: 0px;
+		position: absolute;
+	}
+	.footer-icons::before {
+		width:22%;
+		left:0px;
+	}
+	.footer-icons::after{
+		width:22%;
+	}
+
+	.pateint-reviews .review-box {
+		height: 452px;
+	}
+	.pateint-reviews .review-text p {
+		height: 160px;
+	}
+	.pateint-reviews .slick-dots li{
+		margin:0px 7px;
+	}
+	.membership-package .membership-products-details .price-of-package #currency-icon {
+		left: -5px;
+		font-size: 16px;
+		top: -11px;
+	}
+	.doctors-section .doctor-image {
+		height: 350px!important;
+	}
+	.doctors-section .doctor-details .doctor-box{
+		margin-bottom:20px;
+	}
+	.membership-package .price-of-package{
+		font-size:24px;
+	}
+	.membership-package .membership-products-details .membership-type p {
+		font-size: 16px;
+	}
+	.membership-package .description-of-package{
+		height:100%;
+		padding: 0 10px 20px;
+	}
+	.membership-package .membership-type{
+		margin-top:30px;
+	}
+	.membership-package .membership-package-box{
+		height:100%;
+		padding-bottom:30px;
+	}
+	.treatments-section .treatments-names .treatment-box .treatment-image{
+		height:127px;
+	}
+	.doctors-section .arows-ne-pre .arow-pre{
+		left:20px;
+	}
+	.doctors-section .arows-ne-pre .arow-ne{
+		right:20px;
+	}
+	.treatment-image {
+		padding-left: 0px;
+		display: block;
+		overflow:visible;
+	}
+	.treatments-section .slick-dots li {
+		margin: 0px 7px;
+	}
+	.contact-form .wpcf7 .contact-message{
+		width:100%;
+	}
+	.order-total {
+		width: 52.9%;
+	}
+	.woocommerce .quantity .qty {
+		padding: 10px 10px 10px 10px;
+	}
+	.woocommerce-cart .entry {
+		padding: 4rem 2rem 2rem!important;
+	}
+	.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+		width: 50%!important;
+	}
+	.single-product .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary{
+		width:100%!important;
+
+	}
+	.single-product .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+		padding: 10px 16px!important;
+		font-size: 16px!important;
+	}
+	.single-product #product-142 {
+		padding: 4rem 2rem 2rem!important;
+	}
+	.page-template-default .genesis-nav-menu a {
+		color: #ffffff;
+	}
+	.fa-caret-down {
+		top:7px;
+	}
+	.fa-caret-up {
+		top:7px;
+	}
+	.single-product .fa-caret-up {
+		top: 8px;
+		position: relative;
+		right: -65px;
+	}
+	.single-product .fa-caret-down {
+		top: 8px;
+		position: relative;
+		left: -15px;
+	}
+	.team-doctor-section .our-doctors-banner{
+		width:100%;
+		padding-bottom:50px;
+	}
+	.team-doctor-section .doctor-box .doctor-image {
+		height: 340px;
+		width: 100%;
+	}
+	/* 	.team-doctor-section .doctor-box:nth-child(1) .doctor-name {
+	width: 198px;
+	top: 21px;
+	left: 154px;
+} */
+	.team-doctor-section .doctor-box .doctor-name h2{
+		font-size:24px!important;
+	}
+	/* 	.team-doctor-section .doctor-box .doctor-name {
+	bottom: 317px;
+	left: 195px;
+	width: 160px;
+} */
+
+	.banner-for-practitioners-category {
+		height: 300px;
+	}
+	.team-doctor-section .doctor-box .doctor-practitioner-name h2 {
+		font-size: 24px!important;
+		padding-top:50px;
+	}
+	/* 	.team-doctor-section .doctor-box:nth-child(1) .doctor-practitioner-name{
+	width: 198px;
+	top: 21px;
+	left: 154px;		
+} */
+	.banner-for-liaison-category {
+		height: 300px;
+	}
+	/* 	.team-doctor-section .doctor-box:nth-child(1) .doctor-liaison-name{
+	width: 198px;
+	top: 21px;
+	left: 154px;
+} */
+	.team-doctor-section .doctor-box .doctor-liaison-name h2 {
+		font-size: 24px!important;
+		padding-top:50px;
+	}
+	/* 	.team-doctor-section .doctor-box .doctor-practitioner-name{
+	bottom: 317px;
+	left: 195px;
+	width: 160px;
+} */
+	/* 	.team-doctor-section .doctor-box .doctor-liaison-name{
+	bottom: 317px;
+	left: 195px;
+	width: 160px;
+} */
+	.page-template-team .genesis-nav-menu a{
+		color:#ffffff;
+	}
+	.face-asthetic-treatment-page-banner{
+		height:250px;
+	}
+	.face-asthetic-treatment-page-banner .certified-banner{
+		height:250px;
+	}
+	.face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1{
+		font-size:20px!important;
+		margin-top:0px;
+	}
+	.face-overflow{
+		width:90%;
+	}
+	.face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-subtext p{
+		width:100%;
+		font-size:14px;
+	}
+	.scroll-now-face-asthetic-treatment-page {
+		left: 40.5%;
+	}
+	.team-doctor-section{
+		padding-top:50px;
+	}
+	.face-asthetic-treatment-we-offer .face-asthetic-treatment-page-box .face-asthetic-treatment-image{
+		width:100%;
+	}
+	.face-asthetic-treatment-we-offer .background-color{
+		margin: 0px;
+		width: 100%;
+	}
+	h2.packages-certified{
+		font-size:22px!important;
+	}
+	.face-asthetic-treatment-we-offer .face-asthetic-treatment-name h2 {
+		font-size: 24px!important;
+	}
+	.face-asthetic-treatment-we-offer .service-name-detail{
+		width:100%;
+		margin-left:0px;
+		margin-bottom:20px;
+	}
+	.single-product .entry{
+		padding:2rem 2rem 1rem!important
+	}
+	.woocommerce-checkout .woocommerce-checkout-review-order{
+		width: 100%!important;
+	}
+	.woocommerce-checkout .woocommerce .col2-set, .woocommerce-page .col2-set{
+		width: 100%!important;
+	}
+	.woocommerce-checkout .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{
+		width: 100%!important;
+	}
+	.woocommerce-checkout .woocommerce-checkout-review-order-table tfoot::before{
+		width: 90%!important;
+	}
+	.woocommerce-checkout .product-name .ts-product-image img{
+		width: 55px!important;
+		height: 50px!important;
+	}
+	h3#order_review_heading{
+		padding-top: 30px;
+		padding-bottom:20px;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+	}
+	.woocommerce-checkout .woocommerce table.shop_table{
+		margin: 0 -1px 40px 0;
+	}
+	.touch-field {
+		width: 91%;
+		left: 15px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		top: 0px;
+	}
+	.get-in-touch{
+		width:100%;
+		padding:40px 0px 0px;
+	}
+	.blog-page .blog-post-box{
+		height:960px;
+	}
+	.blog-page .blog-post-box:nth-child(3){
+		margin-left:0px;
+	}
+	.blog-page .sticky {
+		padding: 17px 0px 40px!important;
+	}
+	.blog-page .sticky::before{
+		display:none;
+	}
+	.blog-page .sticky:nth-child(1) .name-of-blog h2 {
+		font-size: 29px!important;
+		padding: 0px 20px;
+	}
+
+	.blog-page .sticky .image-of-blog{
+		width:100%!important;
+	}
+	.blog-page .blog-post-box .name-of-blog::after {
+		left:22px;
+	}
+	.blog-page .sticky .detail-of-blog {
+		width: 100%;
+		margin: 0px;
+		margin-bottom:25px;
+		padding: 0px 20px!important;
+	}
+	.blog-page .blog-post-box #blog-heading {
+		padding: 30px 20px;
+	}
+	.blog-page .blog-post-box .detail-of-blog{
+		padding:10px 20px;
+		height:250px;
+	}
+	.blog-page .blog-post-box .continue-reading-button i {
+		right: -46px;
+	}
+	.blog-page .blog-post-box:nth-child(1) .continue-reading-button i {
+		right: -46px;
+	}
+	.blog-page .blog-post-box{
+		width:100%;
+	}
+	.blog-page .sticky {
+		margin:20px 0px;
+	}
+	.footer-widgets a:over{
+		color:#e6b19f;
+	}
+	/*press page*/
+	.press-page .press-box .publish-date p {
+		text-align: left;
+		font-size: 16px!important;
+		margin-left: 35px;
+	}
+	.press-page .press-box .date-comment{
+		width: 100%;
+	}
+	.press-page .press-box .comments-on-press::before{
+		width: 45px;
+		height: 25px;
+		top: -1px;
+		border-radius: 14px;
+		left: -10px;
+	}
+	.press-page .press-box .comments-on-press{
+		top: 33px;
+		left: 150px;
+	}
+	.press-page .press-box .name-date-title{
+		width: 100%;
+		padding-left: 20px;
+		margin-left: 20px;
+		margin-top: -5px;
+	}
+	.press-page .press-box .name-date-title .press-name h2 {
+		font-size: 28px!important;
+	}
+	.press-page .press-box .name-date-title .title-of-press h4 {
+		font-size: 24px!important;
+	}
+	.press-page .press-box .name-date-title .press-name::before{
+		left: -11px;
+		top: 6px;
+		width: 20px;
+		height: 20px;
+	}
+	.press-page .press-box .content-of-press {
+		padding: 20px 10px 20px 10px;
+		font-size: 14px;
+	}
+	.press-page .press-box .press-detailed-content .detail-heading{
+		width: 100%;
+		margin-left: 10px;
+	}
+	.press-page .press-box .press-detailed-content .detail-heading h3{
+		font-size: 20px;
+	}
+	.press-page .press-box .press-detailed-content .detail-content {
+		padding: 0px 10px 30px 10px;
+		font-family: 'neuemontreal';
+		line-height: 22px;
+		font-size: 14px;
+	}
+	.press-page .press-box .continue-reading-button{
+		margin-left: 10px;
+	}
+	.press-page .press-box .single-press-detailed-content .detail-heading{
+		width: 100%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.press-page .press-box .single-press-detailed-content .detail-heading h3{
+		font-size: 20px;
+	}
+	.press-page .press-box .single-press-detailed-content .detail-content{
+		padding: 0px 10px 30px 10px;
+		font-family: 'neuemontreal';
+		line-height: 22px;
+		font-size: 14px;
+	}
+	.page-template-press .genesis-nav-menu a {
+		color: white;
+	}
+	.page-template-press .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+		color: #d0d1cf;
+	}
+	.page-template-blogs .genesis-nav-menu a {
+		color: white;
+	}
+	.page-template-blogs .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+		color: #d0d1cf;
+	}
+	.single .genesis-nav-menu a {
+		color: white;
+	}
+	.single .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+		color: #d0d1cf;
+	}
+	.banner-for-doctor-category-single{
+		height:150px;
+	}
+	.single-blog-page{
+		padding: 0 20px;
+	}
+	.single-blog-page .blog-post-box #blog-heading{
+		width:100%;
+	}
+	.single-blog-page .blog-post-box{
+		margin:0px;
+	}
+	.single-blog-page .blog-post-box .image-of-blog{
+		margin:0px;
+		width:100%;
+		height:330px;
+	}
+	.single-blog-page .blog-post-box .detail-of-blog {
+		padding: 10px 10px 10px 10px;
+		overflow: hidden;
+	}
+	.treatments-we-offer .treatment-page-box{
+		/* display: flex; */
+		/* flex-direction: column-reverse; */
+		/* margin: 50px 0px; */
+		width: 100%;
+		/* height: 500px; */
+		margin-bottom:10px;
+	}
+	.background-color{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	.treatment-popup{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	.treatments-we-offer .pricing-details {
+		width: 100%;
+		margin: 0px;
+
+	}
+	.treatments-we-offer .treatment-image {
+		width:100%;
+	}
+	.treatments-we-offer .treatment-name h2{
+		width:100%;
+	}
+	.tempus-certified-package .treatment-image img{
+		width:100%;
+	}
+	.treatments-we-offer .treatment-page-box .treatment-image img{
+		width:100%;
+	}
+	.treatment-page-banner .treatment-banner-subtext p{
+		width:100%;
+		padding:0 20px;
+	}
+	.press-page .press-box .image-of-press img{
+		width:100%;
+		height:300px;
+		object-fit:cover;
+	}
+	.press-page .press-box .image-of-press{
+		height:300px;
+	}
+	.blog-page .blog-post-box .image-of-blog img{
+		width:100%;
+	}
+	.blog-page .sticky .image-of-blog img{
+		width:100%;
+	}
+	.single-blog-page .blog-post-box .image-of-blog img{
+		width:100%;
+	}
+	.treatment-page-banner{
+		padding-top:70px;
+	}
+	.scroll-now-treatment-page {
+		width: 40%;
+		top: 35px;
+	}
+	.scroll-now {
+		width:40%;
+		padding-bottom: 10px;
+		position: relative;
+		margin: -87px auto 0;
+	}
+	.treatments-section .treatment-box{
+		margin:0px;
+		width:100%;
+	}
+	.get-in-touch-form .contact-form .wpcf7{
+		margin:0px;
+		width:100%;
+	}
+	.touch-address{
+		left: 0px!important;
+		top: 0px!important;
+		/* margin: 0px!important; */
+		margin-left: 14px!important;
+		width: 91%!important;
+	}
+	.team-doctor-section .doctor-box{
+		width:100%;
+		margin:0px;
+		margin-bottom:30px;
+	}
+	.team-doctor-section .doctor-box .about-doctor{
+		margin-top:30px;
+	}
+	.get-in-touch-contact .contact-form{
+		width: 100%!important;
+		padding: 0px;
+		padding-top: 55px;
+		padding-left: 0px!important;
+	}
+	.get-in-touch-contact .contact-form .tempus-field{
+		width:100%;
+		padding:0px;
+		padding-bottom:30px;
+	}
+	.get-in-touch-contact{
+		padding-top:20px;
+		border-width: 0px;
+	}
+	.page-template-home .genesis-nav-menu #menu-item-360 > a, .page-template-home .genesis-nav-menu #menu-item-361 > a{
+		color:white;
+	}
+	.page-template-home-php .genesis-nav-menu a{
+		color:white;
+	}
+	.site-footer .contact-information{
+		width:100%;
+		padding:10px 0px;
+	}
+	.site-footer .sign-up{
+		width:100%;
+		padding:0px;
+	}
+	.newsletter-heading h2 {
+		font-size: 14px!important;
+	}
+	.site-footer .contact-information .footer-contact{
+		float:none;
+		margin-bottom:10px;
+		padding:0px;
+	}
+	.footer-form .footer-field{
+		width:100%;
+		padding:0px;
+	}
+	.footer-form .submit-singup{
+		margin-top:10px;
+		padding-left:0px;
+	}
+	.g-content-page.active .popup-wrap-g{
+		padding:20px 35px;
+		height:80vh;
+		overflow:auto;
+		padding-top:40px;
+		width: 90%;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-page-detail{
+		padding:0px;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-image{
+		height:300px;
+		width:100%;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-page-detail{
+		overflow:hidden;
+	}
+	.our-doctor-category .active .popup-g .facts-cross{
+		/* 		font-size:20px; */
+		top: 13%;
+		left: 91%;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-name h2{
+		text-align:center;
+		font-size:20px!important;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-page-detail .doctor-description{
+		height:100%;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-page-detail .doctor-specialization p{
+		text-align:center;
+	}
+	.industry-leading-slider {
+		padding: 30px 0px;
+	}
+	.header-widget-area .dropdpwn-arrow{
+		display:none;
+	}
+	.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3{
+		color: black;
+		width: 100%;
+		float:none;
+		margin-bottom:0px!important;
+		font-size: 16px!important;
+	}
+	.page-id-19 .how-to-use-shop{
+		padding:0px;
+		height:auto;
+	}
+	.concerns-page .concern-box {
+		width: 100%;
+	}
+	.concerns-page .concern-title h2 {
+		font-size: 24.29px!important;
+	}
+	.concerns-page .concerns-heading h2{
+		padding:40px 0px;
+	}
+	.banner-home-page .heading-for-banner h2 br{
+		display:block;
+	}
+	.concerns-page{
+		padding-bottom:50px;
+	}
+	/* 	#menu-item-35:after {
+            font-size: 10px!important;
+            top: 26px;
+            left: -276px;
+        } */
+	/* 	.genesis-nav-menu .menu-item.menu-item-has-children:after {
+            font-size: 14px!important;
+            top: 22px;
+            right: 70px;
+            width: 59px;
+            height: 25px;
+            z-index: 999999999999999;
+        } */
+	.genesis-nav-menu #menu-item-35.menu-item-has-children:hover:after{
+		right:110px;
+	}
+	.genesis-nav-menu #menu-item-35.menu-item-has-children:after{
+		right: 110px;
+	}
+	.term-body-treatments .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -6px;
+		left: 10px;
+	}
+	.term-nutrition-and-functional-medicine .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: -13px;
+	}
+	.term-medical-aesthetics .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: 0px;
+	}
+	.term-surgical-services .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: 0px;
+	}
+	.term-dermatology .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: 33px;
+	}
+	.term-facial-aesthetics .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: 0px;
+	}
+	.term-nutrition-and-functional-medicine .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: 20px;
+	}
+	.term-laser-treatments .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: -10px;
+	}
+	.term-iv-infusions .face-asthetic-treatment-page-banner .face-asthetic-treatment-banner-heading h1:before{
+		width: 30px;
+		background-repeat: no-repeat;
+		height: 30px;
+		top: -10px;
+		left: 0px;
+	}
+	.genesis-nav-menu a {
+		color:#ffff;
+	}
+	.concern-banner {
+		height: 250px;
+		background-size: 100% 100%;
+	}
+	.concern-banner .concerns-content {
+		width:100%;
+		padding:0px 20px;
+	}
+	.concern-button{
+		margin-top:25px;
+	}
+	.concerns-posts{
+		padding:50px 0px 0px;
+	}
+	.concern-banner .concerns-content p {
+		font-size:16px;
+		line-height:18px;
+	}
+	.banner-home-page{
+		border:none;
+	}
+	.treatments-section .wrap{
+		border:none;
+	}
+	.quality-experince {
+		border: none;
+	}
+	.newsletter-left{
+		width:100%;
+		margin-left:0px;
+		padding:0px;
+	}
+	.newsletter-social{
+		margin-bottom:20px;
+
+	}
+	.footer-information{
+		padding:0px;
+	}
+	.newsletter-right{
+		width:100%;
+		margin-left:0px;
+	}
+	.newsletter-mail{
+		width:60%;
+	}
+	.contact-no{
+		width:40%;
+	}
+	.team-doctor-section .g-content-page .popup-wrap-g .doctor-left{
+		width:100%;
+		float:none;
+	}
+	.concern-banner .concerns-content h2{
+		font-size: 22px!important;
+		margin: 0px;
+	}
+	.treatments-we-offer .treatment-detail{
+		height:auto;
+	}
+	.membership-package{
+		padding-top:0px;
+	}
+	.tempus-certified-package .treatment-name h2{
+		height:auto;
+		padding-bottom:10px;
+	}
+	.tempus-asthetic-treatment-details{
+		padding:0px 20px;
+		padding-top:20px;
+	}
+	.tempus-cards{
+		width: 100%;
+		margin: 0px;
+		/* 		height: 650px; */
+		padding: 0px;
+	}
+	.tempus-asthetic-treatment-image{
+		height:400px;
+	}
+	.tempus-asthetic-treatment-we-offer h2{
+		font-size:26px!important;
+	}
+	.anti-asthetic-treatment-details,.thread-asthetic-treatment-details{
+		padding:0 20px;
+	}
+	.membership-package .membership-products-details .join-now-button{
+		top:0px;
+	}
+	.treatment-single-page{
+		padding:50px 20px;
+	}
+	.condition-single-page{
+		padding:50px 20px;
+	}
+	.treatment-single-page h2{
+		font-size: 22px!important;
+	}
+	.treatment-single-page .single-treatment-box{
+		display:block;
+	}
+	.treatments-we-offer .g-content-page .certified-left{
+		width: 100%;
+		padding: 0px;
+		padding-bottom: 20px;
+	}
+	.treatments-we-offer .g-content-page .popup-wrap-g .certified-page-detail{
+		width:100%;
+		padding:0px;
+		padding-top:20px;
+	}
+	.treatments-we-offer .g-content-page .certified-left .certified-image{
+		height:300px;
+	}
+	.treatments-we-offer .active .popup-g .facts-cross{
+		top: 13%;
+		left: 89%;
+	}
+	.certified-section .g-content-page .certified-left{
+		width:100%;
+	}
+	.certified-section .g-content-page .popup-wrap-g .certified-page-detail{
+		width:100%;
+		padding:0px;
+		padding-top:20px;
+	}
+	.certified-section .active .popup-g .facts-cross{
+		top: 0;
+		right: 15px;
+	}
+	.certified-section .g-content-page .certified-left .certified-image{
+		height:auto;
+	}
+	.genesis-nav-menu .menu-item:hover > .sub-menu{
+		left: auto;
+		opacity: 1;
+		position: relative;
+		margin-top: 50px;
+		width: 100%;
+		margin: 0px;
+	}
+	.genesis-nav-menu #menu-item-154:hover > .sub-menu {
+		left: auto;
+		opacity: 1;
+		position: relative;
+		margin-top: 50px;
+		width: 100%;
+		margin: 0px;
+	}
+	.genesis-nav-menu .sub-menu a{
+		text-align:center;
+		width:100%;
+		padding: 15px 8px!important;
+	}
+
+	.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1218::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1220::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1327::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1327::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1215::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1214::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1219::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1467::before,.genesis-nav-menu #menu-item-154 .sub-menu #menu-item-1216::before{
+		left: 80px;
+		top: 0px;
+	}
+	.genesis-nav-menu #menu-item-154 .sub-menu .menu-item{
+		text-align:left;
+	}
+	.face-asthetic-treatment-page-banner .category-treatment-banner{
+		height:250px;
+	}
+	.popup-appointwrap{
+		padding: 20px 30px;
+		height: auto;
+		overflow: auto;
+		padding-top: 40px;
+		width: 90%;
+	}
+	.heading-contact-book h2{
+		font-size: 25px!important;
+	}
+	.popup-appointment .book-cross{
+		top: 7%;
+		left: 89.5%;
+	}
+	.tempus-book{
+		padding-right:0px;
+		width: 100%;
+	}
+	.tempus-textarea{
+		padding-right: 0px;
+	}
+	button.book-now{
+		display: block;
+		margin: 0 auto;
+		padding: 13px 40px;
+
+	}
+	.book-now-button{
+		padding-top:10px;
+	}
+	.page-template-home .site-header .wrap {
+		background-size: 170px!important;
+	}
+	.single-product .book-now{
+		top: 22px;
+		right: 76px;
+	}
+	.popup-appointment input[type="submit"]{
+		margin-left: -55px;
+	}
+	#menu-item-1634{
+		display:block;
+	}
+	.site-header .widget-area{
+		margin-left:0px!important;
+	}
+	.treatment-single-page .single-treatment-box .treatment-single-image{
+		margin-top:10px;
+	}
+	.genesis-nav-menu .sub-menu{
+		left: auto;
+		opacity: 1;
+		position: relative;
+		width: 100% !important;
+		display: none;
+	}
+	.genesis-nav-menu > .menu-item.menu-item-has-children > a span i{
+		position: absolute;
+		right: 10%;
+		top: 14%;
+		width: 70px;
+		height: 40px;
+		padding: 14px 0 0;
+		z-index: 999999999999999999999;
+	}
+	.footer-widgets-4{
+		width:100%;
+	}
+	.footer-contact{
+		width:100%;
+	}
+	.footer-icons-social{
+		padding-top:0px;
+	}
+	.header-image .site-title a{
+		left:0;
+		width:50%;
+	}
+	.contact-booke-now{
+		display:none;
+	}
+
+
+}
