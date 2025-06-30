@@ -172,6 +172,14 @@ function tempus_enqueue_styles_scripts() {
 
 }
 
+//* Add Zoho PageSense tracking script to head
+add_action( 'wp_head', 'tempus_add_zoho_tracking' );
+function tempus_add_zoho_tracking() {
+    ?>
+    <script src="https://cdn-eu.pagesense.io/js/foundershealth/a71f79adb32e46278910494ae85a1ac3.js"></script>
+    <?php
+}
+
 // Debug function removed - membership v2 assets loading successfully
 
 // === MEMBERSHIP V2 TEMPLATE LOADING - MULTIPLE APPROACHES ===

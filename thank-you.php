@@ -75,7 +75,7 @@ get_header();
             <div class="blog-preview-header">
                 <h2>Latest Insights</h2>
                 <p>Discover expert advice on aesthetic treatments and wellness</p>
-                <a href="<?php echo home_url('/journal-2/'); ?>" class="view-all-link">View All Articles →</a>
+                <a href="https://tempusbelgravia.co.uk/journal-2/" class="view-all-link">View All Articles →</a>
             </div>
             
             <div class="blog-preview-grid">
