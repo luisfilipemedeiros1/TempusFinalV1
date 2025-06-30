@@ -1213,13 +1213,13 @@ add_action("wp_ajax_newsletter_signup", "tempus_newsletter_signup");
 add_action("wp_ajax_nopriv_newsletter_signup", "tempus_newsletter_signup");
 function tempus_newsletter_signup() {
     // Verify nonce
-    if (\!wp_verify_nonce($_POST["newsletter_nonce_field"], "newsletter_nonce")) {
+    if (!wp_verify_nonce($_POST["newsletter_nonce_field"], "newsletter_nonce")) {
         wp_die("Security check failed");
     }
     
     // Validate email
     $email = sanitize_email($_POST["email"]);
-    if (\!is_email($email)) {
+    if (!is_email($email)) {
         wp_send_json_error(array("message" => "Please enter a valid email address."));
     }
     
@@ -1245,9 +1245,9 @@ function tempus_newsletter_signup() {
     }
     
     // If no plugin is available, save to options
-    if (\!$newsletter_saved) {
+    if (!$newsletter_saved) {
         $subscribers = get_option("tempus_newsletter_subscribers", array());
-        if (\!in_array($email, $subscribers)) {
+        if (!in_array($email, $subscribers)) {
             $subscribers[] = $email;
             update_option("tempus_newsletter_subscribers", $subscribers);
         }
@@ -1263,7 +1263,7 @@ Date: " . date("Y-m-d H:i:s");
         wp_mail($admin_email, $subject, $message);
     }
     
-    wp_send_json_success(array("message" => "Thank you for subscribing\! We will keep you updated with our latest news."));
+    wp_send_json_success(array("message" => "Thank you for subscribing! We will keep you updated with our latest news."));
 }
 
 // Add AJAX handler script to footer
