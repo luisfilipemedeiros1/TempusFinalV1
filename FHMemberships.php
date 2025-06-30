@@ -1398,10 +1398,10 @@ get_header();
         <div class="popup-content">
             <div class="popup-header">
                 <h3>🔑 Exclusive Member Access</h3>
-                <button class="popup-close" id="closePopup">&times;</button>
+                <!-- Removed close button to prevent dismissal -->
             </div>
             <div class="popup-body">
-                <p>Welcome to our exclusive Founders Health member portal. Please enter your access code to unlock premium member benefits and special offers.</p>
+                <p><strong>Access Required:</strong> This is an exclusive Founders Health member portal. You must enter the correct access code to view this content and unlock premium member benefits.</p>
                 <div class="password-form">
                     <input type="password" id="memberPassword" placeholder="Enter access code..." maxlength="50">
                     <button id="submitPassword" class="cta-button">Unlock Access</button>
@@ -1434,9 +1434,10 @@ get_header();
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        cursor: not-allowed;
     }
     
     .popup-content {
@@ -1467,26 +1468,7 @@ get_header();
         font-weight: 600;
     }
     
-    .popup-close {
-        background: none;
-        border: none;
-        color: var(--white);
-        font-size: 2rem;
-        cursor: pointer;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-    }
-    
-    .popup-close:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: scale(1.1);
-    }
+    /* Close button styles removed - popup cannot be dismissed */
     
     .popup-body {
         padding: 30px;
@@ -1609,7 +1591,6 @@ get_header();
     // Members Access Popup Functionality
     document.addEventListener('DOMContentLoaded', function() {
         const popup = document.getElementById('membersPopup');
-        const closeBtn = document.getElementById('closePopup');
         const submitBtn = document.getElementById('submitPassword');
         const passwordInput = document.getElementById('memberPassword');
         const errorDiv = document.getElementById('passwordError');
@@ -1631,7 +1612,7 @@ get_header();
             }, 3000);
         }
         
-        // Close popup function
+        // Close popup function (only called on successful password entry)
         function closePopup() {
             popup.style.display = 'none';
             document.body.style.overflow = 'auto';
@@ -1639,14 +1620,7 @@ get_header();
             passwordInput.value = '';
         }
         
-        // Close popup events
-        closeBtn.addEventListener('click', closePopup);
-        
-        popup.addEventListener('click', function(e) {
-            if (e.target === popup || e.target.classList.contains('popup-overlay')) {
-                closePopup();
-            }
-        });
+        // No close button or overlay click events - popup cannot be dismissed
         
         // Password submission
         function checkPassword() {
@@ -1725,12 +1699,7 @@ get_header();
             }, 4000);
         }
         
-        // ESC key to close
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && popup.style.display === 'flex') {
-                closePopup();
-            }
-        });
+        // ESC key functionality removed - popup cannot be dismissed
     });
     
     // Additional CSS for success states
