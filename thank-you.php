@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Thank You Page
- * Description: Simple thank you page after form submission with contact info and blog preview
+ * Description: Simple thank you page after form submission with contact info and next steps
  *
  * @package tempusbelgravia
  */
@@ -335,11 +335,6 @@ get_header();
         padding: 25px;
         flex-direction: column;
         text-align: center;
-    }
-    
-    .blog-preview-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
     
     .steps-grid {
