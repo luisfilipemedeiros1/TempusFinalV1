@@ -82,7 +82,6 @@
                                 <a href="<?php echo home_url('/treatments-overview/'); ?>">Treatments</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo home_url('/treatments-overview/#facial-aesthetics'); ?>">Facial Aesthetics</a></li>
-                                    <li><a href="<?php echo home_url('/treatments-overview/#wrinkle-treatments'); ?>">Wrinkle Treatments</a></li>
                                     <li><a href="<?php echo home_url('/treatments-overview/#medical-aesthetics'); ?>">Medical Aesthetics</a></li>
                                     <li><a href="<?php echo home_url('/treatments-overview/#body-treatments'); ?>">Body Treatments</a></li>
                                     <li><a href="<?php echo home_url('/treatments-overview/#advanced-treatments'); ?>">Advanced Treatments</a></li>
