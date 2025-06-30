@@ -572,10 +572,6 @@ get_header();
     .contact-item {
         padding: 20px;
     }
-    
-    .blog-preview-content {
-        padding: 20px;
-    }
 }
 </style>
 
