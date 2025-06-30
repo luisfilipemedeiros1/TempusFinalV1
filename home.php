@@ -124,12 +124,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-layer-group" aria-hidden="true"></i> Remodelling</span>
                                 <span class="treatment-detail"><i class="fas fa-arrow-up" aria-hidden="true"></i> Tightening</span>
                             </div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/rf-microneedling/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/rf-microneedling/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20RFNeedling%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -146,12 +146,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-syringe" aria-hidden="true"></i> Filler</span>
                                 <span class="treatment-detail"><i class="fas fa-leaf" aria-hidden="true"></i> Natural Look</span>
                             </div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/lip-enhancement/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/lip-enhancement/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20Lips%20Augmentation%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -168,12 +168,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-atom" aria-hidden="true"></i> Regeneration</span>
                                 <span class="treatment-detail"><i class="fas fa-seedling" aria-hidden="true"></i> Youthful Skin</span>
                                 <span class="treatment-detail"><i class="fas fa-star" aria-hidden="true"></i> Cutting-Edge</span></div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatments-overview/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatments-overview/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Exosome%20Regenerative%20Therapy%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -190,12 +190,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-fire" aria-hidden="true"></i> Fat Reduction</span>
                                 <span class="treatment-detail"><i class="fas fa-sync-alt" aria-hidden="true"></i> Non-Invasive</span>
                             </div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Advanced%20Body%20Contouring%20treatments%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -212,12 +212,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-sync-alt" aria-hidden="true"></i> Minimal Downtime</span>
                                 <span class="treatment-detail"><i class="fas fa-star" aria-hidden="true"></i> Radiance Boost</span>
                             </div>
-                           <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/aquagold/" class="cta-button-secondary" style="flex: 1;">
+                           <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/aquagold/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20Aquagold%20Fine%20Touch%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -234,12 +234,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-tint" aria-hidden="true"></i> Hydration</span>
                                 <span class="treatment-detail"><i class="fas fa-leaf" aria-hidden="true"></i> Subtle Glow</span>
                             </div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/skin-boosters/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/skin-boosters/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Injectable%20Skin%20Boosters%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -256,12 +256,12 @@ get_header();
                                 <span class="treatment-detail"><i class="fas fa-feather-alt" aria-hidden="true"></i> Line Smoothing</span>
                                 <span class="treatment-detail"><i class="fas fa-sync-alt" aria-hidden="true"></i> No Downtime</span>
                             </div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/anti-wrinkle-injections/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/anti-wrinkle-injections/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Anti-Wrinkle%20Injections%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -277,12 +277,12 @@ get_header();
                                 <span class="treatment-detail"><i class="far fa-clock" aria-hidden="true"></i> 60 min</span>
                                 <span class="treatment-detail"><i class="fas fa-atom" aria-hidden="true"></i> Cellular Health</span>
                                 <span class="treatment-detail"><i class="fas fa-bolt" aria-hidden="true"></i> Energy Boost</span></div>
-                            <div class="treatment-buttons" style="display: flex; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment_category/iv-infusions/" class="cta-button-secondary" style="flex: 1;">
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment_category/iv-infusions/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Longevity%20IV%20Infusions%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px;" aria-hidden="true"></i>
+                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>

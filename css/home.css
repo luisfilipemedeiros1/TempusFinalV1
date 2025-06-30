@@ -286,7 +286,7 @@
     .horizontal-scroll-container::-webkit-scrollbar-track { background: var(--light-gray); border-radius: 4px; margin: 0 5px; }
     .horizontal-scroll-container::-webkit-scrollbar-thumb { background-color: var(--primary-light); border-radius: 4px; border: 2px solid var(--light-gray); }
     .horizontal-scroll-container::-webkit-scrollbar-thumb:hover { background-color: var(--primary); }
-    .treatment-grid > .treatment-card { flex-basis: calc(25% - (var(--horizontal-scroll-gap) * 3 / 4)); min-width: 300px; }
+    .treatment-grid > .treatment-card { flex-basis: calc(25% - (var(--horizontal-scroll-gap) * 3 / 4)); min-width: 320px; min-height: 580px; }
     .pathways-grid > .pathway-card { flex-basis: calc(20% - (var(--horizontal-scroll-gap) * 4 / 5)); min-width: 250px; }
     .process-grid > .process-step-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 320px; }
     .product-grid > .product-card { flex-basis: calc(25% - (var(--horizontal-scroll-gap) * 3 / 4)); min-width: 280px; }
@@ -302,7 +302,7 @@
     .best-seller-badge, .trending-badge { position: absolute; top: 20px; left: 20px; padding: 6px 18px; font-size: 0.8rem; font-weight: 600; border-radius: 3px; z-index: 3; text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--heading-font); box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
     .best-seller-badge { background-color: var(--accent-gold); color: var(--dark-text); } /* Gold badge */
     .trending-badge { background-color: var(--accent-deep); color: var(--white); } /* Green badge */
-    .treatment-card-content { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
+    .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
     .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
     .treatment-details { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9rem; color: var(--gray); border-top: 1px solid var(--primary-ultralight); padding-top: 15px; margin-top: auto; flex-wrap: wrap; gap: 5px 10px; } /* Added flex-wrap/gap */
@@ -310,6 +310,9 @@
     .treatment-detail i { margin-right: 8px; color: var(--primary); /* Gold icon */ width: 16px; text-align: center; }
     /* Use GOLD Outline Button */
     .treatment-card .cta-button-secondary { margin-top: 15px; align-self: flex-start; }
+    .treatment-buttons { margin-top: 25px; }
+    .treatment-buttons .cta-button-secondary { margin-top: 0; width: 100%; }
+    .treatment-buttons .cta-button-secondary .fab.fa-whatsapp { color: inherit; }
     /* Use GOLD Filled Button */
     .all-treatments-link { text-align: center; margin-top: 60px; position: relative; z-index: 2; }
     .all-treatments-link .cta-button { /* Ensure primary gold button is used */ }
@@ -564,14 +567,14 @@
 
     /* --- Responsive Design (Keep, adjusted base styles handle most color changes) --- */
     @media (max-width: 1300px) {
-        .treatment-grid > .treatment-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 300px; }
+        .treatment-grid > .treatment-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 320px; min-height: 580px; }
         .process-grid > .process-step-card { flex-basis: calc(40% - (var(--horizontal-scroll-gap) * 1 / 2)); min-width: 320px; }
         .product-grid > .product-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 280px; }
         .pathways-grid > .pathway-card { flex-basis: calc(28% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 280px}
     }
     @media (max-width: 1200px) {
          .instagram-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-         .treatment-grid > .treatment-card { min-width: 280px; }
+         .treatment-grid > .treatment-card { min-width: 300px; min-height: 560px; }
          .process-grid > .process-step-card { min-width: 300px; }
          .product-grid > .product-card { min-width: 280px; }
          .pathways-grid > .pathway-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 260px; height: 480px; }
@@ -595,7 +598,7 @@
          .ba-reveal-images { height: 400px; }
          :root { --horizontal-scroll-padding: 20px; }
          .new-home-content .container { padding: 0 var(--horizontal-scroll-padding); }
-         .treatment-grid > .treatment-card { flex-basis: calc(45% - var(--horizontal-scroll-gap) / 2); min-width: 280px; }
+         .treatment-grid > .treatment-card { flex-basis: calc(45% - var(--horizontal-scroll-gap) / 2); min-width: 300px; min-height: 540px; }
          .process-grid > .process-step-card { flex-basis: calc(50% - var(--horizontal-scroll-gap) / 2); min-width: 300px; min-height: 500px; }
          .product-grid > .product-card { flex-basis: calc(45% - var(--horizontal-scroll-gap) / 2); min-width: 260px; min-height: 420px; }
          .product-card-img { height: 220px; }
@@ -639,7 +642,7 @@
          .contact-form-container { padding: 40px 25px; } .contact-info-container { padding-top: 0; }
          .brand-logos { gap: 40px; } .brand-logo img { max-height: 40px; }
          .brand-nav { width: 36px; height: 36px; opacity: 0.6; }
-         .treatment-grid > .treatment-card { flex-basis: calc(60% - var(--horizontal-scroll-gap) / 2); min-width: 260px; }
+         .treatment-grid > .treatment-card { flex-basis: calc(60% - var(--horizontal-scroll-gap) / 2); min-width: 280px; min-height: 520px; }
          .process-grid > .process-step-card { flex-basis: calc(65% - var(--horizontal-scroll-gap) / 2); min-width: 280px; min-height: auto; padding-bottom: 30px;}
          .product-grid > .product-card { flex-basis: calc(60% - var(--horizontal-scroll-gap) / 2); min-width: 250px; }
          .pathways-grid > .pathway-card { flex-basis: calc(60% - (var(--horizontal-scroll-gap) / 2)); min-width: 240px; height: 420px;}
@@ -695,7 +698,7 @@
          .brand-logos > .brand-logo { max-width: 120px; }
          .brand-nav { width: 32px; height: 32px; }
          .horizontal-scroll-container { margin-top: 25px; }
-         .treatment-grid > .treatment-card { flex-basis: calc(75% - var(--horizontal-scroll-gap) / 2); min-width: 240px; }
+         .treatment-grid > .treatment-card { flex-basis: calc(75% - var(--horizontal-scroll-gap) / 2); min-width: 260px; min-height: 500px; }
          .section-title { margin-bottom: 60px; } .section-title h2 { font-size: 2.2rem; } .section-title .subtitle { font-size: 1.1rem; }
     }
      @media (max-width: 400px) {
