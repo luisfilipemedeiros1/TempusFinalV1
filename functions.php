@@ -747,7 +747,12 @@ function tempus_enqueue_header_navigation_js() {
 function tempus_fallback_menu() {
     echo '<ul class="primary-menu-items">';
     echo '<li><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'Home', 'tempusbelgravia' ) . '</a></li>';
-    echo '<li><a href="' . esc_url( home_url( '/memberships/' ) ) . '">' . esc_html__( 'Memberships', 'tempusbelgravia' ) . '</a></li>';
+    // Memberships dropdown
+    echo '<li class="menu-item-has-children-v2"><a href="' . esc_url( home_url( '/memberships/' ) ) . '">' . esc_html__( 'Memberships', 'tempusbelgravia' ) . ' <i class="fas fa-chevron-down menu-arrow" aria-hidden="true"></i></a>';
+    echo '<ul class="sub-menu-v2">';
+    echo '<li><a href="' . esc_url( home_url( '/memberships/' ) ) . '">' . esc_html__( 'FH Memberships', 'tempusbelgravia' ) . '</a></li>';
+    echo '<li><a href="' . esc_url( home_url( '/tempus-packages/' ) ) . '">' . esc_html__( 'Tempus Packages', 'tempusbelgravia' ) . '</a></li>';
+    echo '</ul></li>';
     echo '<li><a href="' . esc_url( home_url( '/contact/' ) ) . '">' . esc_html__( 'Contact', 'tempusbelgravia' ) . '</a></li>';
     
     // Team dropdown

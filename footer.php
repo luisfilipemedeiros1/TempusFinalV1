@@ -92,7 +92,8 @@
                         <h4>Quick Links</h4>
                         <ul class="footer-links">
                             <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
-                            <li><a href="<?php echo home_url('/memberships/'); ?>">Memberships</a></li>
+                            <li><a href="<?php echo home_url('/memberships/'); ?>">FH Memberships</a></li>
+                            <li><a href="<?php echo home_url('/tempus-packages/'); ?>">Tempus Packages</a></li>
                             <li><a href="<?php echo home_url('/treatments-overview/'); ?>">Treatments</a></li>
                             <li><a href="<?php echo home_url('/tempus-team/'); ?>">Team</a></li>
                             <li><a href="<?php echo home_url('/conditions-treated-2/'); ?>">Conditions</a></li>
@@ -140,7 +141,7 @@
                 
                 <!-- CQC Badge -->
                 <div class="footer-badge">
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2024/07/1-CQC-Regulated-by-WHITE-135px.jpg.webp" alt="CQC Regulated" />
+                    <img src="https://srglimited.co.uk/wp-content/uploads/elementor/thumbs/care-quality-commission-cqc-logo-vector-q1kaelw1ytpbwcyd7s54agtfhx3zhfm76zfljv1x1k.png" alt="CQC Regulated" />
                 </div>
             </div>
         </div>
@@ -258,8 +259,10 @@
     }
     
     .footer-badge img {
-        max-width: 150px;
+        max-width: 200px;
         height: auto;
+        max-height: 60px;
+        object-fit: contain;
     }
     </style>
 

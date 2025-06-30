@@ -44,7 +44,9 @@
                         </a>
                     </div>
                     <div class="quick-actions">
-                        <a href="<?php echo home_url('/memberships/'); ?>" class="quick-link">Memberships</a>
+                        <a href="<?php echo home_url('/memberships/'); ?>" class="quick-link">FH Memberships</a>
+                        <span class="separator">|</span>
+                        <a href="<?php echo home_url('/tempus-packages/'); ?>" class="quick-link">Tempus Packages</a>
                         <span class="separator">|</span>
                         <a href="https://tempusbelgravia.co.uk/journal-2/" class="quick-link">Journal</a>
                     </div>
@@ -69,7 +71,13 @@
                     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
                         <ul class="nav-menu">
                             <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
-                                                                                    <li><a href="<?php echo home_url('/memberships/'); ?>">Memberships</a></li>
+                            <li class="has-dropdown">
+                                <a href="<?php echo home_url('/memberships/'); ?>">Memberships</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo home_url('/memberships/'); ?>">FH Memberships</a></li>
+                                    <li><a href="<?php echo home_url('/tempus-packages/'); ?>">Tempus Packages</a></li>
+                                </ul>
+                            </li>
                             <li class="has-dropdown">
                                 <a href="<?php echo home_url('/treatments-overview/'); ?>">Treatments</a>
                                 <ul class="dropdown-menu">

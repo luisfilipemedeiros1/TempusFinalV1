@@ -257,9 +257,9 @@
     .scroll-mouse { width: 25px; height: 40px; border: 2px solid var(--white); border-radius: 15px; position: relative; margin: 0; }
     .scroll-wheel { width: 3px; height: 8px; background: var(--white); position: absolute; top: 7px; left: 50%; transform: translateX(-50%); border-radius: 3px; animation: scrollWheel 2s infinite; }
     @keyframes scrollWheel { 0% { top: 7px; opacity: 1; } 100% { top: 20px; opacity: 0; } }
-    .hero-badges { position: absolute; right: 30px; bottom: 30px; display: flex; gap: 20px; z-index: 2; opacity: 0; animation: fadeInSimple 1s ease-out 1.8s forwards; animation-play-state: running !important; } /* Reduced z-index to prevent overlap */
-    .hero-badge { width: 80px; height: 80px; background: rgba(255, 255, 255, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    .hero-badge img { max-width: 100%; max-height: 100%; }
+    .hero-badges { position: absolute; right: 30px; bottom: 30px; display: flex; gap: 15px; z-index: 2; opacity: 0; animation: fadeInSimple 1s ease-out 1.8s forwards; animation-play-state: running !important; flex-wrap: wrap; } /* Reduced z-index to prevent overlap */
+    .hero-badge { width: 120px; height: 80px; background: rgba(255, 255, 255, 0.8); border-radius: 10px; display: flex; align-items: center; justify-content: center; padding: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .hero-badge img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
     /* --- Brand Section Carousel (Keep) --- */
     .brands-section { padding: 60px 0; background-color: var(--white); position: relative; overflow: hidden; }
@@ -618,7 +618,8 @@
          .hero h1 { font-size: 3.2rem; margin-bottom: 20px; }
          .hero p { font-size: 1.2rem; max-width: 650px; margin-bottom: 35px; }
          .hero .hero-content > div { margin-top: 25px; }
-         .hero-badges { display: none; }
+         .hero-badges { right: 20px; bottom: 20px; gap: 10px; }
+         .hero-badge { width: 100px; height: 70px; padding: 10px; }
     }
     @media (max-width: 768px) {
          body /* .new-home-content */ { font-size: 17px; } .new-home-content h1 { font-size: 2.8rem; } .new-home-content h2 { font-size: 2.2rem; } .new-home-content h3 { font-size: 1.5rem; }
@@ -701,6 +702,9 @@
          .treatment-grid > .treatment-card { flex-basis: calc(75% - var(--horizontal-scroll-gap) / 2); min-width: 260px; min-height: 500px; }
          .section-title { margin-bottom: 60px; } .section-title h2 { font-size: 2.2rem; } .section-title .subtitle { font-size: 1.1rem; }
     }
+     @media (max-width: 500px) {
+          .hero-badges { display: none; }
+     }
      @media (max-width: 400px) {
           .treatment-details { gap: 5px 10px; font-size: 0.8rem; }
           .treatment-detail i { margin-right: 5px; }
