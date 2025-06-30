@@ -774,16 +774,6 @@ function tempus_fallback_menu() {
     
     echo '<li><a href="' . esc_url( home_url( '/conditions-treated-2/' ) ) . '">' . esc_html__( 'Conditions Treated', 'tempusbelgravia' ) . '</a></li>';
     
-    // Shop dropdown
-    echo '<li class="menu-item-has-children-v2"><a href="' . esc_url( home_url( '/shop/' ) ) . '">' . esc_html__( 'Shop', 'tempusbelgravia' ) . ' <i class="fas fa-chevron-down menu-arrow" aria-hidden="true"></i></a>';
-    echo '<ul class="sub-menu-v2">';
-    echo '<li><a href="' . esc_url( home_url( '/product-category/face-creams-serums/' ) ) . '">' . esc_html__( 'Face Creams and Serums', 'tempusbelgravia' ) . '</a></li>';
-    echo '<li><a href="' . esc_url( home_url( '/product-category/anti-wrinkle/' ) ) . '">' . esc_html__( 'Anti – Wrinkle', 'tempusbelgravia' ) . '</a></li>';
-    echo '<li><a href="' . esc_url( home_url( '/product-category/lips/' ) ) . '">' . esc_html__( 'Lips', 'tempusbelgravia' ) . '</a></li>';
-    echo '<li><a href="' . esc_url( home_url( '/product-category/body-creams/' ) ) . '">' . esc_html__( 'Body Creams', 'tempusbelgravia' ) . '</a></li>';
-    echo '<li><a href="' . esc_url( home_url( '/product-category/eye-creams/' ) ) . '">' . esc_html__( 'Eye Creams', 'tempusbelgravia' ) . '</a></li>';
-    echo '<li><a href="' . esc_url( home_url( '/product-category/spf/' ) ) . '">' . esc_html__( 'SPF', 'tempusbelgravia' ) . '</a></li>';
-    echo '</ul></li>';
     
     echo '<li><a href="' . esc_url( home_url( '/journal/' ) ) . '">' . esc_html__( 'Journal', 'tempusbelgravia' ) . '</a></li>';
     echo '</ul>';

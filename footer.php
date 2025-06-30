@@ -104,7 +104,6 @@
                     <div class="footer-column">
                         <h4>Resources</h4>
                         <ul class="footer-links">
-                            <li><a href="<?php echo home_url('/shop/'); ?>">Shop</a></li>
                             <li><a href="<?php echo home_url('/journal-2/'); ?>">Journal</a></li>
                             <li><a href="<?php echo home_url('/gallery/'); ?>">Gallery</a></li>
                             <li><a href="<?php echo home_url('/about/'); ?>">About Us</a></li>

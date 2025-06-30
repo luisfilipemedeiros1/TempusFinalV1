@@ -10,10 +10,52 @@ get_header();
 ?>
 
 <style>
-/* Membership Page Styles */
+/* Membership Page Styles - Updated to match home page */
 .memberships-page {
     padding: 0;
     background-color: var(--white);
+}
+
+/* Font imports to match home page */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS Variables to match home page */
+:root {
+    --primary: #AF8F5A;
+    --primary-dark: #8B6F47;
+    --accent: #D4AF37;
+    --accent-deep: #B8860B;
+    --dark: #1A1A1A;
+    --gray: #4A4A4A;
+    --light: #FCFBF9;
+    --white: #FFFFFF;
+    --body-font: 'Cormorant Garamond', serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --display-font: 'Playfair Display', serif;
+}
+
+/* Angled transitions */
+.angled-transition {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.angled-top {
+    top: 0;
+}
+
+.angled-bottom {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.angled-transition svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 /* Hero Section */
@@ -54,7 +96,7 @@ get_header();
     font-size: 4rem;
     font-weight: 300;
     margin-bottom: 20px;
-    font-family: var(--display-font, 'Playfair Display', serif);
+    font-family: var(--display-font);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -64,12 +106,14 @@ get_header();
     opacity: 0.9;
     margin-bottom: 30px;
     line-height: 1.6;
+    font-family: var(--body-font);
 }
 
 /* Benefits Section */
 .membership-benefits {
-    padding: 80px 0;
+    padding: 100px 0;
     background: var(--light);
+    position: relative;
 }
 
 .benefits-grid {
@@ -102,12 +146,15 @@ get_header();
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: var(--primary);
+    font-family: var(--heading-font);
+    font-weight: 600;
 }
 
 /* Membership Tiers */
 .membership-tiers {
     padding: 100px 0;
     background: var(--white);
+    position: relative;
 }
 
 .tiers-container {
@@ -229,81 +276,83 @@ get_header();
 .join-button {
     display: block;
     width: 100%;
-    padding: 18px;
+    padding: 18px 30px;
     background: var(--primary);
-    color: white;
+    color: var(--white);
     text-align: center;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: var(--heading-font);
+    position: relative;
+    overflow: hidden;
 }
 
 .join-button:hover {
-    background: var(--primary-dark, #6b5b3a);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(139, 111, 76, 0.3);
-}
-
-/* Comparison Table */
-.comparison-section {
-    padding: 80px 0;
-    background: var(--light);
-}
-
-.comparison-table {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
-    margin-top: 50px;
-}
-
-.comparison-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.comparison-table th,
-.comparison-table td {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.comparison-table th {
-    background: var(--primary);
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-}
-
-.comparison-table th:first-child {
-    width: 40%;
-}
-
-.comparison-table td {
-    color: #666;
-}
-
-.comparison-table tr:last-child td {
-    border-bottom: none;
-}
-
-.comparison-table .check {
+    background: var(--white);
     color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(175, 143, 90, 0.3);
+}
+
+.join-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.join-button:hover::before {
+    left: 100%;
+}
+
+
+/* Section title styling to match home page */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-family: var(--display-font);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.section-title .subtitle {
     font-size: 1.2rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    font-family: var(--body-font);
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
 /* FAQ Section */
 .membership-faq {
-    padding: 80px 0;
-    background: var(--white);
+    padding: 100px 0;
+    background: var(--light);
+    position: relative;
 }
 
 .faq-items {
@@ -394,8 +443,10 @@ get_header();
 
     <!-- Benefits Section -->
     <section class="membership-benefits">
+        <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--white)" points="0,0 100,100 0,100"/></svg></div>
+        <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--white)" points="0,100 100,0 100,100"/></svg></div>
         <div class="container">
-            <div class="section-title text-center">
+            <div class="section-title">
                 <h2>Member Benefits</h2>
                 <p class="subtitle">Experience the pinnacle of aesthetic care with exclusive privileges</p>
                 <div class="divider"></div>
@@ -455,8 +506,10 @@ get_header();
 
     <!-- Membership Tiers -->
     <section class="membership-tiers">
+        <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,0 100,100 0,100"/></svg></div>
+        <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,100 100,0 100,100"/></svg></div>
         <div class="container">
-            <div class="section-title text-center">
+            <div class="section-title">
                 <h2>Choose Your Membership</h2>
                 <p class="subtitle">Select the perfect membership tier to match your wellness journey</p>
                 <div class="divider"></div>
@@ -474,7 +527,7 @@ get_header();
                     </div>
                     <div class="membership-body">
                         <ul class="membership-features">
-                            <li><i class="fas fa-check"></i> 15% discount on all treatments</li>
+                            <li><i class="fas fa-check"></i> 5% discount on all treatments</li>
                             <li><i class="fas fa-check"></i> 2 complimentary facials per year</li>
                             <li><i class="fas fa-check"></i> Priority booking access</li>
                             <li><i class="fas fa-check"></i> £200 monthly treatment credits</li>
@@ -498,7 +551,7 @@ get_header();
                     </div>
                     <div class="membership-body">
                         <ul class="membership-features">
-                            <li><i class="fas fa-check"></i> 20% discount on all treatments</li>
+                            <li><i class="fas fa-check"></i> 10% discount on all treatments</li>
                             <li><i class="fas fa-check"></i> 4 complimentary treatments per year</li>
                             <li><i class="fas fa-check"></i> VIP priority booking</li>
                             <li><i class="fas fa-check"></i> £300 monthly treatment credits</li>
@@ -522,7 +575,7 @@ get_header();
                     </div>
                     <div class="membership-body">
                         <ul class="membership-features">
-                            <li><i class="fas fa-check"></i> 25% discount on all treatments</li>
+                            <li><i class="fas fa-check"></i> 15% discount on all treatments</li>
                             <li><i class="fas fa-check"></i> 6 complimentary premium treatments</li>
                             <li><i class="fas fa-check"></i> Concierge booking service</li>
                             <li><i class="fas fa-check"></i> £400 monthly treatment credits</li>
@@ -539,96 +592,12 @@ get_header();
         </div>
     </section>
 
-    <!-- Comparison Table -->
-    <section class="comparison-section">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Compare Memberships</h2>
-                <p class="subtitle">Find the perfect membership tier for your needs</p>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="comparison-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Benefits</th>
-                            <th>Aesthetic</th>
-                            <th>Gold</th>
-                            <th>Platinum</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Treatment Discount</td>
-                            <td>15%</td>
-                            <td>20%</td>
-                            <td>25%</td>
-                        </tr>
-                        <tr>
-                            <td>Monthly Credits</td>
-                            <td>£200</td>
-                            <td>£300</td>
-                            <td>£400</td>
-                        </tr>
-                        <tr>
-                            <td>Complimentary Treatments</td>
-                            <td>2 per year</td>
-                            <td>4 per year</td>
-                            <td>6 per year</td>
-                        </tr>
-                        <tr>
-                            <td>Product Discount</td>
-                            <td>10%</td>
-                            <td>15%</td>
-                            <td>20%</td>
-                        </tr>
-                        <tr>
-                            <td>Priority Booking</td>
-                            <td><i class="fas fa-check check"></i></td>
-                            <td><i class="fas fa-check check"></i></td>
-                            <td><i class="fas fa-check check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Wellness Assessments</td>
-                            <td>Annual</td>
-                            <td>Quarterly</td>
-                            <td>Monthly</td>
-                        </tr>
-                        <tr>
-                            <td>IV Therapy Sessions</td>
-                            <td>-</td>
-                            <td>1 per year</td>
-                            <td>4 per year</td>
-                        </tr>
-                        <tr>
-                            <td>Personal Coordinator</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td><i class="fas fa-check check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Guest Passes</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td><i class="fas fa-check check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Exclusive Events</td>
-                            <td>-</td>
-                            <td><i class="fas fa-check check"></i></td>
-                            <td><i class="fas fa-check check"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
 
     <!-- FAQ Section -->
     <section class="membership-faq">
+        <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--white)" points="0,0 100,100 0,100"/></svg></div>
         <div class="container">
-            <div class="section-title text-center">
+            <div class="section-title">
                 <h2>Frequently Asked Questions</h2>
                 <p class="subtitle">Everything you need to know about our memberships</p>
                 <div class="divider"></div>
@@ -689,11 +658,11 @@ get_header();
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" style="background: var(--primary); padding: 80px 0; text-align: center;">
+    <section class="cta-section" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 100px 0; text-align: center; position: relative;">
         <div class="container">
-            <h2 style="color: white; margin-bottom: 20px;">Ready to Elevate Your Wellness Journey?</h2>
-            <p style="color: white; opacity: 0.9; font-size: 1.2rem; margin-bottom: 30px;">Join Tempus Belgravia today and experience the ultimate in aesthetic care</p>
-            <a href="#book-now" class="cta-button cta-button-white">Book a Consultation</a>
+            <h2 style="color: var(--white); margin-bottom: 20px; font-family: var(--display-font); font-size: 2.5rem; font-weight: 400;">Ready to Elevate Your Wellness Journey?</h2>
+            <p style="color: var(--white); opacity: 0.9; font-size: 1.2rem; margin-bottom: 40px; font-family: var(--body-font); max-width: 600px; margin-left: auto; margin-right: auto;">Join Tempus Belgravia today and experience the ultimate in aesthetic care</p>
+            <a href="#book-now" class="cta-button-white" style="display: inline-block; padding: 18px 40px; background: var(--white); color: var(--primary); text-decoration: none; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 50px; border: 2px solid var(--white); transition: all 0.3s ease; font-family: var(--heading-font);">Book a Consultation</a>
         </div>
     </section>
 

@@ -46,8 +46,6 @@
                     <div class="quick-actions">
                         <a href="<?php echo home_url('/memberships/'); ?>" class="quick-link">Memberships</a>
                         <span class="separator">|</span>
-                        <a href="<?php echo home_url('/shop/'); ?>" class="quick-link">Shop</a>
-                        <span class="separator">|</span>
                         <a href="https://tempusbelgravia.co.uk/journal-2/" class="quick-link">Journal</a>
                     </div>
                 </div>
