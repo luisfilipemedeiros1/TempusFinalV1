@@ -69,71 +69,6 @@ get_header();
         </div>
     </section>
 
-    <!-- Blog Preview -->
-    <section class="blog-preview">
-        <div class="container">
-            <div class="blog-preview-header">
-                <h2>Latest Insights</h2>
-                <p>Discover expert advice on aesthetic treatments and wellness</p>
-                <a href="https://tempusbelgravia.co.uk/journal-2/" class="view-all-link">View All Articles →</a>
-            </div>
-            
-            <div class="blog-preview-grid">
-                <?php
-                // Get latest 3 blog posts
-                $latest_posts = new WP_Query(array(
-                    'post_type' => 'post',
-                    'posts_per_page' => 3,
-                    'post_status' => 'publish',
-                    'orderby' => 'date',
-                    'order' => 'DESC'
-                ));
-                
-                if ($latest_posts->have_posts()) :
-                    while ($latest_posts->have_posts()) : $latest_posts->the_post();
-                ?>
-                <article class="blog-preview-card">
-                    <?php if (has_post_thumbnail()) : ?>
-                    <div class="blog-preview-image">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('medium', array('loading' => 'lazy')); ?>
-                        </a>
-                    </div>
-                    <?php endif; ?>
-                    
-                    <div class="blog-preview-content">
-                        <div class="blog-meta">
-                            <span class="blog-date"><?php echo get_the_date('M j, Y'); ?></span>
-                            <span class="blog-category">
-                                <?php 
-                                $categories = get_the_category();
-                                if (!empty($categories)) {
-                                    echo esc_html($categories[0]->name);
-                                }
-                                ?>
-                            </span>
-                        </div>
-                        <h3 class="blog-title">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                        </h3>
-                        <p class="blog-excerpt">
-                            <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
-                        </p>
-                        <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
-                    </div>
-                </article>
-                <?php 
-                    endwhile;
-                    wp_reset_postdata();
-                else : 
-                ?>
-                <div class="no-posts-message">
-                    <p>Stay tuned for our latest insights and expert advice.</p>
-                </div>
-                <?php endif; ?>
-            </div>
-        </div>
-    </section>
 
     <!-- Next Steps -->
     <section class="next-steps">
@@ -291,147 +226,6 @@ get_header();
     color: var(--primary-dark);
 }
 
-/* Blog Preview */
-.blog-preview {
-    padding: 80px 0;
-    background: var(--light);
-}
-
-.blog-preview-header {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 60px;
-}
-
-.blog-preview-header h2 {
-    font-size: 2.5rem;
-    font-family: var(--display-font);
-    color: var(--dark-text);
-    margin-bottom: 15px;
-    font-weight: 400;
-}
-
-.blog-preview-header p {
-    font-size: 1.1rem;
-    color: var(--gray);
-    margin-bottom: 25px;
-}
-
-.view-all-link {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.view-all-link:hover {
-    color: var(--primary-dark);
-}
-
-.blog-preview-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.blog-preview-card {
-    background: var(--white);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-}
-
-.blog-preview-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.blog-preview-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.blog-preview-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.blog-preview-card:hover .blog-preview-image img {
-    transform: scale(1.05);
-}
-
-.blog-preview-content {
-    padding: 25px;
-}
-
-.blog-meta {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 0.85rem;
-    color: var(--gray);
-}
-
-.blog-date {
-    font-weight: 500;
-}
-
-.blog-category {
-    color: var(--primary);
-    font-weight: 600;
-}
-
-.blog-title {
-    margin-bottom: 15px;
-}
-
-.blog-title a {
-    color: var(--dark-text);
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.4;
-    font-family: var(--heading-font);
-    transition: color 0.3s ease;
-}
-
-.blog-title a:hover {
-    color: var(--primary);
-}
-
-.blog-excerpt {
-    color: var(--gray);
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.read-more {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
-
-.read-more:hover {
-    color: var(--primary-dark);
-}
-
-.no-posts-message {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 40px;
-    color: var(--gray);
-    font-style: italic;
-}
 
 /* Next Steps */
 .next-steps {
@@ -528,13 +322,11 @@ get_header();
     }
     
     .contact-quick-info,
-    .blog-preview,
     .next-steps {
         padding: 60px 0;
     }
     
     .contact-quick-info h2,
-    .blog-preview-header h2,
     .next-steps h2 {
         font-size: 2rem;
     }
