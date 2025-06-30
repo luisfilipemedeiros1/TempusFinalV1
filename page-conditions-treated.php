@@ -481,53 +481,6 @@ get_header();
         </div>
     </section>
 
-    <!-- Browse by Category -->
-    <section class="browse-categories">
-        <div class="container">
-            <div class="browse-categories-header">
-                <h2>Browse by Category</h2>
-                <p>Explore our treatment solutions organized by your specific concerns</p>
-            </div>
-            
-            <div class="categories-grid">
-                <a href="#facial-aging" class="category-card">
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/8-point-lift-scaled-1.jpeg.webp" alt="Facial Aging" class="category-card-bg">
-                    <div class="category-card-overlay"></div>
-                    <div class="category-card-content">
-                        <h3>Facial Aging</h3>
-                        <p>Wrinkles, volume loss, sagging skin, and other age-related concerns</p>
-                    </div>
-                </a>
-                
-                <a href="#skin-quality" class="category-card">
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Restilane-Skin-Booster-scaled-1.jpeg.webp" alt="Skin Quality" class="category-card-bg">
-                    <div class="category-card-overlay"></div>
-                    <div class="category-card-content">
-                        <h3>Skin Quality</h3>
-                        <p>Acne, pigmentation, texture, and overall skin health improvements</p>
-                    </div>
-                </a>
-                
-                <a href="#body-concerns" class="category-card">
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EMSculpting.jpeg.webp" alt="Body Concerns" class="category-card-bg">
-                    <div class="category-card-overlay"></div>
-                    <div class="category-card-content">
-                        <h3>Body Concerns</h3>
-                        <p>Fat reduction, muscle toning, cellulite, and body contouring</p>
-                    </div>
-                </a>
-                
-                <a href="#hair-wellness" class="category-card">
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/prp-hair-loos.jpeg.webp" alt="Hair & Wellness" class="category-card-bg">
-                    <div class="category-card-overlay"></div>
-                    <div class="category-card-content">
-                        <h3>Hair & Wellness</h3>
-                        <p>Hair restoration, energy enhancement, and holistic wellness</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- Conditions Sections -->
     <section class="conditions-section">
