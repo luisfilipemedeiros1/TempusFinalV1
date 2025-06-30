@@ -47,7 +47,7 @@ get_header();
             </div>          
             <div class="hero-badges">
                  <div class="hero-badge">
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2024/07/1-CQC-Regulated-by-WHITE-135px.jpg.webp" alt="CQC Regulated Clinic Badge">
+                    <img src="https://srglimited.co.uk/wp-content/uploads/elementor/thumbs/care-quality-commission-cqc-logo-vector-q1kaelw1ytpbwcyd7s54agtfhx3zhfm76zfljv1x1k.png" alt="CQC Regulated Clinic Badge" style="max-width: 180px; height: auto;">
                 </div>
                  <div class="hero-badge">
                     <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--accent-deep);" aria-hidden="true"></i> <!-- Decorative icon -->
