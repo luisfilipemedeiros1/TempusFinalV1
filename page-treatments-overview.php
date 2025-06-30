@@ -195,6 +195,31 @@ get_header();
     margin-top: auto;
 }
 
+/* Book Now Section Styles */
+.book-now-section .contact-method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
+}
+
+@media (max-width: 768px) {
+    .book-now-section .booking-form-container {
+        padding: 30px 20px !important;
+    }
+    
+    .book-now-section .location-info {
+        padding: 30px 20px !important;
+    }
+    
+    .book-now-section h2 {
+        font-size: 2rem !important;
+    }
+    
+    .book-now-section .subtitle {
+        font-size: 1.1rem !important;
+        padding: 0 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .treatments-grid {
         grid-template-columns: 1fr;
@@ -621,6 +646,64 @@ get_header();
         </section>
 
     </div>
+    
+    <!-- Book Now Section -->
+    <section id="book-now" class="book-now-section" style="background: var(--primary-ultralight); padding: 80px 0; position: relative;">
+        <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,0 100,100 0,100"/></svg></div>
+        <div class="container">
+            <div class="section-title fade-in-up" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: var(--primary); font-size: 3rem; margin-bottom: 20px;">Ready to Begin Your Journey?</h2>
+                <p class="subtitle" style="color: var(--gray); font-size: 1.3rem; max-width: 800px; margin: 0 auto;">Schedule your personalised consultation and discover the perfect treatment plan tailored to your unique needs and aesthetic goals.</p>
+                <div class="divider" style="margin: 30px auto;"></div>
+            </div>
+            
+            <div class="book-now-content" style="max-width: 900px; margin: 0 auto;">
+                <!-- Booking Form -->
+                <div class="booking-form-container fade-in" style="background: #fff; padding: 50px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 50px;">
+                    <h3 style="text-align: center; margin-bottom: 30px; font-size: 2rem; color: var(--primary);">Request Your Consultation</h3>
+                    <iframe data-tally-src="https://tally.so/embed/wANEXl?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Book Your Appointment"></iframe>
+                    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+                </div>
+                
+                <!-- Contact Methods -->
+                <div class="contact-methods-grid fade-in" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                    <div class="contact-method-card" style="background: #fff; padding: 30px; border-radius: 8px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                        <i class="fas fa-phone-alt" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; display: block;"></i>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;">Call Us</h4>
+                        <p style="color: var(--gray); margin-bottom: 15px;">Speak directly with our team</p>
+                        <a href="tel:+442080373265" style="color: var(--primary); font-size: 1.1rem; font-weight: 600; text-decoration: none;">+44 (0)20 8037 3265</a>
+                    </div>
+                    
+                    <div class="contact-method-card" style="background: #fff; padding: 30px; border-radius: 8px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                        <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #25D366; margin-bottom: 15px; display: block;"></i>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;">WhatsApp</h4>
+                        <p style="color: var(--gray); margin-bottom: 15px;">Quick and convenient messaging</p>
+                        <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20please." target="_blank" rel="noopener noreferrer" style="color: #25D366; font-size: 1.1rem; font-weight: 600; text-decoration: none;">+44 (0)7538 037973</a>
+                    </div>
+                    
+                    <div class="contact-method-card" style="background: #fff; padding: 30px; border-radius: 8px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                        <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; display: block;"></i>
+                        <h4 style="color: var(--primary); margin-bottom: 10px;">Email</h4>
+                        <p style="color: var(--gray); margin-bottom: 15px;">For detailed enquiries</p>
+                        <a href="mailto:info@tempusbelgravia.co.uk" style="color: var(--primary); font-size: 1.1rem; font-weight: 600; text-decoration: none;">info@tempusbelgravia.co.uk</a>
+                    </div>
+                </div>
+                
+                <!-- Location Info -->
+                <div class="location-info fade-in" style="background: #fff; padding: 40px; border-radius: 8px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                    <h4 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">Visit Our Belgravia Clinic</h4>
+                    <address style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; font-style: normal;">
+                        Tempus Belgravia<br>
+                        11A West Halkin Street<br>
+                        Belgravia, London SW1X 8JL
+                    </address>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Tempus+Belgravia,+11A+West+Halkin+Street,+London+SW1X+8JL" target="_blank" rel="noopener noreferrer" class="cta-button" style="margin-top: 20px; display: inline-block;">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </main>
 
 <!-- Include membership JS for animations -->
