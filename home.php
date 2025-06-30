@@ -448,10 +448,6 @@ get_header();
                              <p>Enhanced skin firmness and texture, resulting in a visibly lifted and more defined lower face contour.</p>
                          </div>
                      </div>
-                 </div>
-                 <div class="ba-more-link fade-in" style="margin-top: 60px;">
-                      <a href="https://tempusbelgravia.co.uk/gallery/" class="cta-button">View Full Gallery</a>
-                 </div>
             </div>
         </section>
 

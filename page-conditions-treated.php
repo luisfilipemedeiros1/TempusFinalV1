@@ -450,17 +450,6 @@ get_header();
             <h1 class="fade-in-up">Conditions We Treat</h1>
             <p class="subtitle fade-in-up">Expert solutions for your aesthetic and wellness concerns</p>
             
-            <!-- Category Navigation Dropdown -->
-            <div class="category-navigation fade-in-up">
-                <label for="category-select" class="sr-only">Select a category to view</label>
-                <select id="category-select" class="category-dropdown">
-                    <option value="">Browse by Category</option>
-                    <option value="#facial-aging">Facial Aging Concerns</option>
-                    <option value="#skin-quality">Skin Quality Concerns</option>
-                    <option value="#body-concerns">Body Concerns</option>
-                    <option value="#hair-wellness">Hair & Wellness Concerns</option>
-                </select>
-            </div>
         </div>
     </section>
 
