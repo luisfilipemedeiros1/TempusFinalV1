@@ -347,6 +347,68 @@ get_header();
              </div>
         </section>
 
+        <!-- Before & After Section -->
+        <section class="before-after">
+            <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--white)" points="0,0 100,100 0,100"/></svg></div>
+            <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--primary-ultralight)" points="0,100 100,0 100,100"/></svg></div>
+            <div class="container"> <?php // Use theme's .wrap or this custom .container ?>
+                <div class="section-title fade-in-up">
+                     <h2>Visible Transformations</h2>
+                     <p class="subtitle">Authentic results showcasing the refined vitality achieved through bespoke aesthetic journeys at Tempus Lounge, London.</p>
+                    <div class="divider"></div>
+                </div>
+                 <div class="ba-grid fade-in-stagger">
+                     <!-- Card 1 -->
+                     <div class="ba-reveal-card scale-in">
+                        <div class="ba-reveal-images">
+                             <div class="ba-image-container">
+                                <img class="ba-before-img" src="https://res.cloudinary.com/drtatej7i/image/upload/v1743752535/Before2_sjjugc.png" loading="lazy" alt="Before Facial Harmonisation Treatment">
+                                <img class="ba-after-img" src="https://res.cloudinary.com/drtatej7i/image/upload/v1743752532/After2_lsdrmw.png" loading="lazy" alt="After Facial Harmonisation Treatment">
+                            </div>
+                            <div class="ba-reveal-divider" aria-hidden="true"></div>
+                            <div class="ba-reveal-labels" aria-hidden="true"><span class="ba-label-before">Before</span><span class="ba-label-after">After</span></div>
+                        </div>
+                         <div class="ba-reveal-info">
+                            <h4>Lips Harmonisation</h4>
+                             <p>Subtle line smoothing and volume restoration achieving a balanced, naturally refreshed, and vibrant appearance.</p>
+                        </div>
+                     </div>
+                     <!-- Card 2 -->
+                     <div class="ba-reveal-card scale-in">
+                         <div class="ba-reveal-images">
+                             <div class="ba-image-container">
+                                <img class="ba-before-img" src="https://res.cloudinary.com/drtatej7i/image/upload/v1743752535/Before1_aklops.png" loading="lazy" alt="Before Skin Tone Correction Treatment">
+                                <img class="ba-after-img" src="https://res.cloudinary.com/drtatej7i/image/upload/v1743752533/After1_cnlq0m.png" loading="lazy" alt="After Skin Tone Correction Treatment">
+                            </div>
+                            <div class="ba-reveal-divider" aria-hidden="true"></div>
+                            <div class="ba-reveal-labels" aria-hidden="true"><span class="ba-label-before">Before</span><span class="ba-label-after">After</span></div>
+                        </div>
+                         <div class="ba-reveal-info">
+                             <h4>Wrinkle Treatment</h4>
+                             <p>Marked reduction in expression wrinkles, unveiling a significantly clearer, natural complexion.</p>
+                         </div>
+                     </div>
+                     <!-- Card 3 -->
+                     <div class="ba-reveal-card scale-in">
+                         <div class="ba-reveal-images">
+                            <div class="ba-image-container">
+                                <img class="ba-before-img" src="https://res.cloudinary.com/drtatej7i/image/upload/v1743752532/Before3_w1q592.png" loading="lazy" alt="Before Jawline Definition Treatment">
+                                <img class="ba-after-img" src="https://res.cloudinary.com/drtatej7i/image/upload/v1743752531/After3_rghajk.png" loading="lazy" alt="After Jawline Definition Treatment">
+                            </div>
+                            <div class="ba-reveal-divider" aria-hidden="true"></div>
+                            <div class="ba-reveal-labels" aria-hidden="true"><span class="ba-label-before">Before</span><span class="ba-label-after">After</span></div>
+                        </div>
+                         <div class="ba-reveal-info">
+                             <h4>Jawline Definition</h4>
+                             <p>Enhanced skin firmness and texture, resulting in a visibly lifted and more defined lower face contour.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="ba-more-link fade-in" style="margin-top: 60px;">
+                      <a href="https://tempusbelgravia.co.uk/gallery/" class="cta-button">View Full Gallery</a>
+                 </div>
+            </div>
+        </section>
 
         <!-- Your Journey Section -->
         <section class="process-section your-journey-section">
@@ -945,27 +1007,6 @@ get_header();
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7727759795657!2d-0.15848638485867464!3d51.49903711913661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053c78215a11%3A0x75a6eb4b0115f140!2sTempus%20Belgravia!5e0!3m2!1sen!2suk!4v1677594982156!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of Tempus Lounge Belgravia on Google Maps"></iframe>
                         </div>
                     </div>
-                 </div>
-             </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter-section">
-             <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,0 100,100 0,100"/></svg></div>
-            <?php /* Point angled bottom towards the theme's footer background color if needed */ ?>
-            <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#f9f9f9" points="0,100 100,0 100,100"/></svg></div> <?php // Assuming theme footer is #f9f9f9, adjust fill color if needed ?>
-             <div class="container"> <?php // Use theme's .wrap or this custom .container ?>
-                 <div class="newsletter-container fade-in-up">
-                     <div class="newsletter-header">
-                         <h3>Timeless Insights Direct To You</h3>
-                         <p>Subscribe for curated wellness advice, the latest in aesthetic science, exclusive events, and special invitations from Tempus Lounge.</p>
-                     </div>
-                     <!-- Add your actual form processing URL/shortcode if using a plugin -->
-                      <form class="newsletter-form" action="#" method="POST" aria-label="Newsletter Signup">
-                          <label for="newsletter-email" class="screen-reader-text">Email address for newsletter</label>
-                          <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Enter your email address" required aria-required="true" autocomplete="email">
-                          <button type="submit" class="newsletter-button">Subscribe</button>
-                     </form>
                  </div>
              </div>
         </section>
