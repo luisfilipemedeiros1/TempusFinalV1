@@ -47,9 +47,6 @@ get_header();
             </div>          
             <div class="hero-badges">
                  <div class="hero-badge">
-                    <img src="https://srglimited.co.uk/wp-content/uploads/elementor/thumbs/care-quality-commission-cqc-logo-vector-q1kaelw1ytpbwcyd7s54agtfhx3zhfm76zfljv1x1k.png" alt="CQC Regulated Clinic Badge" style="max-width: 180px; height: auto;">
-                </div>
-                 <div class="hero-badge">
                     <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--accent-deep);" aria-hidden="true"></i> <!-- Decorative icon -->
                 </div>
             </div>
@@ -661,6 +658,21 @@ get_header();
                  </div>
              </div>
          </section>
+
+        <!-- CQC Badge Section -->
+        <section class="cqc-badge-section">
+            <div class="container">
+                <div class="cqc-badge-container fade-in">
+                    <div class="cqc-badge-content">
+                        <img src="https://srglimited.co.uk/wp-content/uploads/elementor/thumbs/care-quality-commission-cqc-logo-vector-q1kaelw1ytpbwcyd7s54agtfhx3zhfm76zfljv1x1k.png" alt="CQC Regulated Clinic Badge" class="cqc-badge-image">
+                        <div class="cqc-badge-text">
+                            <h3>CQC Regulated</h3>
+                            <p>Tempus Lounge is regulated by the Care Quality Commission, ensuring the highest standards of safety and care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FAQ Section -->
         <section class="faq-section">
