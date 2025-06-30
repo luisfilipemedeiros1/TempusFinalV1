@@ -245,7 +245,7 @@ get_header();
         </div>
 
         <!-- Facial Aesthetics Category -->
-        <section class="category-section">
+        <section id="facial-aesthetics" class="category-section">
             <div class="category-title fade-in">
                 <h2>Facial Aesthetics</h2>
                 <div class="category-divider"></div>
@@ -338,7 +338,7 @@ get_header();
         </section>
 
         <!-- Wrinkle Treatments Category -->
-        <section class="category-section">
+        <section id="wrinkle-treatments" class="category-section">
             <div class="category-title fade-in">
                 <h2>Wrinkle Treatments</h2>
                 <div class="category-divider"></div>
@@ -403,7 +403,7 @@ get_header();
         </section>
 
         <!-- Medical Aesthetics Category -->
-        <section class="category-section">
+        <section id="medical-aesthetics" class="category-section">
             <div class="category-title fade-in">
                 <h2>Medical Aesthetics</h2>
                 <div class="category-divider"></div>
@@ -454,7 +454,7 @@ get_header();
         </section>
 
         <!-- Body Treatments Category -->
-        <section class="category-section">
+        <section id="body-treatments" class="category-section">
             <div class="category-title fade-in">
                 <h2>Body Treatments</h2>
                 <div class="category-divider"></div>
@@ -519,7 +519,7 @@ get_header();
         </section>
 
         <!-- Advanced Treatments Category -->
-        <section class="category-section">
+        <section id="advanced-treatments" class="category-section">
             <div class="category-title fade-in">
                 <h2>Advanced Treatments</h2>
                 <div class="category-divider"></div>
@@ -584,7 +584,7 @@ get_header();
         </section>
 
         <!-- IV Infusions Category -->
-        <section class="category-section">
+        <section id="iv-infusions" class="category-section">
             <div class="category-title fade-in">
                 <h2>IV Infusions</h2>
                 <div class="category-divider"></div>
@@ -625,5 +625,50 @@ get_header();
 
 <!-- Include membership JS for animations -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/membership-v2.js"></script>
+
+<script>
+// Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle smooth scrolling for hash links
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            
+            // Check if it's a hash link to the same page
+            if (href.includes('#') && (href.startsWith('#') || href.includes(window.location.pathname))) {
+                const targetId = href.split('#')[1];
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    e.preventDefault();
+                    const headerHeight = document.querySelector('.site-header').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // If page loads with a hash, scroll to it after a short delay
+    if (window.location.hash) {
+        setTimeout(function() {
+            const targetElement = document.querySelector(window.location.hash);
+            if (targetElement) {
+                const headerHeight = document.querySelector('.site-header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 100);
+    }
+});
+</script>
 
 <?php get_footer(); ?>

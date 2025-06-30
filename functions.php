@@ -1207,3 +1207,102 @@ function render_team_category_template($category_title, $category_slug, $hero_im
     </script>
     <?php
 }
+
+//* Newsletter Signup Handler
+add_action("wp_ajax_newsletter_signup", "tempus_newsletter_signup");
+add_action("wp_ajax_nopriv_newsletter_signup", "tempus_newsletter_signup");
+function tempus_newsletter_signup() {
+    // Verify nonce
+    if (\!wp_verify_nonce($_POST["newsletter_nonce_field"], "newsletter_nonce")) {
+        wp_die("Security check failed");
+    }
+    
+    // Validate email
+    $email = sanitize_email($_POST["email"]);
+    if (\!is_email($email)) {
+        wp_send_json_error(array("message" => "Please enter a valid email address."));
+    }
+    
+    // Check if using a newsletter plugin
+    $newsletter_saved = false;
+    
+    // Try to save with MailChimp for WordPress
+    if (function_exists("mc4wp_get_api_v3")) {
+        // Add to MailChimp
+        $api = mc4wp_get_api_v3();
+        try {
+            $list_id = get_option("mc4wp_default_list_id");
+            if ($list_id) {
+                $api->add_list_member($list_id, array(
+                    "email_address" => $email,
+                    "status" => "subscribed"
+                ));
+                $newsletter_saved = true;
+            }
+        } catch (Exception $e) {
+            // Continue to try other methods
+        }
+    }
+    
+    // If no plugin is available, save to options
+    if (\!$newsletter_saved) {
+        $subscribers = get_option("tempus_newsletter_subscribers", array());
+        if (\!in_array($email, $subscribers)) {
+            $subscribers[] = $email;
+            update_option("tempus_newsletter_subscribers", $subscribers);
+        }
+        
+        // Send notification email to admin
+        $admin_email = get_option("admin_email");
+        $subject = "New Newsletter Subscription - Tempus Belgravia";
+        $message = "A new user has subscribed to the newsletter:
+
+Email: " . $email . "
+
+Date: " . date("Y-m-d H:i:s");
+        wp_mail($admin_email, $subject, $message);
+    }
+    
+    wp_send_json_success(array("message" => "Thank you for subscribing\! We will keep you updated with our latest news."));
+}
+
+// Add AJAX handler script to footer
+add_action("wp_footer", "tempus_newsletter_ajax_script");
+function tempus_newsletter_ajax_script() {
+    ?>
+    <script>
+    jQuery(document).ready(function($) {
+        $(".newsletter-form").on("submit", function(e) {
+            e.preventDefault();
+            var form = $(this);
+            var button = form.find(".submit-btn");
+            var originalText = button.html();
+            
+            // Show loading state
+            button.html("<span>Sending...</span>");
+            button.prop("disabled", true);
+            
+            $.ajax({
+                url: form.attr("action"),
+                type: "POST",
+                data: form.serialize(),
+                success: function(response) {
+                    if (response.success) {
+                        form.html("<div style=\"color: white; padding: 20px; text-align: center;\">" + response.data.message + "</div>");
+                    } else {
+                        alert(response.data.message);
+                        button.html(originalText);
+                        button.prop("disabled", false);
+                    }
+                },
+                error: function() {
+                    alert("An error occurred. Please try again later.");
+                    button.html(originalText);
+                    button.prop("disabled", false);
+                }
+            });
+        });
+    });
+    </script>
+    <?php
+}

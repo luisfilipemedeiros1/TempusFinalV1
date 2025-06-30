@@ -12,13 +12,47 @@
                         <h3>Stay Informed</h3>
                         <p>Receive exclusive insights on aesthetic innovations and wellness tips</p>
                     </div>
-                    <form class="newsletter-form" action="#" method="POST">
-                        <input type="email" name="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="submit-btn">
-                            <span>Subscribe</span>
-                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                    </form>
+                    <?php 
+                    // Use Contact Form 7 or WPForms if available
+                    if (function_exists('do_shortcode')) {
+                        // Try Contact Form 7 first
+                        $newsletter_form = do_shortcode('[contact-form-7 id="newsletter" title="Newsletter Signup"]');
+                        
+                        // If no Contact Form 7, try WPForms
+                        if (strpos($newsletter_form, 'wpcf7') === false) {
+                            $newsletter_form = do_shortcode('[wpforms id="newsletter"]');
+                        }
+                        
+                        // If still no form plugin, use default HTML
+                        if (strpos($newsletter_form, 'form') === false) {
+                            ?>
+                            <form class="newsletter-form" action="<?php echo admin_url('admin-ajax.php'); ?>" method="POST">
+                                <input type="email" name="email" placeholder="Enter your email address" required>
+                                <input type="hidden" name="action" value="newsletter_signup">
+                                <?php wp_nonce_field('newsletter_nonce', 'newsletter_nonce_field'); ?>
+                                <button type="submit" class="submit-btn">
+                                    <span>Subscribe</span>
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                            <?php
+                        } else {
+                            echo $newsletter_form;
+                        }
+                    } else {
+                        ?>
+                        <form class="newsletter-form" action="<?php echo admin_url('admin-ajax.php'); ?>" method="POST">
+                            <input type="email" name="email" placeholder="Enter your email address" required>
+                            <input type="hidden" name="action" value="newsletter_signup">
+                            <?php wp_nonce_field('newsletter_nonce', 'newsletter_nonce_field'); ?>
+                            <button type="submit" class="submit-btn">
+                                <span>Subscribe</span>
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -26,7 +60,7 @@
         <!-- Main Footer Content -->
         <div class="footer-main">
             <div class="container">
-                <div class="footer-grid">
+                <div class="footer-grid" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; align-items: start;">
                     <!-- Brand Column -->
                     <div class="footer-brand">
                         <div class="footer-logo">
@@ -57,15 +91,26 @@
                     <div class="footer-column">
                         <h4>Quick Links</h4>
                         <ul class="footer-links">
-                            <li><a href="<?php echo home_url('/about/'); ?>">About Us</a></li>
-                            <li><a href="<?php echo home_url('/treatments/'); ?>">All Treatments</a></li>
-                            <li><a href="<?php echo home_url('/team/'); ?>">Our Team</a></li>
+                            <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
                             <li><a href="<?php echo home_url('/memberships/'); ?>">Memberships</a></li>
-                            <li><a href="<?php echo home_url('/journal/'); ?>">Journal</a></li>
-                            <li><a href="<?php echo home_url('/contact/'); ?>">Contact</a></li>
+                            <li><a href="<?php echo home_url('/treatments-overview/'); ?>">Treatments</a></li>
+                            <li><a href="<?php echo home_url('/tempus-team/'); ?>">Team</a></li>
+                            <li><a href="<?php echo home_url('/conditions-treated/'); ?>">Conditions</a></li>
+                            <li><a href="<?php echo home_url('/#contact'); ?>">Contact</a></li>
                         </ul>
                     </div>
-            
+                    
+                    <!-- Additional Links -->
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="<?php echo home_url('/shop/'); ?>">Shop</a></li>
+                            <li><a href="<?php echo home_url('/journal-2/'); ?>">Journal</a></li>
+                            <li><a href="<?php echo home_url('/gallery/'); ?>">Gallery</a></li>
+                            <li><a href="<?php echo home_url('/about/'); ?>">About Us</a></li>
+                            <li><a href="<?php echo home_url('/faq/'); ?>">FAQ</a></li>
+                        </ul>
+                    </div>
                     
                     <!-- Contact Info -->
                     <div class="footer-column footer-contact">
@@ -132,6 +177,92 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
+
+    <style>
+    /* Footer Grid Responsive Styles */
+    @media (max-width: 1024px) {
+        .footer-grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 30px !important;
+        }
+        .footer-brand {
+            grid-column: 1 / -1;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .footer-grid {
+            grid-template-columns: 1fr !important;
+            gap: 30px !important;
+        }
+        .footer-column {
+            margin-bottom: 20px;
+        }
+        .footer-newsletter-section .newsletter-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-newsletter-section .newsletter-text {
+            margin-bottom: 20px;
+        }
+        .footer-newsletter-section .newsletter-form {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    
+    /* Newsletter Form Styling */
+    .newsletter-form {
+        display: flex;
+        gap: 10px;
+        max-width: 500px;
+    }
+    
+    .newsletter-form input[type="email"] {
+        flex: 1;
+        padding: 12px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .newsletter-form input[type="email"]::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .newsletter-form .submit-btn {
+        padding: 12px 30px;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .newsletter-form .submit-btn:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+    }
+    
+    /* Footer Badge Positioning */
+    .footer-badge {
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .footer-badge img {
+        max-width: 150px;
+        height: auto;
+    }
+    </style>
 
     <?php wp_footer(); ?>
 </body>

@@ -96,6 +96,13 @@ function home_content()
 					}
 					?>
 				</div>
+				
+				<!-- Book Now Button -->
+				<div class="treatment-book-now" style="text-align: center; margin-top: 40px;">
+					<a href="/#book-now" class="book-now-btn" style="display: inline-block; background-color: #007cba; color: #fff; padding: 15px 40px; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+						Book Now
+					</a>
+				</div>
 			</div>
         </div>
     </div>
