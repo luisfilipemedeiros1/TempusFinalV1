@@ -82,102 +82,65 @@ get_header();
     color: var(--gray);
 }
 
-/* Browse by Category Section */
-.browse-categories {
-    padding: 100px 0;
-    background: var(--white);
+/* Category Navigation Dropdown */
+.category-navigation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.browse-categories-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.browse-categories-header h2 {
-    font-size: 3rem;
+.category-dropdown {
+    background: rgba(255, 255, 255, 0.95);
     color: var(--primary);
-    margin-bottom: 20px;
-    font-family: var(--heading-font);
-}
-
-.browse-categories-header p {
-    font-size: 1.2rem;
-    color: var(--gray);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.category-card {
-    position: relative;
-    height: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.category-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-.category-card-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.category-card:hover .category-card-bg {
-    transform: scale(1.1);
-}
-
-.category-card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-    transition: background 0.3s ease;
-}
-
-.category-card:hover .category-card-overlay {
-    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
-}
-
-.category-card-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 40px 30px;
-    z-index: 2;
-}
-
-.category-card-content h3 {
-    color: white;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.category-card-content p {
-    color: rgba(255,255,255,0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 15px 20px;
     font-size: 1rem;
-    line-height: 1.5;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    cursor: pointer;
+    min-width: 280px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23AF8F5A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 50px;
 }
+
+.category-dropdown:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-dropdown:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(175, 143, 90, 0.3);
+}
+
+.category-dropdown option {
+    color: var(--primary);
+    background: var(--white);
+    padding: 10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 
 /* Conditions Grid */
 .conditions-section {
@@ -446,9 +409,15 @@ get_header();
         font-size: 2.5rem;
     }
     
-    .category-nav-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+    .category-dropdown {
+        min-width: 250px;
+        font-size: 0.9rem;
+        padding: 12px 16px;
+        padding-right: 45px;
+    }
+    
+    .category-navigation {
+        margin-top: 30px;
     }
     
     .conditions-grid {
@@ -463,6 +432,15 @@ get_header();
         padding: 20px;
     }
 }
+
+@media (max-width: 480px) {
+    .category-dropdown {
+        min-width: 220px;
+        font-size: 0.85rem;
+        padding: 10px 14px;
+        padding-right: 40px;
+    }
+}
 </style>
 
 <main class="conditions-page">
@@ -471,6 +449,18 @@ get_header();
         <div class="conditions-hero-content">
             <h1 class="fade-in-up">Conditions We Treat</h1>
             <p class="subtitle fade-in-up">Expert solutions for your aesthetic and wellness concerns</p>
+            
+            <!-- Category Navigation Dropdown -->
+            <div class="category-navigation fade-in-up">
+                <label for="category-select" class="sr-only">Select a category to view</label>
+                <select id="category-select" class="category-dropdown">
+                    <option value="">Browse by Category</option>
+                    <option value="#facial-aging">Facial Aging Concerns</option>
+                    <option value="#skin-quality">Skin Quality Concerns</option>
+                    <option value="#body-concerns">Body Concerns</option>
+                    <option value="#hair-wellness">Hair & Wellness Concerns</option>
+                </select>
+            </div>
         </div>
     </section>
 
@@ -873,24 +863,38 @@ get_header();
 </main>
 
 <script>
-// Smooth scrolling for category navigation
+// Category dropdown navigation
 document.addEventListener('DOMContentLoaded', function() {
-    // Category navigation smooth scroll
-    document.querySelectorAll('.category-card').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                const headerHeight = document.querySelector('.site-header').offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight - 20;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+    const categoryDropdown = document.getElementById('category-select');
+    
+    if (categoryDropdown) {
+        categoryDropdown.addEventListener('change', function() {
+            const selectedValue = this.value;
+            
+            if (selectedValue && selectedValue.startsWith('#')) {
+                const targetId = selectedValue.substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    // Calculate header height for offset
+                    const header = document.querySelector('.site-header') || document.querySelector('header');
+                    const headerHeight = header ? header.offsetHeight : 100;
+                    const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                    
+                    // Smooth scroll to target section
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Reset dropdown to default option after navigation
+                    setTimeout(() => {
+                        this.selectedIndex = 0;
+                    }, 100);
+                }
             }
         });
-    });
+    }
 });
 </script>
 
