@@ -90,7 +90,7 @@
                             
 
                             
-                            <li><a href="<?php echo home_url('/conditions-treated/'); ?>">Conditions</a></li>
+                            <li><a href="<?php echo home_url('/conditions-treated-2/'); ?>">Conditions</a></li>
                             <li><a href="https://tempusbelgravia.co.uk/#contact">Contact</a></li>
                         </ul>
                     </nav>

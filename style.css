@@ -3253,6 +3253,13 @@ color: black;
 	font-family:'open-sans-light';
 	display:none;
 }
+/* ===================================
+   WooCommerce Styles
+   =================================== 
+   Note: WooCommerce styles have been moved to /css/woocommerce.css
+   for better organization and maintainability.
+   ===================================*/
+
 .woocommerce nav.woocommerce-pagination .page-numbers{
 	font-family: 'open-sans-medium'!important;
 }

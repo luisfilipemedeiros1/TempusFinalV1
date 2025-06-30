@@ -129,6 +129,21 @@ function tempus_enqueue_styles_scripts() {
         }
     }
     
+    // Enqueue WooCommerce-specific CSS and JS for shop pages
+    if ( is_woocommerce() || is_shop() || is_product_category() || is_product_tag() || is_product() ) {
+        $woocommerce_css_path = get_stylesheet_directory() . '/css/woocommerce.css';
+        $woocommerce_css_url = get_stylesheet_directory_uri() . '/css/woocommerce.css';
+        if ( file_exists( $woocommerce_css_path ) ) {
+            wp_enqueue_style('tempus-woocommerce-styles', $woocommerce_css_url, array('tempus-main-styles'), CHILD_THEME_VERSION);
+        }
+        
+        $woocommerce_js_path = get_stylesheet_directory() . '/js/woocommerce.js';
+        $woocommerce_js_url = get_stylesheet_directory_uri() . '/js/woocommerce.js';
+        if ( file_exists( $woocommerce_js_path ) ) {
+            wp_enqueue_script('tempus-woocommerce', $woocommerce_js_url, array('jquery', 'wc-add-to-cart'), CHILD_THEME_VERSION, true);
+        }
+    }
+    
     // Membership V2 template assets are now loaded via separate hook for Genesis compatibility
 
     // --- PAGE-SPECIFIC SCRIPTS ---
@@ -494,6 +509,21 @@ function theme_custom_init() {
 // Add WooCommerce support
 add_theme_support( 'woocommerce' );
 
+// Add WooCommerce content wrappers for Genesis
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+
+add_action( 'woocommerce_before_main_content', 'tempus_woocommerce_wrapper_start', 10 );
+add_action( 'woocommerce_after_main_content', 'tempus_woocommerce_wrapper_end', 10 );
+
+function tempus_woocommerce_wrapper_start() {
+    echo '<main class="content woocommerce-main">';
+}
+
+function tempus_woocommerce_wrapper_end() {
+    echo '</main>';
+}
+
 // To change add to cart text on single product page
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' );
 function woocommerce_custom_single_add_to_cart_text() {
@@ -536,70 +566,22 @@ function bbloomer_display_quantity_minus() {
    echo '<button type="button" class="minus" aria-label="' . esc_attr__('Decrease quantity', 'tempusbelgravia') . '"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>'; // Use fas for solid icons in FA 5+
 }
 
-// Trigger update quantity script (Keep existing, but consider moving JS to a file)
-add_action( 'wp_footer', 'bbloomer_add_cart_quantity_plus_minus' );
-function bbloomer_add_cart_quantity_plus_minus() {
-    // Only run on product or cart pages
-    if ( ! is_product() && ! is_cart() ) return;
+// Note: Quantity button JavaScript has been moved to js/woocommerce.js
 
-    // It's better to enqueue this script properly instead of outputting in footer
-    // Consider adding this JS to your theme's main JS file (e.g., js/custom.js)
-    // If kept here, ensure jQuery is loaded
-    if ( ! wp_script_is( 'jquery', 'done' ) ) {
-       wp_enqueue_script('jquery'); // Ensure jQuery is loaded if not already
+// Add AJAX handler for cart count updates
+add_action( 'wp_ajax_get_cart_count', 'tempus_get_cart_count' );
+add_action( 'wp_ajax_nopriv_get_cart_count', 'tempus_get_cart_count' );
+function tempus_get_cart_count() {
+    if ( function_exists( 'WC' ) ) {
+        echo WC()->cart->get_cart_contents_count();
+    } else {
+        echo '0';
     }
-    ?>
-    <script type="text/javascript">
-    jQuery(function($) {
-        if ( ! String.prototype.getDecimals ) {
-            String.prototype.getDecimals = function() {
-                var num = this,
-                    match = ('' + num).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
-                if ( ! match ) {
-                    return 0;
-                }
-                return Math.max( 0, ( match[1] ? match[1].length : 0 ) - ( match[2] ? +match[2] : 0 ) );
-            }
-        }
-        // Quantity buttons
-        $(document).on( 'click', '.plus, .minus', function() {
-            var $qty        = $( this ).closest( '.quantity' ).find( '.qty'),
-                currentVal  = parseFloat( $qty.val() ),
-                max         = parseFloat( $qty.attr( 'max' ) ),
-                min         = parseFloat( $qty.attr( 'min' ) ),
-                step        = $qty.attr( 'step' );
-
-            // Format values
-            if ( ! currentVal || currentVal === '' || currentVal === 'NaN' ) currentVal = 0;
-            if ( max === '' || max === 'NaN' ) max = '';
-            if ( min === '' || min === 'NaN' ) min = 0;
-            if ( step === 'any' || step === '' || step === undefined || parseFloat( step ) === 'NaN' ) step = 1;
-
-            // Change the value
-            if ( $( this ).is( '.plus' ) ) {
-                if ( max && ( currentVal >= max ) ) {
-                    $qty.val( max );
-                } else {
-                    $qty.val( ( currentVal + parseFloat( step )).toFixed( step.getDecimals() ) );
-                }
-            } else {
-                if ( min && ( currentVal <= min ) ) {
-                    $qty.val( min );
-                } else if ( currentVal > 0 ) {
-                    $qty.val( ( currentVal - parseFloat( step )).toFixed( step.getDecimals() ) );
-                }
-            }
-
-            // Trigger change event
-            $qty.trigger( 'change' );
-        });
-    });
-    </script>
-    <?php
+    wp_die();
 }
 
-// Output product categories before shop loop (Keep existing)
-add_action( 'woocommerce_before_shop_loop', 'woocommerce_output_all_categories' );
+// Output product categories before shop loop with improved styling
+add_action( 'woocommerce_before_shop_loop', 'woocommerce_output_all_categories', 15 );
 function woocommerce_output_all_categories() {
     // Get uncategorized term ID to exclude it
     $uncategorized_term = get_term_by( 'slug', 'uncategorized', 'product_cat' );
@@ -608,24 +590,57 @@ function woocommerce_output_all_categories() {
     $terms = get_terms( array(
         'taxonomy' => 'product_cat',
         'hide_empty' => true,
-        'count' => true, // Include count
-        'exclude' => array($exclude_id), // Exclude uncategorized
-        'orderby' => 'name', // Order alphabetically
+        'count' => true,
+        'exclude' => array($exclude_id),
+        'orderby' => 'name',
         'order' => 'ASC'
     ) );
 
     if ( $terms && ! is_wp_error( $terms ) ) {
+        $current_cat = get_queried_object();
+        $current_cat_id = is_a($current_cat, 'WP_Term') ? $current_cat->term_id : 0;
+        
         echo '<div class="product-categories">';
-        // Optional: Add an "All" link
-         echo '<a href="' . esc_url(get_permalink( wc_get_page_id( 'shop' ) )) . '">' . esc_html__('All', 'tempusbelgravia') . ' /</a> ';
+        
+        // Add "All" link
+        $shop_page_url = get_permalink( wc_get_page_id( 'shop' ) );
+        $active_class = ( is_shop() && ! is_product_category() ) ? ' class="active"' : '';
+        echo '<a href="' . esc_url($shop_page_url) . '"' . $active_class . '>' . esc_html__('All Products', 'tempusbelgravia') . '</a>';
 
         foreach ( $terms as $term ) {
-            echo '<a href="' . esc_url(get_term_link( $term )) . '">' . esc_html($term->name) . '<span class="product-count"> (' . esc_html($term->count) . ')</span> /</a> '; // Added space and parenthesis
+            $active_class = ( $current_cat_id === $term->term_id ) ? ' class="active"' : '';
+            echo '<a href="' . esc_url(get_term_link( $term )) . '"' . $active_class . '>' . esc_html($term->name) . '<span class="product-count">' . esc_html($term->count) . '</span></a>';
         }
-        // Remove trailing slash if needed
-        // echo rtrim($output, ' /'); // This might be tricky with the last link
+        
         echo '</div>';
     }
+}
+
+// Improve WooCommerce product grid display
+add_filter( 'loop_shop_columns', 'tempus_loop_columns', 999 );
+function tempus_loop_columns() {
+    return 3; // Default to 3 columns on shop pages
+}
+
+// Add support for WooCommerce gallery features
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
+
+// Remove WooCommerce default styles to use our custom ones
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+// Customize WooCommerce breadcrumbs
+add_filter( 'woocommerce_breadcrumb_defaults', 'tempus_woocommerce_breadcrumbs' );
+function tempus_woocommerce_breadcrumbs() {
+    return array(
+        'delimiter'   => ' <i class="fas fa-chevron-right"></i> ',
+        'wrap_before' => '<nav class="woocommerce-breadcrumb" aria-label="breadcrumb">',
+        'wrap_after'  => '</nav>',
+        'before'      => '',
+        'after'       => '',
+        'home'        => __( 'Home', 'tempusbelgravia' ),
+    );
 }
 
 
@@ -757,7 +772,7 @@ function tempus_fallback_menu() {
     echo '<li><a href="' . esc_url( home_url( '/certified-packages/' ) ) . '">' . esc_html__( 'Certified Packages', 'tempusbelgravia' ) . '</a></li>';
     echo '</ul></li>';
     
-    echo '<li><a href="' . esc_url( home_url( '/conditions-treated/' ) ) . '">' . esc_html__( 'Conditions Treated', 'tempusbelgravia' ) . '</a></li>';
+    echo '<li><a href="' . esc_url( home_url( '/conditions-treated-2/' ) ) . '">' . esc_html__( 'Conditions Treated', 'tempusbelgravia' ) . '</a></li>';
     
     // Shop dropdown
     echo '<li class="menu-item-has-children-v2"><a href="' . esc_url( home_url( '/shop/' ) ) . '">' . esc_html__( 'Shop', 'tempusbelgravia' ) . ' <i class="fas fa-chevron-down menu-arrow" aria-hidden="true"></i></a>';

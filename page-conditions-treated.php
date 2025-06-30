@@ -82,51 +82,101 @@ get_header();
     color: var(--gray);
 }
 
-/* Category Navigation */
-.category-navigation {
-    padding: 60px 0;
+/* Browse by Category Section */
+.browse-categories {
+    padding: 100px 0;
     background: var(--white);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.category-nav-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
+.browse-categories-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.browse-categories-header h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+}
+
+.browse-categories-header p {
+    font-size: 1.2rem;
+    color: var(--gray);
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.category-nav-item {
-    text-align: center;
-    padding: 25px;
-    background: var(--light);
-    border-radius: 12px;
-    text-decoration: none;
-    color: var(--primary);
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-card {
+    position: relative;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
 }
 
-.category-nav-item:hover {
-    background: var(--primary);
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.category-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-card-bg {
+    transform: scale(1.1);
+}
+
+.category-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    transition: background 0.3s ease;
+}
+
+.category-card:hover .category-card-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.category-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 30px;
+    z-index: 2;
+}
+
+.category-card-content h3 {
     color: white;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.category-nav-item i {
-    font-size: 2rem;
-}
-
-.category-nav-item span {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
+}
+
+.category-card-content p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 /* Conditions Grid */
@@ -232,17 +282,19 @@ get_header();
 
 .treatment-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
 }
 
 .treatment-tag {
     display: inline-block;
-    padding: 5px 12px;
+    padding: 8px 16px;
     background: rgba(139, 111, 76, 0.1);
     color: var(--primary);
     font-size: 0.85rem;
     border-radius: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 /* Detailed Condition Modal Style */
@@ -429,25 +481,49 @@ get_header();
         </div>
     </section>
 
-    <!-- Category Navigation -->
-    <section class="category-navigation">
+    <!-- Browse by Category -->
+    <section class="browse-categories">
         <div class="container">
-            <div class="category-nav-grid">
-                <a href="#facial-aging" class="category-nav-item">
-                    <i class="fas fa-face-smile"></i>
-                    <span>Facial Aging</span>
+            <div class="browse-categories-header">
+                <h2>Browse by Category</h2>
+                <p>Explore our treatment solutions organized by your specific concerns</p>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="#facial-aging" class="category-card">
+                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/8-point-lift-scaled-1.jpeg.webp" alt="Facial Aging" class="category-card-bg">
+                    <div class="category-card-overlay"></div>
+                    <div class="category-card-content">
+                        <h3>Facial Aging</h3>
+                        <p>Wrinkles, volume loss, sagging skin, and other age-related concerns</p>
+                    </div>
                 </a>
-                <a href="#skin-quality" class="category-nav-item">
-                    <i class="fas fa-spa"></i>
-                    <span>Skin Quality</span>
+                
+                <a href="#skin-quality" class="category-card">
+                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Restilane-Skin-Booster-scaled-1.jpeg.webp" alt="Skin Quality" class="category-card-bg">
+                    <div class="category-card-overlay"></div>
+                    <div class="category-card-content">
+                        <h3>Skin Quality</h3>
+                        <p>Acne, pigmentation, texture, and overall skin health improvements</p>
+                    </div>
                 </a>
-                <a href="#body-concerns" class="category-nav-item">
-                    <i class="fas fa-person"></i>
-                    <span>Body Concerns</span>
+                
+                <a href="#body-concerns" class="category-card">
+                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EMSculpting.jpeg.webp" alt="Body Concerns" class="category-card-bg">
+                    <div class="category-card-overlay"></div>
+                    <div class="category-card-content">
+                        <h3>Body Concerns</h3>
+                        <p>Fat reduction, muscle toning, cellulite, and body contouring</p>
+                    </div>
                 </a>
-                <a href="#hair-wellness" class="category-nav-item">
-                    <i class="fas fa-seedling"></i>
-                    <span>Hair & Wellness</span>
+                
+                <a href="#hair-wellness" class="category-card">
+                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/prp-hair-loos.jpeg.webp" alt="Hair & Wellness" class="category-card-bg">
+                    <div class="category-card-overlay"></div>
+                    <div class="category-card-content">
+                        <h3>Hair & Wellness</h3>
+                        <p>Hair restoration, energy enhancement, and holistic wellness</p>
+                    </div>
                 </a>
             </div>
         </div>
@@ -847,7 +923,7 @@ get_header();
 // Smooth scrolling for category navigation
 document.addEventListener('DOMContentLoaded', function() {
     // Category navigation smooth scroll
-    document.querySelectorAll('.category-nav-item').forEach(link => {
+    document.querySelectorAll('.category-card').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);

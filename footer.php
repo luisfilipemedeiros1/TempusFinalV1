@@ -95,7 +95,7 @@
                             <li><a href="<?php echo home_url('/memberships/'); ?>">Memberships</a></li>
                             <li><a href="<?php echo home_url('/treatments-overview/'); ?>">Treatments</a></li>
                             <li><a href="<?php echo home_url('/tempus-team/'); ?>">Team</a></li>
-                            <li><a href="<?php echo home_url('/conditions-treated/'); ?>">Conditions</a></li>
+                            <li><a href="<?php echo home_url('/conditions-treated-2/'); ?>">Conditions</a></li>
                             <li><a href="<?php echo home_url('/#contact'); ?>">Contact</a></li>
                         </ul>
                     </div>
