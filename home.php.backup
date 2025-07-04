@@ -92,7 +92,7 @@ get_header();
 
                       <!-- Card 1: Hifu -->
                       <div class="treatment-card scale-in">
-                        <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/hifu-treatment.webp" loading="lazy" alt="HIFU Treatment"></div>
+                        <div class="treatment-card-img"><img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761823/DSCF1645_w7xsbk.jpg" loading="lazy" alt="HIFU Treatment"></div>
                         <div class="treatment-card-content">
                             <h3>HIFU Skin Tightening</h3>
                             <p>Non-surgical lift using focused ultrasound energy to tighten skin on the face, neck, and décolletage for a youthful contour.</p>
@@ -161,7 +161,7 @@ get_header();
 
                      <!-- Card 5: Body Contouring -->
                      <div class="treatment-card scale-in">
-                         <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/body-contouring.webp" loading="lazy" alt="Body Contouring Treatment"></div>
+                         <div class="treatment-card-img"><img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743754471/laser-epilation-and-cosmetology-in-beauty-salon-2025-03-17-16-59-36-utc_k0nglx.jpg" loading="lazy" alt="Body Contouring Treatment"></div>
                         <div class="treatment-card-content">
                             <h3>Advanced Body Contouring</h3>
                             <p>Utilise technologies like EMSculpt Neo or Cryolipolysis to sculpt, tone muscle, reduce stubborn fat, and refine body contours non-invasively.</p>
@@ -195,7 +195,7 @@ get_header();
 
                      <!-- Card 7: Injectable Skin Boosters -->
                       <div class="treatment-card scale-in">
-                         <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/skin-boosters.webp" loading="lazy" alt="Skin booster treatment enhancing hydration"></div>
+                         <div class="treatment-card-img"><img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743754271/getty-images-LH8AWrWHjuA-unsplash_dqjuha.jpg" loading="lazy" alt="Skin booster treatment enhancing hydration"></div>
                          <div class="treatment-card-content">
                              <h3>Injectable Skin Boosters</h3>
                             <p>Deeply hydrate and revitalise skin from within using micro-droplets of hyaluronic acid for lasting radiance and improved texture.</p>
@@ -265,7 +265,7 @@ get_header();
                  <div class="pathways-grid horizontal-scroll-container fade-in-stagger" data-autorotate="true">
                      <!-- Pathway Card 1: Facial Aesthetics -->
                      <a href="https://tempusbelgravia.co.uk/treatment_category/facial-aesthetics/" class="pathway-card scale-in">
-                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/facial-aesthetics-category.webp" loading="lazy" alt="Facial Aesthetics procedures concept" class="pathway-card-bg">
+                         <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754273/getty-images-36aasMPPoVE-unsplash_lwakd8.jpg" loading="lazy" alt="Facial Aesthetics procedures concept" class="pathway-card-bg">
                          <div class="pathway-card-overlay"></div>
                          <div class="pathway-card-content">
                              <i class="fas fa-smile" aria-hidden="true"></i>
@@ -275,7 +275,7 @@ get_header();
                      </a>
                      <!-- Pathway Card 2: Body Contouring -->
                      <a href="https://tempusbelgravia.co.uk/body-treatment/" class="pathway-card scale-in">
-                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/body-contouring-category.webp" loading="lazy" alt="Body Contouring treatments illustration" class="pathway-card-bg">
+                         <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_faces,h_600,w_400/v1743754471/laser-epilation-and-cosmetology-in-beauty-salon-2025-03-17-16-59-36-utc_k0nglx.jpg" loading="lazy" alt="Body Contouring treatments illustration" class="pathway-card-bg">
                          <div class="pathway-card-overlay"></div>
                          <div class="pathway-card-content">
                              <i class="fas fa-person-booth" aria-hidden="true"></i>
@@ -285,7 +285,7 @@ get_header();
                      </a>
                      <!-- Pathway Card 3: Laser & Energy -->
                      <a href="https://tempusbelgravia.co.uk/treatment_category/laser-treatments/" class="pathway-card scale-in">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/laser-energy-category.webp" loading="lazy" alt="Laser and Energy based skin treatments concept" class="pathway-card-bg">
+                        <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754267/getty-images-cRJxe2xOUWg-unsplash_1_wzppep.jpg" loading="lazy" alt="Laser and Energy based skin treatments concept" class="pathway-card-bg">
                         <div class="pathway-card-overlay"></div>
                         <div class="pathway-card-content">
                             <i class="fas fa-wave-square" aria-hidden="true"></i>
@@ -295,7 +295,7 @@ get_header();
                     </a>
                     <!-- Pathway Card 4: Injectable Artistry -->
                      <a href="https://tempusbelgravia.co.uk/treatment_category/medical-aesthetics/" class="pathway-card scale-in">
-                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/injectable-artistry-category.webp" loading="lazy" alt="Injectable fillers and neuromodulators example" class="pathway-card-bg">
+                         <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_faces,h_600,w_400/v1743754269/getty-images-QlxmgYd2emI-unsplash_a01khu.jpg" loading="lazy" alt="Injectable fillers and neuromodulators example" class="pathway-card-bg">
                          <div class="pathway-card-overlay"></div>
                          <div class="pathway-card-content">
                              <i class="fas fa-syringe" aria-hidden="true"></i>
@@ -305,7 +305,7 @@ get_header();
                      </a>
                      <!-- Pathway Card 5: Medical Dermatology -->
                      <a href="https://tempusbelgravia.co.uk/treatment_category/dermatology/" class="pathway-card scale-in">
-                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/medical-dermatology-category.webp" loading="lazy" alt="Expert medical dermatology consultation" class="pathway-card-bg">
+                         <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754277/getty-images-xf9a3aoRAGg-unsplash_1_znku6m.jpg" loading="lazy" alt="Expert medical dermatology consultation" class="pathway-card-bg">
                           <div class="pathway-card-overlay"></div>
                          <div class="pathway-card-content">
                               <i class="fas fa-notes-medical" aria-hidden="true"></i>
@@ -315,7 +315,7 @@ get_header();
                      </a>
                      <!-- Pathway Card 6: IV Nutrient Therapy -->
                     <a href="https://tempusbelgravia.co.uk/treatment_category/iv-infusions/" class="pathway-card scale-in">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/iv-nutrient-category.webp" loading="lazy" alt="IV nutrient drip therapy session" class="pathway-card-bg">
+                        <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754737/Screenshot_2025-04-04_at_9.18.35_AM_edlusm.png" loading="lazy" alt="IV nutrient drip therapy session" class="pathway-card-bg">
                          <div class="pathway-card-overlay"></div>
                         <div class="pathway-card-content">
                              <i class="fas fa-tint" aria-hidden="true"></i>
@@ -325,7 +325,7 @@ get_header();
                      </a>
                      <!-- Pathway Card 7: Longevity Science -->
                     <a href="https://tempusbelgravia.co.uk/treatment_category/nutrition-and-functional-medicine/" class="pathway-card scale-in">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/longevity-science-category.webp" loading="lazy" alt="Longevity science integrating nutrition and vitality" class="pathway-card-bg">
+                        <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743755077/Screenshot_2025-04-04_at_9.24.26_AM_e5jpwl.png" loading="lazy" alt="Longevity science integrating nutrition and vitality" class="pathway-card-bg">
                          <div class="pathway-card-overlay"></div>
                         <div class="pathway-card-content">
                              <i class="fas fa-seedling" aria-hidden="true"></i>
@@ -335,7 +335,7 @@ get_header();
                      </a>
                      <!-- Pathway Card 8: Surgical Expertise -->
                      <a href="https://tempusbelgravia.co.uk/treatment_category/surgical-services/" class="pathway-card scale-in">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/surgical-expertise-category.webp" loading="lazy" alt="Refined surgical procedures example" class="pathway-card-bg">
+                        <img src="https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754902/Screenshot_2025-04-04_at_9.21.33_AM_j5nnfb.png" loading="lazy" alt="Refined surgical procedures example" class="pathway-card-bg">
                          <div class="pathway-card-overlay"></div>
                         <div class="pathway-card-content">
                             <i class="fas fa-cut" aria-hidden="true"></i>
@@ -366,7 +366,7 @@ get_header();
                              <div class="process-step-title"><h3>1. Discovery & Vision</h3></div>
                          </div>
                          <div class="journey-highlight-img">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/journey/discovery-vision.webp" loading="lazy" alt="Personalized consultation discussing vision and goals at Tempus Lounge">
+                              <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761798/DSCF1682_ebhg0a.jpg" loading="lazy" alt="Personalized consultation discussing vision and goals at Tempus Lounge">
                          </div>
                          <div class="process-step-content">
                              <p>Our dialogue begins with understanding your unique aspirations – enhancing <strong>visible health</strong> while nurturing inner vitality. We listen deeply to craft a truly <strong>bespoke</strong> vision for your aesthetic and <strong>longevity</strong> goals.</p>
@@ -379,7 +379,7 @@ get_header();
                              <div class="process-step-title"><h3>2. Holistic Insight</h3></div>
                          </div>
                           <div class="journey-highlight-img">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/journey/holistic-insight.webp" loading="lazy" alt="Advanced 3D facial imaging analysis in progress">
+                              <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761742/DSCF1691_m8aari.jpg" loading="lazy" alt="Advanced 3D facial imaging analysis in progress">
                           </div>
                          <div class="process-step-content">
                              <p>Beyond the surface, we utilize advanced diagnostics – from 3D imaging to potential biomarker analysis – gaining deep insights into your skin health, biological <strong>aging</strong> markers, and wellness status for precise, data-driven planning.</p>
@@ -392,7 +392,7 @@ get_header();
                              <div class="process-step-title"><h3>3. Bespoke Blueprint</h3></div>
                          </div>
                            <div class="journey-highlight-img">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/hifu-treatment.webp" loading="lazy" alt="Planning bespoke treatments and longevity protocols with a specialist">
+                              <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761823/DSCF1645_w7xsbk.jpg" loading="lazy" alt="Planning bespoke treatments and longevity protocols with a specialist">
                            </div>
                           <div class="process-step-content">
                              <p>Your unique 'Vitality Blueprint' is designed, synergistically integrating cutting-edge aesthetic treatments (addressing <strong>visible health</strong>) with targeted <strong>longevity</strong> protocols (optimizing cellular function), reflecting a truly <strong>bespoke</strong> strategy.</p>
@@ -405,7 +405,7 @@ get_header();
                               <div class="process-step-title"><h3>4. Harmonisation</h3></div>
                           </div>
                             <div class="journey-highlight-img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/journey/harmonisation.webp" loading="lazy" alt="Expert performing an aesthetic treatment in a serene Tempus Lounge room">
+                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743756299/DSCF1758_trieqm.jpg" loading="lazy" alt="Expert performing an aesthetic treatment in a serene Tempus Lounge room">
                             </div>
                           <div class="process-step-content">
                              <p>Experience treatments delivered with medical precision and artistic sensibility in our serene sanctuary. We focus on achieving harmonious, natural-looking results that enhance your <strong>visible health</strong> and reflect refined vitality, respecting the natural process of <strong>aging</strong>.</p>
@@ -418,7 +418,7 @@ get_header();
                              <div class="process-step-title"><h3>5. Evolving Partnership</h3></div>
                           </div>
                            <div class="journey-highlight-img">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/journey/evolving-partnership.webp" loading="lazy" alt="Ongoing client support and progress monitoring discussion">
+                              <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743762642/DSCF1572_urh5uk.jpg" loading="lazy" alt="Ongoing client support and progress monitoring discussion">
                            </div>
                           <div class="process-step-content">
                              <p>Your journey evolves with us. We provide ongoing support, monitor progress, and adapt your plan, ensuring sustained results and optimizing your path towards long-term <strong>longevity</strong> and enduring <strong>visible health</strong> through a continuous, <strong>bespoke</strong> relationship.</p>
@@ -445,7 +445,7 @@ get_header();
                              <div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                              <p class="testimonial-quote">Tempus offers the highest standards in a wonderful, welcoming environment. Lenka performed my treatment with professionalism and expertise. She is thorough with explanations and has gifted hands.</p>
                              <div class="testimonial-author">
-                                <div class="testimonial-avatar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/badges/google-reviews-logo.webp" loading="lazy" alt="Google Review Avatar Placeholder"></div>
+                                <div class="testimonial-avatar"><img src="https://www.arrowpestcontrol.com/wp-content/uploads/2021/03/Google-Reviews-Logo-732x500.jpg" loading="lazy" alt="Google Review Avatar Placeholder"></div>
                                 <div class="testimonial-info"><h4 class="testimonial-name">Badia E.</h4><p class="testimonial-meta">Verified Client Review</p></div>
                             </div>
                          </div>
@@ -453,7 +453,7 @@ get_header();
                               <div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                               <p class="testimonial-quote">Only one word describes my experience: "amazing"! The attention to detail, the serene atmosphere, and the results... Tempus is simply the best.</p>
                              <div class="testimonial-author">
-                                 <div class="testimonial-avatar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/badges/google-reviews-logo.webp" loading="lazy" alt="Google Review Avatar Placeholder"></div>
+                                 <div class="testimonial-avatar"><img src="https://www.arrowpestcontrol.com/wp-content/uploads/2021/03/Google-Reviews-Logo-732x500.jpg" loading="lazy" alt="Google Review Avatar Placeholder"></div>
                                  <div class="testimonial-info"><h4 class="testimonial-name">Gloria P. V.</h4><p class="testimonial-meta">Verified Client Review</p></div>
                             </div>
                          </div>
@@ -461,7 +461,7 @@ get_header();
                               <div class="testimonial-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                               <p class="testimonial-quote">I rarely write reviews, but Dr. Rotsaert exceeded all expectations. I've met top plastic surgeons globally, and she is #1 in every aspect - skill, artistry, and care.</p>
                              <div class="testimonial-author">
-                                <div class="testimonial-avatar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/badges/google-reviews-logo.webp" loading="lazy" alt="Google Review Avatar Placeholder"></div>
+                                <div class="testimonial-avatar"><img src="https://www.arrowpestcontrol.com/wp-content/uploads/2021/03/Google-Reviews-Logo-732x500.jpg" loading="lazy" alt="Google Review Avatar Placeholder"></div>
                                 <div class="testimonial-info"><h4 class="testimonial-name">Sophie L. S.</h4><p class="testimonial-meta">Verified Client Review</p></div>
                             </div>
                          </div>
@@ -545,7 +545,7 @@ get_header();
                       <!-- Product Card 1 -->
                       <div class="product-card scale-in">
                           <div class="product-card-img">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/intelligent-face-body-cream.webp" loading="lazy" alt="Injectual Intelligent Face + Body Cream Product Image">
+                              <img src="https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/intelligent-face-and-body-cream-purple-v.3-300x300.jpg" loading="lazy" alt="Injectual Intelligent Face + Body Cream Product Image">
                           </div>
                           <div class="product-card-content">
                               <h3>Injectual Intelligent Face + Body Cream</h3>
@@ -557,7 +557,7 @@ get_header();
                       <!-- Product Card 2 -->
                        <div class="product-card scale-in">
                            <div class="product-card-img">
-                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/anti-wrinkle-serum.webp" loading="lazy" alt="Anti Wrinkle Serum Product Image">
+                               <img src="https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/Zeitschild_-Anti-Wrinkle-Serum-scaled-300x300.jpg" loading="lazy" alt="Anti Wrinkle Serum Product Image">
                            </div>
                            <div class="product-card-content">
                                <h3>Anti Wrinkle Serum</h3>
@@ -569,7 +569,7 @@ get_header();
                       <!-- Product Card 3 -->
                       <div class="product-card scale-in">
                           <div class="product-card-img">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/instant-eye-revive.webp" loading="lazy" alt="Injectual Instant Eye Revive Product Image">
+                              <img src="https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/instant-eye-revive-open-purple-v.3-scaled-300x300.jpg" loading="lazy" alt="Injectual Instant Eye Revive Product Image">
                           </div>
                           <div class="product-card-content">
                               <h3>Injectual Instant Eye Revive</h3>
@@ -581,7 +581,7 @@ get_header();
                       <!-- Product Card 4 -->
                        <div class="product-card scale-in">
                            <div class="product-card-img">
-                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/correcting-spf-50.webp" loading="lazy" alt="Injectual Innovative Correcting SPF 50+ Product Image">
+                               <img src="https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/08_05_2022_Injectual_186-edited-v.3-300x300.jpg" loading="lazy" alt="Injectual Innovative Correcting SPF 50+ Product Image">
                            </div>
                            <div class="product-card-content">
                                <h3>Injectual Innovative Correcting SPF 50+</h3>
@@ -593,7 +593,7 @@ get_header();
                       <!-- Product Card 5 -->
                       <div class="product-card scale-in">
                            <div class="product-card-img">
-                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/products/firming-neck-creme.webp" loading="lazy" alt="Firming Neck Creme Serum Product Image">
+                               <img src="https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/Zeitschild-Neck-and-Neckline-Firming-scaled-300x300.jpg" loading="lazy" alt="Firming Neck Creme Serum Product Image">
                            </div>
                            <div class="product-card-content">
                                <h3>Firming Neck Creme Serum</h3>
@@ -621,12 +621,12 @@ get_header();
                          <div class="divider"></div>
                      </div>
                      <div class="instagram-grid fade-in">
-                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE1/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram/gallery-1.webp" loading="lazy" alt="Instagram Image: Serene treatment room aesthetic"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
-                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE2/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 2"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram/gallery-2.webp" loading="lazy" alt="Instagram Image: Tempus Lounge atmosphere detail"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
-                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE3/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 3"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram/gallery-3.webp" loading="lazy" alt="Instagram Image: RF Needling skin tightening results example"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
-                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE4/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 4"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram/gallery-4.webp" loading="lazy" alt="Instagram Image: Luxury skincare product display"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
-                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE5/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 5"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram/gallery-5.webp" loading="lazy" alt="Instagram Image: Client receiving IV vitamin drip therapy"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
-                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE6/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 6"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram/gallery-6.webp" loading="lazy" alt="Instagram Image: Exterior view of Tempus Lounge Belgravia"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
+                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE1/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 1"><img src="https://res.cloudinary.com/drtatej7i/image/upload/v1743761283/Screenshot_2025-04-04_at_11.06.19_AM_dlqjzj.png" loading="lazy" alt="Instagram Image: Serene treatment room aesthetic"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
+                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE2/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 2"><img src="https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.07.03_AM_oqitvn.png" loading="lazy" alt="Instagram Image: Tempus Lounge atmosphere detail"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
+                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE3/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 3"><img src="https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.06.55_AM_t3b1wz.png" loading="lazy" alt="Instagram Image: RF Needling skin tightening results example"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
+                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE4/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 4"><img src="https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.06.05_AM_akgzdv.png" loading="lazy" alt="Instagram Image: Luxury skincare product display"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
+                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE5/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 5"><img src="https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.06.49_AM_brrbvr.png" loading="lazy" alt="Instagram Image: Client receiving IV vitamin drip therapy"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
+                          <div class="instagram-item scale-in"><a href="https://www.instagram.com/p/CEXAMPLE6/" target="_blank" rel="noopener noreferrer" aria-label="View Instagram Post 6"><img src="https://res.cloudinary.com/drtatej7i/image/upload/v1743761280/Screenshot_2025-04-04_at_11.06.42_AM_sxn6iu.png" loading="lazy" alt="Instagram Image: Exterior view of Tempus Lounge Belgravia"><span class="instagram-overlay"><i class="fab fa-instagram instagram-icon"></i></span></a></div>
                      </div>
                      <div class="instagram-follow fade-in">
                          <i class="fab fa-instagram" aria-hidden="true"></i>
