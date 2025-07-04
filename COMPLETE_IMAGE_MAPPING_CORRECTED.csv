@@ -1,0 +1,201 @@
+OLD_URL,NEW_LOCAL_PATH,CATEGORY,DESCRIPTION
+# CLOUDINARY IMAGES (31 total) - These go in theme directory
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761823/DSCF1645_w7xsbk.jpg,/wp-content/themes/tempusbelgravia/images/treatments/hifu-treatment.webp,treatment,HIFU Skin Tightening
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743754471/laser-epilation-and-cosmetology-in-beauty-salon-2025-03-17-16-59-36-utc_k0nglx.jpg,/wp-content/themes/tempusbelgravia/images/treatments/body-contouring.webp,treatment,Body Contouring
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743754271/getty-images-LH8AWrWHjuA-unsplash_dqjuha.jpg,/wp-content/themes/tempusbelgravia/images/treatments/skin-boosters.webp,treatment,Injectable Skin Boosters
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754273/getty-images-36aasMPPoVE-unsplash_lwakd8.jpg,/wp-content/themes/tempusbelgravia/images/treatments/facial-aesthetics-category.webp,category,Facial Aesthetics Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_faces,h_600,w_400/v1743754471/laser-epilation-and-cosmetology-in-beauty-salon-2025-03-17-16-59-36-utc_k0nglx.jpg,/wp-content/themes/tempusbelgravia/images/treatments/body-contouring-category.webp,category,Body Contouring Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754267/getty-images-cRJxe2xOUWg-unsplash_1_wzppep.jpg,/wp-content/themes/tempusbelgravia/images/treatments/laser-energy-category.webp,category,Laser & Energy Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_faces,h_600,w_400/v1743754269/getty-images-QlxmgYd2emI-unsplash_a01khu.jpg,/wp-content/themes/tempusbelgravia/images/treatments/injectable-artistry-category.webp,category,Injectable Artistry Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754277/getty-images-xf9a3aoRAGg-unsplash_1_znku6m.jpg,/wp-content/themes/tempusbelgravia/images/treatments/medical-dermatology-category.webp,category,Medical Dermatology Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754737/Screenshot_2025-04-04_at_9.18.35_AM_edlusm.png,/wp-content/themes/tempusbelgravia/images/treatments/iv-nutrient-category.webp,category,IV Nutrient Therapy Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743755077/Screenshot_2025-04-04_at_9.24.26_AM_e5jpwl.png,/wp-content/themes/tempusbelgravia/images/treatments/longevity-science-category.webp,category,Longevity Science Category
+https://res.cloudinary.com/drtatej7i/image/upload/c_fill,g_center,h_600,w_400/v1743754902/Screenshot_2025-04-04_at_9.21.33_AM_j5nnfb.png,/wp-content/themes/tempusbelgravia/images/treatments/surgical-expertise-category.webp,category,Surgical Expertise Category
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761798/DSCF1682_ebhg0a.jpg,/wp-content/themes/tempusbelgravia/images/journey/discovery-vision.webp,journey,Discovery & Vision
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743761742/DSCF1691_m8aari.jpg,/wp-content/themes/tempusbelgravia/images/journey/holistic-insight.webp,journey,Holistic Insight
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743756299/DSCF1758_trieqm.jpg,/wp-content/themes/tempusbelgravia/images/journey/harmonisation.webp,journey,Harmonisation
+https://res.cloudinary.com/drtatej7i/image/upload/t_d/v1743762642/DSCF1572_urh5uk.jpg,/wp-content/themes/tempusbelgravia/images/journey/evolving-partnership.webp,journey,Evolving Partnership
+https://res.cloudinary.com/drtatej7i/image/upload/v1743761283/Screenshot_2025-04-04_at_11.06.19_AM_dlqjzj.png,/wp-content/themes/tempusbelgravia/images/instagram/gallery-1.webp,instagram,Instagram Gallery 1
+https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.07.03_AM_oqitvn.png,/wp-content/themes/tempusbelgravia/images/instagram/gallery-2.webp,instagram,Instagram Gallery 2
+https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.06.55_AM_t3b1wz.png,/wp-content/themes/tempusbelgravia/images/instagram/gallery-3.webp,instagram,Instagram Gallery 3
+https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.06.05_AM_akgzdv.png,/wp-content/themes/tempusbelgravia/images/instagram/gallery-4.webp,instagram,Instagram Gallery 4
+https://res.cloudinary.com/drtatej7i/image/upload/v1743761281/Screenshot_2025-04-04_at_11.06.49_AM_brrbvr.png,/wp-content/themes/tempusbelgravia/images/instagram/gallery-5.webp,instagram,Instagram Gallery 5
+https://res.cloudinary.com/drtatej7i/image/upload/v1743761280/Screenshot_2025-04-04_at_11.06.42_AM_sxn6iu.png,/wp-content/themes/tempusbelgravia/images/instagram/gallery-6.webp,instagram,Instagram Gallery 6
+https://res.cloudinary.com/drtatej7i/image/upload/v1743752535/Before2_sjjugc.png,/wp-content/themes/tempusbelgravia/images/gallery/before/lips-before.webp,gallery,Lips Before
+https://res.cloudinary.com/drtatej7i/image/upload/v1743752532/After2_lsdrmw.png,/wp-content/themes/tempusbelgravia/images/gallery/after/lips-after.webp,gallery,Lips After
+https://res.cloudinary.com/drtatej7i/image/upload/v1743752535/Before1_aklops.png,/wp-content/themes/tempusbelgravia/images/gallery/before/wrinkle-before.webp,gallery,Wrinkle Before
+https://res.cloudinary.com/drtatej7i/image/upload/v1743752533/After1_cnlq0m.png,/wp-content/themes/tempusbelgravia/images/gallery/after/wrinkle-after.webp,gallery,Wrinkle After
+https://res.cloudinary.com/drtatej7i/image/upload/v1743752532/Before3_w1q592.png,/wp-content/themes/tempusbelgravia/images/gallery/before/jawline-before.webp,gallery,Jawline Before
+https://res.cloudinary.com/drtatej7i/image/upload/v1743752531/After3_rghajk.png,/wp-content/themes/tempusbelgravia/images/gallery/after/jawline-after.webp,gallery,Jawline After
+https://res.cloudinary.com/drtatej7i/image/upload/t_Banner/v1693401674/DermaplaSKIN2_gtrfxq.jpg,/wp-content/themes/tempusbelgravia/images/banners/dermapla-skin.webp,banner,Dermapla Skin Banner
+https://res.cloudinary.com/drtatej7i/image/upload/t_Banner/v1695816813/SkinPenMicroneedling_vvqrxa.jpg,/wp-content/themes/tempusbelgravia/images/banners/skinpen-microneedling.webp,banner,SkinPen Microneedling Banner
+https://res.cloudinary.com/drtatej7i/image/upload/t_Banner/v1693404418/Morpheus8Banner_gxlgxl.jpg,/wp-content/themes/tempusbelgravia/images/banners/morpheus8.webp,banner,Morpheus8 Banner
+https://res.cloudinary.com/drtatej7i/image/upload/t_Banner/v1693407057/Fotona_wygmbh.jpg,/wp-content/themes/tempusbelgravia/images/banners/fotona.webp,banner,Fotona Banner
+# NITROCDN PRODUCT IMAGES (5 total) - These go in theme directory
+https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/intelligent-face-and-body-cream-purple-v.3-300x300.jpg,/wp-content/themes/tempusbelgravia/images/products/intelligent-face-body-cream.webp,product,Injectual Face + Body Cream
+https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/Zeitschild_-Anti-Wrinkle-Serum-scaled-300x300.jpg,/wp-content/themes/tempusbelgravia/images/products/anti-wrinkle-serum.webp,product,Anti Wrinkle Serum
+https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/instant-eye-revive-open-purple-v.3-scaled-300x300.jpg,/wp-content/themes/tempusbelgravia/images/products/instant-eye-revive.webp,product,Instant Eye Revive
+https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/08_05_2022_Injectual_186-edited-v.3-300x300.jpg,/wp-content/themes/tempusbelgravia/images/products/correcting-spf-50.webp,product,Correcting SPF 50+
+https://cdn-ljahp.nitrocdn.com/iJfXjnUaLEgdjHFPFrPQVJUWPeICKGxo/assets/images/optimized/rev-557fc46/tempusbelgravia.co.uk/wp-content/uploads/2022/09/Zeitschild-Neck-and-Neckline-Firming-scaled-300x300.jpg,/wp-content/themes/tempusbelgravia/images/products/firming-neck-creme.webp,product,Firming Neck Creme Serum
+# EXTERNAL DOMAIN IMAGES (4 total) - These go in theme directory
+https://www.arrowpestcontrol.com/wp-content/uploads/2021/03/Google-Reviews-Logo-732x500.jpg,/wp-content/themes/tempusbelgravia/images/badges/google-reviews-logo.webp,badge,Google Reviews Logo
+https://eventssaudi.com/wp-content/uploads/2023/04/20220623133650-8a73e599-me.jpg,/wp-content/themes/tempusbelgravia/images/misc/events-saudi-1.webp,misc,Events Saudi Banner 1
+https://eventssaudi.com/wp-content/uploads/2023/04/20220621234329-e8e8eecb-wm.jpg,/wp-content/themes/tempusbelgravia/images/misc/events-saudi-2.webp,misc,Events Saudi Banner 2
+https://demo.ovathemes.com/medup/wp-content/uploads/2023/03/blog-06.jpg,/wp-content/themes/tempusbelgravia/images/misc/demo-blog.webp,misc,Demo Blog Image
+# TEMPUSBELGRAVIA.CO.UK IMAGES (140+ total) - These maintain their original WordPress structure
+# Hero & Background
+https://tempusbelgravia.co.uk/wp-content/uploads/2022/11/3.-Final-Promotional-Video-Draft-2-Tempus-Belgravia-.mp4,/wp-content/uploads/2022/11/3.-Final-Promotional-Video-Draft-2-Tempus-Belgravia-.mp4,video,Hero Background Video
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Relax-restore.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/11/Relax-restore.jpeg.webp,hero,Hero Fallback Image
+# Technology & Partner Logos
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/aquagold.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/aquagold.png.webp,logo,Aquagold Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/azzalure.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/azzalure.png.webp,logo,Azzalure Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/cryopen.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/cryopen.png.webp,logo,Cryopen Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/dermapen.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/dermapen.png.webp,logo,Dermapen Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/emsculpt.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/emsculpt.png.webp,logo,Emsculpt Logo
+https://tempusbelgravia.co.uk/wp-content/uploads/2022/10/focus.png,/wp-content/uploads/2022/10/focus.png,logo,Focus Dual Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/fotona-06-1.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/fotona-06-1.png.webp,logo,Fotona Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/harmony-xl-pro.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/harmony-xl-pro.png.webp,logo,Harmony XL Pro Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/hydrafacial.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/hydrafacial.png.webp,logo,Hydrafacial Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/juvederm.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/juvederm.png.webp,logo,Juvederm Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/morpheus-8.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/morpheus-8.png.webp,logo,Morpheus 8 Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/obagi.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/obagi.png.webp,logo,Obagi Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/profhilo.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/profhilo.png.webp,logo,Profhilo Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/radiesse.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/radiesse.png.webp,logo,Radiesse Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/restylane.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/restylane.png.webp,logo,Restylane Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/revolax.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/revolax.png.webp,logo,Revolax Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/sculptra.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/sculptra.png.webp,logo,Sculptra Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/skinpen.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/skinpen.png.webp,logo,Skinpen Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/teoxane.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/teoxane.png.webp,logo,Teoxane Logo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/ultherapy.png.webp,/wp-content/webp-express/webp-images/uploads/2022/10/ultherapy.png.webp,logo,Ultherapy Logo
+# Team Member Photos
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Veerle-Rotsaert-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Veerle-Rotsaert-scaled.jpg.webp,team,Dr. Veerle Rotsaert
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Nadine-Hachach-Haram-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Nadine-Hachach-Haram-scaled.jpg.webp,team,Dr. Nadine Haram
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Dr.-Souphi-Samizadeh--scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Dr.-Souphi-Samizadeh--scaled.jpg.webp,team,Dr. Souphiyeh Samizadeh
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Shideh-Pouria-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Shideh-Pouria-scaled.jpg.webp,team,Dr. Shideh Pouria
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Gillian-Jones-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Gillian-Jones-scaled.jpg.webp,team,Gillian Jones
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Kerry-Moore-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Kerry-Moore-scaled.jpg.webp,team,Kerry Moore
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Lenka-Johnson-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Lenka-Johnson-scaled.jpg.webp,team,Lenka Johnson
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Amy.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Amy.jpg.webp,team,Amy
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Barbara.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Barbara.jpg.webp,team,Barbara
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/2._CW.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/2._CW.jpg.webp,team,CW
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/1._BM.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/1._BM.jpg.webp,team,BM
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Aneta_-5.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Aneta_-5.jpg.webp,team,Aneta
+https://tempusbelgravia.co.uk/wp-content/uploads/2023/06/hoda.jpg,/wp-content/uploads/2023/06/hoda.jpg,team,Hoda
+https://tempusbelgravia.co.uk/wp-content/uploads/2023/06/amy.jpg,/wp-content/uploads/2023/06/amy.jpg,team,Amy 2
+https://tempusbelgravia.co.uk/wp-content/uploads/2023/06/adriana-1.jpg,/wp-content/uploads/2023/06/adriana-1.jpg,team,Adriana
+https://tempusbelgravia.co.uk/wp-content/uploads/2023/06/aneta-1.jpg,/wp-content/uploads/2023/06/aneta-1.jpg,team,Aneta 2
+# Treatment Images (main homepage treatments)
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Silhouette-Soft-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Silhouette-Soft-scaled-1.jpeg.webp,treatment,RF Microneedling
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp,treatment,Lip Enhancement
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp,treatment,Exosomes Facial
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/09/aquagold.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2023/09/aquagold.jpeg.webp,treatment,Aquagold Fine Touch
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/New-Project-2.png.webp,/wp-content/webp-express/webp-images/uploads/2022/08/New-Project-2.png.webp,treatment,Anti-Wrinkle Areas
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Nutrition-2.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Nutrition-2.jpg.webp,treatment,IV Nutrition
+# All Other Treatment Images
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Anti-Wrinkle-Injection-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Anti-Wrinkle-Injection-scaled-1.jpeg.webp,treatment,Anti-Wrinkle Injection
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Bioidentical-Hormones-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Bioidentical-Hormones-scaled-1.jpeg.webp,treatment,Bioidentical Hormones
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Chemical-Peels-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Chemical-Peels-scaled-1.jpeg.webp,treatment,Chemical Peels
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Cryopen-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Cryopen-scaled-1.jpeg.webp,treatment,Cryopen
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Dermaplaning-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Dermaplaning-scaled-1.jpeg.webp,treatment,Dermaplaning
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Dermal-Filler-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Dermal-Filler-scaled-1.jpeg.webp,treatment,Dermal Filler
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Emsculpt-Neo-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Emsculpt-Neo-scaled-1.jpeg.webp,treatment,Emsculpt Neo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Fat-Dissolving-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Fat-Dissolving-scaled-1.jpeg.webp,treatment,Fat Dissolving
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Focus-Dual-HIFU-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Focus-Dual-HIFU-scaled-1.jpeg.webp,treatment,Focus Dual HIFU
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Functional-Medicine-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Functional-Medicine-scaled-1.jpeg.webp,treatment,Functional Medicine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Health-Screen-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Health-Screen-scaled-1.jpeg.webp,treatment,Health Screen
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Heavy-Metal-Testing-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Heavy-Metal-Testing-scaled-1.jpeg.webp,treatment,Heavy Metal Testing
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/IV-Nutritional-Therapy-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/IV-Nutritional-Therapy-scaled-1.jpeg.webp,treatment,IV Nutritional Therapy
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/IPL-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/IPL-scaled-1.jpeg.webp,treatment,IPL
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Laser-Hair-Removal-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Laser-Hair-Removal-scaled-1.jpeg.webp,treatment,Laser Hair Removal
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Laser-Pigmentation-Removal-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Laser-Pigmentation-Removal-scaled-1.jpeg.webp,treatment,Laser Pigmentation Removal
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Laser-Tattoo-Removal-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Laser-Tattoo-Removal-scaled-1.jpeg.webp,treatment,Laser Tattoo Removal
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Micro-Needling-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Micro-Needling-scaled-1.jpeg.webp,treatment,Micro Needling
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Morpheus8-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Morpheus8-scaled-1.jpeg.webp,treatment,Morpheus8
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Mychway-Cavitation-Machine-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Mychway-Cavitation-Machine-scaled-1.jpeg.webp,treatment,Mychway Cavitation
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Nutritional-Support-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Nutritional-Support-scaled-1.jpeg.webp,treatment,Nutritional Support
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Organic-Acid-Testing-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Organic-Acid-Testing-scaled-1.jpeg.webp,treatment,Organic Acid Testing
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/PRP-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/PRP-scaled-1.jpeg.webp,treatment,PRP
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Pixel-Laser-Resurfacing-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Pixel-Laser-Resurfacing-scaled-1.jpeg.webp,treatment,Pixel Laser Resurfacing
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Profhilo-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Profhilo-scaled-1.jpeg.webp,treatment,Profhilo
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Sculptural-Face-Lift-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Sculptural-Face-Lift-scaled-1.jpeg.webp,treatment,Sculptural Face Lift
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Sculptra-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Sculptra-scaled-1.jpeg.webp,treatment,Sculptra
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Semaglutide-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Semaglutide-scaled-1.jpeg.webp,treatment,Semaglutide
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Skin-Tightening-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Skin-Tightening-scaled-1.jpeg.webp,treatment,Skin Tightening
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Snoring-Treatment-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Snoring-Treatment-scaled-1.jpeg.webp,treatment,Snoring Treatment
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Stool-Analysis-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Stool-Analysis-scaled-1.jpeg.webp,treatment,Stool Analysis
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Thread-Lifts-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Thread-Lifts-scaled-1.jpeg.webp,treatment,Thread Lifts
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Ultherapy-scaled-1.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Ultherapy-scaled-1.jpeg.webp,treatment,Ultherapy
+# Surgical Treatment Images
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/09/Brazilian-Butt-Lift.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/09/Brazilian-Butt-Lift.jpeg.webp,surgical,Brazilian Butt Lift
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/09/FaceLift-scaled.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/09/FaceLift-scaled.jpeg.webp,surgical,FaceLift
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/09/Neck-lift.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/09/Neck-lift.jpeg.webp,surgical,Neck Lift
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Abdominoplasty.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Abdominoplasty.jpg.webp,surgical,Abdominoplasty
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Arm-Lift.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Arm-Lift.jpg.webp,surgical,Arm Lift
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Breast-Aug.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Breast-Aug.jpg.webp,surgical,Breast Augmentation
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Breast-Reduction.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Breast-Reduction.jpg.webp,surgical,Breast Reduction
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Fat-Transfer.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Fat-Transfer.jpg.webp,surgical,Fat Transfer
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Gynaecomastia.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Gynaecomastia.jpg.webp,surgical,Gynaecomastia
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Laser-Vaginal-REj.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Laser-Vaginal-REj.jpg.webp,surgical,Laser Vaginal Rejuvenation
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Liposuction.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Liposuction.jpg.webp,surgical,Liposuction
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Non-surgical-blepharoplast.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Non-surgical-blepharoplast.jpg.webp,surgical,Non-surgical Blepharoplasty
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Rhinoplasty.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Rhinoplasty.jpg.webp,surgical,Rhinoplasty
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Thigh-lift.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Thigh-lift.jpg.webp,surgical,Thigh Lift
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Upper-Lower-Blepharoplasty.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Upper-Lower-Blepharoplasty.jpg.webp,surgical,Upper Lower Blepharoplasty
+# Technology/Equipment Images  
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Morpheus8Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Morpheus8Machine-scaled.jpg.webp,technology,Morpheus8 Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Emsculpt-Neo-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Emsculpt-Neo-Machine-scaled.jpg.webp,technology,Emsculpt Neo Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Focus-Dual-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Focus-Dual-Machine-scaled.jpg.webp,technology,Focus Dual Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/HarmonyXL-Pro-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/HarmonyXL-Pro-Machine-scaled.jpg.webp,technology,Harmony XL Pro Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Mychway-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Mychway-Machine-scaled.jpg.webp,technology,Mychway Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Pixel-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Pixel-Machine-scaled.jpg.webp,technology,Pixel Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/SkinPen-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/SkinPen-Machine-scaled.jpg.webp,technology,SkinPen Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Ultherapy-Machine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Ultherapy-Machine-scaled.jpg.webp,technology,Ultherapy Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Fotona4DMachine-scaled.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/08/Fotona4DMachine-scaled.jpg.webp,technology,Fotona 4D Machine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Dermapen-Machine.jpg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Dermapen-Machine.jpg.webp,technology,Dermapen Machine
+# Condition Images
+# Body Conditions
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Gynecomastia.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Gynecomastia.jpg.webp,condition,Gynecomastia
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Loose-Skin-and-stretch-marks.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Loose-Skin-and-stretch-marks.jpg.webp,condition,Loose Skin and Stretch Marks
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Stubborn-Fat.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Stubborn-Fat.jpg.webp,condition,Stubborn Fat
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Large-Pores.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Large-Pores.jpg.webp,condition,Large Pores
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Sweating.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Sweating.jpg.webp,condition,Sweating
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Tattoo-Removal.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Tattoo-Removal.jpg.webp,condition,Tattoo Removal
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Hair-Loss.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Hair-Loss.jpg.webp,condition,Hair Loss
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Knee-Treatment.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Knee-Treatment.jpg.webp,condition,Knee Treatment
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Laser-Hair-Removal.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Laser-Hair-Removal.jpg.webp,condition,Laser Hair Removal Condition
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Snoring.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Snoring.jpg.webp,condition,Snoring
+# Facial Conditions
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Uneven-Skin-Tone.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Uneven-Skin-Tone.jpg.webp,condition,Uneven Skin Tone
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Under-Eye-Concerns.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Under-Eye-Concerns.jpg.webp,condition,Under Eye Concerns
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Tired-Eyes.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Tired-Eyes.jpg.webp,condition,Tired Eyes
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Sun-Damage.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Sun-Damage.jpg.webp,condition,Sun Damage
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Scarring.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Scarring.jpg.webp,condition,Scarring
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Poor-Skin-Quality.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Poor-Skin-Quality.jpg.webp,condition,Poor Skin Quality
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Poor-Jaw-Definition-1.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Poor-Jaw-Definition-1.jpg.webp,condition,Poor Jaw Definition
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Pigmentation.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Pigmentation.jpg.webp,condition,Pigmentation
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Neck-Concerns.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Neck-Concerns.jpg.webp,condition,Neck Concerns
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Loss-of-Volume.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Loss-of-Volume.jpg.webp,condition,Loss of Volume
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Lines-and-wrinkles.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Lines-and-wrinkles.jpg.webp,condition,Lines and Wrinkles
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Lip-Concerns.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Lip-Concerns.jpg.webp,condition,Lip Concerns
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Facial-Asymmetry.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Facial-Asymmetry.jpg.webp,condition,Facial Asymmetry
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Dull-Dehydrated-Skin.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Dull-Dehydrated-Skin.jpg.webp,condition,Dull Dehydrated Skin
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Blemish-and-Breakouts.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Blemish-and-Breakouts.jpg.webp,condition,Blemish and Breakouts
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Age-Spots.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Age-Spots.jpg.webp,condition,Age Spots
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Acne.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Acne.jpg.webp,condition,Acne
+# Wellness & Infusion Images
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Anti-aging.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Anti-aging.jpg.webp,wellness,Anti-aging
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Energy-Boost.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Energy-Boost.jpg.webp,wellness,Energy Boost
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Exercise-Recovery.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Exercise-Recovery.jpg.webp,wellness,Exercise Recovery
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Fat-Loss.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Fat-Loss.jpg.webp,wellness,Fat Loss
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Immunity-Boost.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Immunity-Boost.jpg.webp,wellness,Immunity Boost
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Regenerative-Medicine.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Regenerative-Medicine.jpg.webp,wellness,Regenerative Medicine
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Sleep-Stress.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Sleep-Stress.jpg.webp,wellness,Sleep Stress
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Vitamin-Replacement.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Vitamin-Replacement.jpg.webp,wellness,Vitamin Replacement
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Wellness-Concerns.jpg.webp,/wp-content/webp-express/webp-images/uploads/2023/01/Wellness-Concerns.jpg.webp,wellness,Wellness Concerns
+# Clinic Interior & Ambiance
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Clinic-scaled.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Clinic-scaled.jpeg.webp,clinic,Clinic Interior
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/10/Reception-scaled.jpeg.webp,/wp-content/webp-express/webp-images/uploads/2022/10/Reception-scaled.jpeg.webp,clinic,Reception
+# Badges & Certifications
+https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2024/07/1-CQC-Regulated-by-WHITE-135px.jpg.webp,/wp-content/webp-express/webp-images/uploads/2024/07/1-CQC-Regulated-by-WHITE-135px.jpg.webp,badge,CQC Regulated
+https://tempusbelgravia.co.uk/wp-content/uploads/2023/04/google-reviews-2.png,/wp-content/uploads/2023/04/google-reviews-2.png,badge,Google Reviews
+https://tempusbelgravia.co.uk/wp-content/uploads/2022/09/verified.png,/wp-content/uploads/2022/09/verified.png,badge,Verified

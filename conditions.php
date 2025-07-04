@@ -12,29 +12,6 @@ get_header();
 
 <div class="treatment-page-wrapper">
     <main id="treatment-content" class="treatment-main-content">
-        
-        <!-- Hero Section -->
-        <section class="treatment-hero conditions-hero">
-            <div class="treatment-hero-content">
-                <h1><?php the_field('heading_banner') ?: 'Conditions We Treat'; ?></h1>
-                <p class="subtitle"><?php the_field('sub_text_for_banner') ?: 'Comprehensive care for a wide range of aesthetic and medical conditions'; ?></p>
-                <?php if( get_field('text_for_banner_button') ): ?>
-                <a href="#conditions" class="cta-button"><?php the_field('text_for_banner_button'); ?></a>
-                <?php else: ?>
-                <a href="#conditions" class="cta-button">Explore Our Treatments</a>
-                <?php endif; ?>
-            </div>
-        </section>
-
-        <!-- Introduction Section -->
-        <section class="treatment-section">
-            <div class="treatment-container">
-                <div class="intro-content">
-                    <h2>Expert Care for Every Concern</h2>
-                    <p class="lead-text">At Tempus Belgravia, we understand that each condition requires specialized knowledge and personalized treatment. Our experienced medical team combines advanced techniques with compassionate care to address a comprehensive range of aesthetic and medical concerns, helping you achieve optimal health and confidence.</p>
-                </div>
-            </div>
-        </section>
 
         <!-- Conditions Grid Section -->
         <section class="treatment-section alt-bg" id="conditions">

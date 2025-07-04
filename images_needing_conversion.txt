@@ -1,0 +1,70 @@
+# Images That Need WebP Conversion
+# Generated: 2025-07-04
+# Total: 41 files need conversion from JPG/PNG to WebP
+
+# Team Photos (4 files)
+images/team/adriana.jpg → images/team/adriana.webp
+images/team/amy-2.jpg → images/team/amy-2.webp
+images/team/aneta-2.jpg → images/team/aneta-2.webp
+images/team/hoda.jpg → images/team/hoda.webp
+
+# Product Images (5 files)
+images/products/anti-wrinkle-serum.jpg → images/products/anti-wrinkle-serum.webp
+images/products/correcting-spf-50.jpg → images/products/correcting-spf-50.webp
+images/products/firming-neck-creme.jpg → images/products/firming-neck-creme.webp
+images/products/instant-eye-revive.jpg → images/products/instant-eye-revive.webp
+images/products/intelligent-face-body-cream.jpg → images/products/intelligent-face-body-cream.webp
+
+# Treatment Category Images (10 files)
+images/treatments/body-contouring-category.jpg → images/treatments/body-contouring-category.webp
+images/treatments/body-contouring.jpg → images/treatments/body-contouring.webp
+images/treatments/facial-aesthetics-category.jpg → images/treatments/facial-aesthetics-category.webp
+images/treatments/hifu-treatment.jpg → images/treatments/hifu-treatment.webp
+images/treatments/injectable-artistry-category.jpg → images/treatments/injectable-artistry-category.webp
+images/treatments/iv-nutrient-category.png → images/treatments/iv-nutrient-category.webp
+images/treatments/laser-energy-category.jpg → images/treatments/laser-energy-category.webp
+images/treatments/longevity-science-category.png → images/treatments/longevity-science-category.webp
+images/treatments/medical-dermatology-category.jpg → images/treatments/medical-dermatology-category.webp
+images/treatments/skin-boosters.jpg → images/treatments/skin-boosters.webp
+images/treatments/surgical-expertise-category.png → images/treatments/surgical-expertise-category.webp
+
+# Journey Images (4 files)
+images/journey/discovery-vision.jpg → images/journey/discovery-vision.webp
+images/journey/evolving-partnership.jpg → images/journey/evolving-partnership.webp
+images/journey/harmonisation.jpg → images/journey/harmonisation.webp
+images/journey/holistic-insight.jpg → images/journey/holistic-insight.webp
+
+# Instagram Gallery (6 files)
+images/instagram/gallery-1.png → images/instagram/gallery-1.webp
+images/instagram/gallery-2.png → images/instagram/gallery-2.webp
+images/instagram/gallery-3.png → images/instagram/gallery-3.webp
+images/instagram/gallery-4.png → images/instagram/gallery-4.webp
+images/instagram/gallery-5.png → images/instagram/gallery-5.webp
+images/instagram/gallery-6.png → images/instagram/gallery-6.webp
+
+# Before/After Gallery (6 files)
+images/gallery/after/jawline-after.png → images/gallery/after/jawline-after.webp
+images/gallery/after/lips-after.png → images/gallery/after/lips-after.webp
+images/gallery/after/wrinkle-after.png → images/gallery/after/wrinkle-after.webp
+images/gallery/before/jawline-before.png → images/gallery/before/jawline-before.webp
+images/gallery/before/lips-before.png → images/gallery/before/lips-before.webp
+images/gallery/before/wrinkle-before.png → images/gallery/before/wrinkle-before.webp
+
+# Badges & Logos (4 files)
+images/badges/google-reviews-logo.jpg → images/badges/google-reviews-logo.webp
+images/badges/google-reviews.png → images/badges/google-reviews.webp
+images/badges/verified.png → images/badges/verified.webp
+images/logos/focus.png → images/logos/focus.webp
+
+# Main Logo (1 file)
+images/logo.png → images/logo.webp
+
+# CONVERSION COMMANDS
+# To convert these files when WebP tools are available, run:
+# 
+# For macOS:
+# brew install webp
+# 
+# Then for each file:
+# cwebp -q 85 input.jpg -o output.webp
+# cwebp -q 90 input.png -o output.webp (for logos/badges)
