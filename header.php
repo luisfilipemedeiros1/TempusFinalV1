@@ -44,9 +44,9 @@
                         </a>
                     </div>
                     <div class="quick-actions">
-                        <a href="<?php echo home_url('/memberships/'); ?>" class="quick-link">Memberships</a>
+                        <a href="<?php echo home_url('/memberships/'); ?>" class="quick-link">FH Memberships</a>
                         <span class="separator">|</span>
-                        <a href="<?php echo home_url('/shop/'); ?>" class="quick-link">Shop</a>
+                        <a href="<?php echo home_url('/tempus-packages/'); ?>" class="quick-link">Tempus Packages</a>
                         <span class="separator">|</span>
                         <a href="https://tempusbelgravia.co.uk/journal-2/" class="quick-link">Journal</a>
                     </div>
@@ -71,9 +71,22 @@
                     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
                         <ul class="nav-menu">
                             <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
-                                                                                    <li><a href="<?php echo home_url('/memberships/'); ?>">Memberships</a></li>
-                            <li>
+                            <li class="has-dropdown">
+                                <a href="<?php echo home_url('/memberships/'); ?>">Memberships</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo home_url('/memberships/'); ?>">FH Memberships</a></li>
+                                    <li><a href="<?php echo home_url('/tempus-packages/'); ?>">Tempus Packages</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
                                 <a href="<?php echo home_url('/treatments-overview/'); ?>">Treatments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?php echo home_url('/treatments-overview/#facial-aesthetics'); ?>">Facial Aesthetics</a></li>
+                                    <li><a href="<?php echo home_url('/treatments-overview/#medical-aesthetics'); ?>">Medical Aesthetics</a></li>
+                                    <li><a href="<?php echo home_url('/treatments-overview/#body-treatments'); ?>">Body Treatments</a></li>
+                                    <li><a href="<?php echo home_url('/treatments-overview/#advanced-treatments'); ?>">Advanced Treatments</a></li>
+                                    <li><a href="<?php echo home_url('/treatments-overview/#iv-infusions'); ?>">IV Infusions</a></li>
+                                </ul>
                             </li>
                             
                                                         <li>
@@ -82,7 +95,7 @@
                             
 
                             
-                            <li><a href="<?php echo home_url('/conditions-treated/'); ?>">Conditions</a></li>
+                            <li><a href="<?php echo home_url('/conditions-treated-2/'); ?>">Conditions</a></li>
                             <li><a href="https://tempusbelgravia.co.uk/#contact">Contact</a></li>
                         </ul>
                     </nav>
