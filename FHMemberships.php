@@ -1392,6 +1392,344 @@ get_header();
     });
     </script>
 
+    <!-- Exclusive Members Access Popup -->
+    <div id="membersPopup" class="members-access-popup" style="display: none;">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>🔑 Exclusive Member Access</h3>
+                <!-- Removed close button to prevent dismissal -->
+            </div>
+            <div class="popup-body">
+                <p><strong>Access Required:</strong> This is an exclusive Founders Health member portal. You must enter the correct access code to view this content and unlock premium member benefits.</p>
+                <div class="password-form">
+                    <input type="password" id="memberPassword" placeholder="Enter access code..." maxlength="50">
+                    <button id="submitPassword" class="cta-button">Unlock Access</button>
+                </div>
+                <div id="passwordError" class="error-message" style="display: none;">
+                    Incorrect access code. Please try again.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* Members Access Popup Styles */
+    .members-access-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.5s ease-out;
+    }
+    
+    .popup-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        cursor: not-allowed;
+    }
+    
+    .popup-content {
+        position: relative;
+        background: var(--white);
+        border-radius: 15px;
+        max-width: 500px;
+        width: 90%;
+        max-height: 90vh;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: slideInUp 0.6s ease-out 0.2s both;
+    }
+    
+    .popup-header {
+        padding: 30px 30px 20px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .popup-header h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-family: var(--heading-font);
+        font-weight: 600;
+    }
+    
+    /* Close button styles removed - popup cannot be dismissed */
+    
+    .popup-body {
+        padding: 30px;
+    }
+    
+    .popup-body p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: var(--gray);
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .password-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #memberPassword {
+        padding: 15px 20px;
+        border: 2px solid var(--light-gray);
+        border-radius: 8px;
+        font-size: 1rem;
+        font-family: var(--body-font);
+        transition: all 0.3s ease;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    #memberPassword:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(175, 143, 90, 0.1);
+    }
+    
+    #submitPassword {
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    #submitPassword:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(175, 143, 90, 0.3);
+    }
+    
+    .error-message {
+        color: #e74c3c;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        background: #ffeaea;
+        border-radius: 5px;
+        border: 1px solid #f5c6cb;
+    }
+    
+    .popup-content.success {
+        animation: successPulse 0.6s ease-out;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    @keyframes successPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .popup-content {
+            width: 95%;
+            margin: 20px;
+        }
+        
+        .popup-header {
+            padding: 25px 20px 15px;
+        }
+        
+        .popup-header h3 {
+            font-size: 1.3rem;
+        }
+        
+        .popup-body {
+            padding: 25px 20px;
+        }
+        
+        .popup-body p {
+            font-size: 1rem;
+        }
+        
+        #memberPassword, #submitPassword {
+            padding: 12px 15px;
+        }
+    }
+    </style>
+
+    <script>
+    // Members Access Popup Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('membersPopup');
+        const submitBtn = document.getElementById('submitPassword');
+        const passwordInput = document.getElementById('memberPassword');
+        const errorDiv = document.getElementById('passwordError');
+        const correctPassword = 'FoundersHealth2025Members';
+        
+        // Check if user has already entered correct password
+        const hasAccess = sessionStorage.getItem('fhMemberAccess') === 'granted';
+        
+        if (!hasAccess) {
+            // Show popup after 3 seconds delay
+            setTimeout(() => {
+                popup.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                
+                // Focus password input after animation
+                setTimeout(() => {
+                    passwordInput.focus();
+                }, 600);
+            }, 3000);
+        }
+        
+        // Close popup function (only called on successful password entry)
+        function closePopup() {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            errorDiv.style.display = 'none';
+            passwordInput.value = '';
+        }
+        
+        // No close button or overlay click events - popup cannot be dismissed
+        
+        // Password submission
+        function checkPassword() {
+            const enteredPassword = passwordInput.value.trim();
+            
+            if (enteredPassword === correctPassword) {
+                // Success
+                sessionStorage.setItem('fhMemberAccess', 'granted');
+                document.querySelector('.popup-content').classList.add('success');
+                
+                // Show success message briefly then close
+                setTimeout(() => {
+                    closePopup();
+                    
+                    // Optional: Show success notification
+                    showSuccessNotification();
+                }, 800);
+                
+            } else {
+                // Error
+                errorDiv.style.display = 'block';
+                passwordInput.classList.add('error');
+                passwordInput.value = '';
+                passwordInput.focus();
+                
+                // Remove error styling after 3 seconds
+                setTimeout(() => {
+                    passwordInput.classList.remove('error');
+                }, 3000);
+            }
+        }
+        
+        // Submit button click
+        submitBtn.addEventListener('click', checkPassword);
+        
+        // Enter key submission
+        passwordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+        
+        // Clear error on input
+        passwordInput.addEventListener('input', function() {
+            if (errorDiv.style.display === 'block') {
+                errorDiv.style.display = 'none';
+            }
+        });
+        
+        // Success notification function
+        function showSuccessNotification() {
+            const notification = document.createElement('div');
+            notification.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: linear-gradient(135deg, #2ecc71, #27ae60);
+                    color: white;
+                    padding: 15px 25px;
+                    border-radius: 8px;
+                    font-family: var(--heading-font);
+                    font-weight: 500;
+                    z-index: 10000;
+                    box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+                    animation: slideInRight 0.5s ease-out;
+                ">
+                    ✅ Welcome, Founders Health Member!
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 4000);
+        }
+        
+        // ESC key functionality removed - popup cannot be dismissed
+    });
+    
+    // Additional CSS for success states
+    const additionalStyles = document.createElement('style');
+    additionalStyles.textContent = `
+        #memberPassword.error {
+            border-color: #e74c3c;
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    `;
+    document.head.appendChild(additionalStyles);
+    </script>
+
 <?php
 // Use the theme's footer
 get_footer();

@@ -257,9 +257,9 @@
     .scroll-mouse { width: 25px; height: 40px; border: 2px solid var(--white); border-radius: 15px; position: relative; margin: 0; }
     .scroll-wheel { width: 3px; height: 8px; background: var(--white); position: absolute; top: 7px; left: 50%; transform: translateX(-50%); border-radius: 3px; animation: scrollWheel 2s infinite; }
     @keyframes scrollWheel { 0% { top: 7px; opacity: 1; } 100% { top: 20px; opacity: 0; } }
-    .hero-badges { position: absolute; right: 30px; bottom: 30px; display: flex; gap: 20px; z-index: 2; opacity: 0; animation: fadeInSimple 1s ease-out 1.8s forwards; animation-play-state: running !important; } /* Reduced z-index to prevent overlap */
-    .hero-badge { width: 80px; height: 80px; background: rgba(255, 255, 255, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; padding: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    .hero-badge img { max-width: 100%; max-height: 100%; }
+    .hero-badges { position: absolute; right: 30px; bottom: 30px; display: flex; gap: 15px; z-index: 2; opacity: 0; animation: fadeInSimple 1s ease-out 1.8s forwards; animation-play-state: running !important; flex-wrap: wrap; } /* Reduced z-index to prevent overlap */
+    .hero-badge { width: 120px; height: 120px; background: transparent; border-radius: 0; display: flex; align-items: center; justify-content: center; padding: 0; box-shadow: none; }
+    .hero-badge img { width: 100%; height: 100%; object-fit: contain; }
 
     /* --- Brand Section Carousel (Keep) --- */
     .brands-section { padding: 60px 0; background-color: var(--white); position: relative; overflow: hidden; }
@@ -286,7 +286,7 @@
     .horizontal-scroll-container::-webkit-scrollbar-track { background: var(--light-gray); border-radius: 4px; margin: 0 5px; }
     .horizontal-scroll-container::-webkit-scrollbar-thumb { background-color: var(--primary-light); border-radius: 4px; border: 2px solid var(--light-gray); }
     .horizontal-scroll-container::-webkit-scrollbar-thumb:hover { background-color: var(--primary); }
-    .treatment-grid > .treatment-card { flex-basis: calc(25% - (var(--horizontal-scroll-gap) * 3 / 4)); min-width: 300px; }
+    .treatment-grid > .treatment-card { flex-basis: calc(25% - (var(--horizontal-scroll-gap) * 3 / 4)); min-width: 320px; min-height: 580px; }
     .pathways-grid > .pathway-card { flex-basis: calc(20% - (var(--horizontal-scroll-gap) * 4 / 5)); min-width: 250px; }
     .process-grid > .process-step-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 320px; }
     .product-grid > .product-card { flex-basis: calc(25% - (var(--horizontal-scroll-gap) * 3 / 4)); min-width: 280px; }
@@ -302,7 +302,7 @@
     .best-seller-badge, .trending-badge { position: absolute; top: 20px; left: 20px; padding: 6px 18px; font-size: 0.8rem; font-weight: 600; border-radius: 3px; z-index: 3; text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--heading-font); box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
     .best-seller-badge { background-color: var(--accent-gold); color: var(--dark-text); } /* Gold badge */
     .trending-badge { background-color: var(--accent-deep); color: var(--white); } /* Green badge */
-    .treatment-card-content { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
+    .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
     .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
     .treatment-details { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9rem; color: var(--gray); border-top: 1px solid var(--primary-ultralight); padding-top: 15px; margin-top: auto; flex-wrap: wrap; gap: 5px 10px; } /* Added flex-wrap/gap */
@@ -310,6 +310,9 @@
     .treatment-detail i { margin-right: 8px; color: var(--primary); /* Gold icon */ width: 16px; text-align: center; }
     /* Use GOLD Outline Button */
     .treatment-card .cta-button-secondary { margin-top: 15px; align-self: flex-start; }
+    .treatment-buttons { margin-top: 25px; }
+    .treatment-buttons .cta-button-secondary { margin-top: 0; width: 100%; }
+    .treatment-buttons .cta-button-secondary .fab.fa-whatsapp { color: inherit; }
     /* Use GOLD Filled Button */
     .all-treatments-link { text-align: center; margin-top: 60px; position: relative; z-index: 2; }
     .all-treatments-link .cta-button { /* Ensure primary gold button is used */ }
@@ -446,6 +449,78 @@
     /* Use GOLD Filled Button */
     .all-products-link .cta-button { /* Ensure primary gold button is used */ }
 
+    /* --- CQC Badge Section --- */
+    .cqc-badge-section {
+        background-color: var(--white);
+        padding: 60px 0;
+        border-top: 1px solid var(--light-gray);
+        border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .cqc-badge-container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .cqc-badge-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+        background-color: var(--light);
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    
+    .cqc-badge-image {
+        max-width: 120px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    .cqc-badge-text {
+        text-align: left;
+        flex: 1;
+    }
+    
+    .cqc-badge-text h3 {
+        color: var(--primary);
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        font-family: var(--heading-font);
+        font-weight: 600;
+    }
+    
+    .cqc-badge-text p {
+        color: var(--gray);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+        .cqc-badge-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 25px;
+        }
+        
+        .cqc-badge-text {
+            text-align: center;
+        }
+        
+        .cqc-badge-image {
+            max-width: 100px;
+        }
+        
+        .cqc-badge-section {
+            padding: 40px 0;
+        }
+    }
+
     /* --- Instagram Section (Adjusted Colors) --- */
     .instagram-container { text-align: center; position: relative; z-index: 2; }
     .instagram-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 50px; }
@@ -564,14 +639,14 @@
 
     /* --- Responsive Design (Keep, adjusted base styles handle most color changes) --- */
     @media (max-width: 1300px) {
-        .treatment-grid > .treatment-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 300px; }
+        .treatment-grid > .treatment-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 320px; min-height: 580px; }
         .process-grid > .process-step-card { flex-basis: calc(40% - (var(--horizontal-scroll-gap) * 1 / 2)); min-width: 320px; }
         .product-grid > .product-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 280px; }
         .pathways-grid > .pathway-card { flex-basis: calc(28% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 280px}
     }
     @media (max-width: 1200px) {
          .instagram-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-         .treatment-grid > .treatment-card { min-width: 280px; }
+         .treatment-grid > .treatment-card { min-width: 300px; min-height: 560px; }
          .process-grid > .process-step-card { min-width: 300px; }
          .product-grid > .product-card { min-width: 280px; }
          .pathways-grid > .pathway-card { flex-basis: calc(33.33% - (var(--horizontal-scroll-gap) * 2 / 3)); min-width: 260px; height: 480px; }
@@ -595,7 +670,7 @@
          .ba-reveal-images { height: 400px; }
          :root { --horizontal-scroll-padding: 20px; }
          .new-home-content .container { padding: 0 var(--horizontal-scroll-padding); }
-         .treatment-grid > .treatment-card { flex-basis: calc(45% - var(--horizontal-scroll-gap) / 2); min-width: 280px; }
+         .treatment-grid > .treatment-card { flex-basis: calc(45% - var(--horizontal-scroll-gap) / 2); min-width: 300px; min-height: 540px; }
          .process-grid > .process-step-card { flex-basis: calc(50% - var(--horizontal-scroll-gap) / 2); min-width: 300px; min-height: 500px; }
          .product-grid > .product-card { flex-basis: calc(45% - var(--horizontal-scroll-gap) / 2); min-width: 260px; min-height: 420px; }
          .product-card-img { height: 220px; }
@@ -615,7 +690,8 @@
          .hero h1 { font-size: 3.2rem; margin-bottom: 20px; }
          .hero p { font-size: 1.2rem; max-width: 650px; margin-bottom: 35px; }
          .hero .hero-content > div { margin-top: 25px; }
-         .hero-badges { display: none; }
+         .hero-badges { right: 20px; bottom: 20px; gap: 10px; }
+         .hero-badge { width: 100px; height: 100px; padding: 0; }
     }
     @media (max-width: 768px) {
          body /* .new-home-content */ { font-size: 17px; } .new-home-content h1 { font-size: 2.8rem; } .new-home-content h2 { font-size: 2.2rem; } .new-home-content h3 { font-size: 1.5rem; }
@@ -639,7 +715,7 @@
          .contact-form-container { padding: 40px 25px; } .contact-info-container { padding-top: 0; }
          .brand-logos { gap: 40px; } .brand-logo img { max-height: 40px; }
          .brand-nav { width: 36px; height: 36px; opacity: 0.6; }
-         .treatment-grid > .treatment-card { flex-basis: calc(60% - var(--horizontal-scroll-gap) / 2); min-width: 260px; }
+         .treatment-grid > .treatment-card { flex-basis: calc(60% - var(--horizontal-scroll-gap) / 2); min-width: 280px; min-height: 520px; }
          .process-grid > .process-step-card { flex-basis: calc(65% - var(--horizontal-scroll-gap) / 2); min-width: 280px; min-height: auto; padding-bottom: 30px;}
          .product-grid > .product-card { flex-basis: calc(60% - var(--horizontal-scroll-gap) / 2); min-width: 250px; }
          .pathways-grid > .pathway-card { flex-basis: calc(60% - (var(--horizontal-scroll-gap) / 2)); min-width: 240px; height: 420px;}
@@ -695,9 +771,12 @@
          .brand-logos > .brand-logo { max-width: 120px; }
          .brand-nav { width: 32px; height: 32px; }
          .horizontal-scroll-container { margin-top: 25px; }
-         .treatment-grid > .treatment-card { flex-basis: calc(75% - var(--horizontal-scroll-gap) / 2); min-width: 240px; }
+         .treatment-grid > .treatment-card { flex-basis: calc(75% - var(--horizontal-scroll-gap) / 2); min-width: 260px; min-height: 500px; }
          .section-title { margin-bottom: 60px; } .section-title h2 { font-size: 2.2rem; } .section-title .subtitle { font-size: 1.1rem; }
     }
+     @media (max-width: 500px) {
+          .hero-badges { display: none; }
+     }
      @media (max-width: 400px) {
           .treatment-details { gap: 5px 10px; font-size: 0.8rem; }
           .treatment-detail i { margin-right: 5px; }
