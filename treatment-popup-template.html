@@ -1,0 +1,227 @@
+<!-- Treatment Popup Template Example -->
+<!-- This template shows how to structure the treatment popups using the extracted data -->
+
+<style>
+.treatment-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FCFBF9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.treatment-popup.active {
+    display: block;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.popup-overlay.active {
+    display: block;
+}
+
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.treatment-popup h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #004D40;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.treatment-popup .description {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.treatment-popup .info-section {
+    margin-bottom: 20px;
+}
+
+.treatment-popup .info-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #AF8F5A;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.treatment-popup .benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.treatment-popup .benefits-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 14px;
+}
+
+.treatment-popup .benefits-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #AF8F5A;
+    font-weight: bold;
+}
+
+.treatment-popup .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.treatment-popup .info-item {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.treatment-popup .info-item .label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.treatment-popup .info-item .value {
+    font-size: 16px;
+    color: #004D40;
+    font-weight: 500;
+}
+
+.treatment-popup .cta-button {
+    display: inline-block;
+    background: #AF8F5A;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.treatment-popup .cta-button:hover {
+    background: #8B6F47;
+}
+</style>
+
+<!-- Popup Overlay -->
+<div class="popup-overlay" id="popupOverlay"></div>
+
+<!-- Example Treatment Popup (HIFU) -->
+<div class="treatment-popup" id="hifuPopup">
+    <button class="popup-close" onclick="closePopup('hifu')">&times;</button>
+    
+    <h2>HIFU (High Intensity Focused Ultrasound)</h2>
+    
+    <p class="description">
+        HIFU is a non-surgical skin rejuvenation treatment that uses ultrasound technology to lift, firm, and tighten skin by stimulating collagen production deep beneath the surface. Known as a 'non-surgical facelift', it provides a rejuvenated and more youthful appearance.
+    </p>
+    
+    <div class="info-section">
+        <h3>Key Benefits</h3>
+        <ul class="benefits-list">
+            <li>Proven safety record for all skin colors</li>
+            <li>Non-invasive alternative to surgical procedures</li>
+            <li>Stimulates natural collagen production</li>
+            <li>Lifts and tightens sagging skin</li>
+        </ul>
+    </div>
+    
+    <div class="info-grid">
+        <div class="info-item">
+            <div class="label">Treatment Duration</div>
+            <div class="value">30-90 minutes per session</div>
+        </div>
+        <div class="info-item">
+            <div class="label">Downtime</div>
+            <div class="value">Virtually none</div>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h3>Ideal For</h3>
+        <p>Sagging or loose skin on face, neck, and body; Fine lines and wrinkles; Signs of aging; Skin laxity</p>
+    </div>
+    
+    <a href="/treatment/hifu-high-intensity-focused-ultrasound/" class="cta-button">Learn More</a>
+</div>
+
+<!-- JavaScript for popup functionality -->
+<script>
+// Treatment data loaded from JSON
+const treatmentData = {
+    // This would be loaded from the treatment-popup-data.json file
+};
+
+function openPopup(treatmentId) {
+    document.getElementById('popupOverlay').classList.add('active');
+    document.getElementById(treatmentId + 'Popup').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePopup(treatmentId) {
+    document.getElementById('popupOverlay').classList.remove('active');
+    document.getElementById(treatmentId + 'Popup').classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close popup when clicking overlay
+document.getElementById('popupOverlay').addEventListener('click', function() {
+    document.querySelectorAll('.treatment-popup.active').forEach(popup => {
+        popup.classList.remove('active');
+    });
+    this.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+
+// Function to dynamically create popup content
+function createPopup(treatmentKey) {
+    const treatment = treatmentData[treatmentKey];
+    if (!treatment) return;
+    
+    // Create popup HTML dynamically
+    // This would generate the popup structure using the JSON data
+}
+</script>

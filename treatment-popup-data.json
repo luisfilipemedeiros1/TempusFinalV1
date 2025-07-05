@@ -1,0 +1,180 @@
+{
+  "treatments": {
+    "hifu": {
+      "name": "HIFU (High Intensity Focused Ultrasound)",
+      "description": "HIFU is a non-surgical skin rejuvenation treatment that uses focused ultrasound energy to penetrate deep skin layers, stimulating natural collagen production. Known as a 'non-surgical facelift', it targets the deep foundational layers of the skin to provide lifting, firming, and tightening effects.",
+      "benefits": [
+        "Proven safety record for all skin colors",
+        "Non-invasive alternative to surgical procedures",
+        "Stimulates natural collagen production for up to 6 months",
+        "Lifts and tightens sagging skin without surgery",
+        "Comfortable treatment process with minimal discomfort"
+      ],
+      "areas": [
+        "Face",
+        "Neck",
+        "Décolletage",
+        "Arms",
+        "Abdomen",
+        "Thighs",
+        "Buttocks"
+      ],
+      "duration": "30-90 minutes per session",
+      "downtime": "Virtually none - resume normal activities immediately",
+      "idealFor": "Sagging or loose skin on face, neck, and body; Fine lines and wrinkles; Desire for non-surgical skin rejuvenation; All skin types",
+      "sessions": "Typically 2-3 sessions spaced several weeks apart",
+      "results": "Visible improvements within 2-3 months, continued collagen production for up to 6 months",
+      "sideEffects": "Temporary redness, slight swelling, mild tingling (subsides within hours to days)"
+    },
+    "rf-microneedling": {
+      "name": "RF Microneedling",
+      "description": "RF Microneedling is a revolutionary procedure that combines microneedling with radiofrequency energy to deliver outstanding results. It uses ultra-fine needles that penetrate the skin at adjustable depths while releasing controlled radiofrequency energy to stimulate the natural healing response and trigger collagen and elastin production.",
+      "benefits": [
+        "Smooths acne scars and uneven skin texture",
+        "Reduces wrinkles and fine lines",
+        "Boosts collagen and elastin production",
+        "Safe for all skin types and colours",
+        "Tightens and firms skin"
+      ],
+      "areas": [
+        "Face",
+        "Neck",
+        "Décolletage",
+        "Hands",
+        "Other body areas"
+      ],
+      "duration": "45-60 minutes per session",
+      "downtime": "1-2 days minimal recovery (temporary swelling and mild redness)",
+      "idealFor": "Acne scars; Wrinkles and fine lines; Uneven skin texture; Skin laxity; All skin types seeking rejuvenation",
+      "sessions": "3-6 treatments spaced 2-4 weeks apart",
+      "results": "Initial improvements in 2-3 weeks, optimal results around 12 weeks after final session",
+      "features": "Adjustable needle depth and customizable energy intensity with topical numbing for comfort"
+    },
+    "lip-enhancement": {
+      "name": "Lip Enhancement",
+      "description": "Lip enhancement is a cosmetic procedure that uses dermal fillers containing hyaluronic acid-like substances to create fuller, more defined lips. This minimally invasive treatment is customizable to achieve your desired lip shape and volume while maintaining a natural appearance.",
+      "benefits": [
+        "Adds definition and volume to lips",
+        "Creates a more symmetrical facial appearance",
+        "Immediately visible results",
+        "Customizable to desired lip shape",
+        "Restores lip volume lost with aging",
+        "Boosts self-confidence"
+      ],
+      "duration": "Less than 1 hour",
+      "downtime": "Minimal, some swelling possible",
+      "idealFor": "Loss of lip volume due to aging; Naturally thin lips; Lip asymmetry; Desire for fuller, more defined lips; Overall facial aesthetic enhancement",
+      "longevity": "Results typically last 3-6 months",
+      "procedure": "Minimally invasive with natural body-compatible ingredients",
+      "consultation": "Personalized treatment plan recommended to discuss individual goals"
+    },
+    "emsculpt-neo": {
+      "name": "EMSculpt Neo",
+      "description": "EMSculpt Neo is a revolutionary non-invasive body contouring treatment that simultaneously burns fat and builds muscle. It uses electromagnetic fields to trigger powerful muscle contractions while radiofrequency heat permanently destroys fat cells, achieving both fat reduction and muscle mass growth in a single treatment.",
+      "benefits": [
+        "Combines fat removal and muscle toning in one treatment",
+        "Non-invasive and painless procedure",
+        "No downtime - immediate return to activities",
+        "Effective for patients with BMI up to 35",
+        "No physical exertion required",
+        "Permanent fat cell elimination"
+      ],
+      "mechanism": [
+        "Electromagnetic energy stimulates intense muscle contractions",
+        "Radiofrequency heat targets and destroys fat cells",
+        "Promotes simultaneous muscle growth and fat reduction"
+      ],
+      "duration": "30 minutes per session",
+      "downtime": "None",
+      "idealFor": "Fat reduction; Muscle toning and building; Body contouring; Overall body sculpting; Patients seeking non-surgical alternatives",
+      "sessions": "4 sessions recommended for visible results",
+      "areas": "Multiple body areas (abdomen, buttocks, arms, legs)",
+      "suitability": "Versatile treatment for diverse body types"
+    },
+    "aquagold": {
+      "name": "Aquagold Fine Touch",
+      "description": "Aquagold Fine Touch is a revolutionary cosmetic procedure that uses a micro-channeling device to deliver customized micro-infusions of Botox and hyaluronic acid just below the skin's surface. This virtually painless treatment provides visible results in as little as 7 days, targeting skin rejuvenation and texture improvement.",
+      "benefits": [
+        "Hydrates and clarifies skin",
+        "Smoothens skin texture and improves tone",
+        "Eliminates fine lines and wrinkles",
+        "Reduces sebum production and oily skin",
+        "Minimizes pore size appearance"
+      ],
+      "duration": "30-45 minutes per session",
+      "downtime": "Virtually none",
+      "idealFor": "Sensitive skin; Fine lines and wrinkles; Uneven skin texture and tone; Large pores; Oily skin; Overall skin rejuvenation",
+      "frequency": "Can be repeated every 3 months"
+    },
+    "skin-boosters": {
+      "name": "Skin Boosters",
+      "description": "Skin Boosters are injectable treatments using hyaluronic acid to enhance skin moisture from within. They work to improve skin hydration and quality, giving a natural, refreshed appearance.",
+      "benefits": [
+        "Deep skin hydration",
+        "Improves skin elasticity and firmness",
+        "Enhances overall skin quality",
+        "Natural-looking results"
+      ],
+      "duration": "30-45 minutes (typical)",
+      "downtime": "Minimal",
+      "idealFor": "Dry or dehydrated skin; Loss of skin elasticity; Dull complexion; Fine lines from dehydration"
+    },
+    "anti-wrinkle-injections": {
+      "name": "Wrinkle Treatments",
+      "description": "Our wrinkle treatments are designed to get rid of wrinkles and fine lines, revitalise and smooth the skin. Using advanced techniques and premium products, we provide natural-looking results that enhance your appearance while maintaining facial expression.",
+      "benefits": [
+        "Eliminates wrinkles and fine lines",
+        "Revitalises and smooths the skin",
+        "Prevents formation of new wrinkles",
+        "Quick treatment with minimal discomfort",
+        "Natural-looking results when expertly administered"
+      ],
+      "duration": "15-30 minutes",
+      "downtime": "None",
+      "idealFor": "Forehead lines; Crow's feet; Frown lines; Dynamic wrinkles from facial expressions; Skin rejuvenation",
+      "consultation": "Personalized treatment plan available"
+    },
+    "iv-infusions": {
+      "name": "IV Infusions by Revita Wellbeing",
+      "description": "Intravenous (IV) therapy delivers essential vitamins and minerals directly into the bloodstream, bypassing the digestive system for maximum absorption and immediate benefits. Administered by qualified medical professionals in our luxurious Belgravia clinic.",
+      "benefits": [
+        "100% absorption rate for maximum effectiveness",
+        "Instant energy boost and enhanced immunity",
+        "Superior hydration at cellular level",
+        "Customizable formulations for specific health goals",
+        "Immediate results with no digestive issues"
+      ],
+      "duration": "30-60 minutes per infusion",
+      "downtime": "None - resume activities immediately",
+      "idealFor": "Low energy; Immune support; Skin health; Muscle recovery; Anti-aging; Stress management; Metabolism support; Detoxification",
+      "treatments": {
+        "revita-base": "Essential vitamins (B Complex, B5, B6, B12) - £150",
+        "skin-brightening": "High-dose Vitamin C (requires blood test) - £250",
+        "relax-restore": "Natural amino acids and minerals for stress relief - £370",
+        "skin-hair-nails": "Biotin and amino acids for beauty boost - £350",
+        "anti-aging": "Glutathione for collagen restoration - £370",
+        "diet-detox": "Fat metabolism and detoxification - £400",
+        "immuno-support": "Zinc and amino acids for immunity - £370",
+        "energy-booster": "B vitamins for mental clarity - £290",
+        "pre-workout": "Natural performance enhancement - £240",
+        "post-workout": "Muscle recovery and rehydration - £240",
+        "glutathione-addon": "Master antioxidant boost - £90 (course of 3: £250)"
+      }
+    },
+    "exosome-therapy": {
+      "name": "Exosomes Growth Factors Facial",
+      "description": "The Exosomes Growth Factors Facial uses the AQUAGOLD® fine touch device - a 24-carat gold micro-infusion system - to deliver a specially chosen mixture of high-quality ingredients including exosomes and growth factors directly into the skin for advanced rejuvenation.",
+      "benefits": [
+        "Delivers growth factors for cellular regeneration",
+        "Enhances collagen and elastin production",
+        "Improves skin texture and tone",
+        "Advanced anti-aging benefits",
+        "Uses luxurious 24-carat gold micro-infusion technology"
+      ],
+      "duration": "45-60 minutes",
+      "downtime": "Minimal",
+      "idealFor": "Advanced anti-aging; Skin rejuvenation; Cellular regeneration; Premium facial treatment seekers",
+      "device": "AQUAGOLD® fine touch with 24-carat gold needles"
+    }
+  }
+}
