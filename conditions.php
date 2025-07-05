@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Conditions Page
- * Description: Modern conditions listing page with elegant design
+ * Description: Browse conditions by category
  *
  * @package tempusbelgravia
  */
@@ -10,17 +10,29 @@
 get_header();
 ?>
 
-<div class="treatment-page-wrapper">
-    <main id="treatment-content" class="treatment-main-content">
+<div class="conditions-page-wrapper">
+    <main id="conditions-content" class="conditions-main-content">
 
-        <!-- Conditions Grid Section -->
-        <section class="treatment-section alt-bg" id="conditions">
-            <div class="treatment-container">
-                <div class="section-header">
-                    <h2>Comprehensive Condition Treatment</h2>
-                    <p>Professional solutions tailored to your specific needs</p>
+        <!-- Browse by Category Section -->
+        <section class="conditions-browse-section">
+            <div class="container">
+                <div class="browse-header">
+                    <h1>Browse Conditions by Category</h1>
+                    <p>Select a category to explore our treatment options</p>
                 </div>
 
+                
+                <!-- Category Filters -->
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Conditions</button>
+                    <button class="filter-btn" data-category="aging">Anti-Aging</button>
+                    <button class="filter-btn" data-category="facial">Facial Concerns</button>
+                    <button class="filter-btn" data-category="skin">Skin Issues</button>
+                    <button class="filter-btn" data-category="body">Body Concerns</button>
+                    <button class="filter-btn" data-category="hair">Hair & Scalp</button>
+                    <button class="filter-btn" data-category="medical">Medical</button>
+                </div>
+                
                 <?php 
                 // Query conditions
                 $conditions_query = new WP_Query(array(
@@ -31,9 +43,11 @@ get_header();
                 ));
 
                 if( $conditions_query->have_posts() ): ?>
-                <div class="treatment-grid">
-                    <?php while( $conditions_query->have_posts() ): $conditions_query->the_post(); ?>
-                    <article class="treatment-card condition-card">
+                <div class="conditions-grid">
+                    <?php while( $conditions_query->have_posts() ): $conditions_query->the_post(); 
+                        $category = get_field('condition_category_type') ?: 'general';
+                    ?>
+                    <article class="condition-card" data-category="<?php echo esc_attr($category); ?>">
                         <div class="treatment-image">
                             <?php if( get_field('_thumb_image') ): ?>
                                 <img src="<?php echo get_field('_thumb_image'); ?>" alt="<?php the_title(); ?>">
@@ -74,7 +88,7 @@ get_header();
                 </div>
                 <?php else: ?>
                     <!-- Default Conditions if no posts exist -->
-                    <div class="treatment-grid">
+                    <div class="conditions-grid">
                         <?php 
                         $default_conditions = array(
                             array(
@@ -142,8 +156,21 @@ get_header();
                             )
                         );
                         
-                        foreach($default_conditions as $condition): ?>
-                        <article class="treatment-card condition-card">
+                        foreach($default_conditions as $condition): 
+                            $category_map = [
+                                'Skin Conditions' => 'skin',
+                                'Vascular Conditions' => 'medical',
+                                'Vascular' => 'medical',
+                                'Pigmentation' => 'skin',
+                                'Aging' => 'aging',
+                                'Inflammatory' => 'medical',
+                                'Hair & Scalp' => 'hair',
+                                'Skin Texture' => 'body',
+                                'Autoimmune' => 'medical'
+                            ];
+                            $data_category = isset($category_map[$condition['category']]) ? $category_map[$condition['category']] : 'general';
+                        ?>
+                        <article class="condition-card" data-category="<?php echo esc_attr($data_category); ?>">
                             <div class="treatment-image">
                                 <img src="<?php echo $condition['image']; ?>" alt="<?php echo $condition['name']; ?>">
                                 <span class="condition-category"><?php echo $condition['category']; ?></span>
@@ -171,138 +198,108 @@ get_header();
             </div>
         </section>
 
-        <!-- Conditions by Category Section -->
-        <section class="treatment-section">
-            <div class="treatment-container">
-                <div class="section-header">
-                    <h2>Conditions by Category</h2>
-                    <p>Browse our expertise by condition type</p>
-                </div>
-                
-                <div class="conditions-categories">
-                    <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3>Skin Conditions</h3>
-                        <p>Acne, eczema, dermatitis, and other common skin disorders</p>
-                        <ul>
-                            <li>Active acne treatment</li>
-                            <li>Eczema management</li>
-                            <li>Dermatitis care</li>
-                            <li>Sensitive skin solutions</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Pigmentation Issues</h3>
-                        <p>Melasma, age spots, and uneven skin tone correction</p>
-                        <ul>
-                            <li>Melasma treatment</li>
-                            <li>Age spot removal</li>
-                            <li>Post-inflammatory hyperpigmentation</li>
-                            <li>Sun damage reversal</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Signs of Aging</h3>
-                        <p>Wrinkles, fine lines, and age-related skin changes</p>
-                        <ul>
-                            <li>Fine line reduction</li>
-                            <li>Wrinkle treatment</li>
-                            <li>Skin texture improvement</li>
-                            <li>Volume restoration</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-heart-pulse"></i>
-                        </div>
-                        <h3>Vascular Conditions</h3>
-                        <p>Rosacea, spider veins, and visible blood vessels</p>
-                        <ul>
-                            <li>Rosacea management</li>
-                            <li>Spider vein treatment</li>
-                            <li>Broken capillaries</li>
-                            <li>Vascular lesions</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Treatment Approach Section -->
-        <section class="treatment-section alt-bg">
-            <div class="treatment-container">
-                <div class="section-header">
-                    <h2>Our Treatment Approach</h2>
-                    <p>Comprehensive care tailored to your unique needs</p>
-                </div>
-                
-                <div class="approach-timeline">
-                    <div class="approach-step">
-                        <div class="step-number">1</div>
-                        <h3>Comprehensive Assessment</h3>
-                        <p>Detailed evaluation of your condition, medical history, and treatment goals.</p>
-                    </div>
-                    
-                    <div class="approach-step">
-                        <div class="step-number">2</div>
-                        <h3>Personalized Treatment Plan</h3>
-                        <p>Customized approach combining the most effective treatments for your specific condition.</p>
-                    </div>
-                    
-                    <div class="approach-step">
-                        <div class="step-number">3</div>
-                        <h3>Professional Treatment</h3>
-                        <p>Expert care using advanced techniques and state-of-the-art equipment.</p>
-                    </div>
-                    
-                    <div class="approach-step">
-                        <div class="step-number">4</div>
-                        <h3>Ongoing Support</h3>
-                        <p>Continuous monitoring and adjustment to ensure optimal results and long-term success.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="treatment-cta-section">
-            <div class="treatment-container">
-                <div class="cta-content">
-                    <h2>Ready to Address Your Concerns?</h2>
-                    <p>Book your consultation today and let our experts create a personalized treatment plan for your condition</p>
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20condition%20treatment%20please." 
-                       class="cta-button" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                        Book Your Consultation
-                    </a>
-                </div>
-            </div>
-        </section>
-
     </main>
 </div>
 
 <style>
-/* Conditions Page Specific Styles */
-.conditions-hero {
-    background: linear-gradient(135deg, #E1D4C7 0%, #F7F3ED 100%);
+/* Include home.css variables */
+:root {
+    --primary: #AF8F5A;
+    --primary-dark: #8C6F44;
+    --primary-light: #D4AF7A;
+    --primary-ultralight: #F7F3ED;
+    --dark-text: #333333;
+    --gray: #555555;
+    --light-gray: #eeeeee;
+    --white: #ffffff;
+    --transition-medium: 0.3s ease;
 }
 
-/* Condition Card Enhancements */
+/* Conditions Page Specific Styles */
+.conditions-page-wrapper {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.conditions-browse-section {
+    padding: 60px 0;
+}
+
+.browse-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.browse-header h1 {
+    font-size: 2.5rem;
+    color: var(--dark-text);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.browse-header p {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Conditions Grid */
+.conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.condition-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.condition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
 .condition-card .treatment-image {
     position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.condition-card .treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .condition-category {
@@ -319,6 +316,23 @@ get_header();
     letter-spacing: 0.5px;
 }
 
+.condition-card .treatment-content {
+    padding: 30px;
+}
+
+.condition-card .treatment-name {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.condition-card .treatment-description {
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
 .condition-symptoms {
     background: var(--primary-ultralight);
     padding: 15px;
@@ -328,7 +342,6 @@ get_header();
 }
 
 .condition-symptoms h4 {
-    font-family: var(--heading-font);
     font-size: 0.9rem;
     color: var(--primary);
     margin-bottom: 8px;
@@ -344,192 +357,103 @@ get_header();
     line-height: 1.5;
 }
 
-/* Conditions Categories */
-.conditions-categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 3rem;
-}
-
-.category-card {
-    background: var(--white);
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all var(--transition-medium);
-    text-align: center;
-}
-
-.category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(175, 143, 90, 0.15);
-}
-
-.category-icon {
-    width: 70px;
-    height: 70px;
-    background: var(--primary-ultralight);
-    border-radius: 50%;
+.treatment-actions {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.treatment-link {
     color: var(--primary);
-    margin: 0 auto 20px;
-    transition: all var(--transition-medium);
-}
-
-.category-card:hover .category-icon {
-    background: var(--primary);
-    color: var(--white);
-    transform: scale(1.1);
-}
-
-.category-card h3 {
-    font-family: var(--heading-font);
-    font-size: 1.4rem;
-    color: var(--dark-text);
-    margin-bottom: 15px;
-}
-
-.category-card p {
-    color: var(--gray);
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.category-card ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-.category-card li {
-    padding: 8px 0;
-    color: var(--dark-text);
-    font-size: 0.95rem;
-    position: relative;
-    padding-left: 20px;
-}
-
-.category-card li:before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--primary);
-    font-weight: bold;
-}
-
-/* Treatment Approach Timeline */
-.approach-timeline {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    margin-top: 3rem;
-    position: relative;
-}
-
-.approach-timeline::before {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 10%;
-    right: 10%;
-    height: 2px;
-    background: var(--primary-light);
-    z-index: 0;
-}
-
-.approach-step {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.step-number {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 20px;
-    background: var(--primary);
-    color: var(--white);
-    border-radius: 50%;
-    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: var(--heading-font);
-    box-shadow: 0 5px 20px rgba(175, 143, 90, 0.3);
+    gap: 8px;
+    transition: all 0.3s ease;
 }
 
-.approach-step h3 {
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    color: var(--dark-text);
-    margin-bottom: 15px;
+.treatment-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(5px);
 }
 
-.approach-step p {
-    color: var(--gray);
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-/* CTA Section */
-.treatment-cta-section {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.treatment-cta-section .cta-content h2 {
-    color: var(--white);
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: var(--display-font);
-}
-
-.treatment-cta-section .cta-content p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.treatment-cta-section .cta-button {
-    background: var(--white);
+.cta-button-secondary {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid var(--primary);
     color: var(--primary);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
 }
 
-.treatment-cta-section .cta-button:hover {
-    background: var(--light);
-    transform: translateY(-2px);
+.cta-button-secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .conditions-categories {
+    .conditions-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
     
-    .approach-timeline {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .category-filters {
+        gap: 10px;
     }
     
-    .approach-timeline::before {
-        display: none;
+    .filter-btn {
+        padding: 8px 20px;
+        font-size: 0.85rem;
     }
     
-    .category-card {
-        padding: 30px 20px;
+    .browse-header h1 {
+        font-size: 2rem;
+    }
+    
+    .treatment-actions {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .cta-button-secondary {
+        text-align: center;
     }
 }
 </style>
+
+<script>
+// Filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const conditionCards = document.querySelectorAll('.condition-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter cards
+            conditionCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
 
 <?php
 // Use the theme's modern footer
