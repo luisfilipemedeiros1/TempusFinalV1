@@ -57,6 +57,27 @@ function home_content()
         height: auto;
         border-radius: 8px;
     }
+    .book-now-btn:hover {
+        background-color: #8C6F44 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(175, 143, 90, 0.3);
+    }
+    .treatment-price {
+        margin: 30px 0;
+        padding: 20px;
+        background: #f8f8f8;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .price-label {
+        font-size: 20px;
+        color: #333;
+        margin: 0;
+    }
+    .price-label strong {
+        color: #AF8F5A;
+        font-size: 24px;
+    }
     @media (max-width: 768px) {
         .single-treatment-box {
             padding: 20px;
@@ -98,9 +119,9 @@ function home_content()
 				</div>
 				
 				<!-- Book Now Button -->
-				<div class="treatment-book-now" style="text-align: center; margin-top: 40px;">
-					<a href="/#book-now" class="book-now-btn" style="display: inline-block; background-color: #007cba; color: #fff; padding: 15px 40px; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
-						Book Now
+				<div class="treatment-book-now" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+					<a href="<?php echo home_url('/#contact'); ?>" class="book-now-btn" style="display: inline-block; background-color: #AF8F5A; color: #fff; padding: 15px 40px; font-size: 18px; font-weight: 600; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; font-family: 'Montserrat', sans-serif;">
+						Book Consultation
 					</a>
 				</div>
 			</div>
