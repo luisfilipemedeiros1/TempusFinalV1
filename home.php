@@ -103,7 +103,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20HIFU%20Skin%20Tightening%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20RFNeedling%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20Lips%20Augmentation%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Exosome%20Regenerative%20Therapy%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -192,7 +192,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Advanced%20Body%20Contouring%20treatments%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -214,7 +214,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20Aquagold%20Fine%20Touch%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -236,7 +236,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Injectable%20Skin%20Boosters%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -258,7 +258,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Anti-Wrinkle%20Injections%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -279,7 +279,7 @@ get_header();
                                     Learn More
                                 </a>
                                 <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Longevity%20IV%20Infusions%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Book Now <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
