@@ -16,119 +16,7 @@ get_header();
     background-color: var(--white);
 }
 
-/* Hero Section */
-.conditions-hero {
-    position: relative;
-    height: 500px;
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(139, 111, 76, 0.8) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.conditions-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Dr.-Nadine-Hachach-Haram-scaled.jpg.webp');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: 1;
-}
-
-.conditions-hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: var(--white);
-    max-width: 900px;
-    padding: 0 20px;
-}
-
-.conditions-hero h1 {
-    font-size: 4rem;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-family: var(--display-font, 'Playfair Display', serif);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.conditions-hero .subtitle {
-    font-size: 1.4rem;
-    opacity: 0.9;
-    line-height: 1.6;
-}
-
-/* Introduction Section */
-.conditions-intro {
-    padding: 80px 0;
-    background: var(--light);
-    text-align: center;
-}
-
-.conditions-intro .container {
-    max-width: 900px;
-}
-
-.conditions-intro p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--gray);
-}
-
-/* Category Navigation Dropdown */
-.category-navigation {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.category-dropdown {
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--primary);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    padding: 15px 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: var(--heading-font);
-    cursor: pointer;
-    min-width: 280px;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23AF8F5A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 16px;
-    padding-right: 50px;
-}
-
-.category-dropdown:hover {
-    background: rgba(255, 255, 255, 1);
-    border-color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.category-dropdown:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(175, 143, 90, 0.3);
-}
-
-.category-dropdown option {
-    color: var(--primary);
-    background: var(--white);
-    padding: 10px;
-}
-
+/* Screen reader only text */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -405,20 +293,6 @@ get_header();
 
 /* Responsive */
 @media (max-width: 768px) {
-    .conditions-hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .category-dropdown {
-        min-width: 250px;
-        font-size: 0.9rem;
-        padding: 12px 16px;
-        padding-right: 45px;
-    }
-    
-    .category-navigation {
-        margin-top: 30px;
-    }
     
     .conditions-grid {
         grid-template-columns: 1fr;
@@ -433,36 +307,11 @@ get_header();
     }
 }
 
-@media (max-width: 480px) {
-    .category-dropdown {
-        min-width: 220px;
-        font-size: 0.85rem;
-        padding: 10px 14px;
-        padding-right: 40px;
-    }
-}
 </style>
 
 <main class="conditions-page">
-    <!-- Hero Section -->
-    <section class="conditions-hero">
-        <div class="conditions-hero-content">
-            <h1 class="fade-in-up">Conditions We Treat</h1>
-            <p class="subtitle fade-in-up">Expert solutions for your aesthetic and wellness concerns</p>
-            
-        </div>
-    </section>
-
-    <!-- Introduction -->
-    <section class="conditions-intro">
-        <div class="container">
-            <p>At Tempus Belgravia, we understand that every individual's concerns are unique. Our expert team combines advanced medical knowledge with cutting-edge treatments to address a comprehensive range of aesthetic and wellness conditions. From signs of aging to specific skin concerns, we provide personalized treatment plans designed to achieve optimal results.</p>
-        </div>
-    </section>
-
-
     <!-- Conditions Sections -->
-    <section class="conditions-section">
+    <section class="conditions-section" style="padding-top: 60px;">
         <div class="container">
             <!-- Facial Aging Category -->
             <div id="facial-aging" class="condition-category">
