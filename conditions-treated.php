@@ -345,87 +345,12 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
     padding-top: 0;
 }
 
-/* Hero Section */
-.conditions-hero {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-    margin-bottom: 60px;
-}
-
-.conditions-hero .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.conditions-hero .hero-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.conditions-hero .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
-}
-
-.conditions-hero .hero-content {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 2;
-    padding: 0 20px;
-}
-
-.hero-title {
-    color: var(--white);
-    font-size: 4rem;
-    margin-bottom: 20px;
-    font-family: var(--display-font);
-    font-weight: 500;
-}
-
-.hero-subtitle {
-    color: var(--white);
-    font-size: 1.4rem;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    opacity: 0.9;
-}
-
-.hero-cta {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.hero-cta:hover {
-    background-color: var(--primary-dark);
-    transform: translateY(-2px);
-}
 
 /* Filter Section */
 .conditions-filter-section {
     background-color: var(--white);
-    padding: 40px 0;
+    padding: 60px 0 40px;
     margin-bottom: 60px;
-    border-bottom: 1px solid var(--light-gray);
 }
 
 .filter-wrapper h2 {
@@ -797,13 +722,6 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
     
     .conditions-grid {
         grid-template-columns: 1fr;
@@ -826,20 +744,8 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
 </style>
 
 <div class="conditions-page-wrapper">
-    <main id="conditions-content" class="conditions-main-content">
+    <main id="conditions-content" class="conditions-main-content" style="padding-top: 40px;">
         
-        <!-- Hero Section -->
-        <section class="conditions-hero">
-            <div class="hero-background">
-                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner%2016:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Conditions Treatment">
-            </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title fade-in-up">Conditions We Treat</h1>
-                <p class="hero-subtitle fade-in-up">Expert diagnosis and advanced treatment solutions for your aesthetic and medical concerns</p>
-                <a href="#conditions-list" class="hero-cta fade-in-up">Explore Conditions</a>
-            </div>
-        </section>
 
         <!-- Filter Section -->
         <section class="conditions-filter-section">
@@ -1011,8 +917,6 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
         <!-- Book Consultation Section (from home page) -->
         <section id="book-consultation" class="contact-section">
              <div class="contact-pattern"></div>
-             <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,0 100,100 0,100"/></svg></div>
-             <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--primary-ultralight)" points="0,100 100,0 100,100"/></svg></div>
              <div class="container">
                   <div class="section-title fade-in-up">
                      <h2>Begin Your Journey</h2>
