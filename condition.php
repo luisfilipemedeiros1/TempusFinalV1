@@ -13,31 +13,8 @@ get_header();
 <div class="treatment-page-wrapper">
     <main id="treatment-content" class="treatment-main-content">
         
-        <!-- Hero Section -->
-        <section class="treatment-hero conditions-hero">
-            <div class="treatment-hero-content">
-                <h1><?php the_field('heading_banner') ?: 'Comprehensive Condition Treatment'; ?></h1>
-                <p class="subtitle"><?php the_field('sub_text_for_banner') ?: 'Specialized care for multiple conditions with personalized treatment approaches'; ?></p>
-                <?php if( get_field('text_for_banner_button') ): ?>
-                <a href="#conditions" class="cta-button"><?php the_field('text_for_banner_button'); ?></a>
-                <?php else: ?>
-                <a href="#conditions" class="cta-button">Explore Treatments</a>
-                <?php endif; ?>
-            </div>
-        </section>
-
-        <!-- Introduction Section -->
-        <section class="treatment-section">
-            <div class="treatment-container">
-                <div class="intro-content">
-                    <h2>Personalized Treatment for Every Condition</h2>
-                    <p class="lead-text">At Tempus Belgravia, we provide comprehensive care for a wide range of conditions. Our expert medical team creates personalized treatment plans that address your specific needs, ensuring optimal results and improved quality of life.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Conditions Grid Section -->
-        <section class="treatment-section alt-bg" id="conditions">
+        <section class="treatment-section" id="conditions" style="padding-top: 60px;">
             <div class="treatment-container">
                 <div class="section-header">
                     <h2>Available Treatments</h2>
@@ -190,9 +167,6 @@ get_header();
 
 <style>
 /* Condition Page Specific Styles */
-.conditions-hero {
-    background: linear-gradient(135deg, #E1D4C7 0%, #F7F3ED 100%);
-}
 
 /* Treatment Grid */
 .treatment-grid {
