@@ -701,7 +701,7 @@ get_header();
                     }
                     /* Form Container Styling */
                     #zf_div_2ocXcoePUH67HGo9WmzdB894DR7POz1NopDMCtNf5L4 {
-                        padding: 10px;
+                        padding: 0 10px 10px 10px;
                         box-sizing: border-box;
                         width: 100%;
                     }
@@ -721,6 +721,10 @@ get_header();
                     }
                     /* Mobile Styles */
                     @media (max-width: 768px) {
+                        .contact-form-title {
+                            font-size: 1.8rem !important;
+                            padding: 15px 10px 10px 10px !important;
+                        }
                         .contact-vertical {
                             gap: 2rem;
                             padding: 0 0.5rem;
@@ -900,8 +904,8 @@ get_header();
                     }
                     </style>
                      <!-- Contact Form Block -->
-                     <div class="visit-block fade-in" style="background: #fff;">
-                         <h3>Request Your Consultation</h3>
+                     <div class="fade-in" style="background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                         <h3 class="contact-form-title" style="text-align: center; padding: 20px 10px 10px 10px; margin: 0; font-size: 2.5rem; color: #333;">Request Your Consultation</h3>
                          <div id="zf_div_2ocXcoePUH67HGo9WmzdB894DR7POz1NopDMCtNf5L4"></div>
                          <script type="text/javascript">
                          (function() {
