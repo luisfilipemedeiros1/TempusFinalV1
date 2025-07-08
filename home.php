@@ -699,6 +699,26 @@ get_header();
                         margin: 0 auto;
                         padding: 0 1rem;
                     }
+                    /* Form Container Styling */
+                    #zf_div_2ocXcoePUH67HGo9WmzdB894DR7POz1NopDMCtNf5L4 {
+                        padding: 10px;
+                        box-sizing: border-box;
+                        width: 100%;
+                    }
+                    #zf_div_2ocXcoePUH67HGo9WmzdB894DR7POz1NopDMCtNf5L4 iframe {
+                        width: 100% !important;
+                        max-width: 100% !important;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    /* Tablet/iPad Styles */
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                        .visit-block h3,
+                        .map-block h3 {
+                            font-size: 2rem !important;
+                            margin-bottom: 1.5rem !important;
+                        }
+                    }
                     /* Mobile Styles */
                     @media (max-width: 768px) {
                         .contact-vertical {
@@ -708,11 +728,12 @@ get_header();
                         .visit-block,
                         .contact-methods-block,
                         .map-block {
-                            padding: 1.5rem !important;
+                            padding: 10px !important;
                         }
                         .visit-block h3,
                         .map-block h3 {
                             font-size: 1.8rem !important;
+                            margin-bottom: 1rem !important;
                         }
                         .contact-item {
                             padding: 1rem;
@@ -744,7 +765,7 @@ get_header();
                     }
                     .visit-block {
                         background: #f8f8f8;
-                        padding: 3rem;
+                        padding: 10px;
                         border-radius: 12px;
                         box-shadow: 0 4px 20px rgba(0,0,0,0.08);
                         text-align: center;
@@ -857,7 +878,7 @@ get_header();
                     }
                     .map-block {
                         background: #fff;
-                        padding: 3rem;
+                        padding: 10px;
                         border-radius: 12px;
                         box-shadow: 0 4px 20px rgba(0,0,0,0.08);
                         box-sizing: border-box;
@@ -927,7 +948,7 @@ get_header();
                                  f.src = ifrmSrc;
                                  f.style.border="none";
                                  f.style.height="1041px";
-                                 f.style.width="90%";
+                                 f.style.width="100%";
                                  f.style.transition="all 0.5s ease";
                                  f.setAttribute("aria-label", 'Contact Us');
                                  
@@ -982,7 +1003,7 @@ get_header();
                     </div>
                     
                     <!-- Contact Methods Block -->
-                    <div class="contact-methods-block fade-in" style="background: #fff; padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                    <div class="contact-methods-block fade-in" style="background: #fff; padding: 10px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
                         <h3 style="text-align: center; margin-bottom: 2rem; font-size: 2.5rem; color: #333;">Get in Touch</h3>
                         <div class="contact-methods">
                             <div class="contact-item">
