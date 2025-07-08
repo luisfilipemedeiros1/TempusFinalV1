@@ -537,7 +537,8 @@ get_header();
              </div>
         </section>
 
-        <!-- Shop Highlight Section -->
+        <!-- Shop Highlight Section - HIDDEN -->
+        <?php /* Commenting out the Curated Skincare Essentials section
         <section class="shop-highlight-section">
             <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,0 100,100 0,100"/></svg></div>
             <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--white)" points="0,100 100,0 100,100"/></svg></div>
@@ -614,6 +615,7 @@ get_header();
                  </div>
              </div>
         </section>
+        */ ?>
 
         <!-- Instagram Gallery Section -->
          <section class="instagram-section">
