@@ -305,14 +305,61 @@
     .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
     .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
     
-    /* Treatment Price Styles */
-    .treatment-price {
-        color: var(--primary);
-        font-size: 1.25rem;
-        font-weight: 500;
-        margin: -10px 0 15px 0;
+    /* Treatment Price Ribbon Styles */
+    .price-ribbon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: var(--primary);
+        color: var(--white);
+        padding: 8px 20px;
+        font-size: 1rem;
+        font-weight: 600;
         font-family: var(--heading-font);
         letter-spacing: 0.5px;
+        border-radius: 25px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        z-index: 3;
+        white-space: nowrap;
+    }
+    
+    /* Alternative corner ribbon style */
+    .price-ribbon-corner {
+        position: absolute;
+        top: 15px;
+        right: -35px;
+        background: var(--primary);
+        color: var(--white);
+        padding: 8px 40px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: var(--heading-font);
+        transform: rotate(45deg);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        z-index: 3;
+    }
+    
+    /* Ensure treatment card has relative positioning */
+    .treatment-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Adjust badge positioning when price ribbon is present */
+    .treatment-card .best-seller-badge,
+    .treatment-card .trending-badge {
+        left: 20px;
+        top: 20px;
+    }
+    
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+        .price-ribbon {
+            font-size: 0.85rem;
+            padding: 6px 15px;
+            top: 15px;
+            right: 15px;
+        }
     }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
     .treatment-details { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9rem; color: var(--gray); border-top: 1px solid var(--primary-ultralight); padding-top: 15px; margin-top: auto; flex-wrap: wrap; gap: 5px 10px; } /* Added flex-wrap/gap */

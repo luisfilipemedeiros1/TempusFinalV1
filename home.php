@@ -89,10 +89,10 @@ get_header();
 
                       <!-- Card 1: Hifu -->
                       <div class="treatment-card scale-in">
+                        <div class="price-ribbon">Starting at £350</div>
                         <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/hifu-treatment.webp" loading="lazy" alt="HIFU Treatment"></div>
                         <div class="treatment-card-content">
                             <h3>HIFU Skin Tightening</h3>
-                            <div class="treatment-price">Starting at £350</div>
                             <p>Non-surgical lift using focused ultrasound energy to tighten skin on the face, neck, and décolletage for a youthful contour.</p>
                             <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-arrow-up" aria-hidden="true"></i> Lifting</span>
@@ -113,10 +113,10 @@ get_header();
                     <!-- Card 2: Morpheus8 (Best Seller) -->
                      <div class="treatment-card scale-in">
                          <span class="best-seller-badge">Best Seller</span>
+                         <div class="price-ribbon">Starting at £750</div>
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Silhouette-Soft-scaled-1.jpeg.webp" loading="lazy" alt="Morpheus8 RF microneedling device detail"></div>
                          <div class="treatment-card-content">
                             <h3>RF Microneedling</h3>
-                            <div class="treatment-price">Starting at £750</div>
                             <p>Advanced fractional technology combining radiofrequency and microneedling to remodel tissue, tighten skin, and improve texture.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="far fa-clock" aria-hidden="true"></i> 75-90 min</span>
@@ -136,10 +136,10 @@ get_header();
 
                      <!-- Card 3: Lips Augmentation -->
                       <div class="treatment-card scale-in">
+                         <div class="price-ribbon">Starting at £450</div>
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp" loading="lazy" alt="Lips Augmentation Treatment"></div>
                          <div class="treatment-card-content">
                              <h3>Lips Augmentation</h3>
-                            <div class="treatment-price">Starting at £450</div>
                             <p>Enhance lip volume, shape, and definition using premium dermal fillers for natural-looking, beautifully balanced results.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-smile-beam" aria-hidden="true"></i> Volume & Shape</span>
@@ -160,10 +160,10 @@ get_header();
                     <!-- Card 4: Exosomes - WITH TRENDING BADGE -->
                      <div class="treatment-card scale-in">
                          <span class="trending-badge">Trending</span>
+                         <div class="price-ribbon">Starting at £600</div>
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp" loading="lazy" alt="Exosomes Therapy"></div>
                          <div class="treatment-card-content">
                             <h3>Exosome Regenerative Therapy</h3>
-                            <div class="treatment-price">Starting at £600</div>
                             <p>Harness the power of exosomes for advanced skin regeneration, reducing inflammation, improving texture, and promoting youthful vitality.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-atom" aria-hidden="true"></i> Regeneration</span>
@@ -182,10 +182,10 @@ get_header();
 
                      <!-- Card 5: Body Contouring -->
                      <div class="treatment-card scale-in">
+                         <div class="price-ribbon">Starting at £150</div>
                          <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/body-contouring.webp" loading="lazy" alt="Body Contouring Treatment"></div>
                         <div class="treatment-card-content">
                             <h3>Advanced Body Contouring</h3>
-                            <div class="treatment-price">Starting at £150</div>
                             <p>Utilise technologies like EMSculpt Neo or Cryolipolysis to sculpt, tone muscle, reduce stubborn fat, and refine body contours non-invasively.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-person-booth" aria-hidden="true"></i> Sculpt & Tone</span>
@@ -205,6 +205,7 @@ get_header();
 
                      <!-- Card 6: Aquagold Fine Touch -->
                       <div class="treatment-card scale-in">
+                         <div class="price-ribbon">Starting at £350</div>
                         <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/09/aquagold.jpeg.webp" loading="lazy" alt="Aquagold Fine Touch microinfusion device"></div>
                         <div class="treatment-card-content">
                             <h3>Aquagold Fine Touch™</h3>
@@ -227,6 +228,7 @@ get_header();
 
                      <!-- Card 7: Injectable Skin Boosters -->
                       <div class="treatment-card scale-in">
+                         <div class="price-ribbon">Starting at £450</div>
                          <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/skin-boosters.webp" loading="lazy" alt="Skin booster treatment enhancing hydration"></div>
                          <div class="treatment-card-content">
                              <h3>Injectable Skin Boosters</h3>
@@ -249,6 +251,7 @@ get_header();
 
                      <!-- Card 8: Anti-Wrinkle Injections -->
                      <div class="treatment-card scale-in">
+                         <div class="price-ribbon">Starting at £295</div>
                         <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/New-Project-2.png.webp" loading="lazy" alt="Anti-Wrinkle injection areas illustration"></div>
                         <div class="treatment-card-content">
                             <h3>Precision Anti-Wrinkle Injections</h3>
@@ -271,6 +274,7 @@ get_header();
 
                      <!-- Card 9: Longevity IV Infusions -->
                     <div class="treatment-card scale-in">
+                         <div class="price-ribbon">Price on consultation</div>
                         <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2023/01/Nutrition-2.jpg.webp" loading="lazy" alt="IV Vitamin Drip therapy in progress"></div>
                         <div class="treatment-card-content">
                             <h3>Longevity IV Infusions</h3>
