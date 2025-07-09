@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'tempusbelgravia' );
 define( 'CHILD_THEME_URL', 'http://www.dicema.com/' );
-define( 'CHILD_THEME_VERSION', '2.0.3' ); // Increment version for cache busting
+define( 'CHILD_THEME_VERSION', '2.0.4' ); // Increment version for cache busting
 
 //* Include treatment prices
 require_once( get_stylesheet_directory() . '/inc/treatment-prices.php' );
@@ -46,6 +46,9 @@ function tempus_enqueue_styles_scripts() {
     
     // Enqueue modern header/footer styles (global)
     wp_enqueue_style('tempus-header-footer', get_stylesheet_directory_uri() . '/css/header-footer.css', array('tempus-main-styles'), CHILD_THEME_VERSION);
+    
+    // Enqueue badges CSS (global - needed on multiple pages)
+    wp_enqueue_style('tempus-badges', get_stylesheet_directory_uri() . '/css/badges.css', array('tempus-main-styles'), CHILD_THEME_VERSION);
 
     // --- PAGE-SPECIFIC STYLES ---
     

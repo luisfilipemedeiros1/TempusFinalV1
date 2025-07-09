@@ -299,46 +299,7 @@
     .treatment-card:hover .treatment-card-img img { transform: scale(1.05); }
     .treatment-card-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7) 100%); }
     .treatment-tag { position: absolute; top: 20px; right: 20px; background: var(--accent-deep); color: var(--white); padding: 6px 18px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; border-radius: 3px; font-family: var(--heading-font); font-weight: 500; z-index: 3; }
-    /* Treatment Badge System */
-    .treatment-badges {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        z-index: 3;
-    }
-    
-    .badge {
-        display: inline-block;
-        padding: 6px 18px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        border-radius: 3px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-family: var(--heading-font);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        white-space: nowrap;
-    }
-    
-    .badge.best-seller {
-        background-color: var(--accent-gold);
-        color: var(--dark-text);
-    }
-    
-    .badge.trending {
-        background-color: var(--accent-deep);
-        color: var(--white);
-    }
-    
-    .badge.price {
-        background-color: var(--primary) !important;
-        color: var(--white) !important;
-        display: inline-block !important;
-        visibility: visible !important;
-    }
+    /* Badge styles moved to badges.css for better maintainability */
     .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
     .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
     
@@ -348,19 +309,6 @@
         overflow: hidden;
     }
     
-    /* Mobile responsive adjustments for badges */
-    @media (max-width: 768px) {
-        .treatment-badges {
-            top: 15px;
-            left: 15px;
-            gap: 6px;
-        }
-        
-        .badge {
-            font-size: 0.75rem;
-            padding: 5px 12px;
-        }
-    }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
     .treatment-details { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9rem; color: var(--gray); border-top: 1px solid var(--primary-ultralight); padding-top: 15px; margin-top: auto; flex-wrap: wrap; gap: 5px 10px; } /* Added flex-wrap/gap */
     .treatment-detail { display: flex; align-items: center; }

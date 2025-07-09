@@ -195,15 +195,7 @@ get_header();
     margin-top: auto;
 }
 
-/* Treatment Price Styles */
-.treatment-price {
-    color: var(--primary);
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin: -10px 0 15px 0;
-    font-family: var(--heading-font);
-    letter-spacing: 0.5px;
-}
+/* Treatment Price Styles - Removed, using badge system instead */
 
 /* Book Now Section Styles */
 .book-now-section .contact-method-card:hover {
@@ -288,6 +280,9 @@ get_header();
             <div class="treatments-grid fade-in-stagger">
                 <!-- Lip Enhancement -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/lip-enhancement/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp" alt="Lip Enhancement" loading="lazy">
@@ -295,7 +290,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Lip Enhancement</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Create fuller, more defined lips with our expert lip filler treatments for natural-looking results.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/lip-enhancement/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -303,6 +297,9 @@ get_header();
 
                 <!-- Cheek Enhancement -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/cheek-enhancement/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Cheek-Enhancement-scaled-1.jpeg.webp" alt="Cheek Enhancement" loading="lazy">
@@ -310,7 +307,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Cheek Enhancement</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Restore volume and lift to your cheeks for a youthful, contoured appearance.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/cheek-enhancement/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -318,6 +314,9 @@ get_header();
 
                 <!-- Chin Filler -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/chin-filler/">
                             <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 9:16/v1742655993/pablo-merchan-montes-rrcEoas5d5A-unsplash_gshplk.jpg" alt="Chin Filler" loading="lazy">
@@ -325,7 +324,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Chin Filler</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Enhance your profile and facial balance with precision chin augmentation.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/chin-filler/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -333,6 +331,9 @@ get_header();
 
                 <!-- Jawline Filler -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/jawline-filler/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/jawline-filler-scaled-1.jpeg.webp" alt="Jawline Filler" loading="lazy">
@@ -340,7 +341,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Jawline Filler</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Define and sculpt your jawline for a more structured, youthful appearance.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/jawline-filler/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -348,6 +348,9 @@ get_header();
 
                 <!-- Temple Filler -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/temple-filler/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Temple-Filler-scaled-1.jpeg.webp" alt="Temple Filler" loading="lazy">
@@ -355,7 +358,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Temple Filler</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Restore volume to hollow temples for a refreshed, rejuvenated look.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/temple-filler/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -363,6 +365,9 @@ get_header();
 
                 <!-- Nose Reshaping -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £600</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/nose-reshaping/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Nose-Reshaping-scaled-1.jpeg.webp" alt="Nose Reshaping" loading="lazy">
@@ -370,7 +375,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Nose Reshaping</h3>
-                        <div class="treatment-price">Starting at £600</div>
                         <p>Non-surgical rhinoplasty to refine and balance your nasal profile.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/nose-reshaping/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -387,6 +391,9 @@ get_header();
             <div class="treatments-grid fade-in-stagger">
                 <!-- Face Wrinkles -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £295</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/face-wrinkles/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Artboard-83.png.webp" alt="Face Wrinkles" loading="lazy">
@@ -394,7 +401,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Face Wrinkles</h3>
-                        <div class="treatment-price">Starting at £295</div>
                         <p>Smooth away fine lines and wrinkles for a refreshed, youthful appearance.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/face-wrinkles/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -402,6 +408,9 @@ get_header();
 
                 <!-- Under Eye -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £600</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/under-eye/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/under-eye-scaled-1.jpeg.webp" alt="Under Eye" loading="lazy">
@@ -409,7 +418,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Under Eye Treatment</h3>
-                        <div class="treatment-price">Starting at £600</div>
                         <p>Reduce dark circles and hollows for brighter, more youthful-looking eyes.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/under-eye/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -417,6 +425,9 @@ get_header();
 
                 <!-- Brow Lift -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £400</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/brow-lift/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Brow-Lift-scaled-1.jpeg.webp" alt="Brow Lift" loading="lazy">
@@ -424,7 +435,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Brow Lift</h3>
-                        <div class="treatment-price">Starting at £400</div>
                         <p>Elevate and shape your brows for a more open, refreshed appearance.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/brow-lift/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -432,6 +442,9 @@ get_header();
 
                 <!-- Nefertiti Neck Lift -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £495</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/nefertiti-neck-lift/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/8-point-lift-scaled-1.jpeg.webp" alt="Nefertiti Neck Lift" loading="lazy">
@@ -439,7 +452,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Nefertiti Neck Lift</h3>
-                        <div class="treatment-price">Starting at £495</div>
                         <p>Non-surgical neck lifting and contouring for a more defined jawline.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/nefertiti-neck-lift/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -456,6 +468,9 @@ get_header();
             <div class="treatments-grid fade-in-stagger">
                 <!-- Skin Boosters -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/skin-boosters/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Restilane-Skin-Booster-scaled-1.jpeg.webp" alt="Skin Boosters" loading="lazy">
@@ -463,7 +478,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Skin Boosters</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Deep hydration treatments that improve skin quality from within.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/skin-boosters/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -471,6 +485,9 @@ get_header();
 
                 <!-- Profhilo Face -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £450</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/profhilo-face/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Profhilo-Face-scaled-1.jpeg.webp" alt="Profhilo Face" loading="lazy">
@@ -478,7 +495,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Profhilo Face</h3>
-                        <div class="treatment-price">Starting at £450</div>
                         <p>Revolutionary bio-remodelling treatment for skin laxity and hydration.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/profhilo-face/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -486,6 +502,9 @@ get_header();
 
                 <!-- Mesotherapy -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £350</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/mesotherapy/">
                             <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/mesotherapy-treatment-2021-08-26-19-52-34-utc-scaled-1.jpeg.webp" alt="Mesotherapy" loading="lazy">
@@ -493,7 +512,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>Mesotherapy</h3>
-                        <div class="treatment-price">Starting at £350</div>
                         <p>Targeted micro-injections to rejuvenate and revitalize your skin.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/mesotherapy/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
@@ -510,6 +528,9 @@ get_header();
             <div class="treatments-grid fade-in-stagger">
                 <!-- EMSculpt Neo -->
                 <div class="treatment-card scale-in">
+                    <div class="treatment-badges">
+                        <span class="badge badge-price">Starting at £2,995</span>
+                    </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/">
                             <img src="https:"https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EMSculpting.jpeg.webp" alt="EMSculpt Neo" loading="lazy">
@@ -517,7 +538,6 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>EMSculpt Neo</h3>
-                        <div class="treatment-price">Starting at £2,995</div>
                         <p>Build muscle and reduce fat simultaneously with electromagnetic technology.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>

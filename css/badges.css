@@ -1,0 +1,145 @@
+/**
+ * Treatment Card Badges Styles
+ * Separate CSS file for badge system to avoid conflicts
+ * 
+ * @package tempusbelgravia
+ * @version 2.0.3
+ */
+
+/* Badge Container - High specificity to override any conflicts */
+.treatment-card .treatment-badges {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+/* Base Badge Styles */
+.treatment-card .treatment-badges .badge {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    line-height: 1;
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Badge Hover Effect */
+.treatment-card .treatment-badges .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Best Seller Badge */
+.treatment-card .treatment-badges .badge.badge-bestseller {
+    background-color: #C7A331; /* Accent Gold */
+    color: #333333;
+}
+
+/* Trending Badge */
+.treatment-card .treatment-badges .badge.badge-trending {
+    background-color: #004D40; /* Deep Teal */
+    color: #ffffff;
+}
+
+/* Price Badge */
+.treatment-card .treatment-badges .badge.badge-price {
+    background-color: #AF8F5A; /* Primary Gold */
+    color: #ffffff;
+}
+
+/* Special styling when multiple badges exist */
+.treatment-card .treatment-badges:has(.badge-bestseller) .badge.badge-price,
+.treatment-card .treatment-badges:has(.badge-trending) .badge.badge-price {
+    /* Price badge gets slightly different styling when stacked */
+    font-size: 0.75rem;
+    background-color: #8C6F44; /* Darker gold for contrast */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .treatment-card .treatment-badges {
+        top: 15px;
+        left: 15px;
+        gap: 6px;
+    }
+    
+    .treatment-card .treatment-badges .badge {
+        font-size: 0.7rem;
+        padding: 6px 14px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+    
+    /* Adjust font size for stacked badges on mobile */
+    .treatment-card .treatment-badges:has(.badge-bestseller) .badge.badge-price,
+    .treatment-card .treatment-badges:has(.badge-trending) .badge.badge-price {
+        font-size: 0.65rem;
+        padding: 5px 12px;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .treatment-card .treatment-badges {
+        top: 18px;
+        left: 18px;
+    }
+    
+    .treatment-card .treatment-badges .badge {
+        font-size: 0.75rem;
+        padding: 7px 16px;
+    }
+}
+
+/* Animation for badge appearance */
+@keyframes badgeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.treatment-card .treatment-badges .badge {
+    animation: badgeFadeIn 0.5s ease-out;
+}
+
+/* Stagger animation for multiple badges */
+.treatment-card .treatment-badges .badge:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+/* Ensure badges are visible over images */
+.treatment-card .treatment-card-img {
+    position: relative;
+    z-index: 1;
+}
+
+/* Override any potential conflicts from parent theme */
+.treatment-card .treatment-badges,
+.treatment-card .treatment-badges * {
+    box-sizing: border-box;
+}
+
+/* Print styles */
+@media print {
+    .treatment-card .treatment-badges .badge {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
