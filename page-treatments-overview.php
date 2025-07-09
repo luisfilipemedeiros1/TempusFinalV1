@@ -250,10 +250,7 @@ get_header();
         font-size: 1.8rem;
     }
 }
-/* Temporarily hide treatments with duplicate images */
-.treatment-card.hidden {
-    display: none !important;
-}
+/* All treatments now have unique images */
 </style>
 
 <main id="main-content" class="treatments-overview-page">
@@ -572,14 +569,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Hydrafacial - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Hydrafacial -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/hydrafacial/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Hydrafacial" loading="lazy">
+                            <img src="https://images.pexels.com/photos/3852159/pexels-photo-3852159.jpeg" alt="Hydrafacial" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -589,14 +586,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- PRX-T33 - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- PRX-T33 -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/prx-t33/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="PRX-T33" loading="lazy">
+                            <img src="https://images.pexels.com/photos/5069396/pexels-photo-5069396.jpeg" alt="PRX-T33" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -606,14 +603,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Tempus Bespoke Facial - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Tempus Bespoke Facial -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/tempus-bespoke-facial/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Tempus Bespoke Facial" loading="lazy">
+                            <img src="https://images.pexels.com/photos/3852159/pexels-photo-3852159.jpeg" alt="Tempus Bespoke Facial" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -623,14 +620,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- IPL - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- IPL -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/ipl/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="IPL" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="IPL" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -640,14 +637,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fotona 4D - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Fotona 4D -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £500</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fotona-4d/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Fotona 4D" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="Fotona 4D" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -657,14 +654,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fotona 3D - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Fotona 3D -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £300</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fotona-3d/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Fotona 3D" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="Fotona 3D" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -708,14 +705,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fractional Laser - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Fractional Laser -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £500</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fractional-laser/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Fractional Laser" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="Fractional Laser" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -725,14 +722,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Vascular Laser - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Vascular Laser -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/vascular-laser/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Vascular Laser" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg" alt="Vascular Laser" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -742,14 +739,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Dermalux LED - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Dermalux LED -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £800</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/dermalux-led/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Dermalux LED" loading="lazy">
+                            <img src="https://images.pexels.com/photos/7578901/pexels-photo-7578901.jpeg" alt="Dermalux LED" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -827,14 +824,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Velashape - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Velashape -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/velashape/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner%2016:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Velashape" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4754026/pexels-photo-4754026.jpeg" alt="Velashape" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -878,14 +875,14 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Non Surgical BBL - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Non Surgical BBL -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £450</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/non-surgical-bbl/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner%2016:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Non Surgical BBL" loading="lazy">
+                            <img src="https://images.pexels.com/photos/4046655/pexels-photo-4046655.jpeg" alt="Non Surgical BBL" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1015,11 +1012,11 @@ get_header();
                 <div class="category-divider"></div>
             </div>
             <div class="treatments-grid fade-in-stagger">
-                <!-- Energy Booster - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Energy Booster -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/energy-booster/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Energy Booster" loading="lazy">
+                            <img src="https://images.pexels.com/photos/6823334/pexels-photo-6823334.jpeg" alt="Energy Booster" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1057,14 +1054,14 @@ get_header();
                 </p>
             </div>
             <div class="treatments-grid fade-in-stagger">
-                <!-- Surgical Consultation - HIDDEN: Using duplicate getty images placeholder -->
-                <div class="treatment-card scale-in hidden">
+                <!-- Surgical Consultation -->
+                <div class="treatment-card scale-in">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/surgical-consultation/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655685/getty-images-j_ewv-85zX8-unsplash_owcdyq.jpg" alt="Surgical Consultation" loading="lazy">
+                            <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg" alt="Surgical Consultation" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1211,14 +1208,14 @@ get_header();
             <div class="subcategory-section" style="margin-bottom: 60px;">
                 <h3 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Ladies Hair Removal</h3>
                 <div class="treatments-grid fade-in-stagger">
-                    <!-- Small Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Small Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £100</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Small Areas Laser" loading="lazy">
+                                <img src="https://images.pexels.com/photos/247287/pexels-photo-247287.jpeg" alt="Small Areas Laser" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1228,14 +1225,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Medium Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Medium Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £120</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Medium Areas Laser" loading="lazy">
+                                <img src="https://images.pexels.com/photos/247287/pexels-photo-247287.jpeg" alt="Medium Areas Laser" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1245,14 +1242,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Large Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £150</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Large Areas Laser" loading="lazy">
+                                <img src="https://images.pexels.com/photos/247287/pexels-photo-247287.jpeg" alt="Large Areas Laser" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1262,14 +1259,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Extra Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Extra Large Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £200</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Extra Large Areas Laser" loading="lazy">
+                                <img src="https://images.pexels.com/photos/247287/pexels-photo-247287.jpeg" alt="Extra Large Areas Laser" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1279,14 +1276,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Full Leg - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Full Leg -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £250</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Full Leg Laser" loading="lazy">
+                                <img src="https://images.pexels.com/photos/247287/pexels-photo-247287.jpeg" alt="Full Leg Laser" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1296,14 +1293,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Full Body - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Full Body -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £800</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Full Body Laser" loading="lazy">
+                                <img src="https://images.pexels.com/photos/247287/pexels-photo-247287.jpeg" alt="Full Body Laser" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1319,14 +1316,14 @@ get_header();
             <div class="subcategory-section">
                 <h3 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Men's Hair Removal</h3>
                 <div class="treatments-grid fade-in-stagger">
-                    <!-- Small Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Small Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £100</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Men's Small Areas" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Men's Small Areas" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1336,14 +1333,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Medium Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Medium Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £120</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Men's Medium Areas" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Men's Medium Areas" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1353,14 +1350,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Large Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £150</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Men's Large Areas" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Men's Large Areas" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1370,14 +1367,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Extra Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Extra Large Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £200</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Men's Extra Large Areas" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Men's Extra Large Areas" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1387,14 +1384,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- XXL Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- XXL Areas -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £300</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Men's XXL Areas" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Men's XXL Areas" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1404,14 +1401,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Back & Shoulders - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Back & Shoulders -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £400</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Back & Shoulders" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Back & Shoulders" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
@@ -1421,14 +1418,14 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Men's Full Body - HIDDEN: Using duplicate curated lifestyle placeholder -->
-                    <div class="treatment-card scale-in hidden">
+                    <!-- Men's Full Body -->
+                    <div class="treatment-card scale-in">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £800</span>
                         </div>
                         <div class="treatment-card-img">
                             <a href="https://tempusbelgravia.co.uk/treatment/laser-hair-removal/">
-                                <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Men's Full Body" loading="lazy">
+                                <img src="https://images.pexels.com/photos/7139524/pexels-photo-7139524.jpeg" alt="Men's Full Body" loading="lazy">
                             </a>
                         </div>
                         <div class="treatment-card-content">
