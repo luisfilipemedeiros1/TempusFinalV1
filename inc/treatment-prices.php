@@ -358,6 +358,75 @@ function get_tempus_treatment_prices() {
             'name' => 'Scar Revision - Body',
             'price' => '£1200',
             'category' => 'surgical'
+        ),
+        
+        // LASER HAIR REMOVAL - LADIES
+        'laser-hair-ladies-small' => array(
+            'name' => 'Upper lip/Chin/Ears/Stomach/Decolletage/Areola',
+            'price' => '£100',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-ladies-medium' => array(
+            'name' => 'Hairline/Sideburns/Underarm/Bikini/Lower leg',
+            'price' => '£120',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-ladies-large' => array(
+            'name' => 'Jawline/Neck/Hollywood/Brazilian/Bikini/Lower Arm/Thighs',
+            'price' => '£150',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-ladies-xlarge' => array(
+            'name' => 'Full face/Full arm',
+            'price' => '£200',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-ladies-full-leg' => array(
+            'name' => 'Full leg',
+            'price' => '£250',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-ladies-full-body' => array(
+            'name' => 'Full body',
+            'price' => '£800',
+            'category' => 'laser-hair-removal'
+        ),
+        
+        // LASER HAIR REMOVAL - MEN
+        'laser-hair-men-small' => array(
+            'name' => 'Neck/Ears/Eyebrows',
+            'price' => '£100',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-men-medium' => array(
+            'name' => 'Back of Neck/Lower Leg',
+            'price' => '£120',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-men-large' => array(
+            'name' => 'Beard/Thighs',
+            'price' => '£150',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-men-xlarge' => array(
+            'name' => 'Lower back/Under Arms/Lower Arm/Male Bikini',
+            'price' => '£200',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-men-xxlarge' => array(
+            'name' => 'Shoulders/Chest/Stomach/Full Arms/Full Leg/Male Hollywood',
+            'price' => '£300',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-men-back-shoulders' => array(
+            'name' => 'Back & Shoulders/Buttocks',
+            'price' => '£400',
+            'category' => 'laser-hair-removal'
+        ),
+        'laser-hair-men-full-body' => array(
+            'name' => 'Full body',
+            'price' => '£800',
+            'category' => 'laser-hair-removal'
         )
     );
 }
