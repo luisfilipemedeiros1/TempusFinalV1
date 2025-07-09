@@ -355,16 +355,24 @@
     /* Mobile responsive adjustments */
     @media (max-width: 768px) {
         .price-ribbon {
-            font-size: 0.85rem;
-            padding: 6px 15px;
+            font-size: 0.75rem;
+            padding: 5px 12px;
             top: 15px;
-            right: 15px;
+            left: 15px;
         }
         
         /* Adjust stacked position for mobile */
         .treatment-card:has(.best-seller-badge) .price-ribbon,
         .treatment-card:has(.trending-badge) .price-ribbon {
             top: 45px;
+        }
+        
+        /* Adjust badge position for mobile */
+        .best-seller-badge, .trending-badge {
+            font-size: 0.75rem;
+            padding: 5px 12px;
+            top: 15px;
+            left: 15px;
         }
     }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
