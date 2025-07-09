@@ -299,46 +299,46 @@
     .treatment-card:hover .treatment-card-img img { transform: scale(1.05); }
     .treatment-card-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7) 100%); }
     .treatment-tag { position: absolute; top: 20px; right: 20px; background: var(--accent-deep); color: var(--white); padding: 6px 18px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; border-radius: 3px; font-family: var(--heading-font); font-weight: 500; z-index: 3; }
-    .best-seller-badge, .trending-badge { position: absolute; top: 20px; left: 20px; padding: 6px 18px; font-size: 0.8rem; font-weight: 600; border-radius: 3px; z-index: 3; text-transform: uppercase; letter-spacing: 0.5px; font-family: var(--heading-font); box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-    .best-seller-badge { background-color: var(--accent-gold); color: var(--dark-text); } /* Gold badge */
-    .trending-badge { background-color: var(--accent-deep); color: var(--white); } /* Green badge */
-    .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
-    .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
-    
-    /* Treatment Price Ribbon Styles - matching badge style */
-    .price-ribbon {
+    /* Treatment Badge System */
+    .treatment-badges {
         position: absolute;
         top: 20px;
-        left: 20px; /* Same side as badges for consistency */
-        background: var(--primary);
-        color: var(--white);
-        padding: 6px 18px; /* Match badge padding */
-        font-size: 0.8rem; /* Match badge font size */
-        font-weight: 600;
-        font-family: var(--heading-font);
-        text-transform: uppercase; /* Match badge style */
-        letter-spacing: 0.5px;
-        border-radius: 3px; /* Match badge radius */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         z-index: 3;
+    }
+    
+    .badge {
+        display: inline-block;
+        padding: 6px 18px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border-radius: 3px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-family: var(--heading-font);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         white-space: nowrap;
     }
     
-    /* Alternative corner ribbon style */
-    .price-ribbon-corner {
-        position: absolute;
-        top: 15px;
-        right: -35px;
-        background: var(--primary);
-        color: var(--white);
-        padding: 8px 40px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        font-family: var(--heading-font);
-        transform: rotate(45deg);
-        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-        z-index: 3;
+    .badge.best-seller {
+        background-color: var(--accent-gold);
+        color: var(--dark-text);
     }
+    
+    .badge.trending {
+        background-color: var(--accent-deep);
+        color: var(--white);
+    }
+    
+    .badge.price {
+        background-color: var(--primary);
+        color: var(--white);
+    }
+    .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
+    .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
     
     /* Ensure treatment card has relative positioning */
     .treatment-card {
@@ -346,33 +346,17 @@
         overflow: hidden;
     }
     
-    /* When card has both badge and price, stack them vertically */
-    .treatment-card:has(.best-seller-badge) .price-ribbon,
-    .treatment-card:has(.trending-badge) .price-ribbon {
-        top: 55px; /* Move price down when badge exists */
-    }
-    
-    /* Mobile responsive adjustments */
+    /* Mobile responsive adjustments for badges */
     @media (max-width: 768px) {
-        .price-ribbon {
-            font-size: 0.75rem;
-            padding: 5px 12px;
+        .treatment-badges {
             top: 15px;
             left: 15px;
+            gap: 6px;
         }
         
-        /* Adjust stacked position for mobile */
-        .treatment-card:has(.best-seller-badge) .price-ribbon,
-        .treatment-card:has(.trending-badge) .price-ribbon {
-            top: 45px;
-        }
-        
-        /* Adjust badge position for mobile */
-        .best-seller-badge, .trending-badge {
+        .badge {
             font-size: 0.75rem;
             padding: 5px 12px;
-            top: 15px;
-            left: 15px;
         }
     }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
