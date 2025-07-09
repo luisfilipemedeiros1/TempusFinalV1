@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'tempusbelgravia' );
 define( 'CHILD_THEME_URL', 'http://www.dicema.com/' );
-define( 'CHILD_THEME_VERSION', '2.1.4' ); // Updated all treatments with images from FH Memberships page
+define( 'CHILD_THEME_VERSION', '2.1.7' ); // Hidden Laser Hair Removal section
 
 //* Include treatment prices
 require_once( get_stylesheet_directory() . '/inc/treatment-prices.php' );

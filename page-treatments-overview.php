@@ -518,8 +518,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- PRP Facial -->
-                <div class="treatment-card scale-in">
+                <!-- PRP Facial - HIDDEN -->
+                <div class="treatment-card scale-in" style="display: none;">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £600</span>
                     </div>
@@ -535,8 +535,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- AquaGold -->
-                <div class="treatment-card scale-in">
+                <!-- AquaGold - HIDDEN -->
+                <div class="treatment-card scale-in" style="display: none;">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -552,8 +552,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Dermapen Microneedling -->
-                <div class="treatment-card scale-in">
+                <!-- Dermapen Microneedling - HIDDEN -->
+                <div class="treatment-card scale-in" style="display: none;">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -1005,8 +1005,8 @@ get_header();
             </div>
         </section>
 
-        <!-- IV Infusions Category -->
-        <section id="iv-infusions" class="category-section">
+        <!-- IV Infusions Category - HIDDEN -->
+        <section id="iv-infusions" class="category-section" style="display: none;">
             <div class="category-title fade-in">
                 <h2>IV Infusions</h2>
                 <div class="category-divider"></div>
@@ -1192,8 +1192,8 @@ get_header();
             </div>
         </section>
 
-        <!-- Laser Hair Removal Category -->
-        <section id="laser-hair-removal" class="category-section">
+        <!-- Laser Hair Removal Category - HIDDEN -->
+        <section id="laser-hair-removal" class="category-section" style="display: none;">
             <div class="category-title fade-in">
                 <h2>Laser Hair Removal</h2>
                 <div class="category-divider"></div>
