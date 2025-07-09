@@ -250,6 +250,10 @@ get_header();
         font-size: 1.8rem;
     }
 }
+/* Temporarily hide treatments with duplicate images */
+.treatment-card.hidden {
+    display: none !important;
+}
 </style>
 
 <main id="main-content" class="treatments-overview-page">
@@ -568,8 +572,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Hydrafacial -->
-                <div class="treatment-card scale-in">
+                <!-- Hydrafacial - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
@@ -585,8 +589,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- PRX-T33 -->
-                <div class="treatment-card scale-in">
+                <!-- PRX-T33 - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
@@ -602,8 +606,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Tempus Bespoke Facial -->
-                <div class="treatment-card scale-in">
+                <!-- Tempus Bespoke Facial - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -619,8 +623,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- IPL -->
-                <div class="treatment-card scale-in">
+                <!-- IPL - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -636,8 +640,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fotona 4D -->
-                <div class="treatment-card scale-in">
+                <!-- Fotona 4D - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £500</span>
                     </div>
@@ -653,8 +657,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fotona 3D -->
-                <div class="treatment-card scale-in">
+                <!-- Fotona 3D - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £300</span>
                     </div>
@@ -704,8 +708,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fractional Laser -->
-                <div class="treatment-card scale-in">
+                <!-- Fractional Laser - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £500</span>
                     </div>
@@ -721,8 +725,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Vascular Laser -->
-                <div class="treatment-card scale-in">
+                <!-- Vascular Laser - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -738,8 +742,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Dermalux LED -->
-                <div class="treatment-card scale-in">
+                <!-- Dermalux LED - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £800</span>
                     </div>
@@ -823,8 +827,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Velashape -->
-                <div class="treatment-card scale-in">
+                <!-- Velashape - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -874,8 +878,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Non Surgical BBL -->
-                <div class="treatment-card scale-in">
+                <!-- Non Surgical BBL - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £450</span>
                     </div>
@@ -1011,8 +1015,8 @@ get_header();
                 <div class="category-divider"></div>
             </div>
             <div class="treatments-grid fade-in-stagger">
-                <!-- Energy Booster -->
-                <div class="treatment-card scale-in">
+                <!-- Energy Booster - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/energy-booster/">
                             <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655013/curated-lifestyle-2RhCe25XVuM-unsplash_xyamg0.jpg" alt="Energy Booster" loading="lazy">
@@ -1053,8 +1057,8 @@ get_header();
                 </p>
             </div>
             <div class="treatments-grid fade-in-stagger">
-                <!-- Surgical Consultation -->
-                <div class="treatment-card scale-in">
+                <!-- Surgical Consultation - HIDDEN: Using duplicate getty images placeholder -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
@@ -1207,8 +1211,8 @@ get_header();
             <div class="subcategory-section" style="margin-bottom: 60px;">
                 <h3 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Ladies Hair Removal</h3>
                 <div class="treatments-grid fade-in-stagger">
-                    <!-- Small Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Small Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £100</span>
                         </div>
@@ -1224,8 +1228,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Medium Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Medium Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £120</span>
                         </div>
@@ -1241,8 +1245,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £150</span>
                         </div>
@@ -1258,8 +1262,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Extra Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Extra Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £200</span>
                         </div>
@@ -1275,8 +1279,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Full Leg -->
-                    <div class="treatment-card scale-in">
+                    <!-- Full Leg - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £250</span>
                         </div>
@@ -1292,8 +1296,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Full Body -->
-                    <div class="treatment-card scale-in">
+                    <!-- Full Body - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £800</span>
                         </div>
@@ -1315,8 +1319,8 @@ get_header();
             <div class="subcategory-section">
                 <h3 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Men's Hair Removal</h3>
                 <div class="treatments-grid fade-in-stagger">
-                    <!-- Small Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Small Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £100</span>
                         </div>
@@ -1332,8 +1336,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Medium Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Medium Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £120</span>
                         </div>
@@ -1349,8 +1353,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £150</span>
                         </div>
@@ -1366,8 +1370,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Extra Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Extra Large Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £200</span>
                         </div>
@@ -1383,8 +1387,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- XXL Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- XXL Areas - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £300</span>
                         </div>
@@ -1400,8 +1404,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Back & Shoulders -->
-                    <div class="treatment-card scale-in">
+                    <!-- Back & Shoulders - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £400</span>
                         </div>
@@ -1417,8 +1421,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Men's Full Body -->
-                    <div class="treatment-card scale-in">
+                    <!-- Men's Full Body - HIDDEN: Using duplicate curated lifestyle placeholder -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £800</span>
                         </div>
