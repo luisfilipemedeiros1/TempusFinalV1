@@ -13,12 +13,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <!-- HIFU Popup -->
-<div id="hifu-popup" class="treatment-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hifu-popup-title">
+<div id="hifu-popup" class="treatment-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hifu-popup-title" aria-describedby="hifu-popup-subtitle">
     <div class="popup-container">
-        <button class="popup-close" aria-label="Close popup">&times;</button>
+        <button class="popup-close" aria-label="Close treatment information popup" tabindex="0">&times;</button>
         <div class="popup-content">
             <h2 id="hifu-popup-title" class="popup-title">HIFU High-Intensity Focused Ultrasound</h2>
-            <p class="popup-subtitle">Experience the power of non-surgical lifting and tightening with our advanced HIFU technology.</p>
+            <p id="hifu-popup-subtitle" class="popup-subtitle">Experience the power of non-surgical lifting and tightening with our advanced HIFU technology.</p>
             
             <div class="popup-info-grid">
                 <div class="popup-info-item">
