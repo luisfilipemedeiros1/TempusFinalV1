@@ -1319,8 +1319,8 @@ get_header();
             <div class="subcategory-section">
                 <h3 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Men's Hair Removal</h3>
                 <div class="treatments-grid fade-in-stagger">
-                    <!-- Small Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Small Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £100</span>
                         </div>
@@ -1336,8 +1336,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Medium Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Medium Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £120</span>
                         </div>
@@ -1353,8 +1353,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Large Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £150</span>
                         </div>
@@ -1370,8 +1370,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Extra Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Extra Large Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £200</span>
                         </div>
@@ -1387,8 +1387,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- XXL Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- XXL Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £300</span>
                         </div>
@@ -1404,8 +1404,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Back & Shoulders -->
-                    <div class="treatment-card scale-in">
+                    <!-- Back & Shoulders - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £400</span>
                         </div>
@@ -1421,8 +1421,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Men's Full Body -->
-                    <div class="treatment-card scale-in">
+                    <!-- Men's Full Body - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £800</span>
                         </div>
