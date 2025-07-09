@@ -56,16 +56,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £350</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20HIFU%20treatment" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/hifu-high-intensity-focused-ultrasound/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20HIFU%20treatment" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -115,16 +109,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £750</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20RF%20Microneedling" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/rf-microneedling/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20RF%20Microneedling" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -174,16 +162,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £450</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Lip%20Enhancement" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/lip-enhancement/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Lip%20Enhancement" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -233,16 +215,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £600</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Exosomes%20treatment" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/exosomes/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Exosomes%20treatment" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -292,16 +268,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £2,995</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Body%20Contouring" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Body%20Contouring" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -351,16 +321,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £350</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Aquagold%20treatment" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/aquagold/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Aquagold%20treatment" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -410,16 +374,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £450</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Skin%20Boosters" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/skin-boosters/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Skin%20Boosters" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -469,16 +427,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Starting at £295</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Anti-Wrinkle%20Injections" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/anti-wrinkle-injections/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20Anti-Wrinkle%20Injections" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -528,16 +480,10 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             <div class="popup-cta">
                 <div class="popup-price">Price on consultation</div>
-                <div class="popup-buttons">
-                    <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20IV%20Infusions" 
-                       class="cta-button" target="_blank" rel="noopener noreferrer">
-                        Book Consultation <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://tempusbelgravia.co.uk/treatment/iv-vitamin-drips/" 
-                       class="cta-button-secondary" target="_blank">
-                        View Full Details
-                    </a>
-                </div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20for%20IV%20Infusions" 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Consultation <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </div>

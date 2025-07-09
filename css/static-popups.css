@@ -193,9 +193,9 @@
 .popup-cta {
     text-align: center;
     padding: 30px;
-    background: linear-gradient(135deg, var(--primary-ultralight) 0%, rgba(255, 255, 255, 0.5) 100%);
-    border-radius: 8px;
-    margin: -40px -40px 0;
+    background: var(--light);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
 .popup-price {
@@ -206,17 +206,28 @@
     font-family: var(--heading-font);
 }
 
-.popup-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Single CTA Button */
+.popup-cta .cta-single {
+    display: inline-block;
+    min-width: 280px;
+    padding: 16px 32px;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.popup-buttons .cta-button,
-.popup-buttons .cta-button-secondary {
-    min-width: 220px;
-    margin: 0;
+.popup-cta .cta-single:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popup-cta .cta-single i {
+    margin-left: 8px;
+    font-size: 1.2rem;
 }
 
 /* Small mobile devices */
@@ -256,6 +267,12 @@
     
     .popup-price {
         font-size: 1.6rem;
+    }
+    
+    .popup-cta .cta-single {
+        padding: 14px 20px;
+        font-size: 1rem;
+        min-height: 48px;
     }
 }
 
@@ -361,38 +378,22 @@
         line-height: 1.7;
     }
     
-    .popup-buttons {
-        flex-direction: column;
-        gap: 12px;
+    .popup-cta {
+        margin-top: 25px;
+        padding: 25px 20px 30px;
+        background: var(--light);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
     
-    .popup-buttons .cta-button,
-    .popup-buttons .cta-button-secondary {
+    .popup-cta .cta-single {
         width: 100%;
+        max-width: 350px;
         padding: 16px 24px;
         font-size: 1.1rem;
         min-height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-    .popup-cta {
-        margin: -30px -20px 0;
-        padding: 25px 20px 30px;
-        position: sticky;
-        bottom: 0;
-        background: linear-gradient(135deg, var(--primary-ultralight) 0%, rgba(255, 255, 255, 0.95) 100%);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Fallback for browsers without backdrop-filter */
-    @supports not (backdrop-filter: blur(10px)) {
-        .popup-cta {
-            background: linear-gradient(135deg, var(--primary-ultralight) 0%, rgba(255, 255, 255, 0.98) 100%);
-        }
     }
     
     .popup-price {
@@ -456,8 +457,8 @@
         font-weight: 500;
     }
     
-    /* Sticky CTA optimization */
-    .popup-cta {
+    /* CTA optimization */
+    .popup-cta .cta-single {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         will-change: transform;
