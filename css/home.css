@@ -305,20 +305,21 @@
     .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
     .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
     
-    /* Treatment Price Ribbon Styles */
+    /* Treatment Price Ribbon Styles - matching badge style */
     .price-ribbon {
         position: absolute;
         top: 20px;
-        right: 20px;
+        left: 20px; /* Same side as badges for consistency */
         background: var(--primary);
         color: var(--white);
-        padding: 8px 20px;
-        font-size: 1rem;
+        padding: 6px 18px; /* Match badge padding */
+        font-size: 0.8rem; /* Match badge font size */
         font-weight: 600;
         font-family: var(--heading-font);
+        text-transform: uppercase; /* Match badge style */
         letter-spacing: 0.5px;
-        border-radius: 25px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        border-radius: 3px; /* Match badge radius */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         z-index: 3;
         white-space: nowrap;
     }
@@ -345,11 +346,10 @@
         overflow: hidden;
     }
     
-    /* Adjust badge positioning when price ribbon is present */
-    .treatment-card .best-seller-badge,
-    .treatment-card .trending-badge {
-        left: 20px;
-        top: 20px;
+    /* When card has both badge and price, stack them vertically */
+    .treatment-card:has(.best-seller-badge) .price-ribbon,
+    .treatment-card:has(.trending-badge) .price-ribbon {
+        top: 55px; /* Move price down when badge exists */
     }
     
     /* Mobile responsive adjustments */
@@ -359,6 +359,12 @@
             padding: 6px 15px;
             top: 15px;
             right: 15px;
+        }
+        
+        /* Adjust stacked position for mobile */
+        .treatment-card:has(.best-seller-badge) .price-ribbon,
+        .treatment-card:has(.trending-badge) .price-ribbon {
+            top: 45px;
         }
     }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
