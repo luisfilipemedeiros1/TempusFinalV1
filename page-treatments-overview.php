@@ -250,7 +250,10 @@ get_header();
         font-size: 1.8rem;
     }
 }
-/* All treatments now have unique images */
+/* Temporarily hide treatments with duplicate images */
+.treatment-card.hidden {
+    display: none !important;
+}
 </style>
 
 <main id="main-content" class="treatments-overview-page">
@@ -569,8 +572,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Hydrafacial -->
-                <div class="treatment-card scale-in">
+                <!-- Hydrafacial - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
@@ -586,8 +589,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- PRX-T33 -->
-                <div class="treatment-card scale-in">
+                <!-- PRX-T33 - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
@@ -603,8 +606,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Tempus Bespoke Facial -->
-                <div class="treatment-card scale-in">
+                <!-- Tempus Bespoke Facial - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -620,8 +623,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- IPL -->
-                <div class="treatment-card scale-in">
+                <!-- IPL - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -637,8 +640,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fotona 4D -->
-                <div class="treatment-card scale-in">
+                <!-- Fotona 4D - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £500</span>
                     </div>
@@ -654,8 +657,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fotona 3D -->
-                <div class="treatment-card scale-in">
+                <!-- Fotona 3D - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £300</span>
                     </div>
@@ -705,8 +708,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Fractional Laser -->
-                <div class="treatment-card scale-in">
+                <!-- Fractional Laser - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £500</span>
                     </div>
@@ -722,8 +725,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Vascular Laser -->
-                <div class="treatment-card scale-in">
+                <!-- Vascular Laser - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -739,8 +742,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Dermalux LED -->
-                <div class="treatment-card scale-in">
+                <!-- Dermalux LED - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £800</span>
                     </div>
@@ -824,8 +827,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Velashape -->
-                <div class="treatment-card scale-in">
+                <!-- Velashape - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £350</span>
                     </div>
@@ -875,8 +878,8 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Non Surgical BBL -->
-                <div class="treatment-card scale-in">
+                <!-- Non Surgical BBL - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £450</span>
                     </div>
@@ -1012,8 +1015,8 @@ get_header();
                 <div class="category-divider"></div>
             </div>
             <div class="treatments-grid fade-in-stagger">
-                <!-- Energy Booster -->
-                <div class="treatment-card scale-in">
+                <!-- Energy Booster - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/energy-booster/">
                             <img src="https://images.pexels.com/photos/6823334/pexels-photo-6823334.jpeg" alt="Energy Booster" loading="lazy">
@@ -1054,8 +1057,8 @@ get_header();
                 </p>
             </div>
             <div class="treatments-grid fade-in-stagger">
-                <!-- Surgical Consultation -->
-                <div class="treatment-card scale-in">
+                <!-- Surgical Consultation - HIDDEN -->
+                <div class="treatment-card scale-in hidden">
                     <div class="treatment-badges">
                         <span class="badge badge-price">Starting at £250</span>
                     </div>
@@ -1208,8 +1211,8 @@ get_header();
             <div class="subcategory-section" style="margin-bottom: 60px;">
                 <h3 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 30px;">Ladies Hair Removal</h3>
                 <div class="treatments-grid fade-in-stagger">
-                    <!-- Small Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Small Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £100</span>
                         </div>
@@ -1225,8 +1228,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Medium Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Medium Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £120</span>
                         </div>
@@ -1242,8 +1245,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Large Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £150</span>
                         </div>
@@ -1259,8 +1262,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Extra Large Areas -->
-                    <div class="treatment-card scale-in">
+                    <!-- Extra Large Areas - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £200</span>
                         </div>
@@ -1276,8 +1279,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Full Leg -->
-                    <div class="treatment-card scale-in">
+                    <!-- Full Leg - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £250</span>
                         </div>
@@ -1293,8 +1296,8 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Full Body -->
-                    <div class="treatment-card scale-in">
+                    <!-- Full Body - HIDDEN -->
+                    <div class="treatment-card scale-in hidden">
                         <div class="treatment-badges">
                             <span class="badge badge-price">Starting at £800</span>
                         </div>
