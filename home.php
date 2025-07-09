@@ -1092,6 +1092,8 @@ get_header();
         </section>
     </main>
 
+    <!-- Treatment Popups -->
+    <?php include get_stylesheet_directory() . '/template-parts/treatment-popups.php'; ?>
 
 </div> <?php // End optional .new-home-content wrapper ?>
 

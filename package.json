@@ -22,6 +22,7 @@
   "homepage": "https://github.com/luisfilipemedeiros1/TempusFinalV1#readme",
   "description": "",
   "dependencies": {
-    "@google/generative-ai": "^0.24.1"
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.0"
   }
 }
