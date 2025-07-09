@@ -34,8 +34,8 @@ get_header();
             </div>
             <div class="hero-overlay"></div>
             <div class="hero-content container"> <?php // Add .container or .wrap if needed for width constraint ?>
-                <h1 class="fade-in-up" style="animation-delay: 0.3s; animation-play-state: running;">Timeless Vitality & Visibly Rejuvenated</h1>
-                <p class="fade-in-up" style="animation-delay: 0.6s; animation-play-state: running;">Welcome to Tempus Lounge, Belgravia's sanctuary where advanced aesthetic treatments and pioneering longevity science converge. Discover the art of refined vitality and inner balance at our luxury London clinic.</p>
+                <h1 class="fade-in-up" style="animation-delay: 0.3s; animation-play-state: running;">Visible Health & Vitality</h1>
+                <p class="fade-in-up" style="animation-delay: 0.6s; animation-play-state: running;">Welcome to Tempus Lounge, your number one source of Visible Health & Vitality. Where pioneering specialists wield tomorrow's technologies - exosome therapy, polynucleotide regeneration, cellular optimization. Not just treatments, but your transformation made visible.</p>
                 <div class="fade-in-up" style="animation-delay: 0.9s; animation-play-state: running;">
                     <a href="#treatments" class="cta-button cta-button-white">Explore Services</a> <?php // White background, Gold text on hero ?>
                     <a href="#contact" class="cta-button cta-button-secondary">Book Consultation</a> <?php // Transparent background, White text/border on hero ?>
@@ -81,8 +81,8 @@ get_header();
             <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,100 100,0 100,100"/></svg></div>
             <div class="container"> <?php // Use theme's .wrap or this custom .container ?>
                 <div class="section-title fade-in-up">
-                     <h2>Our Signature Treatments</h2>
-                     <p class="subtitle">Experience transformative results with our most sought-after aesthetic and longevity treatments, tailored for discerning clients in Belgravia.</p>
+                     <h2>TEMPUS LOUNGE SIGNATURE TREATMENTS</h2>
+                     <p class="subtitle">Where aesthetic excellence meets regenerative science. Experience treatments that compound into extraordinary results - your transformation made visible.</p>
                      <div class="divider"></div>
                  </div>
                  <div class="treatment-grid horizontal-scroll-container fade-in-stagger" data-autorotate="true">
@@ -92,6 +92,7 @@ get_header();
                         <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/hifu-treatment.webp" loading="lazy" alt="HIFU Treatment"></div>
                         <div class="treatment-card-content">
                             <h3>HIFU Skin Tightening</h3>
+                            <div class="treatment-price">Starting at £350</div>
                             <p>Non-surgical lift using focused ultrasound energy to tighten skin on the face, neck, and décolletage for a youthful contour.</p>
                             <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-arrow-up" aria-hidden="true"></i> Lifting</span>
@@ -115,6 +116,7 @@ get_header();
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Silhouette-Soft-scaled-1.jpeg.webp" loading="lazy" alt="Morpheus8 RF microneedling device detail"></div>
                          <div class="treatment-card-content">
                             <h3>RF Microneedling</h3>
+                            <div class="treatment-price">Starting at £750</div>
                             <p>Advanced fractional technology combining radiofrequency and microneedling to remodel tissue, tighten skin, and improve texture.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="far fa-clock" aria-hidden="true"></i> 75-90 min</span>
@@ -137,6 +139,7 @@ get_header();
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp" loading="lazy" alt="Lips Augmentation Treatment"></div>
                          <div class="treatment-card-content">
                              <h3>Lips Augmentation</h3>
+                            <div class="treatment-price">Starting at £450</div>
                             <p>Enhance lip volume, shape, and definition using premium dermal fillers for natural-looking, beautifully balanced results.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-smile-beam" aria-hidden="true"></i> Volume & Shape</span>
@@ -160,6 +163,7 @@ get_header();
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp" loading="lazy" alt="Exosomes Therapy"></div>
                          <div class="treatment-card-content">
                             <h3>Exosome Regenerative Therapy</h3>
+                            <div class="treatment-price">Starting at £600</div>
                             <p>Harness the power of exosomes for advanced skin regeneration, reducing inflammation, improving texture, and promoting youthful vitality.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-atom" aria-hidden="true"></i> Regeneration</span>
@@ -181,6 +185,7 @@ get_header();
                          <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/body-contouring.webp" loading="lazy" alt="Body Contouring Treatment"></div>
                         <div class="treatment-card-content">
                             <h3>Advanced Body Contouring</h3>
+                            <div class="treatment-price">Starting at £150</div>
                             <p>Utilise technologies like EMSculpt Neo or Cryolipolysis to sculpt, tone muscle, reduce stubborn fat, and refine body contours non-invasively.</p>
                              <div class="treatment-details">
                                 <span class="treatment-detail"><i class="fas fa-person-booth" aria-hidden="true"></i> Sculpt & Tone</span>

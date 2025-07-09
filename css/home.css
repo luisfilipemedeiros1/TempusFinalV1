@@ -304,6 +304,16 @@
     .trending-badge { background-color: var(--accent-deep); color: var(--white); } /* Green badge */
     .treatment-card-content { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; }
     .treatment-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--primary); /* Gold heading */ font-family: var(--heading-font); }
+    
+    /* Treatment Price Styles */
+    .treatment-price {
+        color: var(--primary);
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin: -10px 0 15px 0;
+        font-family: var(--heading-font);
+        letter-spacing: 0.5px;
+    }
     .treatment-card p { font-size: 1rem; color: var(--gray); margin-bottom: 20px; flex-grow: 1; }
     .treatment-details { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 0.9rem; color: var(--gray); border-top: 1px solid var(--primary-ultralight); padding-top: 15px; margin-top: auto; flex-wrap: wrap; gap: 5px 10px; } /* Added flex-wrap/gap */
     .treatment-detail { display: flex; align-items: center; }
