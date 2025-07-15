@@ -44,7 +44,7 @@ $intro_content = array(
 render_treatment_category_template(
     'Nutrition and Functional Medicine',
     'Nutrition and Functional Medicine',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/Nutrition.jpeg',
+    'https://i.ibb.co/zLftQx7/longevity-science.webp',
     $intro_content
 );
 

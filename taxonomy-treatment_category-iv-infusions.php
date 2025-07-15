@@ -54,7 +54,7 @@ $intro_content = array(
 render_treatment_category_template(
     'IV Infusions by Revita Wellbeing at Tempus Belgravia',
     'IV Infusions',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/02/Untitled-1Artboard-1-copy-2_2.png',
+    'https://i.ibb.co/1Vn6YTS/iv-nutritional-therapy.webp',
     $intro_content
 );
 

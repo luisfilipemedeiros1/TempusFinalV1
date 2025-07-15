@@ -22,7 +22,7 @@ $intro_content = array(
 render_treatment_category_template(
     'Dermatology',
     'Dermatology',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/Dermatology.jpg',
+    'https://i.ibb.co/sp9Y8V8S/medical-dermatology.webp',
     $intro_content
 );
 

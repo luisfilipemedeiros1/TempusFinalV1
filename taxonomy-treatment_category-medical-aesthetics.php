@@ -14,7 +14,7 @@ get_header(); ?>
     <!-- Hero Section -->
     <section class="taxonomy-hero fade-in">
         <div class="taxonomy-hero-image">
-            <img src="https://tempusbelgravia.co.uk/wp-content/uploads/2023/02/Untitled-1Artboard-1-copy-2_1.png" alt="Medical Aesthetics">
+            <img src="https://i.ibb.co/Z11Sfjx9/injectable-artistry.webp" alt="Medical Aesthetics">
         </div>
         <div class="taxonomy-hero-overlay"></div>
         <div class="taxonomy-hero-content">

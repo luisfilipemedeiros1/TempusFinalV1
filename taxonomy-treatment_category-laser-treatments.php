@@ -22,7 +22,7 @@ $intro_content = array(
 render_treatment_category_template(
     'Laser Hair Removal',
     'Laser Treatments',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/Laser-Hair-removal.jpeg',
+    'https://i.ibb.co/cSM3rGrL/laser-energy.webp',
     $intro_content
 );
 

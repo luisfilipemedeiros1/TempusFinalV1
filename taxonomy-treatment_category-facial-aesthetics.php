@@ -36,7 +36,7 @@ $intro_content = array(
 render_treatment_category_template(
     'Facial Aesthetics',
     'Facial Aesthetics',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/03/young-pretty-woman-having-facial-treatment-at-spa-2022-12-16-06-45-23-utc-scaled.jpg',
+    'https://i.ibb.co/Z6WLw4FS/facial-treatment.webp',
     $intro_content
 );
 

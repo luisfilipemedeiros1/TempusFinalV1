@@ -286,7 +286,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/lip-enhancement/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp" alt="Lip Enhancement" loading="lazy">
+                            <img src="https://i.ibb.co/JWV3vZZ4/lip-enhancement.webp" alt="Lip Enhancement" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -303,7 +303,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/cheek-enhancement/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Cheek-Enhancement-scaled-1.jpeg.webp" alt="Cheek Enhancement" loading="lazy">
+                            <img src="https://i.ibb.co/bMH0FWWz/cheek-enhancement.webp" alt="Cheek Enhancement" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -337,7 +337,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/jawline-filler/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/jawline-filler-scaled-1.jpeg.webp" alt="Jawline Filler" loading="lazy">
+                            <img src="https://i.ibb.co/fzS3W36d/jawline-filler.webp" alt="Jawline Filler" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -354,7 +354,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/temple-filler/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Temple-Filler-scaled-1.jpeg.webp" alt="Temple Filler" loading="lazy">
+                            <img src="https://i.ibb.co/HTPTkk19/temple-filler.webp" alt="Temple Filler" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -371,7 +371,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/nose-reshaping/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Nose-Reshaping-scaled-1.jpeg.webp" alt="Nose Reshaping" loading="lazy">
+                            <img src="https://i.ibb.co/Y4g8YH0z/nose-reshaping.webp" alt="Nose Reshaping" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -414,7 +414,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/under-eye/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/under-eye-scaled-1.jpeg.webp" alt="Under Eye" loading="lazy">
+                            <img src="https://i.ibb.co/rKGSd16D/under-eye.webp" alt="Under Eye" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -431,7 +431,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/brow-lift/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Brow-Lift-scaled-1.jpeg.webp" alt="Brow Lift" loading="lazy">
+                            <img src="https://i.ibb.co/whvJhqXN/polynucleotide-eye.webp" alt="Brow Lift" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -448,7 +448,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/nefertiti-neck-lift/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/8-point-lift-scaled-1.jpeg.webp" alt="Nefertiti Neck Lift" loading="lazy">
+                            <img src="https://i.ibb.co/MkfK4wwr/8-points-lift.webp" alt="Nefertiti Neck Lift" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -474,7 +474,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/skin-boosters/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Restilane-Skin-Booster-scaled-1.jpeg.webp" alt="Skin Boosters" loading="lazy">
+                            <img src="https://i.ibb.co/Cy5JvF0/restylane-skin-boosters.webp" alt="Skin Boosters" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -491,7 +491,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/profhilo-face/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Profhilo-Face-scaled-1.jpeg.webp" alt="Profhilo Face" loading="lazy">
+                            <img src="https://i.ibb.co/b51w5crS/profhilo.webp" alt="Profhilo Face" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -508,7 +508,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/mesotherapy/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/mesotherapy-treatment-2021-08-26-19-52-34-utc-scaled-1.jpeg.webp" alt="Mesotherapy" loading="lazy">
+                            <img src="https://i.ibb.co/pjx0rtXm/mesotherapy-treatment.webp" alt="Mesotherapy" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -525,7 +525,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/prp-facial/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/PRP-injection.jpeg.webp" alt="PRP Facial" loading="lazy">
+                            <img src="https://i.ibb.co/pv5FHb71/PRP-facial-treatment.webp" alt="PRP Facial" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -542,7 +542,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/aquagold/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/aquagold.jpeg.webp" alt="AquaGold" loading="lazy">
+                            <img src="https://i.ibb.co/qYdbqtyQ/aqua-gold-facial.webp" alt="AquaGold" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -559,7 +559,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/dermapen-microneedling/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Dermapen.jpeg.webp" alt="Dermapen Microneedling" loading="lazy">
+                            <img src="https://i.ibb.co/S4YS0BmX/dermapen.webp" alt="Dermapen Microneedling" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -576,7 +576,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/hydrafacial/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Hydrafacial-Bespoke.jpeg.webp" alt="Hydrafacial" loading="lazy">
+                            <img src="https://i.ibb.co/QFh4g6mm/hydrafacial.webp" alt="Hydrafacial" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -593,7 +593,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/prx-t33/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/prx.png.webp" alt="PRX-T33" loading="lazy">
+                            <img src="https://i.ibb.co/qYmgzx7f/prx-t33.webp" alt="PRX-T33" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -610,7 +610,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/tempus-bespoke-facial/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Tempus-Bespoke-Facial.jpeg.webp" alt="Tempus Bespoke Facial" loading="lazy">
+                            <img src="https://i.ibb.co/FkhLykw5/spa-treatment.webp" alt="Tempus Bespoke Facial" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -627,7 +627,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/ipl/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/ultrasonic-massager-light-skin-treatment-the-wom-2022-12-20-16-33-52-utc-scaled-1.jpeg.webp" alt="IPL" loading="lazy">
+                            <img src="https://i.ibb.co/dsKsdPrT/ultrasonic-massager-light-skin-treatment.webp" alt="IPL" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -644,7 +644,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fotona-4d/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/fotana.jpeg.webp" alt="Fotona 4D" loading="lazy">
+                            <img src="https://i.ibb.co/S4W6qjQX/fotona.webp" alt="Fotona 4D" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -661,7 +661,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fotona-3d/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/fotana.jpeg.webp" alt="Fotona 3D" loading="lazy">
+                            <img src="https://i.ibb.co/S4W6qjQX/fotona.webp" alt="Fotona 3D" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -678,7 +678,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fotona-lip-lase/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Lip-Enhancement-scaled-1.jpeg.webp" alt="Fotona Lip Lase" loading="lazy">
+                            <img src="https://i.ibb.co/JWV3vZZ4/lip-enhancement.webp" alt="Fotona Lip Lase" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -695,7 +695,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fotona-smooth-eye/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/under-eye-scaled-1.jpeg.webp" alt="Fotona Smooth Eye" loading="lazy">
+                            <img src="https://i.ibb.co/rKGSd16D/under-eye.webp" alt="Fotona Smooth Eye" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -712,7 +712,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fractional-laser/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/uploads/2023/07/1980157745-huge-1-scaled.webp" alt="Fractional Laser" loading="lazy">
+                            <img src="https://i.ibb.co/Y70w1cbx/fractional-laser.webp" alt="Fractional Laser" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -729,7 +729,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/vascular-laser/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/Laser-scaled-1.jpeg.webp" alt="Vascular Laser" loading="lazy">
+                            <img src="https://i.ibb.co/zTXCw1PV/vein-treatment.webp" alt="Vascular Laser" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -746,7 +746,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/dermalux-led/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/dermalux.jpeg.webp" alt="Dermalux LED" loading="lazy">
+                            <img src="https://i.ibb.co/Vpmr34Bg/dermalux.webp" alt="Dermalux LED" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -780,7 +780,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/">
-                            <img src="https:"https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EMSculpting.jpeg.webp" alt="EMSculpt Neo" loading="lazy">
+                            <img src="https://i.ibb.co/yFrq9VdY/ems-body-contouring.webp" alt="EMSculpt Neo" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -797,7 +797,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/aqualyx-fat-dissolving/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Fat-disolving-scaled-1.jpeg.webp" alt="Aqualyx" loading="lazy">
+                            <img src="https://i.ibb.co/mCNmTJpy/injection-procedure.webp" alt="Aqualyx" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -814,7 +814,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/onda/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/vascullar.jpg.webp" alt="Onda" loading="lazy">
+                            <img src="https://i.ibb.co/N6px3yc8/onda-body.webp" alt="Onda" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -831,7 +831,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/velashape/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/vascullar.jpg.webp" alt="Velashape" loading="lazy">
+                            <img src="https://i.ibb.co/vC5z6pdk/velashape.webp" alt="Velashape" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -848,7 +848,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/hifu-body/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Hifu-scaled-1.jpeg.webp" alt="HIFU Body" loading="lazy">
+                            <img src="https://i.ibb.co/7J0qDKJk/bodyHIFU.webp" alt="HIFU Body" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -865,7 +865,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/rf-microneedling-body/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Focus-Dual-Hifu-and-Microneedling.jpeg.webp" alt="RF Microneedling Body" loading="lazy">
+                            <img src="https://i.ibb.co/YBHdrBQL/RF-microneedling-body.webp" alt="RF Microneedling Body" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -882,7 +882,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/non-surgical-bbl/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Fat-disolving-scaled-1.jpeg.webp" alt="Non Surgical BBL" loading="lazy">
+                            <img src="https://i.ibb.co/Y7yGDtNH/non-surgical-bbl.webp" alt="Non Surgical BBL" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -899,7 +899,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/profhilo-body/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Profhilo-Face-scaled-1.jpeg.webp" alt="Profhilo Body" loading="lazy">
+                            <img src="https://i.ibb.co/mCNmTJpy/injection-procedure.webp" alt="Profhilo Body" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -916,7 +916,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/dermapen-body/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Dermapen.jpeg.webp" alt="Dermapen Body" loading="lazy">
+                            <img src="https://i.ibb.co/1YptsShB/dermapen-body.webp" alt="Dermapen Body" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -942,7 +942,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/hifu-high-intensity-focused-ultrasound/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Hifu-scaled-1.jpeg.webp" alt="HIFU" loading="lazy">
+                            <img src="https://i.ibb.co/TMcT9Myh/focus-dual-hifu.webp" alt="HIFU" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -959,7 +959,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/thread-lift/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/08/Thread-Lift-scaled-1.jpeg.webp" alt="Thread Lift" loading="lazy">
+                            <img src="https://i.ibb.co/3yvPTz45/pdo-thread-lift-treatment.webp" alt="Thread Lift" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -976,7 +976,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/rf-microneedling/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Focus-Dual-Hifu-and-Microneedling.jpeg.webp" alt="RF Microneedling" loading="lazy">
+                            <img src="https://i.ibb.co/4w1zqGNv/rf-microneedling.webp" alt="RF Microneedling" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -993,7 +993,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/prp-hair-loss-therapy/">
-                            <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/12/prp-hair-loos.jpeg.webp" alt="PRP Hair Loss" loading="lazy">
+                            <img src="https://i.ibb.co/xKRHqFrt/prp-hair.webp" alt="PRP Hair Loss" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">

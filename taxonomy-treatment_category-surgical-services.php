@@ -30,7 +30,7 @@ $intro_content = array(
 render_treatment_category_template(
     'Surgical Procedures In London',
     'Surgical Services',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/Surgical-Services.jpg',
+    'https://i.ibb.co/5gFcdjm2/surgical-expertise.webp',
     $intro_content
 );
 

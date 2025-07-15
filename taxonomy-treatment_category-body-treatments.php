@@ -40,7 +40,7 @@ $intro_content = array(
 render_treatment_category_template(
     'Body Treatments',
     'Body Treatments',
-    'https://tempusbelgravia.co.uk/wp-content/uploads/2023/01/Body-Treatment.jpg',
+    'https://i.ibb.co/My4hjW0N/body-contouring.webp',
     $intro_content
 );
 
