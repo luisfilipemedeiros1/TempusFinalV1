@@ -23,78 +23,82 @@ get_header();
     </a> -->
 
     <main id="genesis-content" class="new-home-main-content"> <?php // Use a unique ID or class if needed ?>
-        <!-- Enhanced Hero Section -->
-        <section class="hero">
-            <div class="hero-background">
-                <video class="hero-video" autoplay muted loop playsinline poster="https://tempusbelgravia.co.uk/wp-content/uploads/2022/11/3.-Final-Promotional-Video-Draft-2-Tempus-Belgravia-.mp4">
-                    <source src="https://tempusbelgravia.co.uk/wp-content/uploads/2022/11/3.-Final-Promotional-Video-Draft-2-Tempus-Belgravia-.mp4" type="video/mp4">
-                    <!-- Fallback Image -->
-                    <img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/Relax-restore.jpeg.webp" alt="Elegant interior of Tempus Lounge">
-                </video>
-            </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content container"> <?php // Add .container or .wrap if needed for width constraint ?>
-                <h1 class="fade-in-up" style="animation-delay: 0.3s; animation-play-state: running;">Visible Health & Vitality</h1>
-                <p class="fade-in-up" style="animation-delay: 0.6s; animation-play-state: running;">Welcome to Tempus Lounge, your number one source of Visible Health & Vitality. Where pioneering specialists wield tomorrow's technologies - exosome therapy, polynucleotide regeneration, cellular optimization. Not just treatments, but your transformation made visible.</p>
-                <div class="fade-in-up" style="animation-delay: 0.9s; animation-play-state: running;">
-                    <a href="#treatments" class="cta-button cta-button-white">Explore Services</a> <?php // White background, Gold text on hero ?>
-                    <a href="#contact" class="cta-button cta-button-secondary">Book Consultation</a> <?php // Transparent background, White text/border on hero ?>
+        <!-- Enhanced Hero Section with Rotating Banners -->
+        <section class="hero hero-rotating">
+            <div class="hero-slides">
+                <!-- Slide 1: £100 Off -->
+                <div class="hero-slide active" data-message="I'm interested in the £100 off promotion for treatments.">
+                    <div class="hero-background">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
+                            <img src="https://i.ibb.co/3m3TYGvV/01.webp" alt="£100 Off Your Next Treatment">
+                        </picture>
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content container">
+                        <h1 class="fade-in-up" style="animation-delay: 0.3s;">£100 Off Your Next Treatment</h1>
+                        <p class="fade-in-up" style="animation-delay: 0.6s;">Experience luxury aesthetic treatments at Tempus Lounge with an exclusive £100 discount. Transform your skin with our advanced therapies.</p>
+                        <div class="fade-in-up" style="animation-delay: 0.9s;">
+                            <a href="#treatments" class="cta-button cta-button-white">Explore Services</a>
+                            <a href="#contact" class="cta-button cta-button-secondary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: 30% Off Body Contouring -->
+                <div class="hero-slide" data-message="I'm interested in the 30% off body contouring promotion.">
+                    <div class="hero-background">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
+                            <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" alt="30% Off Body Contouring">
+                        </picture>
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content container">
+                        <h1 class="fade-in-up">30% Off Body Contouring</h1>
+                        <p class="fade-in-up">Sculpt your ideal silhouette with our advanced body contouring treatments. Limited time offer on EMSculpt Neo and Cryolipolysis.</p>
+                        <div class="fade-in-up">
+                            <a href="#treatments" class="cta-button cta-button-white">View Treatments</a>
+                            <a href="#contact" class="cta-button cta-button-secondary">Claim Offer</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: 50% Off Skin Boosters -->
+                <div class="hero-slide" data-message="I'm interested in the 50% off skin boosters promotion.">
+                    <div class="hero-background">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
+                            <img src="https://i.ibb.co/xqC48G06/03.webp" alt="50% Off Skin Boosters">
+                        </picture>
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content container">
+                        <h1 class="fade-in-up">50% Off Skin Boosters</h1>
+                        <p class="fade-in-up">Revitalize your skin from within with our premium skin booster treatments. Achieve lasting hydration and radiance at half the price.</p>
+                        <div class="fade-in-up">
+                            <a href="#treatments" class="cta-button cta-button-white">Learn More</a>
+                            <a href="#contact" class="cta-button cta-button-secondary">Book Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Navigation Dots -->
+            <div class="hero-dots">
+                <button class="hero-dot active" aria-label="Go to slide 1" data-slide="0"></button>
+                <button class="hero-dot" aria-label="Go to slide 2" data-slide="1"></button>
+                <button class="hero-dot" aria-label="Go to slide 3" data-slide="2"></button>
+            </div>
+            
             <div class="hero-scroll">
                  <a>
                 </a>
             </div>          
             <div class="hero-badges">
                  <div class="hero-badge">
-                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--accent-deep);" aria-hidden="true"></i> <!-- Decorative icon -->
+                    <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--accent-deep);" aria-hidden="true"></i>
                 </div>
-            </div>
-        </section>
-
-        <!-- Rotating Banner Ads Section -->
-        <section class="banner-ads-section">
-            <div class="banner-ads-container">
-                <div class="banner-ads-slider">
-                    <!-- Banner 1: £100 Off -->
-                    <div class="banner-slide active" data-message="I'm interested in the £100 off promotion for treatments.">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
-                            <img src="https://i.ibb.co/3m3TYGvV/01.webp" alt="£100 Off Your Next Treatment" loading="lazy">
-                        </picture>
-                    </div>
-                    
-                    <!-- Banner 2: 30% Off Body Contouring -->
-                    <div class="banner-slide" data-message="I'm interested in the 30% off body contouring promotion.">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
-                            <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" alt="30% Off Body Contouring" loading="lazy">
-                        </picture>
-                    </div>
-                    
-                    <!-- Banner 3: 50% Off Skin Boosters -->
-                    <div class="banner-slide" data-message="I'm interested in the 50% off skin boosters promotion.">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
-                            <img src="https://i.ibb.co/xqC48G06/03.webp" alt="50% Off Skin Boosters" loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-                
-                <!-- Navigation Dots -->
-                <div class="banner-ads-dots">
-                    <button class="banner-dot active" aria-label="Go to slide 1" data-slide="0"></button>
-                    <button class="banner-dot" aria-label="Go to slide 2" data-slide="1"></button>
-                    <button class="banner-dot" aria-label="Go to slide 3" data-slide="2"></button>
-                </div>
-                
-                <!-- Navigation Arrows -->
-                <button class="banner-nav banner-prev" aria-label="Previous banner">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="banner-nav banner-next" aria-label="Next banner">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
             </div>
         </section>
 

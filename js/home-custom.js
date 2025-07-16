@@ -492,13 +492,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }); // End forEach container
     } // End if autoScrollContainers exist
 
-    // --- Rotating Banner Ads ---
-    const bannerAdsSection = document.querySelector('.banner-ads-section');
-    if (bannerAdsSection) {
-        const slides = bannerAdsSection.querySelectorAll('.banner-slide');
-        const dots = bannerAdsSection.querySelectorAll('.banner-dot');
-        const prevBtn = bannerAdsSection.querySelector('.banner-prev');
-        const nextBtn = bannerAdsSection.querySelector('.banner-next');
+    // --- Hero Rotating Slides ---
+    const heroRotating = document.querySelector('.hero-rotating');
+    if (heroRotating) {
+        const slides = heroRotating.querySelectorAll('.hero-slide');
+        const dots = heroRotating.querySelectorAll('.hero-dot');
+        const prevBtn = null; // No arrow navigation for hero
+        const nextBtn = null;
         
         let currentSlide = 0;
         let autoRotateTimer = null;
@@ -513,11 +513,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (dots[i]) {
                     dots[i].classList.remove('active');
                 }
+                
+                // Reset animations
+                const fadeElements = slide.querySelectorAll('.fade-in-up');
+                fadeElements.forEach(el => {
+                    el.style.animationPlayState = 'paused';
+                });
             });
             
             // Show current slide
             if (slides[index]) {
                 slides[index].classList.add('active');
+                
+                // Restart animations for active slide
+                setTimeout(() => {
+                    const fadeElements = slides[index].querySelectorAll('.fade-in-up');
+                    fadeElements.forEach(el => {
+                        el.style.animationPlayState = 'running';
+                    });
+                }, 100);
             }
             if (dots[index]) {
                 dots[index].classList.add('active');
@@ -633,12 +647,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Pause on hover
-        bannerAdsSection.addEventListener('mouseenter', () => {
+        heroRotating.addEventListener('mouseenter', () => {
             isPaused = true;
             stopAutoRotate();
         });
 
-        bannerAdsSection.addEventListener('mouseleave', () => {
+        heroRotating.addEventListener('mouseleave', () => {
             isPaused = false;
             startAutoRotate();
         });
@@ -647,11 +661,11 @@ document.addEventListener('DOMContentLoaded', function() {
         let touchStartX = 0;
         let touchEndX = 0;
         
-        bannerAdsSection.addEventListener('touchstart', (e) => {
+        heroRotating.addEventListener('touchstart', (e) => {
             touchStartX = e.changedTouches[0].screenX;
         }, { passive: true });
         
-        bannerAdsSection.addEventListener('touchend', (e) => {
+        heroRotating.addEventListener('touchend', (e) => {
             touchEndX = e.changedTouches[0].screenX;
             handleSwipe();
         }, { passive: true });
@@ -683,7 +697,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-            if (bannerAdsSection.contains(document.activeElement)) {
+            if (heroRotating.contains(document.activeElement)) {
                 if (e.key === 'ArrowLeft') {
                     prevSlide();
                     pauseAutoRotate();
