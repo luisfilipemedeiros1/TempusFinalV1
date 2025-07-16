@@ -568,11 +568,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Click handlers for banner slides
         slides.forEach((slide, index) => {
             slide.addEventListener('click', function(e) {
-                e.preventDefault();
+                console.log('Banner clicked!', index);
                 const message = this.getAttribute('data-message');
                 const contactSection = document.getElementById('contact');
                 
                 if (contactSection) {
+                    console.log('Scrolling to contact section...');
                     // Scroll to contact section
                     contactSection.scrollIntoView({ behavior: 'smooth' });
                     
@@ -595,6 +596,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             }
                         }
                     }, 1000);
+                } else {
+                    console.log('Contact section not found!');
+                    // Try alternative scroll to bottom
+                    window.scrollTo({
+                        top: document.body.scrollHeight,
+                        behavior: 'smooth'
+                    });
                 }
                 
                 pauseAutoRotate();
