@@ -804,7 +804,7 @@
           .hero .cta-button, .hero .cta-button-secondary { width: 90%; }
       }
 
-    /* --- Rotating Banner Ads Section --- */
+    /* --- State-of-the-Art Rotating Banner Ads Section --- */
     .banner-ads-section {
         position: relative;
         width: 100%;
@@ -820,14 +820,22 @@
         position: relative;
     }
 
-    .banner-ads-slider {
+    .banner-slider-wrapper {
         position: relative;
         width: 100%;
         height: 400px;
         overflow: hidden;
-        border-radius: 8px;
+        border-radius: 12px;
         border: 3px solid var(--primary-ultralight);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        background-color: #fff; /* Fallback background */
+    }
+
+    .banner-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
     .banner-slide {
@@ -835,113 +843,137 @@
         width: 100%;
         height: 100%;
         opacity: 0;
-        transition: opacity 1s ease-in-out;
-        cursor: pointer;
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1;
+        will-change: opacity;
     }
 
     .banner-slide.active {
         opacity: 1;
         z-index: 2;
     }
-    
-    .banner-slide:hover {
-        cursor: pointer;
-    }
-    
-    .banner-slide.active:hover img {
-        transform: scale(1.02);
-        transition: transform 0.3s ease;
-    }
 
-    .banner-slide picture {
+    .banner-slide picture,
+    .banner-slide img {
         width: 100%;
         height: 100%;
         display: block;
+        object-fit: cover; /* Use cover for Ken Burns effect */
     }
 
-    .banner-slide img {
-        width: 90%;
-        height: 90%;
-        object-fit: contain;
-        display: block;
+    /* Ken Burns Effect on Active Image */
+    .banner-slide.active img {
+        animation: kenBurns 10s infinite alternate ease-in-out;
+        will-change: transform;
+    }
+
+    @keyframes kenBurns {
+        0% { transform: scale(1) rotate(0deg); }
+        100% { transform: scale(1.07) rotate(1deg); }
+    }
+
+    /* Visual feedback on hover */
+    .banner-slider-wrapper:hover .banner-slide.active img {
+        filter: brightness(1.05);
+    }
+
+    /* Pause Icon */
+    .banner-pause-icon {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        z-index: 5;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none; /* Prevent blocking clicks */
     }
 
-    /* Navigation Arrows - Hidden */
-    .banner-nav {
-        display: none;
+    .banner-slider-wrapper:hover .banner-pause-icon {
+        opacity: 1;
+    }
+
+    /* Progress Bar */
+    .banner-progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.3);
+        z-index: 4;
+    }
+
+    .banner-progress-bar {
+        height: 100%;
+        background-color: var(--primary);
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        will-change: transform;
+    }
+
+    .banner-progress-bar.active {
+        animation: progressBar 3s linear forwards;
+    }
+
+    @keyframes progressBar {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
     }
 
     /* Navigation Dots */
-    .banner-ads-dots {
+    .banner-dots {
         position: absolute;
-        bottom: 15px;
+        bottom: -25px; /* Position below the banner */
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        gap: 8px;
+        gap: 10px;
         z-index: 10;
     }
 
     .banner-dot {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        border: 1px solid var(--primary);
+        border: 2px solid var(--primary);
         background-color: transparent;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.4s ease;
     }
 
     .banner-dot.active {
         background-color: var(--primary);
-        width: 20px;
-        border-radius: 4px;
+        transform: scale(1.1);
     }
 
     .banner-dot:hover {
         background-color: var(--primary);
-        opacity: 0.7;
+        opacity: 0.8;
     }
 
-    /* Tablet Styles */
+    /* Responsive Adjustments */
     @media (max-width: 1024px) {
-        .banner-ads-slider {
-            height: 350px;
-        }
+        .banner-slider-wrapper { height: 350px; }
     }
 
-    /* Mobile Styles */
     @media (max-width: 768px) {
-        .banner-ads-section {
-            padding: 30px 0;
-        }
-        
-        .banner-ads-slider {
-            height: 300px;
-        }
-        
-        .banner-ads-dots {
-            bottom: 10px;
-        }
-        
-        .banner-dot {
-            width: 6px;
-            height: 6px;
-        }
-        
-        .banner-dot.active {
-            width: 16px;
-        }
+        .banner-ads-section { padding: 30px 0; }
+        .banner-slider-wrapper { height: 300px; }
+        .banner-dots { bottom: -22px; }
+        .banner-dot { width: 8px; height: 8px; }
     }
 
-    /* Small Mobile Styles */
     @media (max-width: 480px) {
-        .banner-ads-slider {
-            height: 250px;
-        }
+        .banner-slider-wrapper { height: 250px; }
     }

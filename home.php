@@ -53,36 +53,46 @@ get_header();
         </section>
         
         <!-- Rotating Banner Ads Section -->
-        <section class="banner-ads-section">
+        <section class="banner-ads-section" role="region" aria-roledescription="carousel" aria-label="Promotional Banners">
             <div class="banner-ads-container">
-                <div class="banner-ads-slider">
-                    <!-- Banner 1: £100 Off -->
-                    <div class="banner-slide active" data-message="I'm interested in the £100 off promotion for treatments.">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
-                            <img src="https://i.ibb.co/3m3TYGvV/01.webp" alt="£100 Off Your Next Treatment" loading="lazy">
-                        </picture>
+                <div class="banner-slider-wrapper">
+                    <div class="banner-slider" aria-live="polite">
+                        <!-- Banner 1: £100 Off -->
+                        <div class="banner-slide active" role="group" aria-roledescription="slide" aria-label="1 of 3" data-message="I'm interested in the £100 off promotion for treatments.">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
+                                <img src="https://i.ibb.co/3m3TYGvV/01.webp" alt="£100 Off Your Next Treatment" loading="lazy">
+                            </picture>
+                        </div>
+                        
+                        <!-- Banner 2: 30% Off Body Contouring -->
+                        <div class="banner-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" data-message="I'm interested in the 30% off body contouring promotion.">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
+                                <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" alt="30% Off Body Contouring" loading="lazy">
+                            </picture>
+                        </div>
+                        
+                        <!-- Banner 3: 50% Off Skin Boosters -->
+                        <div class="banner-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" data-message="I'm interested in the 50% off skin boosters promotion.">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
+                                <img src="https://i.ibb.co/xqC48G06/03.webp" alt="50% Off Skin Boosters" loading="lazy">
+                            </picture>
+                        </div>
                     </div>
-                    
-                    <!-- Banner 2: 30% Off Body Contouring -->
-                    <div class="banner-slide" data-message="I'm interested in the 30% off body contouring promotion.">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
-                            <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" alt="30% Off Body Contouring" loading="lazy">
-                        </picture>
+
+                    <div class="banner-pause-icon" aria-hidden="true">
+                        <i class="fas fa-pause"></i>
                     </div>
-                    
-                    <!-- Banner 3: 50% Off Skin Boosters -->
-                    <div class="banner-slide" data-message="I'm interested in the 50% off skin boosters promotion.">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
-                            <img src="https://i.ibb.co/xqC48G06/03.webp" alt="50% Off Skin Boosters" loading="lazy">
-                        </picture>
+
+                    <div class="banner-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                        <div class="banner-progress-bar"></div>
                     </div>
                 </div>
                 
                 <!-- Navigation Dots -->
-                <div class="banner-ads-dots">
+                <div class="banner-dots">
                     <button class="banner-dot active" aria-label="Go to slide 1" data-slide="0"></button>
                     <button class="banner-dot" aria-label="Go to slide 2" data-slide="1"></button>
                     <button class="banner-dot" aria-label="Go to slide 3" data-slide="2"></button>
