@@ -492,4 +492,203 @@ document.addEventListener('DOMContentLoaded', function() {
         }); // End forEach container
     } // End if autoScrollContainers exist
 
+    // --- Rotating Banner Ads ---
+    const bannerAdsSection = document.querySelector('.banner-ads-section');
+    if (bannerAdsSection) {
+        const slides = bannerAdsSection.querySelectorAll('.banner-slide');
+        const dots = bannerAdsSection.querySelectorAll('.banner-dot');
+        const prevBtn = bannerAdsSection.querySelector('.banner-prev');
+        const nextBtn = bannerAdsSection.querySelector('.banner-next');
+        
+        let currentSlide = 0;
+        let autoRotateTimer = null;
+        let isPaused = false;
+        const rotationInterval = 3000; // 3 seconds
+
+        // Function to show specific slide
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (dots[i]) {
+                    dots[i].classList.remove('active');
+                }
+            });
+            
+            // Show current slide
+            if (slides[index]) {
+                slides[index].classList.add('active');
+            }
+            if (dots[index]) {
+                dots[index].classList.add('active');
+            }
+            
+            currentSlide = index;
+        }
+
+        // Function to go to next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Function to go to previous slide
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-rotation
+        function startAutoRotate() {
+            stopAutoRotate();
+            if (!isPaused) {
+                autoRotateTimer = setInterval(nextSlide, rotationInterval);
+            }
+        }
+
+        function stopAutoRotate() {
+            if (autoRotateTimer) {
+                clearInterval(autoRotateTimer);
+                autoRotateTimer = null;
+            }
+        }
+
+        // Pause auto-rotation temporarily
+        function pauseAutoRotate(duration = rotationInterval * 2) {
+            isPaused = true;
+            stopAutoRotate();
+            setTimeout(() => {
+                isPaused = false;
+                if (!document.hidden) {
+                    startAutoRotate();
+                }
+            }, duration);
+        }
+
+        // Click handlers for banner slides
+        slides.forEach((slide, index) => {
+            slide.addEventListener('click', function(e) {
+                e.preventDefault();
+                const message = this.getAttribute('data-message');
+                const contactSection = document.getElementById('contact');
+                
+                if (contactSection) {
+                    // Scroll to contact section
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Pre-fill the form message after a short delay
+                    setTimeout(() => {
+                        // Try to find the Zoho form iframe and pre-fill the message
+                        const zohoContainer = document.getElementById('zf_div_2ocXcoePUH67HGo9WmzdB894DR7POz1NopDMCtNf5L4');
+                        if (zohoContainer) {
+                            const iframe = zohoContainer.querySelector('iframe');
+                            if (iframe) {
+                                try {
+                                    // Post message to iframe to fill the form
+                                    iframe.contentWindow.postMessage({
+                                        type: 'prefillMessage',
+                                        message: message
+                                    }, 'https://forms.zohopublic.eu');
+                                } catch (e) {
+                                    console.log('Could not pre-fill form:', e);
+                                }
+                            }
+                        }
+                    }, 1000);
+                }
+                
+                pauseAutoRotate();
+            });
+        });
+
+        // Navigation button handlers
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                pauseAutoRotate();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                pauseAutoRotate();
+            });
+        }
+
+        // Dot navigation handlers
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                pauseAutoRotate();
+            });
+        });
+
+        // Pause on hover
+        bannerAdsSection.addEventListener('mouseenter', () => {
+            isPaused = true;
+            stopAutoRotate();
+        });
+
+        bannerAdsSection.addEventListener('mouseleave', () => {
+            isPaused = false;
+            startAutoRotate();
+        });
+
+        // Touch support for mobile swipe
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        bannerAdsSection.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        bannerAdsSection.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next slide
+                    nextSlide();
+                } else {
+                    // Swipe right - previous slide
+                    prevSlide();
+                }
+                pauseAutoRotate();
+            }
+        }
+
+        // Handle visibility change
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopAutoRotate();
+            } else if (!isPaused) {
+                startAutoRotate();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (bannerAdsSection.contains(document.activeElement)) {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                    pauseAutoRotate();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                    pauseAutoRotate();
+                }
+            }
+        });
+
+        // Initialize
+        showSlide(0);
+        startAutoRotate();
+    }
+
 }); // End DOMContentLoaded

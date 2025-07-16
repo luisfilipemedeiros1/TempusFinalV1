@@ -52,6 +52,52 @@ get_header();
             </div>
         </section>
 
+        <!-- Rotating Banner Ads Section -->
+        <section class="banner-ads-section">
+            <div class="banner-ads-container">
+                <div class="banner-ads-slider">
+                    <!-- Banner 1: £100 Off -->
+                    <div class="banner-slide active" data-message="I'm interested in the £100 off promotion for treatments.">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
+                            <img src="https://i.ibb.co/3m3TYGvV/01.webp" alt="£100 Off Your Next Treatment" loading="lazy">
+                        </picture>
+                    </div>
+                    
+                    <!-- Banner 2: 30% Off Body Contouring -->
+                    <div class="banner-slide" data-message="I'm interested in the 30% off body contouring promotion.">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
+                            <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" alt="30% Off Body Contouring" loading="lazy">
+                        </picture>
+                    </div>
+                    
+                    <!-- Banner 3: 50% Off Skin Boosters -->
+                    <div class="banner-slide" data-message="I'm interested in the 50% off skin boosters promotion.">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
+                            <img src="https://i.ibb.co/xqC48G06/03.webp" alt="50% Off Skin Boosters" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="banner-ads-dots">
+                    <button class="banner-dot active" aria-label="Go to slide 1" data-slide="0"></button>
+                    <button class="banner-dot" aria-label="Go to slide 2" data-slide="1"></button>
+                    <button class="banner-dot" aria-label="Go to slide 3" data-slide="2"></button>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="banner-nav banner-prev" aria-label="Previous banner">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="banner-nav banner-next" aria-label="Next banner">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
          <!-- Brands We Work With Section -->
         <section id="brands" class="brands-section">
             <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--dark)" points="0,0 100,100 0,100"/></svg></div>
