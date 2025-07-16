@@ -808,27 +808,26 @@
     .banner-ads-section {
         position: relative;
         width: 100%;
-        height: 100vh;
-        padding: 0;
+        padding: 40px 0;
         background-color: var(--light);
         overflow: hidden;
     }
 
     .banner-ads-container {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
         position: relative;
     }
 
     .banner-ads-slider {
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 400px;
         overflow: hidden;
-        border-radius: 0;
-        box-shadow: none;
+        border-radius: 8px;
+        border: 3px solid var(--primary-ultralight);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     .banner-slide {
@@ -862,10 +861,14 @@
     }
 
     .banner-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
         display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     /* Navigation Arrows - Hidden */
@@ -876,66 +879,69 @@
     /* Navigation Dots */
     .banner-ads-dots {
         position: absolute;
-        bottom: 20px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        gap: 10px;
+        gap: 8px;
         z-index: 10;
     }
 
     .banner-dot {
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        border: 2px solid var(--white);
+        border: 1px solid var(--primary);
         background-color: transparent;
         cursor: pointer;
         transition: all 0.3s ease;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .banner-dot.active {
-        background-color: var(--white);
-        width: 30px;
-        border-radius: 6px;
+        background-color: var(--primary);
+        width: 20px;
+        border-radius: 4px;
     }
 
     .banner-dot:hover {
-        background-color: var(--white);
-        transform: scale(1.2);
+        background-color: var(--primary);
+        opacity: 0.7;
     }
 
     /* Tablet Styles */
     @media (max-width: 1024px) {
-        .banner-ads-section {
-            height: 100vh;
+        .banner-ads-slider {
+            height: 350px;
         }
     }
 
     /* Mobile Styles */
     @media (max-width: 768px) {
         .banner-ads-section {
-            height: 100vh;
+            padding: 30px 0;
+        }
+        
+        .banner-ads-slider {
+            height: 300px;
         }
         
         .banner-ads-dots {
-            bottom: 15px;
+            bottom: 10px;
         }
         
         .banner-dot {
-            width: 10px;
-            height: 10px;
+            width: 6px;
+            height: 6px;
         }
         
         .banner-dot.active {
-            width: 25px;
+            width: 16px;
         }
     }
 
     /* Small Mobile Styles */
     @media (max-width: 480px) {
-        .banner-ads-section {
-            height: 100vh;
+        .banner-ads-slider {
+            height: 250px;
         }
     }
