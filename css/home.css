@@ -973,32 +973,41 @@
 
     @media (max-width: 768px) {
         .banner-ads-section { 
-            padding: 8px 0; 
+            padding: 5px 0; 
         }
         .banner-ads-container {
-            width: 95%;
+            width: 98%;
         }
         .banner-slider-wrapper { 
             height: 280px;
+            border-radius: 4px;
+            border-width: 1px;
         }
         .banner-dots { 
-            margin-top: 8px;
+            margin-top: 6px;
         }
         .banner-dot { 
-            width: 3px; 
-            height: 3px; 
+            width: 2px; 
+            height: 2px; 
         }
     }
 
     @media (max-width: 480px) {
+        .banner-ads-container {
+            width: 99%;
+        }
         .banner-slider-wrapper { 
             height: 220px;
         }
         .banner-ads-section { 
-            padding: 5px 0; 
+            padding: 3px 0; 
         }
         .banner-dots {
-            gap: 4px;
-            margin-top: 6px;
+            gap: 3px;
+            margin-top: 4px;
+        }
+        .banner-dot { 
+            width: 2px; 
+            height: 2px; 
         }
     }
