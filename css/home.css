@@ -792,25 +792,27 @@
     .banner-ads-section {
         position: relative;
         width: 100%;
-        padding: 60px 0;
+        height: 100vh;
+        padding: 0;
         background-color: var(--light);
         overflow: hidden;
     }
 
     .banner-ads-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 20px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         position: relative;
     }
 
     .banner-ads-slider {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 100%;
         overflow: hidden;
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+        box-shadow: none;
     }
 
     .banner-slide {
@@ -850,46 +852,9 @@
         display: block;
     }
 
-    /* Navigation Arrows */
+    /* Navigation Arrows - Hidden */
     .banner-nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.9);
-        border: none;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        z-index: 10;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .banner-nav:hover {
-        background-color: var(--primary);
-        transform: translateY(-50%) scale(1.1);
-    }
-
-    .banner-nav:hover i {
-        color: var(--white);
-    }
-
-    .banner-nav.banner-prev {
-        left: 20px;
-    }
-
-    .banner-nav.banner-next {
-        right: 20px;
-    }
-
-    .banner-nav i {
-        font-size: 20px;
-        color: var(--primary);
-        transition: color 0.3s ease;
+        display: none;
     }
 
     /* Navigation Dots */
@@ -927,50 +892,15 @@
 
     /* Tablet Styles */
     @media (max-width: 1024px) {
-        .banner-ads-slider {
-            height: 350px;
-        }
-        
-        .banner-nav {
-            width: 45px;
-            height: 45px;
-        }
-        
-        .banner-nav i {
-            font-size: 18px;
+        .banner-ads-section {
+            height: 100vh;
         }
     }
 
     /* Mobile Styles */
     @media (max-width: 768px) {
         .banner-ads-section {
-            padding: 40px 0;
-        }
-        
-        .banner-ads-container {
-            padding: 0 15px;
-        }
-        
-        .banner-ads-slider {
-            height: 300px;
-            border-radius: 8px;
-        }
-        
-        .banner-nav {
-            width: 40px;
-            height: 40px;
-        }
-        
-        .banner-nav.banner-prev {
-            left: 10px;
-        }
-        
-        .banner-nav.banner-next {
-            right: 10px;
-        }
-        
-        .banner-nav i {
-            font-size: 16px;
+            height: 100vh;
         }
         
         .banner-ads-dots {
@@ -989,16 +919,7 @@
 
     /* Small Mobile Styles */
     @media (max-width: 480px) {
-        .banner-ads-slider {
-            height: 250px;
-        }
-        
-        .banner-nav {
-            width: 35px;
-            height: 35px;
-        }
-        
-        .banner-nav i {
-            font-size: 14px;
+        .banner-ads-section {
+            height: 100vh;
         }
     }
