@@ -808,7 +808,7 @@
     .banner-ads-section {
         position: relative;
         width: 100%;
-        padding: 40px 0;
+        padding: 20px 0;
         background-color: var(--light);
         overflow: hidden;
     }
@@ -816,7 +816,7 @@
     .banner-ads-container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 15px;
         position: relative;
     }
 
@@ -934,32 +934,31 @@
     /* Navigation Dots */
     .banner-dots {
         position: absolute;
-        bottom: -25px; /* Position below the banner */
+        bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        gap: 10px;
+        gap: 6px;
         z-index: 10;
     }
 
     .banner-dot {
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         border-radius: 50%;
-        border: 2px solid var(--primary);
-        background-color: transparent;
+        border: none;
+        background-color: rgba(175, 143, 90, 0.4);
         cursor: pointer;
-        transition: all 0.4s ease;
+        transition: background-color 0.3s ease;
     }
 
     .banner-dot.active {
         background-color: var(--primary);
-        transform: scale(1.1);
     }
 
     .banner-dot:hover {
         background-color: var(--primary);
-        opacity: 0.8;
+        opacity: 0.7;
     }
 
     /* Responsive Adjustments */
@@ -968,12 +967,32 @@
     }
 
     @media (max-width: 768px) {
-        .banner-ads-section { padding: 30px 0; }
-        .banner-slider-wrapper { height: 300px; }
-        .banner-dots { bottom: -22px; }
-        .banner-dot { width: 8px; height: 8px; }
+        .banner-ads-section { 
+            padding: 15px 0; 
+        }
+        .banner-ads-container {
+            padding: 0 5%;
+        }
+        .banner-slider-wrapper { 
+            height: 300px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .banner-dots { 
+            bottom: 8px; 
+        }
+        .banner-dot { 
+            width: 4px; 
+            height: 4px; 
+        }
     }
 
     @media (max-width: 480px) {
-        .banner-slider-wrapper { height: 250px; }
+        .banner-slider-wrapper { 
+            height: 250px;
+            width: 90%;
+        }
+        .banner-ads-section { 
+            padding: 10px 0; 
+        }
     }
