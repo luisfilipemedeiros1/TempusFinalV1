@@ -808,15 +808,15 @@
     .banner-ads-section {
         position: relative;
         width: 100%;
-        padding: 10px 0;
+        padding: 0;
         background-color: var(--light);
         overflow: hidden;
     }
 
     .banner-ads-container {
-        width: 95%;
-        max-width: 95%;
-        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
         padding: 0;
         position: relative;
     }
@@ -826,8 +826,8 @@
         width: 100%;
         height: 400px;
         overflow: hidden;
-        border-radius: 8px;
-        border: 2px solid var(--primary-ultralight);
+        border-radius: 0;
+        border: none;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         cursor: pointer;
         background-color: #fff; /* Fallback background */
@@ -932,82 +932,29 @@
         to { transform: scaleX(1); }
     }
 
-    /* Navigation Dots */
-    .banner-dots {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        margin-top: 10px;
-        position: relative;
-        z-index: 10;
-    }
-
-    .banner-dot {
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        border: none;
-        background-color: rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-    }
-
-    .banner-dot.active {
-        background-color: #000;
-    }
-
-    .banner-dot:hover {
-        background-color: #000;
-        opacity: 0.8;
-    }
-
     /* Responsive Adjustments */
     @media (max-width: 1024px) {
         .banner-slider-wrapper { 
             height: 350px; 
         }
-        .banner-ads-section { 
-            padding: 8px 0; 
-        }
     }
 
     @media (max-width: 768px) {
-        .banner-ads-section { 
-            padding: 5px 0; 
-        }
         .banner-ads-container {
-            width: 98%;
+            padding: 0;
         }
         .banner-slider-wrapper { 
             height: 280px;
-            border-radius: 4px;
-            border-width: 1px;
-        }
-        .banner-dots { 
-            margin-top: 6px;
-        }
-        .banner-dot { 
-            width: 2px; 
-            height: 2px; 
+            border-radius: 0;
+            border: none;
         }
     }
 
     @media (max-width: 480px) {
-        .banner-ads-container {
-            width: 99%;
-        }
         .banner-slider-wrapper { 
             height: 220px;
         }
-        .banner-ads-section { 
-            padding: 3px 0; 
-        }
-        .banner-dots {
-            gap: 3px;
-            margin-top: 4px;
-        }
-        .banner-dot { 
-            width: 2px; 
-            height: 2px; 
+        .banner-ads-container {
+            padding: 0;
         }
     }

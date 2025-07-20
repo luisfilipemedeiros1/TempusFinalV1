@@ -90,13 +90,6 @@ get_header();
                         <div class="banner-progress-bar"></div>
                     </div>
                 </div>
-                
-                <!-- Navigation Dots -->
-                <div class="banner-dots">
-                    <button class="banner-dot active" aria-label="Go to slide 1" data-slide="0"></button>
-                    <button class="banner-dot" aria-label="Go to slide 2" data-slide="1"></button>
-                    <button class="banner-dot" aria-label="Go to slide 3" data-slide="2"></button>
-                </div>
             </div>
         </section>
 
