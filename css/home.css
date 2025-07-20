@@ -898,11 +898,27 @@
 
     @media (max-width: 768px) {
         .promo-banner-frame {
-            height: 450px; /* Taller for vertical cards */
+            height: auto;
             border-radius: 4px;
         }
 
+        .promo-banner-slide {
+            position: relative;
+            height: auto;
+        }
+
+        .promo-banner-slide:not(.active) {
+            position: absolute;
+        }
+
+        .promo-banner-image {
+            object-fit: contain;
+            height: auto;
+            max-height: 70vh; /* Limit height to viewport */
+        }
+
         .promo-banner-dots {
+            position: absolute;
             bottom: 15px;
             gap: 8px;
         }
@@ -914,10 +930,6 @@
     }
 
     @media (max-width: 480px) {
-        .promo-banner-frame {
-            height: 400px; /* Vertical card aspect ratio */
-        }
-
         .promo-banner-dots {
             bottom: 10px;
         }
