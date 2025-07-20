@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'tempusbelgravia' );
 define( 'CHILD_THEME_URL', 'http://www.dicema.com/' );
-define( 'CHILD_THEME_VERSION', '2.2.3' ); // Banner uses image size with 2% padding
+define( 'CHILD_THEME_VERSION', '2.3.5' ); // Banner matches brands section background
 
 //* Include treatment prices
 require_once( get_stylesheet_directory() . '/inc/treatment-prices.php' );

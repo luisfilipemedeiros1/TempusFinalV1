@@ -51,43 +51,49 @@ get_header();
                 </div>
             </div>
         </section>
-        
-        <!-- Rotating Banner Ads Section -->
-        <section class="banner-ads-section" role="region" aria-roledescription="carousel" aria-label="Promotional Banners">
-            <div class="banner-ads-container">
-                <div class="banner-slider-wrapper">
-                    <div class="banner-slider" aria-live="polite">
-                        <!-- Banner 1: £100 Off -->
-                        <div class="banner-slide active" role="group" aria-roledescription="slide" aria-label="1 of 3" data-message="I'm interested in the £100 off promotion for treatments.">
-                            <picture>
-                                <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
-                                <img src="https://i.ibb.co/3m3TYGvV/01.webp" alt="£100 Off Your Next Treatment" loading="lazy">
-                            </picture>
-                        </div>
-                        
-                        <!-- Banner 2: 30% Off Body Contouring -->
-                        <div class="banner-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" data-message="I'm interested in the 30% off body contouring promotion.">
-                            <picture>
-                                <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
-                                <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" alt="30% Off Body Contouring" loading="lazy">
-                            </picture>
-                        </div>
-                        
-                        <!-- Banner 3: 50% Off Skin Boosters -->
-                        <div class="banner-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" data-message="I'm interested in the 50% off skin boosters promotion.">
-                            <picture>
-                                <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
-                                <img src="https://i.ibb.co/xqC48G06/03.webp" alt="50% Off Skin Boosters" loading="lazy">
-                            </picture>
-                        </div>
-                    </div>
 
-                    <div class="banner-pause-icon" aria-hidden="true">
-                        <i class="fas fa-pause"></i>
-                    </div>
-
-                    <div class="banner-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                        <div class="banner-progress-bar"></div>
+        <!-- Rotating Promotional Banner -->
+        <section class="promo-banner-section">
+            <div class="promo-banner-container">
+                <div class="promo-banner-frame">
+                    <!-- Banner 1: £100 Off -->
+                    <a href="#contact" class="promo-banner-slide active" aria-label="£100 Off Your Next Treatment">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
+                            <img src="https://i.ibb.co/3m3TYGvV/01.webp" 
+                                 alt="£100 Off Your Next Treatment" 
+                                 class="promo-banner-image"
+                                 loading="lazy">
+                        </picture>
+                    </a>
+                    
+                    <!-- Banner 2: 30% Off Body Contouring -->
+                    <a href="#contact" class="promo-banner-slide" aria-label="30% Off Body Contouring">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
+                            <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" 
+                                 alt="30% Off Body Contouring" 
+                                 class="promo-banner-image"
+                                 loading="lazy">
+                        </picture>
+                    </a>
+                    
+                    <!-- Banner 3: 50% Off Skin Boosters -->
+                    <a href="#contact" class="promo-banner-slide" aria-label="50% Off Skin Boosters">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
+                            <img src="https://i.ibb.co/xqC48G06/03.webp" 
+                                 alt="50% Off Skin Boosters" 
+                                 class="promo-banner-image"
+                                 loading="lazy">
+                        </picture>
+                    </a>
+                    
+                    <!-- Navigation dots -->
+                    <div class="promo-banner-dots">
+                        <button class="promo-dot active" aria-label="Go to slide 1" data-slide="0"></button>
+                        <button class="promo-dot" aria-label="Go to slide 2" data-slide="1"></button>
+                        <button class="promo-dot" aria-label="Go to slide 3" data-slide="2"></button>
                     </div>
                 </div>
             </div>
@@ -95,7 +101,6 @@ get_header();
 
          <!-- Brands We Work With Section -->
         <section id="brands" class="brands-section">
-            <div class="angled-transition angled-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--dark)" points="0,0 100,100 0,100"/></svg></div>
             <div class="angled-transition angled-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="var(--light)" points="0,100 100,0 100,100"/></svg></div>
             <div class="container"> <?php // Use theme's .wrap or this custom .container ?>
                 <h2 class="screen-reader-text">Trusted Technology & Product Partners</h2>

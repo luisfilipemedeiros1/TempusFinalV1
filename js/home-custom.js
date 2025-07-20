@@ -492,161 +492,93 @@ document.addEventListener('DOMContentLoaded', function() {
         }); // End forEach container
     } // End if autoScrollContainers exist
 
-    // --- State-of-the-Art Rotating Banner Implementation ---
-    const bannerSection = document.querySelector('.banner-ads-section');
-    if (!bannerSection) return;
+    // --- Simple Rotating Banner Implementation ---
+    const promoBanner = document.querySelector('.promo-banner-frame');
+    if (promoBanner) {
+        const slides = promoBanner.querySelectorAll('.promo-banner-slide');
+        const dots = promoBanner.querySelectorAll('.promo-dot');
+        let currentSlide = 0;
+        let autoRotateTimer = null;
+        const rotationInterval = 5000; // 5 seconds
 
-    const slider = bannerSection.querySelector('.banner-slider');
-    const slides = bannerSection.querySelectorAll('.banner-slide');
-    const dots = bannerSection.querySelectorAll('.banner-dot');
-    const progressBar = bannerSection.querySelector('.banner-progress-bar');
-    const wrapper = bannerSection.querySelector('.banner-slider-wrapper');
+        const showSlide = (index) => {
+            // Update slides
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
 
-    if (!slider || slides.length === 0 || !progressBar) return;
+            // Update dots
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
 
-    let currentSlide = 0;
-    let autoRotateTimer = null;
-    let isPaused = false;
-    const rotationInterval = 3000; // 3 seconds
+            currentSlide = index;
+        };
 
-    const showSlide = (index, isProgrammatic = false) => {
-        if (index === currentSlide && !isProgrammatic) return;
+        const nextSlide = () => {
+            const newIndex = (currentSlide + 1) % slides.length;
+            showSlide(newIndex);
+        };
 
-        currentSlide = index;
-
-        slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-            slide.setAttribute('aria-label', `${i + 1} of ${slides.length}`);
-        });
-
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-
-        // Reset and start progress bar animation
-        progressBar.classList.remove('active');
-        void progressBar.offsetWidth; // Trigger reflow to restart animation
-        progressBar.classList.add('active');
-
-        // Reset auto-rotation timer
-        stopAutoRotate();
-        if (!isPaused) {
-            startAutoRotate();
-        }
-    };
-
-    const nextSlide = () => {
-        const newIndex = (currentSlide + 1) % slides.length;
-        showSlide(newIndex, true);
-    };
-
-    const prevSlide = () => {
-        const newIndex = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(newIndex, true);
-    };
-
-    const startAutoRotate = () => {
-        stopAutoRotate(); // Prevent multiple timers
-        if (!isPaused) {
-            autoRotateTimer = setInterval(nextSlide, rotationInterval);
-        }
-    };
-
-    const stopAutoRotate = () => {
-        clearInterval(autoRotateTimer);
-        autoRotateTimer = null;
-    };
-
-    // --- Event Listeners ---
-
-    // Dots Navigation
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => showSlide(index));
-    });
-
-    // Click to Scroll & Pre-fill Form
-    slides.forEach(slide => {
-        slide.addEventListener('click', function() {
-            const message = this.getAttribute('data-message');
-            const contactSection = document.getElementById('contact');
-
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-                // Pre-fill Zoho form message after scroll
-                setTimeout(() => {
-                    const zohoContainer = document.getElementById('zf_div_2ocXcoePUH67HGo9WmzdB894DR7POz1NopDMCtNf5L4');
-                    const iframe = zohoContainer ? zohoContainer.querySelector('iframe') : null;
-                    if (iframe && message) {
-                        try {
-                            // This custom postMessage relies on the Zoho form page having a listener for it.
-                            iframe.contentWindow.postMessage({ type: 'prefillMessage', message: message }, 'https://forms.zohopublic.eu');
-                        } catch (e) {
-                            console.warn('Could not pre-fill form via postMessage. This may be due to cross-origin restrictions.', e);
-                        }
-                    }
-                }, 800); // Delay to allow for smooth scroll
-            }
-        });
-    });
-
-    // Pause on Hover
-    wrapper.addEventListener('mouseenter', () => {
-        isPaused = true;
-        stopAutoRotate();
-        progressBar.style.animationPlayState = 'paused';
-    });
-
-    wrapper.addEventListener('mouseleave', () => {
-        isPaused = false;
-        startAutoRotate();
-        progressBar.style.animationPlayState = 'running';
-    });
-
-    // Touch/Swipe Gestures
-    let touchStartX = 0;
-    wrapper.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
-    wrapper.addEventListener('touchend', e => {
-        const touchEndX = e.changedTouches[0].screenX;
-        if (touchStartX - touchEndX > 50) nextSlide();
-        else if (touchEndX - touchStartX > 50) prevSlide();
-    }, { passive: true });
-
-    // Keyboard Navigation
-    wrapper.setAttribute('tabindex', '0'); // Make wrapper focusable
-    wrapper.addEventListener('keydown', e => {
-        if (e.key === 'ArrowLeft') {
-            e.preventDefault();
-            prevSlide();
-        } else if (e.key === 'ArrowRight') {
-            e.preventDefault();
-            nextSlide();
-        }
-    });
-
-    // Intersection Observer for Performance
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                if (!isPaused) startAutoRotate();
-            } else {
-                stopAutoRotate();
-            }
-        });
-    }, { threshold: 0.5 }); // Start when 50% of the banner is visible
-
-    observer.observe(bannerSection);
-
-    // Handle page visibility changes
-    document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
+        const startAutoRotate = () => {
             stopAutoRotate();
-        } else {
-            if (!isPaused) startAutoRotate();
-        }
-    });
+            autoRotateTimer = setInterval(nextSlide, rotationInterval);
+        };
 
-    // Initial call
-    showSlide(0, true);
+        const stopAutoRotate = () => {
+            if (autoRotateTimer) {
+                clearInterval(autoRotateTimer);
+                autoRotateTimer = null;
+            }
+        };
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                stopAutoRotate();
+                startAutoRotate();
+            });
+        });
+
+        // Pause on hover
+        promoBanner.addEventListener('mouseenter', stopAutoRotate);
+        promoBanner.addEventListener('mouseleave', startAutoRotate);
+
+        // Touch support for mobile
+        let touchStartX = 0;
+        promoBanner.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+            stopAutoRotate();
+        }, { passive: true });
+
+        promoBanner.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > 50) { // Minimum swipe distance
+                if (diff > 0) {
+                    // Swipe left - next slide
+                    showSlide((currentSlide + 1) % slides.length);
+                } else {
+                    // Swipe right - previous slide
+                    showSlide((currentSlide - 1 + slides.length) % slides.length);
+                }
+            }
+            startAutoRotate();
+        }, { passive: true });
+
+        // Start rotation
+        startAutoRotate();
+
+        // Pause when page is not visible
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopAutoRotate();
+            } else {
+                startAutoRotate();
+            }
+        });
+    }
 
 }); // End DOMContentLoaded
