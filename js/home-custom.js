@@ -568,6 +568,9 @@ document.addEventListener('DOMContentLoaded', function() {
             startAutoRotate();
         }, { passive: true });
 
+        // Initialize first slide (ensure it's visible)
+        showSlide(0);
+        
         // Start rotation
         startAutoRotate();
 
