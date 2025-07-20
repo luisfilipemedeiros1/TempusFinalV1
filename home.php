@@ -70,7 +70,7 @@ get_header();
                     <!-- Banner 2: 30% Off Body Contouring -->
                     <a href="#contact" class="promo-banner-slide" aria-label="30% Off Body Contouring">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
                             <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" 
                                  alt="30% Off Body Contouring" 
                                  class="promo-banner-image"
@@ -81,7 +81,7 @@ get_header();
                     <!-- Banner 3: 50% Off Skin Boosters -->
                     <a href="#contact" class="promo-banner-slide" aria-label="50% Off Skin Boosters">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
                             <img src="https://i.ibb.co/xqC48G06/03.webp" 
                                  alt="50% Off Skin Boosters" 
                                  class="promo-banner-image"

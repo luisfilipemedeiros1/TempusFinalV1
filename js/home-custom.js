@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const dots = promoBanner.querySelectorAll('.promo-dot');
         let currentSlide = 0;
         let autoRotateTimer = null;
-        const rotationInterval = 5000; // 5 seconds
+        const rotationInterval = 4000; // 4 seconds
 
         const showSlide = (index) => {
             // Update slides

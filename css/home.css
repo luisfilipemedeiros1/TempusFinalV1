@@ -898,7 +898,7 @@
 
     @media (max-width: 768px) {
         .promo-banner-frame {
-            height: 280px;
+            height: 450px; /* Taller for vertical cards */
             border-radius: 4px;
         }
 
@@ -915,7 +915,7 @@
 
     @media (max-width: 480px) {
         .promo-banner-frame {
-            height: 220px;
+            height: 400px; /* Vertical card aspect ratio */
         }
 
         .promo-banner-dots {
