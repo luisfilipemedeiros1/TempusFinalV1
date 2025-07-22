@@ -100,14 +100,19 @@
                         </ul>
                     </nav>
                     
-                    <!-- CTA Button -->
+                    <!-- CTA Buttons -->
                     <div class="header-cta">
-                        <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20please." 
-                           class="book-consultation-btn" 
-                           target="_blank" 
-                           rel="noopener noreferrer">
+                        <a href="#contact" 
+                           class="book-consultation-btn">
                             <i class="fas fa-calendar-check" aria-hidden="true"></i>
                             <span>Book Now</span>
+                        </a>
+                        <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20a%20consultation%20please." 
+                           class="book-consultation-btn whatsapp-btn" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span>WhatsApp</span>
                         </a>
                     </div>
                     

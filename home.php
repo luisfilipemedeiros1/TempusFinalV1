@@ -133,30 +133,30 @@ get_header();
                  </div>
                  <div class="treatment-grid horizontal-scroll-container fade-in-stagger" data-autorotate="true">
 
-                      <!-- Card 1: Hifu -->
-                      <div class="treatment-card scale-in">
-                        <div class="treatment-badges">
-                            <span class="badge badge-price">Starting at £350</span>
-                        </div>
-                        <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/hifu-treatment.webp" loading="lazy" alt="HIFU Treatment"></div>
-                        <div class="treatment-card-content">
-                            <h3>HIFU Skin Tightening</h3>
-                            <p>Non-surgical lift using focused ultrasound energy to tighten skin on the face, neck, and décolletage for a youthful contour.</p>
-                            <div class="treatment-details">
-                                <span class="treatment-detail"><i class="fas fa-arrow-up" aria-hidden="true"></i> Lifting</span>
-                                <span class="treatment-detail"><i class="fas fa-layer-group" aria-hidden="true"></i> Non-invasive</span>
-                                <span class="treatment-detail"><i class="fas fa-sync-alt" aria-hidden="true"></i> Minimal Downtime</span>
-                            </div>
-                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/hifu-high-intensity-focused-ultrasound/" class="cta-button-secondary" style="width: 100%;">
+                    <!-- Card 1: Exosomes - WITH TRENDING BADGE -->
+                     <div class="treatment-card scale-in">
+                         <div class="treatment-badges">
+                             <span class="badge badge-trending">Trending</span>
+                             <span class="badge badge-price">Starting at £600</span>
+                         </div>
+                         <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp" loading="lazy" alt="Exosomes Therapy"></div>
+                         <div class="treatment-card-content">
+                            <h3>Exosome Regenerative Therapy</h3>
+                            <p>Harness the power of exosomes for advanced skin regeneration, reducing inflammation, improving texture, and promoting youthful vitality.</p>
+                             <div class="treatment-details">
+                                <span class="treatment-detail"><i class="fas fa-atom" aria-hidden="true"></i> Regeneration</span>
+                                <span class="treatment-detail"><i class="fas fa-seedling" aria-hidden="true"></i> Youthful Skin</span>
+                                <span class="treatment-detail"><i class="fas fa-star" aria-hidden="true"></i> Cutting-Edge</span></div>
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatments-overview/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
-                                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20HIFU%20Skin%20Tightening%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
+                                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Exosome%20Regenerative%20Therapy%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
                                     Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
+                     </div>
 
                     <!-- Card 2: Morpheus8 (Best Seller) -->
                      <div class="treatment-card scale-in">
@@ -209,30 +209,30 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Card 4: Exosomes - WITH TRENDING BADGE -->
-                     <div class="treatment-card scale-in">
-                         <div class="treatment-badges">
-                             <span class="badge badge-trending">Trending</span>
-                             <span class="badge badge-price">Starting at £600</span>
-                         </div>
-                         <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp" loading="lazy" alt="Exosomes Therapy"></div>
-                         <div class="treatment-card-content">
-                            <h3>Exosome Regenerative Therapy</h3>
-                            <p>Harness the power of exosomes for advanced skin regeneration, reducing inflammation, improving texture, and promoting youthful vitality.</p>
-                             <div class="treatment-details">
-                                <span class="treatment-detail"><i class="fas fa-atom" aria-hidden="true"></i> Regeneration</span>
-                                <span class="treatment-detail"><i class="fas fa-seedling" aria-hidden="true"></i> Youthful Skin</span>
-                                <span class="treatment-detail"><i class="fas fa-star" aria-hidden="true"></i> Cutting-Edge</span></div>
-                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatments-overview/" class="cta-button-secondary" style="width: 100%;">
+                      <!-- Card 4: Hifu -->
+                      <div class="treatment-card scale-in">
+                        <div class="treatment-badges">
+                            <span class="badge badge-price">Starting at £350</span>
+                        </div>
+                        <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/hifu-treatment.webp" loading="lazy" alt="HIFU Treatment"></div>
+                        <div class="treatment-card-content">
+                            <h3>HIFU Skin Tightening</h3>
+                            <p>Non-surgical lift using focused ultrasound energy to tighten skin on the face, neck, and décolletage for a youthful contour.</p>
+                            <div class="treatment-details">
+                                <span class="treatment-detail"><i class="fas fa-arrow-up" aria-hidden="true"></i> Lifting</span>
+                                <span class="treatment-detail"><i class="fas fa-layer-group" aria-hidden="true"></i> Non-invasive</span>
+                                <span class="treatment-detail"><i class="fas fa-sync-alt" aria-hidden="true"></i> Minimal Downtime</span>
+                            </div>
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/hifu-high-intensity-focused-ultrasound/" class="cta-button-secondary" style="width: 100%;">
                                     Learn More
                                 </a>
-                                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Exosome%20Regenerative%20Therapy%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
+                                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20the%20HIFU%20Skin%20Tightening%20treatment%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
                                     Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
-                     </div>
+                    </div>
 
                      <!-- Card 5: Body Contouring -->
                      <div class="treatment-card scale-in">
