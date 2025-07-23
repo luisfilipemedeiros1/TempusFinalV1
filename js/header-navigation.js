@@ -31,12 +31,20 @@
         const mobileToggle = $('.mobile-menu-toggle');
         const mainNav = $('.main-navigation');
         const body = $('body');
+        const overlay = $('.mobile-menu-overlay');
         
         mobileToggle.on('click', function(e) {
             e.preventDefault();
             $(this).toggleClass('active');
             mainNav.toggleClass('mobile-active');
             body.toggleClass('menu-open');
+        });
+        
+        // Close mobile menu when clicking overlay
+        overlay.on('click', function() {
+            mobileToggle.removeClass('active');
+            mainNav.removeClass('mobile-active');
+            body.removeClass('menu-open');
         });
         
         // Close mobile menu when clicking outside

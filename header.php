@@ -130,6 +130,9 @@
             </div>
         </div>
     </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
 
     <!-- Main Content Wrapper -->
     <div class="site-wrapper">
