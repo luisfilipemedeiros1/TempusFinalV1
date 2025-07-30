@@ -60,7 +60,7 @@ get_header();
                     <a href="#contact" class="promo-banner-slide active" aria-label="Body Contouring Treatment">
                         <picture>
                             <source media="(max-width: 768px)" srcset="https://i.ibb.co/93bSfrSC/tempuslounge-bodycontourbanner-mobile.webp">
-                            <img src="https://i.ibb.co/Zzb9k6z/BODYCONTOURING.webp" 
+                            <img src="https://i.ibb.co/Zzb9k67z/BODYCONTOURING.webp" 
                                  alt="Body Contouring Treatment" 
                                  class="promo-banner-image"
                                  loading="lazy">
