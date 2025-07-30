@@ -56,34 +56,34 @@ get_header();
         <section class="promo-banner-section">
             <div class="promo-banner-container">
                 <div class="promo-banner-frame">
-                    <!-- Banner 1: £100 Off -->
-                    <a href="#contact" class="promo-banner-slide active" aria-label="£100 Off Your Next Treatment">
+                    <!-- Banner 1: Body Contouring -->
+                    <a href="#contact" class="promo-banner-slide active" aria-label="Body Contouring Treatment">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/27sR6SsT/01.webp">
-                            <img src="https://i.ibb.co/3m3TYGvV/01.webp" 
-                                 alt="£100 Off Your Next Treatment" 
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/93bSfrS/tempuslounge-bodycontourbanner-mobile.webp">
+                            <img src="https://i.ibb.co/Zzb9k6z/BODYCONTOURING.webp" 
+                                 alt="Body Contouring Treatment" 
                                  class="promo-banner-image"
                                  loading="lazy">
                         </picture>
                     </a>
                     
-                    <!-- Banner 2: 30% Off Body Contouring -->
-                    <a href="#contact" class="promo-banner-slide" aria-label="30% Off Body Contouring">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/xtx47bxY/03.webp">
-                            <img src="https://i.ibb.co/3Y5mDJ4x/02.webp" 
-                                 alt="30% Off Body Contouring" 
-                                 class="promo-banner-image"
-                                 loading="lazy">
-                        </picture>
-                    </a>
-                    
-                    <!-- Banner 3: 50% Off Skin Boosters -->
+                    <!-- Banner 2: 50% Off Skin Boosters -->
                     <a href="#contact" class="promo-banner-slide" aria-label="50% Off Skin Boosters">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/1VYmnnW/02.webp">
-                            <img src="https://i.ibb.co/xqC48G06/03.webp" 
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/0j0wMf2/skinboosters-mobile.webp">
+                            <img src="https://i.ibb.co/Ty5fWPp/02.webp" 
                                  alt="50% Off Skin Boosters" 
+                                 class="promo-banner-image"
+                                 loading="lazy">
+                        </picture>
+                    </a>
+                    
+                    <!-- Banner 3: £100 Off -->
+                    <a href="#contact" class="promo-banner-slide" aria-label="£100 Off Your Next Treatment">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/wNmqjmP/next-treatment-mobile.webp">
+                            <img src="https://i.ibb.co/Nd5SC8Z/01.webp" 
+                                 alt="£100 Off Your Next Treatment" 
                                  class="promo-banner-image"
                                  loading="lazy">
                         </picture>
