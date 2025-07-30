@@ -742,7 +742,7 @@ get_header();
                 <!-- Dermalux LED -->
                 <div class="treatment-card scale-in">
                     <div class="treatment-badges">
-                        <span class="badge badge-price">Starting at £800</span>
+                        <span class="badge badge-price">Starting at £80</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/dermalux-led/">
@@ -776,7 +776,8 @@ get_header();
                 <!-- EMSculpt Neo -->
                 <div class="treatment-card scale-in">
                     <div class="treatment-badges">
-                        <span class="badge badge-price">Starting at £2,995</span>
+                        <span class="badge badge-sale">Summer Sale £175</span>
+                        <span class="badge badge-strike">Usually £300</span>
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/">

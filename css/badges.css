@@ -60,6 +60,34 @@
     color: #ffffff;
 }
 
+/* Summer Sale Badge */
+.treatment-card .treatment-badges .badge.badge-sale {
+    background-color: #FF6B6B; /* Sale Red */
+    color: #ffffff;
+    font-weight: 700;
+    animation: pulse 2s infinite;
+}
+
+/* Strikethrough price */
+.treatment-card .treatment-badges .badge.badge-strike {
+    background-color: #666666; /* Gray */
+    color: #ffffff;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Special styling when multiple badges exist */
 .treatment-card .treatment-badges:has(.badge-bestseller) .badge.badge-price,
 .treatment-card .treatment-badges:has(.badge-trending) .badge.badge-price {
