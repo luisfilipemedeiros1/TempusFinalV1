@@ -133,7 +133,33 @@ get_header();
                  </div>
                  <div class="treatment-grid horizontal-scroll-container fade-in-stagger" data-autorotate="true">
 
-                    <!-- Card 1: Exosomes - WITH TRENDING BADGE -->
+                    <!-- Card 1: EMSculpt Neo - LIMITED TIME SUMMER SALE -->
+                     <div class="treatment-card scale-in">
+                         <div class="treatment-badges">
+                             <span class="badge badge-sale">Summer Sale £175</span>
+                             <span class="badge badge-strike">Usually £300</span>
+                         </div>
+                         <div class="treatment-card-img"><img src="https://i.ibb.co/BV3PcczG/emsculpt-detail.webp" loading="lazy" alt="EMSculpt Neo Treatment"></div>
+                        <div class="treatment-card-content">
+                            <h3>EMSculpt Neo™</h3>
+                            <p>Revolutionary body sculpting that builds muscle and burns fat simultaneously using HIFEM+™ and synchronized RF technology. FDA-cleared for non-invasive body contouring.</p>
+                             <div class="treatment-details">
+                                <span class="treatment-detail"><i class="fas fa-dumbbell" aria-hidden="true"></i> +25% Muscle</span>
+                                <span class="treatment-detail"><i class="fas fa-fire" aria-hidden="true"></i> -30% Fat</span>
+                                <span class="treatment-detail"><i class="far fa-clock" aria-hidden="true"></i> 30 min</span>
+                            </div>
+                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+                                <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" class="cta-button-secondary" style="width: 100%;">
+                                    Learn More
+                                </a>
+                                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20the%20EMSculpt%20Neo%20Summer%20Sale%20at%20%C2%A3175%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
+                                    Book Summer Special <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+
+                    <!-- Card 2: Exosomes - WITH TRENDING BADGE -->
                      <div class="treatment-card scale-in">
                          <div class="treatment-badges">
                              <span class="badge badge-trending">Trending</span>
@@ -234,30 +260,6 @@ get_header();
                         </div>
                     </div>
 
-                     <!-- Card 5: Body Contouring -->
-                     <div class="treatment-card scale-in">
-                         <div class="treatment-badges">
-                             <span class="badge badge-price">Starting at £150</span>
-                         </div>
-                         <div class="treatment-card-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/treatments/body-contouring.webp" loading="lazy" alt="Body Contouring Treatment"></div>
-                        <div class="treatment-card-content">
-                            <h3>Advanced Body Contouring</h3>
-                            <p>Utilise technologies like EMSculpt Neo or Cryolipolysis to sculpt, tone muscle, reduce stubborn fat, and refine body contours non-invasively.</p>
-                             <div class="treatment-details">
-                                <span class="treatment-detail"><i class="fas fa-person-booth" aria-hidden="true"></i> Sculpt & Tone</span>
-                                <span class="treatment-detail"><i class="fas fa-fire" aria-hidden="true"></i> Fat Reduction</span>
-                                <span class="treatment-detail"><i class="fas fa-sync-alt" aria-hidden="true"></i> Non-Invasive</span>
-                            </div>
-                            <div class="treatment-buttons" style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
-                                <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" class="cta-button-secondary" style="width: 100%;">
-                                    Learn More
-                                </a>
-                                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20more%20details%20about%20Advanced%20Body%20Contouring%20treatments%20please." class="cta-button-secondary" target="_blank" rel="noopener noreferrer" style="width: 100%; background-color: var(--primary); color: var(--white); border-color: var(--primary);">
-                                    Quick Inquiry <i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--white);" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                     </div>
 
                      <!-- Card 6: Aquagold Fine Touch -->
                       <div class="treatment-card scale-in">

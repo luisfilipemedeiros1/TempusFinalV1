@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'tempusbelgravia' );
 define( 'CHILD_THEME_URL', 'http://www.dicema.com/' );
-define( 'CHILD_THEME_VERSION', '2.5.2' ); // Added EMSculpt summer sale badge and fixed Dermalux LED price
+define( 'CHILD_THEME_VERSION', '2.5.3' ); // Added EMSculpt Neo as first signature treatment with summer sale
 
 //* Include treatment prices
 require_once( get_stylesheet_directory() . '/inc/treatment-prices.php' );
