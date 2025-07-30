@@ -163,7 +163,7 @@ get_header();
                      <div class="treatment-card scale-in">
                          <div class="treatment-badges">
                              <span class="badge badge-trending">Trending</span>
-                             <span class="badge badge-price">Starting at £600</span>
+                             <span class="badge badge-price">Starting at £500</span>
                          </div>
                          <div class="treatment-card-img"><img src="https://tempusbelgravia.co.uk/wp-content/webp-express/webp-images/uploads/2022/11/EXOSOMES-GROWTH-FACTORS-FACIAL.jpeg.webp" loading="lazy" alt="Exosomes Therapy"></div>
                          <div class="treatment-card-content">

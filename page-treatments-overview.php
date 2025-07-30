@@ -786,7 +786,7 @@ get_header();
                     </div>
                     <div class="treatment-card-content">
                         <h3>EMSculpt Neo</h3>
-                        <p>Build muscle and reduce fat simultaneously with electromagnetic technology.</p>
+                        <p>Build muscle and reduce fat simultaneously with electromagnetic technology. Course of 4 sessions: £2,995.</p>
                         <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/" class="treatment-button cta-button-secondary">Learn More</a>
                     </div>
                 </div>
