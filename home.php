@@ -82,7 +82,7 @@ get_header();
                     <a href="#contact" class="promo-banner-slide" aria-label="£100 Off Your Next Treatment">
                         <picture>
                             <source media="(max-width: 768px)" srcset="https://i.ibb.co/wNmqjmP/next-treatment-mobile.webp">
-                            <img src="https://i.ibb.co/Nd5SC8Z/01.webp" 
+                            <img src="https://i.ibb.co/Nd5SC8ZS/01.webp" 
                                  alt="£100 Off Your Next Treatment" 
                                  class="promo-banner-image"
                                  loading="lazy">
