@@ -136,8 +136,8 @@ get_header();
                     <!-- Card 1: EMSculpt Neo - LIMITED TIME SUMMER SALE -->
                      <div class="treatment-card scale-in">
                          <div class="treatment-badges">
-                             <span class="badge badge-sale">Summer Sale £175</span>
-                             <span class="badge badge-strike">Usually £300</span>
+                             <span class="badge badge-trending">Summer Sale</span>
+                             <span class="badge badge-price"><s style="opacity: 0.6;">£300</s> £175</span>
                          </div>
                          <div class="treatment-card-img"><img src="https://i.ibb.co/BV3PcczG/emsculpt-detail.webp" loading="lazy" alt="EMSculpt Neo Treatment"></div>
                         <div class="treatment-card-content">
