@@ -303,7 +303,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/cheek-enhancement/">
-                            <img src="https://i.ibb.co/bMH0FWWz/cheek-enhancement.webp" alt="Cheek Enhancement" loading="lazy">
+                            <img src="https://i.ibb.co/7NtfpGKw/cheek-enhancement-detail.webp" alt="Cheek Enhancement" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -320,7 +320,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/chin-filler/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 9:16/v1742655993/pablo-merchan-montes-rrcEoas5d5A-unsplash_gshplk.jpg" alt="Chin Filler" loading="lazy">
+                            <img src="https://i.ibb.co/LXzn9gTw/chin-filler-detail.webp" alt="Chin Filler" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -337,7 +337,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/jawline-filler/">
-                            <img src="https://i.ibb.co/fzS3W36d/jawline-filler.webp" alt="Jawline Filler" loading="lazy">
+                            <img src="https://i.ibb.co/r2sHbwSg/jawline-filler-detail.webp" alt="Jawline Filler" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -431,7 +431,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/brow-lift/">
-                            <img src="https://i.ibb.co/whvJhqXN/polynucleotide-eye.webp" alt="Brow Lift" loading="lazy">
+                            <img src="https://i.ibb.co/KzjsZ0bn/brow-lift.webp" alt="Brow Lift" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -448,7 +448,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/nefertiti-neck-lift/">
-                            <img src="https://i.ibb.co/MkfK4wwr/8-points-lift.webp" alt="Nefertiti Neck Lift" loading="lazy">
+                            <img src="https://i.ibb.co/35G6NJZ7/nefertitinecklift.webp" alt="Nefertiti Neck Lift" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -712,7 +712,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/fractional-laser/">
-                            <img src="https://i.ibb.co/Y70w1cbx/fractional-laser.webp" alt="Fractional Laser" loading="lazy">
+                            <img src="https://i.ibb.co/RKRHHBW/fractional-laser-detail.webp" alt="Fractional Laser" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -729,7 +729,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/vascular-laser/">
-                            <img src="https://i.ibb.co/zTXCw1PV/vein-treatment.webp" alt="Vascular Laser" loading="lazy">
+                            <img src="https://i.ibb.co/9HJJFN4J/vascular-laser-detail.webp" alt="Vascular Laser" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -780,7 +780,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/emsculpt-neo/">
-                            <img src="https://i.ibb.co/yFrq9VdY/ems-body-contouring.webp" alt="EMSculpt Neo" loading="lazy">
+                            <img src="https://i.ibb.co/BV3PcczG/emsculpt-detail.webp" alt="EMSculpt Neo" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -797,7 +797,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/aqualyx-fat-dissolving/">
-                            <img src="https://i.ibb.co/mCNmTJpy/injection-procedure.webp" alt="Aqualyx" loading="lazy">
+                            <img src="https://i.ibb.co/KjgBfm6x/aqualyx-fat-dissolving.webp" alt="Aqualyx" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -814,7 +814,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/onda/">
-                            <img src="https://i.ibb.co/N6px3yc8/onda-body.webp" alt="Onda" loading="lazy">
+                            <img src="https://i.ibb.co/8Lj4Hjyr/onda-detail.webp" alt="Onda" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -831,7 +831,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/velashape/">
-                            <img src="https://i.ibb.co/vC5z6pdk/velashape.webp" alt="Velashape" loading="lazy">
+                            <img src="https://i.ibb.co/Rwp8n0t/velashape-detail.webp" alt="Velashape" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -916,7 +916,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/dermapen-body/">
-                            <img src="https://i.ibb.co/1YptsShB/dermapen-body.webp" alt="Dermapen Body" loading="lazy">
+                            <img src="https://i.ibb.co/BHmnXCfY/dermapen-body-detail.webp" alt="Dermapen Body" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1078,7 +1078,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/mole-removal/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655993/pablo-merchan-montes-rrcEoas5d5A-unsplash_gshplk.jpg" alt="Mole Removal Face" loading="lazy">
+                            <img src="https://i.ibb.co/Qv5ncPSk/mole-removal-face.webp" alt="Mole Removal Face" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1095,7 +1095,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/mole-removal/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655993/pablo-merchan-montes-rrcEoas5d5A-unsplash_gshplk.jpg" alt="Mole Removal Body" loading="lazy">
+                            <img src="https://i.ibb.co/nMdWcTMR/mole-removal.webp" alt="Mole Removal Body" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1112,7 +1112,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/skin-tag-removal/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655993/pablo-merchan-montes-rrcEoas5d5A-unsplash_gshplk.jpg" alt="Skin Tag Removal" loading="lazy">
+                            <img src="https://i.ibb.co/6c0jM6sz/skin-tag-removal.webp" alt="Skin Tag Removal" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
@@ -1129,7 +1129,7 @@ get_header();
                     </div>
                     <div class="treatment-card-img">
                         <a href="https://tempusbelgravia.co.uk/treatment/keloid-scar-removal/">
-                            <img src="https://res.cloudinary.com/drtatej7i/image/upload/t_Banner 16:9/v1742655993/pablo-merchan-montes-rrcEoas5d5A-unsplash_gshplk.jpg" alt="Keloid Scar Removal" loading="lazy">
+                            <img src="https://i.ibb.co/TjtNKQW/keloid-scar-removal.webp" alt="Keloid Scar Removal" loading="lazy">
                         </a>
                     </div>
                     <div class="treatment-card-content">
