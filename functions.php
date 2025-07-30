@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'tempusbelgravia' );
 define( 'CHILD_THEME_URL', 'http://www.dicema.com/' );
-define( 'CHILD_THEME_VERSION', '2.4.5' ); // Improved mobile burger menu with animations
+define( 'CHILD_THEME_VERSION', '2.4.6' ); // Updated homepage promotional banners
 
 //* Include treatment prices
 require_once( get_stylesheet_directory() . '/inc/treatment-prices.php' );
