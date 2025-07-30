@@ -70,7 +70,7 @@ get_header();
                     <!-- Banner 2: 50% Off Skin Boosters -->
                     <a href="#contact" class="promo-banner-slide" aria-label="50% Off Skin Boosters">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/0j0wMf2/skinboosters-mobile.webp">
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/0j0wMf2x/skinboosters-mobile.webp">
                             <img src="https://i.ibb.co/Ty5fWPp/02.webp" 
                                  alt="50% Off Skin Boosters" 
                                  class="promo-banner-image"
@@ -81,7 +81,7 @@ get_header();
                     <!-- Banner 3: £100 Off -->
                     <a href="#contact" class="promo-banner-slide" aria-label="£100 Off Your Next Treatment">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/wNmqjmP/next-treatment-mobile.webp">
+                            <source media="(max-width: 768px)" srcset="https://i.ibb.co/wNmqjmP3/next-treatment-mobile.webp">
                             <img src="https://i.ibb.co/Nd5SC8ZS/01.webp" 
                                  alt="£100 Off Your Next Treatment" 
                                  class="promo-banner-image"
