@@ -821,7 +821,7 @@
     .promo-banner-frame {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 420px;
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -892,7 +892,7 @@
     /* Responsive adjustments */
     @media (max-width: 1024px) {
         .promo-banner-frame {
-            height: 350px;
+            height: 368px;
         }
     }
 
