@@ -821,7 +821,7 @@
     .promo-banner-frame {
         position: relative;
         width: 100%;
-        height: 441px;
+        height: auto;
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -833,7 +833,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
@@ -846,13 +845,12 @@
         opacity: 1;
         visibility: visible;
         z-index: 2;
+        position: relative;
     }
 
     .promo-banner-image {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
+        height: auto;
         display: block;
     }
 
@@ -891,9 +889,7 @@
 
     /* Responsive adjustments */
     @media (max-width: 1024px) {
-        .promo-banner-frame {
-            height: 386px;
-        }
+        /* Banner frame height is now auto on all screen sizes */
     }
 
     @media (max-width: 768px) {
