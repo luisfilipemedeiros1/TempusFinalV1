@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempus Lounge - Services Brochure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #AF8F5A;
+            --accent-deep: #004D40;
+            --accent-light: #A3C1AD;
+            --light: #FCFBF9;
+            --dark-text: #333333;
+            --gray: #666666;
+            --white: #FFFFFF;
+            --heading-font: 'Playfair Display', 'Cormorant Garamond', serif;
+            --body-font: 'Montserrat', 'Helvetica Neue', sans-serif;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            color: var(--dark-text);
+            line-height: 1.8;
+            font-size: 16px;
+            background-color: var(--light);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            font-weight: 500;
+            line-height: 1.3;
+            color: var(--dark-text);
+        }
+
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.8rem; }
+        h4 { font-size: 1.4rem; }
+        p { margin-bottom: 1.5rem; }
+
+        /* Page Structure */
+        .page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 60px 40px;
+            page-break-after: always;
+        }
+
+        .page:nth-child(odd) {
+            background-color: var(--white);
+        }
+
+        .page:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            background: linear-gradient(135deg, var(--accent-deep) 0%, var(--primary) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cover-page h1 {
+            color: var(--white);
+            font-size: 4.5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .cover-page .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            font-family: var(--body-font);
+        }
+
+        .cover-page .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 3rem;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+
+        /* Treatment Cards */
+        .treatment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .treatment-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(175, 143, 90, 0.1);
+        }
+
+        .treatment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(175, 143, 90, 0.15);
+        }
+
+        .treatment-card-header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .treatment-card-header h3 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .treatment-card-content {
+            padding: 30px;
+        }
+
+        .treatment-price {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .treatment-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .treatment-detail {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .treatment-detail i {
+            color: var(--accent-deep);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Process Timeline */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 40px;
+            width: calc(50% - 40px);
+            margin-bottom: 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: auto;
+            text-align: left;
+        }
+
+        .timeline-item:nth-child(even) {
+            text-align: right;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border: 4px solid var(--white);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .timeline-item:nth-child(odd)::after {
+            left: -50px;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            right: -50px;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.07);
+            text-align: center;
+            position: relative;
+            margin: 40px 0;
+        }
+
+        .testimonial::before {
+            content: '\f10d';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 3rem;
+            position: absolute;
+            top: -20px;
+            left: 40px;
+            color: var(--primary);
+            opacity: 0.2;
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--accent-deep);
+            color: var(--white);
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .cta-section h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 8px 18px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .badge-trending {
+            background-color: var(--accent-deep);
+            color: var(--white);
+        }
+
+        .badge-sale {
+            background-color: #FF6B6B;
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+            
+            .page {
+                padding: 40px 20px;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                width: calc(100% - 40px);
+                margin-left: 40px;
+                text-align: left;
+            }
+            
+            .timeline-item::after {
+                left: -30px;
+            }
+        }
+
+        @media print {
+            .page {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page 1: Cover -->
+    <div class="page cover-page">
+        <div class="container">
+            <img src="https://res.cloudinary.com/drtatej7i/image/upload/v1744361845/Group_30_xsuean.svg" alt="Tempus Lounge" class="logo">
+            <h1>Services Brochure</h1>
+            <p class="subtitle">Where Timeless Vitality Meets Visible Rejuvenation</p>
+            <div class="divider"></div>
+            <p style="margin-top: 3rem; font-size: 1.1rem;">Belgravia's Premier Aesthetic & Longevity Clinic</p>
+        </div>
+    </div>
+
+    <!-- Page 2: Welcome Message -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to Tempus Lounge</h2>
+                <div class="divider"></div>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.3rem; color: var(--primary); margin-bottom: 2rem;">
+                    "Where aesthetic excellence meets regenerative science"
+                </p>
+                <p>
+                    At Tempus Lounge, we believe in the harmony of visible health and enduring vitality. 
+                    Located in the heart of Belgravia, our clinic represents a new paradigm in aesthetic medicine - 
+                    where pioneering specialists wield tomorrow's technologies to create transformations that are 
+                    both immediate and lasting.
+                </p>
+                <p>
+                    Our approach transcends traditional aesthetics. We don't just enhance appearance; we optimize 
+                    cellular function, regenerate tissue, and unlock your body's inherent capacity for renewal. 
+                    Every treatment is a step toward a more vital, confident, and authentically beautiful you.
+                </p>
+                <div class="stats-grid" style="margin-top: 4rem;">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50,000+</h3>
+                        <p>Treatments Performed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>CQC</h3>
+                        <p>Regulated Clinic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Our Philosophy -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Philosophy</h2>
+                <p>A holistic approach to aesthetic excellence and longevity</p>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Scientific Precision</h3>
+                    <p>Every treatment is grounded in peer-reviewed research and delivered with medical precision. We stay at the forefront of aesthetic science to bring you proven, effective solutions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Personalized Care</h3>
+                    <p>Your journey is unique. Our expert practitioners create bespoke treatment plans tailored to your physiology, goals, and lifestyle for results that enhance your natural beauty.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Longevity Focus</h3>
+                    <p>We look beyond surface beauty to cellular health. Our treatments are designed to promote lasting vitality, supporting your body's natural regenerative processes.</p>
+                </div>
+            </div>
+            <div class="cta-section" style="margin-top: 4rem;">
+                <h3>Experience the Tempus Difference</h3>
+                <p>Where every treatment is a step toward your most vital, confident self</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Signature Treatments Overview -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Signature Treatments</h2>
+                <p>Our most sought-after treatments combining innovation with proven results</p>
+                <div class="divider"></div>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <span class="badge badge-sale">Summer Sale</span>
+                        <h3>EMSculpt Neo™</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£175 <small style="text-decoration: line-through; opacity: 0.6;">£300</small></div>
+                        <p>Revolutionary body sculpting that builds muscle and burns fat simultaneously using HIFEM+™ and synchronized RF technology.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-dumbbell"></i> +25% Muscle</span>
+                            <span class="treatment-detail"><i class="fas fa-fire"></i> -30% Fat</span>
+                            <span class="treatment-detail"><i class="far fa-clock"></i> 30 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <span class="badge badge-trending">Trending</span>
+                        <h3>Exosome Therapy</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">From £500</div>
+                        <p>Harness the power of exosomes for advanced skin regeneration, reducing inflammation, improving texture, and promoting youthful vitality.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-atom"></i> Regeneration</span>
+                            <span class="treatment-detail"><i class="fas fa-seedling"></i> Youthful Skin</span>
+                            <span class="treatment-detail"><i class="fas fa-star"></i> Cutting-Edge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Facial Aesthetics -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Facial Aesthetics</h2>
+                <p>Enhance, restore, and rejuvenate with precision and artistry</p>
+                <div class="divider"></div>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Focus Dual HIFU</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£1,499</div>
+                        <p>Non-surgical face and neck lifting using focused ultrasound energy for dramatic tightening and contouring.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-arrow-up"></i> Lifting</span>
+                            <span class="treatment-detail"><i class="fas fa-sync-alt"></i> No Downtime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>RF Microneedling</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£750</div>
+                        <p>Advanced fractional technology combining radiofrequency and microneedling to remodel tissue and improve texture.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-layer-group"></i> Remodelling</span>
+                            <span class="treatment-detail"><i class="far fa-clock"></i> 75-90 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Dermal Fillers</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">From £450</div>
+                        <p>Expert volumization and contouring using premium hyaluronic acid fillers for natural-looking enhancement.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-syringe"></i> Injectable</span>
+                            <span class="treatment-detail"><i class="fas fa-leaf"></i> Natural Results</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: Advanced Technologies -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Advanced Technologies</h2>
+                <p>State-of-the-art equipment for superior results</p>
+                <div class="divider"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fotona 4D® Laser System</h3>
+                    <p>Revolutionary four-dimensional rejuvenation combining multiple laser wavelengths for comprehensive facial renewal without surgery.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 2rem;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Volumetric tightening from within</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Precision sculpting and contouring</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Surface rejuvenation</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Light peel for radiance</li>
+                    </ul>
+                </div>
+                <div style="background: var(--light); padding: 40px; border-radius: 10px;">
+                    <h4 style="color: var(--accent-deep); margin-bottom: 1rem;">Technology Benefits</h4>
+                    <div class="stats-grid" style="margin-top: 2rem;">
+                        <div class="stat-item">
+                            <h3 style="font-size: 2rem;">4D</h3>
+                            <p>Dimensions</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 style="font-size: 2rem;">0</h3>
+                            <p>Downtime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 7: Body Contouring -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Body Contouring & Sculpting</h2>
+                <p>Transform your physique with cutting-edge non-invasive technologies</p>
+                <div class="divider"></div>
+            </div>
+            <div class="cta-section" style="background: var(--primary); margin-bottom: 3rem;">
+                <h3>Special Package Offer</h3>
+                <p>Book 4 sessions: Save 10% | Book 6 sessions: Save 20%</p>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Onda Coolwaves™</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£350/area</div>
+                        <p>Microwave technology for cellulite reduction and skin tightening with lasting results.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-wave-square"></i> Coolwaves</span>
+                            <span class="treatment-detail"><i class="fas fa-compress"></i> Tightening</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Lipolysis Injections</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£150</div>
+                        <p>Targeted fat dissolution for stubborn pockets using Aqualyx or Cincelar.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-bullseye"></i> Targeted</span>
+                            <span class="treatment-detail"><i class="fas fa-vial"></i> Injectable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 8: Injectable Treatments -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Injectable Excellence</h2>
+                <p>Precision treatments for natural enhancement and rejuvenation</p>
+                <div class="divider"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; margin-bottom: 3rem;">
+                <div>
+                    <h3>Anti-Wrinkle Injections</h3>
+                    <div class="treatment-price">From £295</div>
+                </div>
+                <div>
+                    <p>Expertly administered neuromodulators to soften dynamic lines while maintaining natural expression.</p>
+                    <div class="treatment-details">
+                        <span class="treatment-detail"><i class="fas fa-clock"></i> 30 minutes</span>
+                        <span class="treatment-detail"><i class="fas fa-calendar"></i> Lasts 3-4 months</span>
+                        <span class="treatment-detail"><i class="fas fa-ban"></i> No downtime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Consultation</h4>
+                    <p>Detailed facial assessment and treatment planning</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Treatment</h4>
+                    <p>Precise injection technique for optimal results</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Results</h4>
+                    <p>Visible improvement in 3-7 days</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Follow-up</h4>
+                    <p>Complimentary review at 2 weeks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 9: Regenerative Medicine -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Regenerative Medicine</h2>
+                <p>Harnessing your body's natural healing power</p>
+                <div class="divider"></div>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>PRP Therapy</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£600</div>
+                        <p>Platelet-rich plasma therapy for facial rejuvenation or hair restoration using your body's own growth factors.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-dna"></i> Natural</span>
+                            <span class="treatment-detail"><i class="fas fa-recycle"></i> Regenerative</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Profhilo® Body</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£700</div>
+                        <p>Bio-remodelling treatment for body skin laxity, improving hydration and elasticity from within.</p>
+                        <div class="treatment-details">
+                            <span class="treatment-detail"><i class="fas fa-tint"></i> Hydration</span>
+                            <span class="treatment-detail"><i class="fas fa-hand-paper"></i> Skin Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial" style="margin-top: 3rem;">
+                <p class="testimonial-content">
+                    "The exosome treatment has transformed my skin in ways I never thought possible. 
+                    The texture, tone, and overall radiance are remarkable. I feel like I've turned back the clock 10 years!"
+                </p>
+                <p class="testimonial-author">— Sarah M., Belgravia</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 10: Medical Grade Skincare -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Medical Grade Skincare</h2>
+                <p>Professional treatments for lasting skin transformation</p>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>HydraFacial Bespoke</h3>
+                    <p class="treatment-price">£250</p>
+                    <p>Customized multi-step treatment combining cleansing, exfoliation, extraction, and infusion of medical-grade serums.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>PRX-T33 Peel</h3>
+                    <p class="treatment-price">£250</p>
+                    <p>Revolutionary bio-revitalization peel with no downtime, perfect for instant radiance and long-term improvement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Dermalux LED</h3>
+                    <p class="treatment-price">£80</p>
+                    <p>Medical-grade LED phototherapy harnessing specific wavelengths for healing, rejuvenation, and acne treatment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 11: Surgical Services -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Surgical Services & Minor Procedures</h2>
+                <p>Expert surgical care in a discrete, comfortable setting</p>
+                <div class="divider"></div>
+            </div>
+            <div style="background: var(--light); padding: 40px; border-radius: 10px; margin-bottom: 3rem;">
+                <p style="text-align: center; font-size: 1.1rem; color: var(--accent-deep);">
+                    Our Plastic Surgeons offer a full range of procedures including breast augmentation, 
+                    reduction, uplift, implant removal and exchange, liposuction, and blepharoplasty. 
+                    All surgical consultations are conducted at Tempus Lounge.
+                </p>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Mole Removal</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">Face: £595 | Body: £495</div>
+                        <p>Safe, precise removal with minimal scarring by our expert surgeons.</p>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Scar Revision</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">Face: £1,000 | Body: £1,200</div>
+                        <p>Advanced techniques to minimize and improve the appearance of scars.</p>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Earlobe Repair</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">1 Ear: £800 | 2 Ears: £1,400</div>
+                        <p>Expert repair of torn or stretched earlobes with natural results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 12: IV Therapy -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>IV Vitamin Infusions</h2>
+                <p>Optimal wellness delivered directly to your cells</p>
+                <div class="divider"></div>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Energy Booster</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£290</div>
+                        <p>Revitalize with B-complex vitamins, amino acids, and minerals for sustained energy.</p>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Skin Brightening</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£250</div>
+                        <p>High-dose vitamin C and glutathione for radiant, glowing skin from within.</p>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Anti-Aging</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£370</div>
+                        <p>Powerful antioxidants and NAD+ for cellular rejuvenation and longevity support.</p>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Immune Support</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <div class="treatment-price">£370</div>
+                        <p>Strengthen your defenses with vitamin C, zinc, and immune-boosting nutrients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 13: Laser Hair Removal -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Laser Hair Removal</h2>
+                <p>State-of-the-art technology for permanent hair reduction</p>
+                <div class="divider"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 2rem;">Ladies' Treatments</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Small Areas</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£100</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Medium Areas</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£120</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Large Areas</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£150</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Full Leg</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£250</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0;">Full Body</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£800</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 2rem;">Men's Treatments</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Small Areas</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£100</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Medium Areas</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£200</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Large Areas</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£300</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--light);">
+                            <td style="padding: 15px 0;">Back & Shoulders</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£400</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0;">Full Body</td>
+                            <td style="text-align: right; color: var(--primary); font-weight: 600;">£800</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 14: Treatment Journey -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Treatment Journey</h2>
+                <p>A seamless experience from consultation to transformation</p>
+                <div class="divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>1. Consultation</h3>
+                    <p>Comprehensive assessment with our expert practitioners to understand your goals and create a personalized treatment plan.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2. Treatment Planning</h3>
+                    <p>Detailed explanation of recommended treatments, expected outcomes, and investment required for your transformation.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>3. Treatment Day</h3>
+                    <p>Luxurious experience in our state-of-the-art clinic with the highest standards of care and comfort.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>4. Aftercare</h3>
+                    <p>Comprehensive aftercare instructions and support to ensure optimal results and comfort.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>5. Follow-up</h3>
+                    <p>Scheduled reviews to monitor progress and plan maintenance for lasting results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 15: Why Choose Tempus -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Tempus Lounge</h2>
+                <p>Excellence in every aspect of your care</p>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>CQC Regulated</h3>
+                    <p>Fully regulated by the Care Quality Commission, ensuring the highest standards of safety and care.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-medical"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Led by renowned aesthetic doctors and surgeons with decades of combined experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Prime Location</h3>
+                    <p>Conveniently located in the heart of Belgravia, London's most prestigious district.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Luxury Experience</h3>
+                    <p>Discreet, comfortable environment designed for your privacy and relaxation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Latest Technology</h3>
+                    <p>Investment in cutting-edge equipment and techniques for superior results.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Holistic Approach</h3>
+                    <p>Treatments designed to enhance both appearance and overall wellness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 16: Memberships -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tempus Memberships</h2>
+                <p>Exclusive benefits for our valued clients</p>
+                <div class="divider"></div>
+            </div>
+            <div class="treatment-grid">
+                <div class="treatment-card">
+                    <div class="treatment-card-header" style="background: var(--accent-light); color: var(--dark-text);">
+                        <h3>Essential</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Perfect for maintaining your aesthetic results</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> £200 monthly treatment credits</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> 10% off all treatments</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Priority booking</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Complimentary consultations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header">
+                        <h3>Premier</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;">For those seeking regular transformation</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> £300 monthly treatment credits</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> 15% off all treatments</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> VIP access to new treatments</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Quarterly wellness assessment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="treatment-card">
+                    <div class="treatment-card-header" style="background: var(--dark-text);">
+                        <h3>Elite</h3>
+                    </div>
+                    <div class="treatment-card-content">
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Ultimate aesthetic lifestyle membership</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> £400 monthly treatment credits</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> 20% off all treatments</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Personal aesthetic concierge</li>
+                            <li style="margin-bottom: 1rem;"><i class="fas fa-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Annual longevity assessment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 17: Success Stories -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Real transformations, real confidence</p>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-content">
+                    "The team at Tempus Lounge has completely transformed not just my appearance, 
+                    but my confidence. The EMSculpt Neo results exceeded my expectations - 
+                    I've never felt stronger or more sculpted."
+                </p>
+                <p class="testimonial-author">— James H., Chelsea</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-content">
+                    "After years of trying different clinics, I finally found my aesthetic home. 
+                    The expertise, technology, and genuine care at Tempus is unmatched. 
+                    My skin has never looked better thanks to their bespoke treatment plan."
+                </p>
+                <p class="testimonial-author">— Victoria L., Mayfair</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-content">
+                    "The HIFU treatment gave me the lift I was looking for without surgery. 
+                    Friends keep asking what I've done - I look refreshed and natural, 
+                    exactly what I wanted."
+                </p>
+                <p class="testimonial-author">— Michael R., Knightsbridge</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 18: Aftercare Excellence -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Aftercare Excellence</h2>
+                <p>Your journey continues beyond treatment</p>
+                <div class="divider"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 2rem;">Comprehensive Support</h3>
+                    <p>At Tempus Lounge, we believe exceptional results come from exceptional aftercare. Our comprehensive support ensures you achieve and maintain your aesthetic goals.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 2rem;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone" style="color: var(--accent-deep); margin-right: 10px;"></i> 24/7 aftercare hotline</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-file-medical" style="color: var(--accent-deep); margin-right: 10px;"></i> Detailed aftercare instructions</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-user-check" style="color: var(--accent-deep); margin-right: 10px;"></i> Complimentary follow-up appointments</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-gifts" style="color: var(--accent-deep); margin-right: 10px;"></i> Premium aftercare products</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="cta-section">
+                        <h3>Your Wellness Partner</h3>
+                        <p>From your first consultation to long-term maintenance, we're with you every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 19: Visit Us -->
+    <div class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Tempus Lounge</h2>
+                <p>Your journey to transformation begins here</p>
+                <div class="divider"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 2rem;">Location</h3>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                        11A West Halkin Street<br>
+                        Belgravia, London SW1X 8JL
+                    </p>
+                    <h4 style="margin-bottom: 1rem;">Opening Hours</h4>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="padding: 10px 0;">Monday - Friday</td>
+                            <td style="text-align: right;">9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 0;">Saturday</td>
+                            <td style="text-align: right;">By Appointment</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 0;">Sunday</td>
+                            <td style="text-align: right;">Closed</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 2rem;">Book Your Consultation</h3>
+                    <div style="background: var(--light); padding: 30px; border-radius: 10px;">
+                        <p style="margin-bottom: 2rem;"><strong>Phone:</strong> +44 20 8037 3265</p>
+                        <p style="margin-bottom: 2rem;"><strong>Email:</strong> info@tempusbelgravia.co.uk</p>
+                        <p style="margin-bottom: 2rem;"><strong>WhatsApp:</strong> +44 7538 037 973</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <p style="font-size: 0.9rem; color: var(--gray);">
+                                <i class="fas fa-shield-alt" style="margin-right: 5px;"></i>
+                                CQC Regulated Clinic
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 20: Back Cover -->
+    <div class="page cover-page">
+        <div class="container">
+            <h2 style="color: var(--white); margin-bottom: 2rem;">Begin Your Transformation</h2>
+            <div class="divider"></div>
+            <p style="font-size: 1.3rem; margin-bottom: 3rem;">
+                Where timeless vitality meets visible rejuvenation
+            </p>
+            <div class="stats-grid" style="margin-bottom: 3rem;">
+                <div class="stat-item">
+                    <h3 style="color: var(--white);">50+</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Treatments</p>
+                </div>
+                <div class="stat-item">
+                    <h3 style="color: var(--white);">15+</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Expert Practitioners</p>
+                </div>
+                <div class="stat-item">
+                    <h3 style="color: var(--white);">1</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Premier Location</p>
+                </div>
+            </div>
+            <a href="#" class="cta-button" style="background: var(--white); color: var(--primary);">
+                Book Your Consultation Today
+            </a>
+            <div style="margin-top: 4rem;">
+                <p style="font-size: 0.9rem; opacity: 0.8;">
+                    © 2024 Tempus Lounge. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
