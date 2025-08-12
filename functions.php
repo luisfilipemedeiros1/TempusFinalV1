@@ -188,7 +188,7 @@ function tempus_enqueue_styles_scripts() {
 add_action( 'wp_head', 'tempus_add_zoho_tracking' );
 function tempus_add_zoho_tracking() {
     ?>
-    <script src="https://cdn-eu.pagesense.io/js/foundershealth/a71f79adb32e46278910494ae85a1ac3.js"></script>
+    <script src="https://cdn-eu.pagesense.io/js/foundershealth/aebc9fcebea149808336727866a8913f.js"></script>
     <?php
 }
 
