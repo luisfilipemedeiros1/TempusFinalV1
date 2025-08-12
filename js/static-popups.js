@@ -82,6 +82,7 @@
     // Get treatment ID from title
     function getTreatmentId(title) {
         const idMap = {
+            'EMSculpt Neo™': 'emsculpt-neo',
             'HIFU Skin Tightening': 'hifu',
             'RF Microneedling': 'rf-microneedling',
             'Lips Augmentation': 'lip-enhancement',

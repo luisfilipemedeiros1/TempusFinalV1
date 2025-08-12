@@ -488,3 +488,56 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
     </div>
 </div>
+
+<!-- EMSculpt Neo Popup -->
+<div id="emsculpt-neo-popup" class="treatment-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="emsculpt-popup-title">
+    <div class="popup-container">
+        <button class="popup-close" aria-label="Close popup">&times;</button>
+        <div class="popup-content">
+            <h2 id="emsculpt-popup-title" class="popup-title">EMSculpt Neo™</h2>
+            <p class="popup-subtitle">The world's first and only non-invasive body shaping procedure that simultaneously builds muscle and burns fat.</p>
+            
+            <div class="popup-info-grid">
+                <div class="popup-info-item">
+                    <i class="far fa-clock"></i>
+                    <strong>Duration</strong>
+                    <span>30 minutes</span>
+                </div>
+                <div class="popup-info-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <strong>Downtime</strong>
+                    <span>None</span>
+                </div>
+                <div class="popup-info-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <strong>Sessions</strong>
+                    <span>4 treatments</span>
+                </div>
+            </div>
+            
+            <div class="popup-benefits">
+                <h3>Key Benefits</h3>
+                <ul>
+                    <li>Build muscle by up to 25%</li>
+                    <li>Reduce fat by up to 30%</li>
+                    <li>FDA-cleared for abdomen, buttocks, arms, and calves</li>
+                    <li>No surgery, no needles, no downtime</li>
+                    <li>Backed by 30+ scientific studies</li>
+                </ul>
+            </div>
+            
+            <div class="popup-process">
+                <h3>Revolutionary Technology</h3>
+                <p>EMSculpt Neo combines synchronized radiofrequency heating and HIFEM+™ (High-Intensity Focused Electromagnetic) energy. The RF heating prepares muscles for stress, similar to a warm-up before a workout, while HIFEM+™ contracts muscles beyond what's possible through voluntary exercise - delivering approximately 20,000 muscle contractions in just 30 minutes.</p>
+            </div>
+            
+            <div class="popup-cta">
+                <div class="popup-price"><s style="opacity: 0.6;">£300</s> £175 Summer Sale</div>
+                <a href="https://wa.me/447538037973?text=Hi%20Tempus%20Lounge%2C%20I%27d%20like%20to%20book%20the%20EMSculpt%20Neo%20Summer%20Sale%20at%20%C2%A3175%20please." 
+                   class="cta-button cta-single" target="_blank" rel="noopener noreferrer">
+                    Book Summer Special <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
